@@ -1,0 +1,2522 @@
+if (p -> owner && find_sdp(req ) ) {
+sem_unlock(sma , - 1 ) ;
+#define CEPH_MSGR_TAG_CHALLENGE_AUTHORIZER 16
+
+if (password == NULL || ! (mask & KADM5_ATTRIBUTES ) ||
+PRUint32 * aLineno , JSPrincipals * aPrincipals ) ;
+sctp_add_cmd_sf(commands , SCTP_CMD_SET_ASOC , SCTP_ASOC(new_asoc ) ) ;
+
+state -> object_nl = fstrndup(RSTRING_PTR(object_nl ) , len ) ;
+extern int rose_parse_facilities(unsigned char * , unsigned int , struct rose_facilities_struct * ) ;
+uint64_t off = s -> off ;
+" % 4d - % 2d - % 2d , % 2d : % 2d : % 2d . % 9d : % 5s ( % 127 [ A - Za - z0 - 9 : ] ) , Length : % 9d , Pro : % 9d , Off : % 9d , Pri : % 9d , RM : % 9d , Err : % 9d [ % 8x , % 8x ] " ,
+goto error ;
+. gro_receive = sit_gro_receive ,
+const char * name , int rep_quick , my_bool no_copy_stat )
+if (ctx -> terminated || ! ctx -> established ) {
+if (src_end - src < zsize + (sub_type != 2 ) )
+goto out_good ;
+if (half_vert && y + half_vert < s -> avctx -> height )
+FILE_RCSID("@(# ) $ File : cdf . c , v 1 . 59 20140514 23 : 22 : 48 christos Exp $ " )
+
+struct o2nm_cluster * cluster ;
+struct inet_peer * inet_getpeer(const struct inetpeer_addr * daddr , int create ) ;
+sem_unlock(sma , - 1 ) ;
+if((strlen(ptr ) > 2 ) && ( * + + ptr == '"' ) && (strchr( & ptr [ 1 ] , '"' ) != NULL ) ) {
+. proc_handler = addrconf_sysctl_mtu ,
+sigev_none = timr -> it_sigev_notify == SIGEV_NONE ;
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+if (shdr -> sh_size < 1 || shdr -> sh_size > SIZE_MAX ) {
+assert_se(touch_file(path , true , USEC_INFINITY , UID_INVALID , GID_INVALID , MODE_INVALID ) == 0 ) ;
+if ( ! * ptrptr && nmemb && size )
+err = compat_put_timespec( & kts , up ) ;
+if( ! typeName ) abort( ) ;
+touch_file(t -> stamp_path , true , t -> last_trigger . realtime , UID_INVALID , GID_INVALID , MODE_INVALID ) ;
+if (split_flag && size >= MIN_BLOCK_SIZE ) {
+int pktsz , ret ;
+std : : map < std : : string , std : : string > varyingLongNameMap ;
+
+if ( * value == 0 || value [ strlen(value ) - 1 ] == ' , ' ) {
+MODULE_ALIAS_CRYPTO("sha384" ) ;
+if (fscanf(f , "PG % 31 [ t ] % c % c % 31 [ t + - ] % d % 31 [ t ] % d % 31 [ t ] % d" , temp , & endian1 ,
+nickname = NULL ;
+if (eindex < 0 || eindex >= MAX_EVENTS ) {
+struct dump_dir * dd = dd_create(path , g_settings_privatereports ? 0 : client_uid , DEFAULT_DUMP_DIR_MODE ) ;
+conn -> m -> local_tx_end(conn , this_func , ret TSRMLS_CC ) ;
+MODULE_ALIAS_CRYPTO("sha1" ) ;
+nfca_poll -> nfcid1_len = min_t(__u8 , * data + + , NFC_NFCID1_MAXSIZE ) ;
+s -> filesize = UINT64_MAX ;
+SetHeader(atom , nsDependentCString(p , p2 - p ) , PR_TRUE , PR_FALSE ) ;
+else if (anope_flags_compat && ! strcasecmp(target , "MODIFY" ) && myentity_find_ext(target ) == NULL )
+if (key_is_positive(key ) )
+virtual already_AddRefed < MediaResource > CloneData(MediaDecoder * aDecoder ) ;
+mnt_flags |= mnt -> mnt . mnt_flags & ~ MNT_USER_SETTABLE_MASK ;
+band -> prec = av_calloc(reslevel -> num_precincts_x *
+mpz_powm_sec (z , a , m , n ) ;
+exit_func :
+if (pskb_expand_head(skb_out , 0 , size - skb_out -> len , GFP_ATOMIC ) < 0 ) {
+exit_func :
+. splice_write = iter_file_splice_write ,
+if ((psf = psf_allocate ( ) ) == NULL )
+unsigned int count , i ;
+for (plane = 0 ; plane < 4 && frame -> data [ plane ] && frame -> linesize [ plane ] ; plane + + ) {
+CWD_API realpath_cache_bucket * realpath_cache_lookup(const char * path , size_t path_len , time_t t )
+
+if (item_num > 65536 || item_num < 0 ) {
+segment -> AppendSlice( * aInputTrack -> GetSegment( ) ,
+if (peer != NULL )
+size_t length , offset , size , at ;
+size_t ini_entries_len = 0 ;
+bool FireClipboardEvent(int32_t aType , int32_t aSelectionType ) ;
+nsRefPtr < nsRangeStore > mRangeItem ;
+mutex_init( & dev -> lock ) ;
+nanojit : : LIns * args [ ] , bool rooted ) ;
+if (shdr -> sh_size < 1 || shdr -> sh_size > SIZE_MAX ) {
+. llseek = ftrace_filter_lseek ,
+nsCOMPtr < nsIDOMElement > mFrameElement ;
+cmpt -> stream_ = (inmem ) ? jas_stream_memopen2(0 , size ) :
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+goto failed_mount_wq ;
+}
+
+zend_throw_exception_ex(spl_ce_BadMethodCallException , 0 TSRMLS_CC , " % s" , error ) ;
+found = (unsigned char * ) php_memnstr((char * ) haystack + noffset , (char * ) needle , needle_len , (char * ) haystack + haystack_len ) ;
+if (len < tcp_hdrlen || tcp_hdrlen < sizeof(struct tcphdr ) )
+if ((ctxt -> mode != X86EMUL_MODE_PROT64 ) && (efer & EFER_LMA )
+last mod : $ Id : ogg . h 17098 2010 - 03 - 29 05 : 35 : 11Z gmaxwell $
+intrad_get_vendor_attr(u_int32_t * , unsigned char * , const void ** , size_t * , const void * , size_t ) ;
+EVENT_NULL , main_inI1_outR1 } ,
+(1812433253UL * (mt -> mt_buffer_ [ i - 1 ] ^
+if ( ! (flag & EXT4_GET_BLOCKS_PRE_IO ) )
+MODULE_ALIAS_CRYPTO("crct10dif" ) ;
+
+last mod : $ Id : window . h 13293 2007 - 07 - 24 00 : 09 : 47Z xiphmont $
+( * JSFinalizeCallback ) (JSFreeOp * fop , JSFinalizeStatus status , JSBool isCompartment ) ;
+snprintf(bname , sizeof(bname ) , " % s % s" ,
+if (((tot_len - offset - 4 ) < bodyLength ) || (bodyLength < sizeof(EAPOL_RSN_KEY ) ) ) {
+size *= 95 ;
+if (pte_valid_user(pte ) ) {
+# define SSL_ST_ERR (0x05 | SSL_ST_INIT )
+if( end - * p < 2 )
+last mod : $ Id : lpc . h 16037 2009 - 05 - 26 21 : 10 : 58Z xiphmont $
+compute_curve_gamma_table_type1(gamma_table , TRC -> data [ 0 ] ) ;
+skipsize = LOGICAL_BLOCK_SIZE * (int64_t ) vd -> location ;
+FILE_RCSID("@(# ) $ File : softmagic . c , v 1 . 188 20140514 23 : 15 : 42 christos Exp $ " )
+static const float vwin512 [ 256 ] = {
+printf(" Value : % i" , * ((int * ) mapidata -> data ) ) ;
+remaining = tvb_reported_length_remaining(tvb , offset ) ;
+MODULE_ALIAS_CRYPTO("sha1" ) ;
+snprintf (op -> buf_asm , sizeof(op -> buf_asm ) , "packed - switch - payload % d , % d" , array_size , first_key ) ;
+if ( ! SSL_READ_ETM(s ) && EVP_MD_CTX_md(s -> read_hash ) != NULL )
+else umount_tree(mnt , UMOUNT_CONNECTED ) ;
+
+bool
+
+#include < k5 - int . h >
+goto error_put_dest_keyring ;
+dl = kzalloc(size , GFP_KERNEL ) ;
+if (vcpu -> mmio_cur_fragment >= vcpu -> mmio_nr_fragments ) {
+if (ext2_xattr_cache_insert(ext2_mb_cache , bh ) )
+scatterwalk_map_and_copy(dst , req -> dst , 0 , tempCipherLen , 1 ) ;
+#define __S100 PAGE_READONLY_EXEC
+last mod : $ Id $
+off_t fat_size ;
+if (offset > pkt_len ) {
+mapping = vma -> vm_file -> f_dentry -> d_inode -> i_mapping ;
+FILE_RCSID("@(# ) $ File : softmagic . c , v 1 . 196 20141107 15 : 24 : 14 christos Exp $ " )
+
+l_current_pi -> include = (OPJ_INT16 * ) opj_calloc((size_t ) (l_tcp -> numlayers + 1U ) * l_step_l , sizeof(OPJ_INT16 ) ) ;
+#include "compilercompilerdebug . h"
+int32_t offset = 0 , noffset = 0 ;
+void ResetDirectionSetByTextNode(nsTextNode * aTextNode , bool aNullParent ) ;
+ogg_packet * op ) {
+overrun = timer_overrun_to_int(timr , 0 ) ;
+static void FinalizeCallback(JSFreeOp * fop , JSFinalizeStatus status , JSBool isCompartmentGC ) ;
+last mod : $ Id : smallft . h 13293 2007 - 07 - 24 00 : 09 : 47Z xiphmont $
+
+if (ret < 0 && ! p -> skip_release_on_error )
+1 , regs , 0 ) ;
+mutex_unlock( & dev -> lock ) ;
+snprintf (op -> buf_asm , sizeof (op -> buf_asm ) , "sparse - switch - payload % d" , array_size ) ;
+unlock :
+void f2fs_wait_discard_bios(struct f2fs_sb_info * sbi , bool umount ) ;
+static mp_err
+Packet * p = BuildTestPacket(IPPROTO_ICMP , 99 , 0 , 1 , 'A' + i , 16 ) ;
+unsigned int index , count , i ;
+if (key_is_positive(key ) )
+if ( ! context ||
+if (ext2_xattr_cache_insert(ext2_mb_cache , bh ) )
+PRPackedBool mInDtor ;
+
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+done :
+lastProp = bindings . callObjectShape(cx ) ;
+c -> tile_stride = FFALIGN(c -> tile_width , 16 ) * 3 ;
+hwc -> event_base = MSR_ARCH_PERFMON_FIXED_CTR0 + (hwc -> idx - X86_PMC_IDX_FIXED ) ;
+
+bool NS_FASTCALL SetLength( size_type newLength ) ;
+#include < linuxmath64 . h >
+if ( ! iph || iph -> ihl < 5 )
+MODULE_ALIAS_CRYPTO("rfc3686" ) ;
+bh -> b_size = (u64 ) map . m_len << inode -> i_blkbits ;
+rc = expandRegular(fi , fn , psm , 0 , nodigest , 0 ) ;
+if (state != KEY_IS_UNINSTANTIATED )
+struct gfn_to_hva_cache vapic_cache ;
+
+. pprev = NULL ,
+return kvm_vcpu_has_lapic(vcpu ) && vcpu -> arch . apic -> pending_events ;
+valuelen = args -> rmtvaluelen ;
+int _SSL_check_hostname(X509 * cert , const char * host ) ;
+p = BuildTestPacket(IPPROTO_ICMP , id , 1 , 0 , 'A' , 0 ) ;
+virtual void WriteInternal(const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+declen = mutt_b64_decode(out2 , out1 , sizeof(out2 ) ) ;
+if (sa && portno > 0 ) {
+while (isdigit((unsigned char ) * s ) && (ptmp != (tmp + sizeof(tmp ) - 1 ) ) )
+if ((psf = psf_allocate ( ) ) == NULL )
+opendata = nfs4_opendata_alloc( & ctx -> path , state -> owner , 0 , 0 , NULL ) ;
+
+* message = estrndup(stats_header -> message , stats_header -> message_len ) ;
+if(x & (1U << (unsigned int ) i ) ) return i ;
+if (skb == NULL || ! (skb -> dev -> flags & IFF_LOOPBACK ) ) {
+fname_len = Z_STRLEN_P(value ) ;
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+snprintf( psz_remote , sizeof( psz_remote ) , " % s % s" , psz_server , psz_share ) ;
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+float * valuelist ;
+if (do_vnet ) {
+fmode_tfmode ;
+size_t ffmax , parent_len ;
+int udp_push_pending_frames(struct sock * sk )
+struct serial_icounter_struct icount = { } ;
+err = func(file , cmd , parg ) ;
+
+Copyright (c ) 2009 , 2016 , MariaDB
+if (user -> uid_keyring && user -> session_keyring ) {
+* rowp + + = suffix [ code ] & mColorMask ;
+unsigned long outlen , loid [ 16 ] , reallen ;
+last mod : $ Id $
+ZEND_ARG_INFO(0 , flags )
+hrtimer_try_to_cancel( & stime -> hrt ) ;
+conn -> m -> local_tx_end(conn , this_func , ret TSRMLS_CC ) ;
+zend_throw_exception_ex(spl_ce_BadMethodCallException , 0 TSRMLS_CC , " % s" , error ) ;
+if (buf_size < 26 ) {
+if (likely(serio && ! filtered ) )
+MODULE_ALIAS_CRYPTO("sha1 - powerpc" ) ;
+#define MY_REDEL_NO_COPY_STAT 512
+if (dest == path ) {
+CHECK_STEP ;
+if ( ! nblocks || nblocks > INT_MAX 2 sizeof( * s -> decoded_buffer ) - 8 ) {
+
+{ size_t chanmap_size = SF_MIN (psf -> sf . channels , layout_tag & 0xffff ) * sizeof (psf -> channel_map [ 0 ] ) ;
+if (arg >= cdi -> capacity )
+avpriv_request_sample(mov -> fc , "Multiple independent substreams" ) ;
+goto err ;
+
+kzalloc(2 * (length + 1 ) , GFP_KERNEL ) ;
+type == NT_GNU_BUILD_ID && (descsz >= 4 && descsz <= 20 ) ) {
+if ( ! ie1 || ! ie2 )
+MODULE_ALIAS_CRYPTO("md4" ) ;
+
+sem_lock(sma , NULL , - 1 ) ;
+MODULE_ALIAS_CRYPTO("cast5" ) ;
+snprintf(buf , sizeof(buf ) , " % s - % d" , filename , dec_ctx -> frame_number ) ;
+! capable_wrt_inode_uidgid(inode , CAP_FSETID ) )
+int types_list_size = r_read_le32 (p ) ;
+intvaluelen ;
+imap_quote_string(term , sizeof(term ) , pat -> p . str , false ) ;
+if (udf_build_ustr_exact(unifilename , sname , slen ) )
+void DecodeABitOf(RasterImage * aImg , DecodeStrategy aStrategy ) ;
+g_free(compr ) ;
+last mod : $ Id : backends . h 16552 2009 - 09 - 12 02 : 09 : 04Z xiphmont $
+TypedArrayObjectStorage(JSObject * obj ) : mObj(obj )
+FILE_RCSID("@(# ) $ File : readelf . c , v 1 . 104 20141017 15 : 49 : 00 christos Exp $ " )
+oggpack_buffer * opb ) {
+b43err(dev -> wl , " % s" , errmsg ) ;
+static int __net_init sctp_defaults_init(struct net * net )
+static const float tonemasks [ P_BANDS ] [ 6 ] [ EHMER_MAX ] = {
+if ((unsigned long ) len > (unsigned long ) count )
+params -> buffer . fragments > INT_MAX params -> buffer . fragment_size )
+if ( * rsize >= 75 &&
+if (startedFromUnelevatedUpdater ) {
+fmode_t mode ;
+p -> flags |= mrb_obj_ptr(self ) -> flags & MRB_FLAG_IS_FROZEN ;
+
+if (s && s >= filename ) {
+void ResizeTransparencyBitmap( ) ;
+static int
+, public nsIDocShell_ESR38_2
+if (be32_to_cpu(btree [ blk -> index ] . hashval ) == lasthash )
+OM_uint32 KRB5_CALLCONV
+nsSize GetWidthHeightForImage(nsRefPtr < imgRequestProxy > & aImageRequest ) ;
+last mod : $ Id $
+if ( ! SSL_WRITE_ETM(s ) && mac_size != 0 ) {
+! change_apphead ? "" :
+ipv6_select_ident( & fhdr , rt ) ;
+Alloc : : SizeTooBig( ) ;
+loff_t ftrace_filter_lseek(struct file * file , loff_t offset , int whence ) ;
+FILE_RCSID("@(# ) $ File : cdf . c , v 1 . 46 20110916 21 : 23 : 59 christos Exp $ " )
+size_t ss = CDF_SHORT_SEC_SIZE(h ) , i , j ;
+struct nfs_open_context * nfs_find_open_context(struct inode * inode , struct rpc_cred * cred , fmode_t mode )
+sprintf(new_port -> name , "port - % d" , num ) ;
+inline AutoCompartment(ExclusiveContext * cx , JSCompartment * target ) ;
+f2fs_wait_discard_bios(sbi , true ) ;
+u64 msr_data , rcx , rdx ;
+bitmap_zero(ioapic -> rtc_status . dest_map . map , KVM_MAX_VCPU_ID ) ;
+if (val < 64 || val > MAX_TCP_WINDOW ) {
+s -> frame -> nb_samples = s -> frames * MPA_FRAME_SIZE ;
+mutex_unlock( & dev -> lock ) ;
+r = idr_start(a , idr , isoent -> children . cnt , (int ) ffmax , 6 , 2 , & rb_ops ) ;
+rq = tags -> rqs [ off + bit ] ;
+if ( ! inet_opt || ! inet_opt -> opt . srr )
+PHPAPI ulong
+int ret , last_pwd , n_new_keys ;
+static const PRUint8 *
+if (s -> chunksize != UINT64_MAX ) {
+FILE * fp = fopen(dest_filename , "wx" ) ;
+Huff_transmit( & huff , ch , seq , size << 3 ) ;
+FILE_RCSID("@(# ) $ File : cdf . c , v 1 . 55 20140227 23 : 26 : 17 christos Exp $ " )
+BIO * cmsbio = NULL , * tmpin = NULL , * tmpout = NULL ;
+if (is_nmi(intr_info ) )
+goto error ;
+
+virtual void WriteInternal(const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+char * dbname ;
+cl_renderer = Cvar_Get("cl_renderer" , "opengl2" , CVAR_ARCHIVE | CVAR_LATCH | CVAR_PROTECTED ) ;
+if (diffs != 0 )
+unix_inflight(scm -> fp -> user , scm -> fp -> fp [ i ] ) ;
+size_t j , len = apdu . resp [ i + 1 ] ;
+now = timespec_to_ns( & n ) ;
+last mod : $ Id : res0 . c 16552 2009 - 09 - 12 02 : 09 : 04Z xiphmont $
+. splice_write = iter_file_splice_write ,
+code = iakerb_alloc_context( & ctx , 1 ) ;
+schp -> pages [ k ] = alloc_pages(gfp_mask | __GFP_ZERO , order ) ;
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+MODULE_ALIAS_CRYPTO("aes" ) ;
+
+if ( ! mp -> ports && ! mp -> mglist && mp -> timer_armed &&
+PL_ArenaFinish( ) ;
+bool fill(const SourceCoords & other ) ;
+cwd_skip = strlen(cwd ) + 1 ;
+mapping ] ) ) ;
+if (cluster != fs -> clusters + 1 )
+if((len + * stringlen ) >= * stralloc ) {
+if (syscall_nr < 0 || syscall_nr >= NR_syscalls )
+int undos = 0 , alter = 0 , max , locknum ;
+"andw $ 62463 , % % dxt"
+static mp_err
+#if defined(WINCE ) || (MOZ_WINSDK_TARGETVER == MOZ_NTDDI_WS03 )
+if (2 == cipher_len || * out_len < cipher_len - 2 )
+mutex_unlock( & dev -> lock ) ;
+compact_pixels = AcquireCompactPixels(next_image , exception ) ;
+d . lengthAndFlags = buildLengthAndFlags(length , DEPENDENT_FLAGS ) ;
+take_dentry_name_snapshot( & old_name , old_dentry ) ;
+void * const sys_call_table [ __NR_syscalls ] __aligned(4096 ) = {
+#include < linuxmbcache2 . h >
+if (i + bs > (int ) rec -> length )
+if (rs -> rs_bound_addr == 0 || ! rs -> rs_transport ) {
+fh -> ip6fh_nxt = proto ;
+vhost_net_ubuf_put_wait_and_free(oldubufs ) ;
+if ( * rsize >= 18 && rdesc [ 11 ] == 0x3c && rdesc [ 12 ] == 0x02 ) {
+"Range : bytes = % "PRIu64" - " , s -> off ) ;
+struct static_key * once_key )
+request_buf . length = mutt_b64_decode(buf2 , idata -> buf + 2 , sizeof(buf2 ) ) ;
+
+if (rec_hdr . hdr . incl_len > WTAP_MAX_PACKET_SIZE ) {
+while (s [ l ] && l < len ) {
+char * pathname = RUNTIME_PATH "lxclockvarliblxc" ;
+MODULE_ALIAS_CRYPTO("sha1" ) ;
+MODULE_ALIAS_CRYPTO("des" ) ;
+
+nsCOMPtr < nsITreeBoxObject > mTree ;
+iocb -> private = ext4_init_io_end(inode , GFP_NOFS ) ;
+% SetImageProperty( ) .
+perf_sw_event(PERF_COUNT_SW_PAGE_FAULTS , 1 , regs , address ) ;
+}
+nsRefPtrHashtable < nsVoidPtrHashKey , nsDOMWorkerPool > mPools ;
+sem_unlock(sma , - 1 ) ;
+MODULE_ALIAS_CRYPTO("cast6" ) ;
+kfree(rcu_dereference_protected(inet -> inet_opt , 1 ) ) ;
+XPR(NT "byte % u (read % u @ % "Q"u ) % d != % d" ,
+FILE_RCSID("@(# ) $ File : cdf . c , v 1 . 61 20140604 17 : 23 : 19 christos Exp $ " )
+unsigned int pixel_limit ;
+goto loser ;
+evt -> event . lun [ 1 ] = tpg -> tport_tpgt ;
+Copyright (c ) 1997 - 2008 University of Cambridge
+struct ip_options_rcu __rcu * inet_opt ;
+reslevel -> band = av_calloc(reslevel -> nbands , sizeof( * reslevel -> band ) ) ;
+int total_octave_lines ;
+# define rint(x ) (floor((x ) + 0 . 5f ) )
+for (size_t i = 1 , i_end = arr -> Count( ) ; i < i_end ; + + i ) {
+return ( * field_rtrn != NULL ) ;
+
+static size_t len = 0 ;
+MODULE_ALIAS_CRYPTO("serpent" ) ;
+if (hdrincl )
+static const float vwin256 [ 128 ] = {
+__skb_complete_tx_timestamp(skb , sk , SCM_TSTAMP_SND , false ) ;
+BUG_ON(ret == - EEXIST || ret == - EOVERFLOW ) ;
+if (( ! cpu_has_feature(CPU_FTR_TM ) ) || (tsk != current ) )
+lz . avail_in , at , errbuff ) ;
+static int follow_dotdot(struct nameidata * nd )
+if (inet_opt == NULL || ! inet_opt -> opt . srr )
+bool DeferredRelease(nsISupports * obj ) ;
+52 , 53 , 54 , 55 , 56 , 57 , 58 , 59 , 60 , 61 , - 1 , - 1 , - 1 , - 2 , - 1 , - 1 ,
+if ( ! page_name_is_good(page ) )
+** Copyright (C ) 2002 - 2014 Erik de Castro Lopo < erikd@mega - nerd . com >
+int setpwnam(struct passwd * pwd , const char * prefix )
+char query [ NAME_LEN + 100 ] ;
+goto out_bad ;
+static const char CVS_ID [ ] = "@(# ) $ RCSfile : certdata . c , v $ $ Revision : 1 . 67 . 2 . 1 $ $ Date : 20100827 15 : 46 : 44 $ "" ; @(# ) $ RCSfile : certdata . c , v $ $ Revision : 1 . 67 . 2 . 1 $ $ Date : 20100827 15 : 46 : 44 $ " ;
+FILE_RCSID("@(# ) $ File : readelf . c , v 1 . 105 20141122 16 : 04 : 29 christos Exp $ " )
+length = (MagickSizeType ) (unsigned char ) ReadBlobByte(image ) ;
+. splice_write = iter_file_splice_write ,
+already_AddRefed < WebGLUniformLocation > GetUniformLocationObject(WebGLProgram * prog , GLint glLocation ) ;
+if (frame_end - frame < width + 4 )
+mutex_unlock( & dev -> lock ) ;
+static struct mount * last_dest , * first_source , * last_source , * dest_master ;
+perf_sw_event(PERF_COUNT_SW_EMULATION_FAULTS , 1 , regs , address ) ;
+void SetScrollbarEnabled(nsIContent * aContent , nscoord aMaxPos ) ;
+
+exit_io_context(tsk ) ;
+if (num < 0 || num >= 256 ) return ONIGERR_TOO_BIG_NUMBER ;
+if (hdrincl )
+struct key * find_keyring_by_name(const char * name , bool uid_keyring )
+return 0 ;
+
+
+
+for (plane = 0 ; plane < 4 && src -> data [ plane ] && src -> linesize [ plane ] ; plane + + )
+
+
+timr -> it_overrun + = kc -> timer_forward(timr , now ) ;
+
+successors_ = js_pod_calloc < uint32_t > (numSuccessors ) ;
+if (info -> num < 0 || info -> num > 1 )
+MODULE_ALIAS_CRYPTO("aes" ) ;
+strncpy(uaddr -> sa_data , dev -> name , 14 ) ;
+for (cnt = 0 , i = 0 ; i >= 0 && cnt < shdr -> sh_info && (end - (char * ) defs > i ) ; + + cnt ) {
+TypedArrayObjectStorage(JSObject * obj ) : mObj(obj )
+if (HAVE_IP(6 , 0 ) ) {
+struct ip_options_rcu * opt ;
+if ( ! vcpu -> arch . pv_time_enabled )
+_wfopen_s( & fp , path , L"rb" ) ;
+
+
+guint32 off = offset , last_off ;
+EVENT_NULL , aggr_inI1_outR1 } ,
+sas_eh_finish_cmd(cmd ) ;
+virtual void WriteInternal(const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+MODULE_ALIAS_CRYPTO("sha1" ) ;
+
+. llseek = ftrace_filter_lseek ,
+stat != yajl_status_insufficient_data )
+if ( ! unconditional(e ) )
+. llseek = ftrace_filter_lseek ,
+hs = ci -> halfrate_flag ;
+IsTransparent(JSContext * cx , JSObject * wrapper , jsid id ) ;
+
+if (s -> framep [ VP56_FRAME_GOLDEN ] -> data [ 0 ] && s -> framep [ VP56_FRAME_GOLDEN ] != p &&
+if (tag == ASN1_EOC ) {
+unix_notinflight(scm -> fp -> user , scm -> fp -> fp [ i ] ) ;
+if (perf_output_begin( & handle , event , header . size * (top - at ) , 1 ) )
+nsresult InitBasic( ) ;
+return nf_generic_should_process(nf_ct_protonum(ct ) ) ;
+atable -> arev = newrev ;
+if (so == & slirp -> udb || so -> so_lport != uh -> uh_sport ||
+if (p -> nameUTF8 && (u32 ) p -> nameUTF8 [ 0 ] == strlen(p -> nameUTF8 ) - 1 ) {
+const int maxsamples = ARRAY_LEN(buf ) - (AST_FRIENDLY_OFFSET sizeof(buf [ 0 ] ) ) ;
+nfca_poll -> rats_res_len = min_t(__u8 , * data + + , 20 ) ;
+snprintf (str , sizeof (str ) , " { v % i . . v % i } , [ % 04x ] " , vC , vC + vA - 1 , vB ) ;
+dom : : Uint8ClampedArray * aArray ,
+rc = expandRegular(fi , dest , psm , 1 , nodigest , 1 ) ;
+if ( ! mquant || mquant > 31 || mquant < - 31 ) {
+if (key_is_positive(key ) )
+code = iakerb_alloc_context( & ctx , 0 ) ;
+#define SMKTREE_DECODE_MAX_RECURSION 32
+int i , j , l ;
+if (ip_options_echo( & icmp_param . replyopts . opt . opt , skb_in ) )
+
+scatterwalk_map_and_copy(dst , req -> dst , 0 , tempCipherLen , 1 ) ;
+guinttpiLen ;
+if (g_path_is_absolute (filename ) ) {
+bool ImplSplit( sal_uInt16 nPos , sal_uInt16 nSpace , ImplPolygon const * pInitPoly = nullptr ) ;
+static struct fsnotify_group * inotify_new_group(unsigned int max_events )
+
+
+int xt_compat_check_entry_offsets(const void * base , const char * elems ,
+int ret = 0 , probe_size , buf_offset = 0 ;
+#define JSXDR_BYTECODE_VERSION (0xb973c0de - 88 )
+int i , hasAdditionalBlocks ,
+_wfopen_s( & fp , path , L"rb" ) ;
+imap_quote_string(term , sizeof(term ) , pat -> p . str , false ) ;
+my_snprintf(query , sizeof(query ) , "select count( * ) from ` % s`" , table ) ;
+MODULE_ALIAS_CRYPTO("aes" ) ;
+if (info . scale != (Quantum * ) NULL )
+} else if (s -> bit_depth == 1 && s -> bits_per_pixel == 1 ) {
+
+bool seek(const Position & pos , const TokenStream & other ) ;
+n = dn_expand(answer -> qb2 , end , cp , name , (sizeof name ) - 2 ) ;
+r = __copy_from_user(data , (void __user * ) addr + offset , len ) ;
+if( ( * p ) > end - len )
+dh = skb_header_pointer(skb , dataoff , sizeof(_dh ) , & _dh ) ;
+| FLAG_LINK_INTR | FLAG_WWAN | FLAG_NOARP ,
+#define MODULE_MAGIC_NUMBER_MINOR 3
+MODULE_ALIAS_CRYPTO("sha1" ) ;
+p1 = BuildTestPacket(IPPROTO_ICMP , id , 0 , 0 , 'A' , 8 ) ;
+v . val = ! ! test_bit(SOCK_PASSCRED , & sock -> flags ) ;
+MODULE_ALIAS_CRYPTO("intel_qat" ) ;
+
+} JSVAL_ALIGNMENT jsval_layout ;
+
+strncpy(hid -> name , req -> name , sizeof(req -> name ) - 1 ) ;
+unsigned int req_len ;
+static const float FLOOR1_fromdB_INV_LOOKUP [ 256 ] = {
+name_rmt -> valuelen = cpu_to_be32(args -> rmtvaluelen ) ;
+if (h0 -> cur_pic_ptr -> tf . owner == h0 -> avctx ) {
+if (key_is_positive(key ) )
+ses = cifs_find_smb_ses(server , volume_info ) ;
+static inline void realpath_cache_add(const char * path , int path_len , const char * realpath , size_t realpath_len , int is_dir , time_t t )
+key_read_state(key ) == KEY_IS_UNINSTANTIATED )
+INF("io" , S_IRUSR , proc_tgid_io_accounting ) ,
+imap_quote_string(dest , dlen , buf , false ) ;
+! capable_wrt_inode_uidgid(inode , CAP_FSETID ) )
+h -> ref_count [ 1 ] = 1 ;
+
+mpz_powm_sec (b , b , key -> e , key -> n ) ;
+resv_map_put(vma ) ;
+memcpy(result , ptr , len ) ;
+MODULE_ALIAS_NETDEV("tunl0" ) ;
+FILE_RCSID("@(# ) $ File : funcs . c , v 1 . 73 20140910 18 : 41 : 51 christos Exp $ " )
+bool growPendingArray(JSContext * cx ) ;
+( * respond ) (arg , EINVAL , NULL , NULL , NULL ) ;
+if ( ! dev_name || kern_path(dev_name , LOOKUP_FOLLOW , & path ) ) {
+if (syscall_nr < 0 || syscall_nr >= NR_syscalls )
+MODULE_ALIAS_CRYPTO("aes" ) ;
+#define GR2_VERSION_BUGFIX 3
+static void __timerfd_remove_cancel(struct timerfd_ctx * ctx )
+for (ie = io + ps -> nid ; io < ie && ND_TTEST( * io ) ; + + io ) {
+nsCOMPtr < nsIChannel > mChannel ;
+fprintf(fp , " % s % s" , certificate_data -> hostname , certificate_data -> fingerprint ) ;
+! SSL_WRITE_ETM(s ) && SSL_USE_EXPLICIT_IV(s ) &&
+int no_tmp_rsa = 0 , no_dhe = 0 , nocert = 0 ;
+nfs4_close_sync(path , state , fmode & (FMODE_READ | FMODE_WRITE ) ) ;
+peer = maybe_get_net(peer ) ;
+FreeStmt((ParseCommon * ) append ) ;
+bool RemoveMessageAndDispatchPluginEvent(UINT aFirstMsg , UINT aLastMsg ) const ;
+MODULE_ALIAS_CRYPTO("ghash" ) ;
+netdev -> hw_features = NETIF_F_HW_VLAN_CTAG_RX ;
+NEED_OP(2 , 0 ) ;
+if (SSL_READ_ETM(s ) && s -> read_hash ) {
+perf_event_ctx_unlock(group_leader , gctx ) ;
+if (key_is_positive(key ) &&
+if (stringset == ETH_SS_STATS || stringset == ETH_SS_PRIV_FLAGS )
+last mod : $ Id : codebook . c 16597 2009 - 10 - 01 02 : 54 : 22Z tterribe $
+bool seen ;
+if ( ! list_empty( & asoc -> asocs ) ) {
+
+size_t nchars , idstrlength , gsoplength , vlength , vsharplength , curlen ;
+mb2_cache_entry_put(ext4_mb_cache , ce ) ;
+struct rcu_headrcu ;
+ts -> tm_mon + 1 , ts -> tm_mday , ts -> tm_hour , ts -> tm_min , ts -> tm_sec ) ;
+err = scm_send(sock , msg , siocb -> scm , true ) ;
+fmode_t delegation_type = 0 ;
+extern int parse_rock_ridge_inode(struct iso_directory_record * , struct inode * , int relocated ) ;
+void unix_inflight(struct user_struct * user , struct file * fp )
+int pixel_ptr = - 4 ;
+void ip_options_build(struct sk_buff * skb , struct ip_options * opt ,
+if (plen ) {
+if( p != end - sig_len )
+FILE_RCSID("@(# ) $ File : readelf . c , v 1 . 143 20180609 16 : 00 : 06 christos Exp $ " )
+static const float vwin1024 [ 512 ] = {
+" < message type = 'chat' to = 'stabber@localhostprofanity' from = 'stabber@localhost' > "
+MODULE_ALIAS_CRYPTO("salsa20" ) ;
+v . val = ! ! test_bit(SOCK_PASSSEC , & sock -> flags ) ;
+FILE_RCSID("@(# ) $ File : funcs . c , v 1 . 81 20150528 19 : 26 : 59 christos Exp $ " )
+if (regset -> core_note_type && regset -> get &&
+if (SSL_WRITE_ETM(s ) && mac_size != 0 ) {
+#include < linuxcrypto . h >
+Address addressForInlineReturn( ) ;
+struct mutex lock ;
+int mutt_b64_decode(char * out , const char * in , size_t olen )
+last mod : $ Id : lookup_data . h 16037 2009 - 05 - 26 21 : 10 : 58Z xiphmont $
+void doRemoveChild(bool aNotify ) ;
+return mPump || mWaitingOnAsyncRedirect ;
+
+cp = php_parserr(cp , end , & answer , DNS_T_ANY , 1 , raw , & retval ) ;
+cp = php_parserr(cp , end , & answer , type_to_fetch , store_results , raw , & retval ) ;
+. splice_write = iter_file_splice_write ,
+pgprot_t prot = __get_dma_pgprot(attrs , PAGE_KERNEL ) ;
+inline Lookup getLookup( ) const ;
+sem_unlock(sma , - 1 ) ;
+unsigned match ;
+status = decode_getacl(xdr , rqstp , res ) ;
+MODULE_ALIAS_CRYPTO("stdrng" ) ;
+extern int parse_rock_ridge_inode(struct iso_directory_record * , struct inode * , int relocated ) ;
+last mod : $ Id $
+static RFlagsAtOffset * r_flag_get_nearest_list(RFlag * f , ut64 off , int dir ) {
+nfcf_poll -> sensf_res_len = min_t(__u8 , * data + + , NFC_SENSF_RES_MAXSIZE ) ;
+struct nfs4_state_owner * sp , fmode_t fmode , int flags ,
+g [ j ] + = g [ j ] ;
+appendPsqlMetaConnect(buf , dbname ) ;
+if ( ! npages || base_gfn != old . base_gfn ) {
+NS_IMETHOD_(void ) NoteWeakMapping(void * map , void * key , void * kdelegate , void * val ) = 0 ;
+if (key_is_negative(key ) )
+else if (i > pos + delta && i + insn -> off + 1 <= pos + delta )
+if ( ! peer && sip_cfg . alwaysauthreject && ast_test_flag( & p -> flags [ 1 ] , SIP_PAGE2_REGISTERTRYING ) ) {
+hugepage_subpool_put_pages(spool , reserve ) ;
+- 3 , - 1 , - 3 , 4 , - 1 , - 3 , - 1 , - 1 , - 3 ,
+bool CopyTexSubImage2D_base(WebGLenum target ,
+static inline zend_ulong realpath_cache_key(const char * path , size_t path_len )
+for (plane = 0 ; plane < 4 && in -> data [ plane ] && in -> linesize [ plane ] ; plane + + ) {
+MODULE_ALIAS_CRYPTO("twofish" ) ;
+last mod : $ Id $
+#include "imgRequestProxy . h"
+name_rmt -> valuelen = cpu_to_be32(args -> rmtvaluelen ) ;
+php_stat(filename , filename_len , funcnum , return_value ) ;
+static int fit_line(lsfit_acc * a , int fits , int * y0 , int * y1 ) {
+MODULE_ALIAS_CRYPTO("deflate" ) ;
+struct page * page ;
+
+ns_capable(task_active_pid_ns(current ) -> user_ns , CAP_SYS_ADMIN ) ) &&
+: lastBinding(NULL ) , nargs(0 ) , nvars(0 ) , nupvars(0 ) , hasDup_(false )
+char * name , int rep_quick , my_bool no_copy_stat )
+return(((image -> columns + 7 ) 8 ) * GetPSDPacketSize(image ) ) ;
+const cdf_stream_t * sst , const cdf_directory_t * root_storage )
+if (s -> ls && ! (bits <= 8 || nb_components == 1 ) ) {
+put_io_context(ioc ) ;
+static const float vwin2048 [ 1024 ] = {
+fprintf(stderr , "( % d ) , " , pageout ) ;
+imap_quote_string(errstr , sizeof(errstr ) , list . name , true ) ;
+long mtemp , save_adjust ;
+if (stringset == ETH_SS_STATS || stringset == ETH_SS_PRIV_FLAGS )
+#define BUILD_REVISION 778
+return false ;
+struct ip_options_rcu * opt ) ;
+snprintf(efbuf , sizeof(efbuf ) , "REG_ % s" , name ) ;
+#define BUFSIZE ((1024 * 1024 ) + sizeof(struct nbd_reply ) )
+if ((transfer_encoding != NULL ) && (m_strcasestr(transfer_encoding , "chunked" ) != NULL ) ) {
+s -> filesize = UINT64_MAX ;
+. llseek = ftrace_filter_lseek ,
+NS_ASSERTION(mContentOffset < PRInt32(aContent -> GetText( ) -> GetLength( ) ) ,
+int mutt_b64_decode(char * out , const char * in , size_t olen ) ;
+size_t off = 0 , len = 0 , end ;
+mm -> mmap_legacy_base = TASK_UNMAPPED_BASE + random_factor ;
+me -> active_tracks = 0 ;
+nfcb_poll -> sensb_res_len = min_t(__u8 , * data + + , NFC_SENSB_RES_MAXSIZE ) ;
+ret = ext4_convert_unwritten_extents_endio(handle , inode , map ,
+
+static spnego_gss_ctx_id_t create_spnego_ctx(int ) ;
+snprintf_func (ecmd , TESTBUFSIZE , " % s % s - f % s % s % s % s % s % s % s" ,
+while ( -- n >= 0 && ND_TTEST( * ps ) ) {
+goto failed_mount_wq ;
+client -> auth_buffer = g_byte_array_new ( ) ;
+return retval ;
+gdCtxPuts(out , " } ; " ) ;
+if ( ! parse_dylib (bin , off ) ) {
+if (mTarget == LOCAL_GL_ELEMENT_ARRAY_BUFFER && mByteLength ) {
+for (plane = 0 ; plane < 4 && in -> data [ plane ] && in -> linesize [ plane ] ; plane + + ) {
+INF("io" , S_IRUSR , proc_tid_io_accounting ) ,
+MODULE_ALIAS_CRYPTO("crc32c" ) ;
+iakerb_gss_import_sec_context ,
+if ( ! PS(use_only_cookies ) && ! PS(id ) &&
+nsWindow * GetContainerWindow( ) ;
+if (key -> state != KEY_IS_UNINSTANTIATED ) {
+static int CVE_2014_5472_isofs_read_inode(struct inode * inode , int relocated )
+char query [ NAME_LEN + 100 ] , rows [ NAME_LEN ] , fields [ 16 ] ;
+xen_netbk_idx_release(netbk , pending_idx , XEN_NETIF_RSP_OKAY ) ;
+nsCOMPtr < nsPIDOMWindow > mWindow ;
+unsigned char * start = sptr + sopt -> srr ;
+if (last_pic_structure != PICT_FRAME ) {
+if (likely(HAVE_OP(t , 15 ) ) ) {
+Mutex mLock ;
+get_key_type(keyType , valstr , sizeof valstr ) ;
+rc = jmp_rel(ctxt , ctxt -> src . val ) ;
+struct inet_peer * inet_getpeer(const struct inetpeer_addr * daddr , int create )
+if (fchmod(fileno(fp ) , 0666 & ~ curumsk ) < 0 ) {
+CHECK_PRINCIPAL_AND_DATA(ShouldLoad ) ;
+SKB_EXT_ERR(skb ) -> opt_stats )
+return err == 0 ? NF_ACCEPT : NF_DROP ;
+newinet -> inet_opt = NULL ;
+cli_dbgmsg("cli_pdf : dumping obj % u % u" , obj -> id >> 8 , obj -> id & 0xff ) ;
+HKEY baseKey = nullptr ;
+int ipc_rcu_getref(void * ptr ) ;
+needquotes = true ;
+ext3_msg(sb , KERN_ERR , "error : failed to open journal device % s : % ld" ,
+int count , int pmgr_flag )
+last mod : $ Id $
+if (perf_event_overflow(event , & data , regs ) )
+len = file && file -> size > 0 ? file -> size : 4096 ;
+return xfrm6_rcv_spi(skb , spi ) > 0 ? : 0 ;
+if (last_pic_structure != PICT_FRAME ) {
+
+size_t maxcount ;
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+unsigned int offset = sizeof(struct ipv6hdr ) ;
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+static void sample_hbp_handler(struct perf_event * bp ,
+static already_AddRefed < MediaResource > Create(MediaDecoder * aDecoder , nsIChannel * aChannel ) ;
+len = (ms -> c . len = 20 + level ) * sizeof( * ms -> c . li ) ;
+BUG_ON(ret == - EEXIST || ret == - EOVERFLOW ) ;
+if (unlikely(get_dumpable(current -> mm ) != SUID_DUMP_USER ) ) {
+MODULE_ALIAS_CRYPTO("stdrng" ) ;
+while (entry -> nr < PERF_MAX_STACK_DEPTH ) {
+
+STIN void mdct_bitreverse(mdct_lookup * init ,
+state -> space = fstrndup(RSTRING_PTR(space ) , len ) ;
+if ( cur [ 0 ] && cur [ 0 ] -> clazz && cur [ 0 ] -> clazz -> get_interface )
+if ( ! handle || ! SecIsValidHandle(handle ) )
+! js_data . isObject( ) )
+. splice_write = iter_file_splice_write ,
+XRSTORS ,
+REProgState * curState = NULL ;
+memset(fsa , 0 , sizeof(fsa ) ) ;
+MODULE_ALIAS_CRYPTO("aes" ) ;
+return - EINVAL ;
+js : : ReadBarriered < js : : types : : TypeObject > emptyTypeObject ;
+ipc . opt = & icmp_param . replyopts . opt ;
+MODULE_ALIAS_CRYPTO("ghash" ) ;
+virtual void WriteInternal(const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+if (plen ) {
+err = synth_devs [ dev ] -> load_patch(dev , fmt , buf + p , c , 0 ) ;
+
+if ((offsets [ 1 ] - offsets [ 0 ] < 0 ) || pcre_get_substring_list(subject , offsets , count , & stringlist ) < 0 ) {
+MODULE_ALIAS_CRYPTO("serpent" ) ;
+int len = mutt_b64_decode(buffer , encoded , sizeof(buffer ) ) ;
+NAPI_GRO_CB(skb ) -> encap_mark = 0 ;
+if (pread(fd , xsh_addr , xsh_sizeof , off + size * strtab ) < (ssize_t ) xsh_sizeof ) {
+if ((format < 0 ) || ((format - 1 ) >= EXIF_NUM_FORMATS ) )
+CKM_INVALID_MECHANISM , UNSUPPORTED_CERT_EXTENSION ) ,
+memset(str , 0 , MAX_APN_LENGTH + 1 ) ;
+ssize_t n ;
+if (keyring && link_ret == 0 )
+RAnalOp next_op = { 0 } ;
+extern struct nfs_open_context * nfs_find_open_context(struct inode * inode , struct rpc_cred * cred , fmode_t mode ) ;
+if ( * rsize >= 31 && rdesc [ 29 ] == 0x05 && rdesc [ 30 ] == 0x09 ) {
+zend_throw_error(exception_ce , " % s" , message ) ;
+nsSize GetWidthHeightForImage(nsRefPtr < imgRequestProxy > & aImageRequest ) ;
+goto out_bad ;
+mask = (JAS_CAST(uint_fast32_t , 1 ) << numbps ) - 1 ;
+nsWeakPtr mContent ;
+MODULE_ALIAS_CRYPTO("des3_ede" ) ;
+copy_fields(s , s1 , golden_frame , keyframe ) ;
+unsigned int index , count , i ;
+if ( * off >= skb -> len && skb -> len ) {
+last mod : $ Id $
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+jas_eprintf("got box type % s" , box -> info -> name ) ;
+
+for (pad = (w % 4 ) ? (4 - w % 4 ) : 0 ; pad > 0 ; pad -- )
+nfca_poll -> nfcid1_len = min_t(__u8 , * data + + , NFC_NFCID1_MAXSIZE ) ;
+for (plane = 0 ; plane < 4 && in -> data [ plane ] && in -> linesize [ plane ] ; plane + + ) {
+if (perf_event_overflow(event , & data , regs ) )
+int count , int pmgr_flag )
+case EXIT_REASON_INVEPT : case EXIT_REASON_INVVPID :
+perf_event_ctx_unlock(group_leader , gctx ) ;
+if (pskb_expand_head(skb_out , 0 , size - skb_out -> len , GFP_ATOMIC ) < 0 ) {
+sem_unlock(sma , locknum ) ;
+transhdrlen , mtu , flags , rt ) ;
+u64 event_id = event -> attr . config ;
+
+ret = xt_compat_check_entry_offsets(e , e -> elems , e -> target_offset ,
+return error < 0 ? error : 0 ;
+if (prefixlen <= len ) {
+
+int linesize = av_image_get_linesize(avctx -> pix_fmt , avctx -> width , 0 ) ;
+ipv6_select_ident(fh , rt ) ;
+
+last mod : $ Id $
+if (n == - 1 ) {
+mpz_powm_sec (r , key -> g , k , key -> p ) ;
+vdev -> ctx = kcalloc(nvec , sizeof(struct vfio_pci_irq_ctx ) , GFP_KERNEL ) ;
+f2fs_wait_discard_bios(sbi , false ) ;
+* flags |= FOLL_COW ;
+sk -> sk_sndbuf = max_t(int , val * 2 , SOCK_MIN_SNDBUF ) ;
+* NET_RX_DROP (packet was dropped , but freed )
+static int ocfs2_dio_wr_get_block(struct inode * inode , sector_t iblock ,
+for (i = 0 ; (i + 3 ) < sec -> size ; i + = 4 ) {
+void markRoots(JSTracer * trc ) ;
+if (serial -> port [ 0 ] && serial -> port [ 0 ] == usbcons_info . port ) {
+. match_data . cmp = key_default_cmp ,
+len = dp -> ip6r_len ;
+if ((psf = psf_allocate ( ) ) == NULL )
+if (ccid != NULL && ccid -> ccid_ops -> ccid_hc_tx_getsockopt != NULL )
+goto out_bad ;
+goto out_err ;
+
+strncpy(algo -> alg_name , auth -> alg_name , sizeof(algo -> alg_name ) ) ;
+uint64_t old_off = s -> off ;
+if ( ! new_idmap_permitted(file , ns , cap_setid , & new_map ) )
+} else if (size != 0 ) {
+if(x & (1U << (unsigned int ) i ) ) return i ;
+struct mb2_cache * ext4_mb_cache = EXT4_GET_MB_CACHE(inode ) ;
+GetJSProtoObject( ) const { return xpc_UnmarkGrayObject(mJSProtoObject ) ; }
+fn = NULL ;
+skcipher_request_set_tfm( & ctx -> req , skcipher ) ;
+
+atomic_t refcount ;
+f = xfmkstemp( & tmpname , NULL , "test" ) ;
+static inline zend_ulong realpath_cache_key(const char * path , size_t path_len )
+__sock_release(SOCKET_I(inode ) , inode ) ;
+#define MAX_PASSWORD_SIZE 512
+ftrace_filter_lseek(struct file * file , loff_t offset , int whence )
+if (fp && NFCT_FRAG6_CB(fp ) -> orig == NULL )
+build_config(char * prefix , struct manager_ctx * manager , struct server * server )
+const char * name , int rep_quick , my_bool no_copy_stat )
+const HeapPtrShape & previous( ) const {
+} else if (encoding == 1 && (c -> bpp == 6 || c -> bpp == 8 ) && c -> format != CHUNKY ) {
+fname_len = strlen(fname ) ;
+
+(void ) memmove( cp , cp + 2 , strlen( cp ) - 1 ) ;
+
+static int _nfs4_do_open(struct inode * dir , struct path * path , fmode_t fmode , int flags , struct iattr * sattr , struct rpc_cred * cred , struct nfs4_state ** res )
+if (ip_options_echo( & icmp_param -> replyopts . opt . opt , skb ) )
+else if ((s -> filesize == UINT64_MAX && whence == SEEK_END ) )
+dprintk(2 , "vm_close % p [ count = % u , vma = % 08lx - % 08lx ] " , map ,
+char_u ** array = NULL ;
+#define JSXDR_BYTECODE_VERSION (0xb973c0de - 90 )
+return segmented_write_std(ctxt , ctxt -> memop . addr . mem , & fx_state , size ) ;
+} ;
+static long __snd_timer_user_ioctl(struct file * file , unsigned int cmd ,
+MODULE_ALIAS_NETDEV("sit0" ) ;
+phar_file_stat(filename , filename_len , funcnum , PHAR_G(orig ) , INTERNAL_FUNCTION_PARAM_PASSTHRU ) ;
+last mod : $ Id $
+size_t pos = 0 ;
+last mod : $ Id $
+if (len > 32 )
+
+js_Atomize(JSContext * cx , const char * bytes , size_t length , uintN flags ) ;
+chip -> data_buffer = kzalloc(TPM_BUFSIZE , GFP_KERNEL ) ;
+static const float vwin4096 [ 2048 ] = {
+for (cnt = 0 , i = 0 ; i >= 0 && cnt < shdr -> sh_info && ((char * ) defs + i < end ) ; + + cnt ) {
+if (in_bio != NULL ) {
+create_spnego_ctx(int initiate )
+int sysctl_tcp_challenge_ack_limit = 1000 ;
+WCHAR installDir [ MAX_PATH + 1 ] = { L'0' } ;
+if ( * rsize >= 112 && rdesc [ 104 ] == 0x26 && rdesc [ 105 ] == 0x80 &&
+
+state = nfs4_do_open(dir , & path , fmode , flags , sattr , cred ) ;
+if ( * rsize >= 62 && rdesc [ 39 ] == 0x2a && rdesc [ 40 ] == 0xf5 &&
+if ((skb_mac_header(skb ) < skb -> head + frag_hdr_sz ) &&
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+char buf [ 1024 ] ;
+rc = crypto_memneq(xattr_data -> digest , calc . digest ,
+static void kgdb_hw_overflow_handler(struct perf_event * event ,
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+if ( ! atomic_dec_and_test( & container_of(ptr , struct ipc_rcu_hdr , data ) -> refcount ) )
+} JSVAL_ALIGNMENT jsval_layout ;
+exit_func :
+OriginClearCompleted(const nsACString & aPattern ) ;
+conn -> m -> local_tx_end(conn , this_func , ret TSRMLS_CC ) ;
+std : : vector < TBuiltInFunction > mFunctions ;
+
+if (pread(fd , xph_addr , xph_sizeof , off ) < (ssize_t ) xph_sizeof ) {
+timer -> it_overrun + = 1LL << i ;
+PHPAPI void php_stat(const char * filename , size_t filename_length , int type , zval * return_value )
+memcpy(serial -> value , priv -> cac_id , serial -> len ) ;
+
+
+zend_error(E_ERROR , " % s" , message ) ;
+virtual already_AddRefed < MediaResource > CloneData(MediaDecoder * aDecoder ) ;
+typedef signed char int8_t ;
+memcpy(msg , & msg_tmp , sizeof( * msg ) ) ;
+
+last mod : $ Id $
+ret = copy_to_user(uattr , attr , attr -> size ) ;
+. proc_handler = proc_dmesg_restrict ,
+static bool neuterViews(JSContext * cx , Handle < ArrayBufferObject * > buffer , void * newData ) ;
+dprintk(2 , "vm_open % p [ count = % u , vma = % 08lx - % 08lx ] " , map ,
+jpc_tsfb_band_t bnds [ JPC_MAXBANDS ] ;
+if (length > 1 )
+if (user -> uid_keyring && user -> session_keyring ) {
+size_t fname_len ;
+#include "compilercompilerdebug . h"
+while (isdigit((unsigned char ) * s ) && (ptmp != (tmp + sizeof(tmp ) - 1 ) ) )
+xen_netbk_idx_release(netbk , pending_idx , XEN_NETIF_RSP_OKAY ) ;
+while ( * tail ) tail = & ( * tail ) -> next ;
+sc = create_spnego_ctx(0 ) ;
+FILE_RCSID("@(# ) $ File : softmagic . c , v 1 . 190 20140603 19 : 01 : 34 christos Exp $ " )
+__skb_complete_tx_timestamp(skb , sk , tstype , opt_stats ) ;
+if ( ! PS(use_only_cookies ) && ! PS(id ) &&
+image -> alpha_trait = viff_info . number_data_bands == 4 ? BlendPixelTrait :
+eprintf ("DWARF : Unexpected pointer size : % u" , (unsigned ) hdr -> pointer_size ) ;
+memset( & ah , 0 , sizeof(ah ) ) ;
+goto out_bad ;
+vorbis_analysis_buffer(v , ci -> blocksizes [ 1 ] * 3 ) ;
+return ret ;
+. llseek = ftrace_filter_lseek ,
+* dptr + + = ROSE_CALL_REQ_ADDR_LEN_VAL ;
+
+ret = xt_compat_check_entry_offsets(e , e -> elems ,
+prog = bpf_prog_inc(prog ) ;
+last mod : $ Id $
+if(attr >= 0 && xhash_get(in -> states , rkey ) == (void * ) conn_INPROGRESS ) {
+mutex_unlock( & dev -> lock ) ;
+rq = hctx -> tags -> rqs [ off + bit ] ;
+if (p -> tokenpos >= (p -> tokenlen - 1 ) ) {
+static const float vwin8192 [ 4096 ] = {
+if(temp == - 1 || temp >= info -> partvals ) goto eopbreak ;
+vhost_net_ubuf_put_wait_and_free(ubufs ) ;
+quantum_info = AcquireQuantumInfo(image_info , next_image ) ;
+int32 inOOMReport ;
+bufsize = MIN(file -> size , sizeof buf ) ;
+__android_log_print(ANDROID_LOG_INFO , "Gecko" , " % s" , utf8str . get( ) ) ;
+MODULE_ALIAS_CRYPTO("sha512" ) ;
+ret = snprintf(dest , len , " % slxclock % s" , rundir , p ) ;
+js_InitRandom(JSContext * cx ) ;
+unsigned long timeleft , request_size , copy_size ;
+goto out_bad ;
+if (pmc_overflow(val ) )
+no_copy_stat ? MYF(MY_REDEL_NO_COPY_STAT ) : MYF(0 ) ) ||
+void FireOnInput(PRBool aTrusted ) ;
+if (nbytes > sizeof( * hwrpb ) )
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+if (stringset == ETH_SS_STATS || stringset == ETH_SS_PRIV_FLAGS )
+
+goto have_file ;
+assoc = (src + req -> cryptlen ) ;
+if ( ! rc && tcon ) {
+struct mb2_cache * s_mb_cache ;
+n = dn_expand(answer -> qb2 , end , cp , name , (sizeof name ) - 2 ) ;
+if ((skb_mac_header(skb ) < skb -> head + frag_hdr_sz ) &&
+. match_data . cmp = key_default_cmp ,
+s -> chunksize = UINT64_MAX ;
+for (k = 0 ; offset < len ; j + + )
+cli_dbgmsg("cli_scanxar : % u checksum errors and % u extraction errors . " ,
+PLArenaPool * poolp , * tmppoolp = NULL ;
+file = kzalloc(sizeof( * file ) , GFP_NOIO ) ;
+struct ip_options_rcu * inet_opt ;
+last mod : $ Id $
+if (perf_event_overflow(event , & data , regs ) ) {
+FILE_RCSID("@(# ) $ File : readcdf . c , v 1 . 40 20140306 15 : 23 : 33 christos Exp $ " )
+if (newIndex < newLen )
+ModuleEntry(JSContext * cx ) : mozilla : : Module( ) , obj(cx ) , thisObjectKey(cx ) {
+int ret = proc_dointvec_minmax(table , write , buffer , lenp , ppos ) ;
+while ( (i < to_read ) && (tmpName [ i ] != 0 ) ) {
+dev -> canch [ i ] = gs_make_candev(i , intf , dconf ) ;
+if ((ret = xd3_read_uint32_t (stream , & inp , max , & rval ) ) !=
+_iov -> iov_len = min((u64 ) len - s , size ) ;
+
+
+if (vstart > end || end - vstart < sizeof (Elf_(Verdaux ) ) ) {
+user -> unix_inflight -- ;
+int xt_check_entry_offsets(const void * base , const char * elems ,
+JAS_DBGLOG(101 , ("jas_malloc( % zu ) " , size ) ) ;
+if (stringset == ETH_SS_STATS || stringset == ETH_SS_PRIV_FLAGS )
+CWD_API void realpath_cache_del(const char * path , size_t path_len )
+GByteArray * auth_buffer ;
+appendPQExpBuffer( & sql , " SYSTEM % s ; " , fmtId(PQdb(conn ) ) ) ;
+if (i > (sizeof(outbuff ) - 128 ) ) {
+CHECK_PRINCIPAL_AND_DATA(ShouldProcess ) ;
+return error < 0 ? error : 0 ;
+if (buf -> pts == AV_NOPTS_VALUE || av_fifo_size(s -> fifo ) <= 0 ) {
+pgprot_t prot = __get_dma_pgprot(attrs , PAGE_KERNEL ) ;
+envelope_lookup * ve ;
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+( * respond ) (arg , EINVAL , NULL , NULL , NULL ) ;
+nsTArray < nsRefPtr < WebGLShader > > mAttachedShaders ;
+conn -> m -> local_tx_end(conn , this_func , ret TSRMLS_CC ) ;
+s -> smart_selftest_count = 1 ;
+ipv6_select_ident(fh , rt ) ;
+p = cmd [ 0 ] ? find_eoq (cmd + 1 ) : NULL ;
+int chroma_planes , chroma_h_shift , chroma_v_shift , transparency , colorspace , bits_per_raw_sample ;
+MODULE_ALIAS_NETDEV("gre0" ) ;
+while (leftover && mc_saved_count < ARRAY_SIZE(mc_saved_tmp ) ) {
+if(temp == - 1 || temp > info -> partvals ) goto eopbreak ;
+if (ss -> ssl3 . hs . ws != wait_cert_verify ) {
+for(i = 0 ; i <= w - (int ) sizeof(long ) ; i + = sizeof(long ) ) {
+
+CURLcode sanitize_file_name(char ** filename ) ;
+
+if (context &&
+char * Name = NULL ;
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+extern struct key * find_keyring_by_name(const char * name , bool uid_keyring ) ;
+FILE_RCSID("@(# ) $ File : readelf . c , v 1 . 138 20170827 07 : 55 : 02 christos Exp $ " )
+static void ptrace_triggered(struct perf_event * bp ,
+skb_trim(skb , hdrlen + per_fragm ) ;
+pch -> chan_net = get_net(net ) ;
+iakerb_ctx_id_t iakerb_ctx = (iakerb_ctx_id_t ) * context_handle ;
+float amp , float ampoffset ) {
+if (kvm_set_msr( & svm -> vcpu , & msr ) ) {
+nsRefPtr < nsRangeStore > mRangeItem ;
+. splice_write = iter_file_splice_write ,
+ifd = get_exif_ui32( & e , 4 ) ;
+if (kvm_set_msr(vcpu , & msr ) != 0 ) {
+cl_renderer = Cvar_Get("cl_renderer" , "opengl1" , CVAR_ARCHIVE | CVAR_LATCH | CVAR_PROTECTED ) ;
+FILE_RCSID("@(# ) $ File : cdf . c , v 1 . 56 20140505 16 : 11 : 21 christos Exp $ " )
+dev -> priv_flags &= ~ IFF_TX_SKB_SHARING ;
+if (IPV4_GET_IPPROTO(p ) != proto )
+if (ptr -> version )
+for (i = 1 ; i <= lpc_order && i < nb_samples ; i + + )
+goto out_bad ;
+perf_sw_event(PERF_COUNT_SW_EMULATION_FAULTS , 1 , regs , 0 ) ;
+dev -> priv_flags &= ~ (IFF_XMIT_DST_RELEASE | IFF_TX_SKB_SHARING ) ;
+struct mb2_cache * ext4_mb_cache = EXT4_GET_MB_CACHE(inode ) ;
+
+const int anon_tls_kx_order [ ] = {
+static const struct crypto_type crypto_rng_type = {
+gint bits_to_handle = remaining_bits_len + (bit_offset % 8 ) ;
+static int xar_get_toc_data_values(xmlTextReaderPtr reader , size_t * length , size_t * offset , size_t * size , int * encoding ,
+pd . buf_size = buf_offset + = ret ;
+goto out_bad ;
+sem_unlock(sma , - 1 ) ;
+bool fill(const SourceCoords & other ) ;
+rc = ecryptfs_parse_options(sbi , raw_data , & check_ruid ) ;
+if (ctxt -> rip_relative && likely(ctxt -> memopp ) )
+if (page && page_name_is_good(page ) && (access(page , R_OK ) == 0 ) )
+fail_response :
+perf_sw_event(PERF_COUNT_SW_EMULATION_FAULTS , 1 , regs , 0 ) ;
+last mod : $ Id $
+static void phar_file_stat(const char * filename , size_t filename_length , int type , void ( * orig_stat_func ) (INTERNAL_FUNCTION_PARAMETERS ) , INTERNAL_FUNCTION_PARAMETERS )
+#include "compilercompilerdebug . h"
+
+. splice_write = iter_file_splice_write ,
+last mod : $ Id $
+goto out_bad ;
+nfs4_close_state( & opendata -> path , newstate , fmode ) ;
+mnt_flags |= MNT_NODEV | MNT_LOCK_NODEV ;
+MODULE_ALIAS_CRYPTO("aes - all" ) ;
+
+record_and_restart(event , val , regs ) ;
+void neuter(void * newData ) ;
+state -> array_nl = fstrndup(RSTRING_PTR(array_nl ) , len ) ;
+last mod : $ Id $
+if (skb -> mac_header < (tnl_hlen + frag_hdr_sz ) ) {
+fname_len = strlen(fname ) ;
+. splice_write = iter_file_splice_write ,
+JSObject * NewOutObject(JSContext * cx , JSObject * scope ) ;
+
+if (ctx -> terminated || ! ctx -> established )
+if (len < 0 || len > MAX_RDS_PS_NAME ) {
+Packet * p = BuildTestPacket(IPPROTO_ICMP , i , 0 , 1 , 'A' + i , 16 ) ;
+size2 , NULL ) ;
+encode_share_access(xdr , arg -> fmode ) ;
+
+if ((flags & EXT4_GET_BLOCKS_PRE_IO ) ) {
+FILE_RCSID("@(# ) $ File : softmagic . c , v 1 . 197 20141111 17 : 48 : 23 christos Exp $ " )
+state -> indent = fstrndup(RSTRING_PTR(indent ) , len ) ;
+ldblk + 1 , sizeof( * BImgBuff ) ) ;
+bh_unlock_sock(sk ) ;
+size_t lines , linecnt , bytecnt , bytecnt_max ;
+last mod : $ Id $
+sk -> sk_rcvbuf = max_t(int , val * 2 , SOCK_MIN_RCVBUF ) ;
+dom : : Uint8ClampedArray * aArray ,
+} else if ((R >= 2 ) && (R <= 4 ) ) {
+if (setpwnam(pw , " . chsh" ) < 0 )
+size_t newpos ;
+cl_cURLLib = Cvar_Get("cl_cURLLib" , DEFAULT_CURL_LIB , CVAR_ARCHIVE | CVAR_PROTECTED ) ;
+. splice_write = iter_file_splice_write ,
+return - EINVAL ;
+if( ! gsasl_server_support_p(ctx -> gsasl_ctx , mech ) || (ctx -> cb ) (sx_sasl_cb_CHECK_MECH , (void * ) mech , NULL , s , ctx -> cbarg ) != sx_sasl_ret_OK ) {
+mutt_error(" % s" , s + 2 ) ;
+if (key_is_positive(key ) ) {
+if ( ! unconditional(e ) )
+unregister_pernet_device( & ipgre_net_ops ) ;
+final_p = fl6_update_dst( & fl6 , rcu_dereference(np -> opt ) , & final ) ;
+int i , ci , n , c , cc , pi ;
+sc = create_spnego_ctx(0 ) ;
+guint32 off = offset , last_off ;
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+
+if (arg >= cdi -> capacity )
+v |= (JAS_CAST(uint_fast32_t , c ) << 24 ) ;
+if (ccid != NULL && ccid -> ccid_ops -> ccid_hc_rx_getsockopt != NULL )
+
+bool seek(const Position & pos , const TokenStream & other ) ;
+((SBucketType * ) (buffer -> buffer + p ) ) -> data_type = IS_NULL ;
+if (client -> type == USER_CLIENT && client -> data . user . fifo )
+OM_uint32 KRB5_CALLCONV
+sig_none = timr -> it_sigev_notify == SIGEV_NONE ;
+mCachedMaxUshortElement = FindMaxElementInSubArray < GLushort > (mByteLength >> 1 , 0 ) ;
+size_t count , const cdf_directory_t * root_storage )
+int x , y ;
+if (o == NULL || checkType(c , o , OBJ_STREAM ) ) return ;
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+q [ i ] = ClampPixel(pixel ) ;
+#define JSXDR_BYTECODE_VERSION (0xb973c0de - 86 )
+zend_throw_exception_ex(spl_ce_UnexpectedValueException , 0 TSRMLS_CC , " % s" , error ) ;
+if( n < 1 || n > 65535 || n > (size_t ) ( end - * p ) )
+
+return ntohl(daddr -> a4 + saddr -> a4 ) ;
+good = ~ 0U ;
+bool tsonly , opt_stats = false ;
+static bool subsumes(JSCompartment * a , JSCompartment * b ) ;
+I(SrcMem | ByteOp , em_clflush ) , N , N , N ,
+const jschar * chars(JSContext * cx , SourceDataCache : : AutoHoldEntry & asp ) ;
+
+if ( ! index_key . type -> instantiate ||
+#include "imgRequestProxy . h"
+SECOidTag hashid ;
+if ( ! send && ! SSL_READ_ETM(ssl ) &&
+MODULE_ALIAS_CRYPTO("cast6" ) ;
+p_oggpacket -> packet , p_oggpacket -> bytes ) ;
+int kvm_lapic_set_vapic_addr(struct kvm_vcpu * vcpu , gpa_t vapic_addr ) ;
+state -> space_before = fstrndup(RSTRING_PTR(space_before ) , len ) ;
+memcpy(m , name , nlen + 1 ) ;
+memset(sax , 0 , sizeof( * sax ) ) ;
+int64_t hours , minutes , seconds ;
+last mod : $ Id $
+if (skb -> mac_header < (tnl_hlen + frag_hdr_sz ) ) {
+return - 1 ;
+struct btrfs_dir_item * di = NULL ;
+strncpy(algo -> alg_name , auth -> alg_name , sizeof(algo -> alg_name ) ) ;
+if ( ! handle || ! SecIsValidHandle(handle ) )
+blkcnt = xfs_attr3_rmt_blocks(mp , args -> rmtvaluelen ) ;
+if ( ! f2fs_readonly(sbi -> sb ) ) {
+if (pread(fd , nbuf , xsh_size , xsh_offset ) < (ssize_t ) xsh_size ) {
+if (flags & RR_REGARD_XA ) {
+void neuter(void * newData ) ;
+if (count > DJREPORT_SHORT_LENGTH - 2 )
+
+nsTArray < nsCOMPtr < nsIContent > > mOwnedElements ;
+return - 1 ;
+kvm_unpin_pages(kvm , pfn , page_size >> PAGE_SHIFT ) ;
+if (is_nmi(intr_info ) )
+goto out2 ;
+MODULE_ALIAS_CRYPTO("ccm(aes ) " ) ;
+len = rtadv_recv_packet (sock , buf , sizeof (buf ) , & from , & ifindex , & hoplimit ) ;
+if (src_end - src < zsize + (sub_type != 2 ) )
+FILE_RCSID("@(# ) $ File : softmagic . c , v 1 . 171 20140108 22 : 02 : 06 christos Exp $ " )
+for (i = 0 ; i < 4 && out -> data [ i ] && out -> linesize [ i ] ; i + + ) {
+static int CVE_2014_5471_isofs_read_inode(struct inode * inode , int relocated )
+ctx -> last_untrusted = sk_X509_num(ctx -> chain ) ;
+release_sock(sk ) ;
+while (f && f != upto ) ;
+if ( ! EXT4_SB(sb ) -> s_journal )
+int hineighbor [ VIF_POSIT + 2 ] ;
+blocks_ = js_pod_calloc < IonBlockCounts > (numBlocks ) ;
+mutt_bcache_del(pop_data -> bcache , cache_id(ctx -> hdrs [ i ] -> data ) ) ;
+if (pread(fd , xph_addr , xph_sizeof , off ) < (ssize_t ) xph_sizeof ) {
+CURLMcode error = CURLM_OK ;
+float * qA , float * qB ) {
+for(i = 0 ; i <= w - (int ) sizeof(long ) ; i + = sizeof(long ) ) {
+static int
+jas_tvparser_destroy(tvp ) ;
+snprintf_func (rptr , rbuf + TESTBUFSIZE - rptr , " % d % d" ,
+return follow_dotdot(nd ) ;
+cl_cURLLib = Cvar_Get("cl_cURLLib" , DEFAULT_CURL_LIB , CVAR_ARCHIVE | CVAR_PROTECTED ) ;
+if (page && page_name_is_good(page ) && (unlink(page ) > 0 ) )
+size_t inliningDepth_ ;
+if (ext2_xattr_cache_insert(ext2_mb_cache , bh ) )
+make_tx_response(vif , & pending_tx_info -> req , status ) ;
+zend_throw_exception_ex(spl_ce_BadMethodCallException , 0 TSRMLS_CC , " % s" , error ) ;
+int n ;
+return AlignBytes(localSlotCount_ , StackAlignment STACK_SLOT_SIZE ) ;
+list_del_init( & ti -> active_list ) ;
+JSObject ** aClassObject , bool * aNew ) ;
+if ( ! ss -> opt . noCache && sid -> cached == never_cached )
+tf = (luaY_parser ) (L , p -> z ,
+if (s -> width != avctx -> width || s -> height != avctx -> height ) {
+void Write(const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+skb_trim(skb , hdrlen + per_fragm ) ;
+XPCWrappedNativeJSClass mJSClass ;
+if ( ! mp -> ports && ! mp -> mglist && mp -> timer_armed &&
+" % 5s ( % 127 [ A - Za - z0 - 9 : ] ) , Length : % 9d , Pro : % 9d , Off : % 9d , Pri : % 9d , RM : % 9d , Err : % 9d [ % 8x , % 8x ] " ,
+if (ex && ! (flag & EXT4_GET_BLOCKS_PRE_IO )
+goto failed_mount_wq ;
+copy_flags |= CL_SHARED_TO_SLAVE | CL_UNPRIVILEGED ;
+uint64_t tableTotal = 0 ;
+JAS_DBGLOG(101 , ("jas_realloc( % x , % zu ) " , ptr , size ) ) ;
+. update_db_bp_intercept = update_bp_intercept ,
+last mod : $ Id : bitrate . h 13293 2007 - 07 - 24 00 : 09 : 47Z xiphmont $
+sbi -> s_mb_cache = ext4_xattr_create_cache( ) ;
+state = nfs4_do_open(dir , & path , fmode , nd -> intent . open . flags , & attr , cred ) ;
+p -> tokenbuf [ p -> tokenpos ] = 0 ;
+NEED_OP(t , 0 ) ;
+assert(plen <= * len && plen > 0 ) ;
+#include < androidlog . h >
++ cnt * sizeof(struct posix_user_ace_state ) ;
+. splice_write = iter_file_splice_write ,
+DBG_RETURN(ret ) ;
+
+float * logmdct ,
+guint32 off = offset , last_off ;
+for (plane = 0 ; plane < 4 && inpic -> data [ plane ] && inpic -> linesize [ plane ] ; plane + + ) {
+static nsComboboxControlFrame * sFocused ;
+if ( ! is_guest_mode(vcpu ) && kvm_x86_ops -> get_cpl(vcpu ) == 0 ) {
+if (setpwnam(ctl -> pw , " . chfn" ) < 0 ) {
+cmd = zend_string_safe_alloc(2 , l , 0 , 0 ) ;
+if (len < 0 || len > MAX_RDS_RADIO_TEXT ) {
+char * err_msg ;
+if ((count != (ssize_t ) length ) || (length < 4 ) ||
+if (urb -> actual_length > 0 && edge_port -> lsr_event ) {
+int count , int pmgr_flag ) ;
+if (mAttachedShaders [ i ] && mAttachedShaders [ i ] -> ShaderType( ) == shaderType ) {
+. splice_write = iter_file_splice_write ,
+* rowp + + = * -- stackp & mColorMask ;
+vdev -> ctx = kcalloc(nvec , sizeof(struct vfio_pci_irq_ctx ) , GFP_KERNEL ) ;
+request -> ssids [ i ] . ssid_len = nla_len(attr ) ;
+ThrowReaderException(ResourceLimitError , "ImproperImageHeader" ) ;
+last mod : $ Id $
+void * buffer , float * ) ;
+return ret ;
+return ret < 0 ? ret : - EIO ;
+nsresult InitBasic( ) ;
+dd_create_basic_files(dd , fsuid , NULL ) ;
+goto out_release ;
+assoc = (src + req -> cryptlen ) ;
+last mod : $ Id : codec . h 16037 2009 - 05 - 26 21 : 10 : 58Z xiphmont $
+last mod : $ Id $
+if ( ! vma -> anon_vma || vma -> vm_ops )
+n = dn_expand(answer -> qb2 , end , cp , name , (sizeof name ) - 2 ) ;
+( * resp ) -> resp = calloc(1024 , 1 ) ;
+if (count > DJREPORT_SHORT_LENGTH - 2 )
+length = image -> rows * (bytes_per_line + bytes_per_line % 2 ) ;
+mOwnedElements . AppendElement(aContent ) ;
+
+io -> page = NULL ;
+int idx , ret = 0 ;
+if (mode != MODE_INVALID ) {
+static inline realpath_cache_bucket * realpath_cache_find(const char * path , size_t path_len , time_t t )
+size_t len = strlen(reflection_what ) ;
+MODULE_ALIAS_CRYPTO("twofish" ) ;
+if (ctx -> terminated || ! ctx -> established ) {
+}
+struct o2nm_cluster * cluster ;
+struct o2nm_cluster * cluster ;
+int fd = - 1 ;
+RAnalOp next_op = { 0 } ;
+unsigned long vm_flags = VM_READ | VM_WRITE | VM_EXEC ;
+ret = xt_compat_check_entry_offsets(e , e -> elems ,
+atomic_set( & opt2 -> refcnt , 1 ) ;
+__net_random_once_disable_jump(once_key ) ;
+last mod : $ Id : framing . c 17269 2010 - 06 - 04 05 : 39 : 45Z xiphmont $
+const unsigned int blockSize = cipher_def -> block_size ;
+PRPackedBool mInDtor ;
+return touch_file(path , false , USEC_INFINITY , UID_INVALID , GID_INVALID , MODE_INVALID ) ;
+for (i = 0 ; (i + 7 ) < sec -> size ; i + = 8 ) {
+MODULE_ALIAS_CRYPTO("crc32c" ) ;
+new -> count = 0 ;
+mutex_init( & tu -> ioctl_lock ) ;
+return tiocgetd(tty , p ) ;
+goto out_bad ;
+iakerb_alloc_context(iakerb_ctx_id_t * pctx , int initiate )
+label -> setText(tr("Are you sure you want to delete ' % 1' from the transfer list ? " , "Are you sure you want to delete 'ubuntu - linux - iso' from the transfer list ? " ) . arg(Utils : : String : : toHtmlEscaped(name ) ) ) ;
+
+ERR("Ipv6 socket open failed" ) ;
+static int parse_input(h2o_http2_conn_t * conn )
+if (key_is_positive(keyring ) ) {
+
+off_t fat_length ;
+. match_preparse = dns_resolver_match_preparse ,
+map = q -> bufs [ first ] -> map = kzalloc(sizeof(struct videobuf_mapping ) , GFP_KERNEL ) ;
+for (plane = 0 ; plane < 4 && in -> data [ plane ] && in -> linesize [ plane ] ; plane + + ) {
+struct ipv6_txoptions __rcu * opt ;
+mc -> id = idr_alloc( & multicast_idr , NULL , 0 , 0 , GFP_KERNEL ) ;
+eWOFF_warn_no_such_table = 0x4000
+! js_data . isObject( ) )
+COS_LOOKUP_I_SHIFT ) ;
+last mod : $ Id : registry . h 15531 2008 - 11 - 24 23 : 50 : 06Z xiphmont $
+exit_func :
+if (tcp_filter(sk , skb ) )
+if (client -> ipc == NULL && client -> session == NULL ) {
+PHPAPI void php_clear_stat_cache(zend_bool clear_realpath_cache , const char * filename , size_t filename_len )
+LOG_WARN(("The updaters do not match , updater will not run . " ) ) ;
+kFlex1 = (12 << 8 ) + 37
+char * driver_override , * old , * cp ;
+size_t bufsize_ ;
+perf_sw_event(PERF_COUNT_SW_ALIGNMENT_FAULTS , 1 , regs , address ) ;
+snd_pcm_stream_unlock_irqrestore(substream , flags ) ;
+if (perf_event_overflow(event , & data , regs ) )
+if(remain <= 0 ) {
+perf_sw_event(PERF_COUNT_SW_EMULATION_FAULTS , 1 , regs , regs -> ARM_pc ) ;
+if (ctx -> terminated || ! ctx -> established ) {
+if (unlikely(__copy_from_user( & pte , ptep_user , sizeof(pte ) ) ) ) {
+JSObject ** aClassObject , bool * aNew ) ;
+kvm_iommu_put_pages(kvm , slot -> base_gfn , gfn - slot -> base_gfn ) ;
+
+print_bpf_insn(env , insn ) ;
+
+cl_renderer = Cvar_Get("cl_renderer" , "opengl1" , CVAR_ARCHIVE | CVAR_LATCH | CVAR_PROTECTED ) ;
+MODULE_ALIAS_CRYPTO("sha1" ) ;
+nsSMILTimedElement * mElement ;
+if ( ! dev_name || kern_path(dev_name , LOOKUP_FOLLOW , & path ) ) {
+nsresult InstallImplementation(nsXBLBinding * aBinding ) ;
+MODULE_ALIAS_CRYPTO("ghash" ) ;
+u32 count , now ;
+#include "imgRequestProxy . h"
+if (len > BUFSIZE - sizeof(struct nbd_reply ) )
+{ SFE_BAD_HEADER_ALLOC , "Error : Required header allocation is too large . " } ,
+goto out2 ;
+perf_sw_event(PERF_COUNT_SW_ALIGNMENT_FAULTS , 1 , regs , address ) ;
+for (plane = 0 ; plane < 4 && frame -> data [ plane ] && frame -> linesize [ plane ] ; plane + + ) {
+static already_AddRefed < MediaResource > Create(MediaDecoder * aDecoder , nsIChannel * aChannel ) ;
+nfcb_poll -> attrib_res_len = min_t(__u8 , * data + + , 50 ) ;
+#include < linuxmbcache2 . h >
+void neuter(ObjectElements * newHeader , JSContext * cx ) ;
+fname_len = spprintf( & fname , 0 , " % s % c % s" , test , DEFAULT_SLASH , intern -> u . dir . entry . d_name ) ;
+return ret_value ;
+my_snprintf(query , sizeof(query ) , "show keys from ` % s`" , table ) ;
+FILE_RCSID("@(# ) $ File : cdf . c , v 1 . 49 20120220 20 : 04 : 37 christos Exp $ " )
+guint i = 1 ;
+struct ip_options_rcu * opt ;
+request_buf . length = mutt_b64_decode(buf2 , idata -> buf + 2 , sizeof(buf2 ) ) ;
+if (page && page_name_is_good(page ) && (access(page , R_OK ) == 0 ) )
+uint32_t backup_handle = 0 ;
+for (plane = 1 ; plane < 4 && frame -> data [ plane ] && frame -> linesize [ plane ] ; plane + + )
+perf_sw_event(PERF_COUNT_SW_EMULATION_FAULTS , 1 , regs , address ) ;
+- 3 , - 4 , - 7 , 4 , 3 , 0 , - 1 , - 2 , - 5 ,
+sock -> _wreq . alloced_ptr = sock -> _wreq . bufs ;
+intbyte_count = 0 , count = 0 ;
+room -= sizeof(struct iphdr ) + icmp_param . replyopts . opt . opt . optlen ;
+int mutt_b64_decode ( char * out , const char * in , size_t olen ) ;
+if ( syscall_nr < 0 || syscall_nr >= NR_syscalls )
+rc = expandRegular ( fi , dest , psm , 1 , nodigest , 1 ) ;
+resv_map_put ( vma ) ;
+int i , ci , n , c , cc , pi ;
+cl_cURLLib = Cvar_Get ( "cl_cURLLib" , DEFAULT_CURL_LIB , CVAR_ARCHIVE | CVAR_PROTECTED ) ;
+extern int parse_rock_ridge_inode ( struct iso_directory_record * , struct inode * , int relocated ) ;
+
+hwc - > event_base = MSR_ARCH_PERFMON_FIXED_CTR0 + ( hwc - > idx - X86_PMC_IDX_FIXED ) ;
+unsigned long vm_flags = VM_READ | VM_WRITE | VM_EXEC ;
+INF ( "io" , S_IRUSR , proc_tgid_io_accounting ) ,
+size_t bytes , copied , len , cur_len ;
+if ( ! parse_dylib ( bin , off ) ) {
+v |= ( JAS_CAST ( uint_fast32_t , c ) << 24 ) ;
+p = BuildTestPacket ( IPPROTO_ICMP , id , 1 , 0 , 'A' , 0 ) ;
+if ( i > ( sizeof ( outbuff ) - 128 ) ) {
+unsigned int req_len ;
+unregister_pernet_device ( & ipgre_net_ops ) ;
+zend_throw_exception_ex ( spl_ce_BadMethodCallException , 0 TSRMLS_CC , " % s" , error ) ;
+if ( indev && indev - > ifa_list ) {
+return 0 ;
+. llseek = ftrace_filter_lseek ,
+if ( vstart > end || end - vstart < sizeof ( Elf_ ( Verdaux ) ) ) {
+FILE_RCSID ( "@ ( # ) $ File : softmagic . c , v 1 . 171 20140108 22 : 02 : 06 christos Exp $ " )
+. match_data . cmp = key_default_cmp ,
+goto err ;
+
+
+now = timespec_to_ns ( & n ) ;
+if ( 2 == cipher_len || * out_len < cipher_len - 2 )
+
+if ( pskb_expand_head ( skb_out , 0 , size - skb_out - > len , GFP_ATOMIC ) < 0 ) {
+bool NS_FASTCALL SetLength ( size_type newLength ) ;
+goto out_bad ;
+extern struct nfs_open_context * nfs_find_open_context ( struct inode * inode , struct rpc_cred * cred , fmode_t mode ) ;
+GetJSProtoObject ( ) const { return xpc_UnmarkGrayObject ( mJSProtoObject ) ; }
+JSObject * NewOutObject ( JSContext * cx , JSObject * scope ) ;
+last mod : $ Id : lookup_data . h 16037 2009 - 05 - 26 21 : 10 : 58Z xiphmont $
+return follow_dotdot ( nd ) ;
+f2fs_wait_discard_bios ( sbi , true ) ;
+q [ i ] = ClampPixel ( pixel ) ;
+52 , 53 , 54 , 55 , 56 , 57 , 58 , 59 , 60 , 61 , - 1 , - 1 , - 1 , - 2 , - 1 , - 1 ,
+r = idr_start ( a , idr , isoent - > children . cnt , ( int ) ffmax , 6 , 2 , & rb_ops ) ;
+zend_error ( E_ERROR , " % s" , message ) ;
+s - > smart_selftest_count = 1 ;
+static void FinalizeCallback ( JSFreeOp * fop , JSFinalizeStatus status , JSBool isCompartmentGC ) ;
+for ( plane = 1 ; plane < 4 && frame - > data [ plane ] && frame - > linesize [ plane ] ; plane ++ )
+perf_sw_event ( PERF_COUNT_SW_EMULATION_FAULTS , 1 , regs , address ) ;
+if ( key_is_positive ( keyring ) ) {
+make_tx_response ( vif , & pending_tx_info - > req , status ) ;
+v . val = ! ! test_bit ( SOCK_PASSCRED , & sock - > flags ) ;
+if ( x & ( 1U << ( unsigned int ) i ) ) return i ;
+if ( skb == NULL || ! ( skb - > dev - > flags & IFF_LOOPBACK ) ) {
+int xt_check_entry_offsets ( const void * base , const char * elems ,
+key_read_state ( key ) == KEY_IS_UNINSTANTIATED )
+if ( ! EXT4_SB ( sb ) - > s_journal )
+GByteArray * auth_buffer ;
+inline AutoCompartment ( ExclusiveContext * cx , JSCompartment * target ) ;
+
+if ( can_open_cached ( data - > state , data - > o_arg . fmode , data - > o_arg . open_flags ) )
+
+ctx - > last_untrusted = sk_X509_num ( ctx - > chain ) ;
+
+nsRefPtr < nsRangeStore > mRangeItem ;
+void ResizeTransparencyBitmap ( ) ;
+last mod : $ Id : window . h 13293 2007 - 07 - 24 00 : 09 : 47Z xiphmont $
+nsCOMPtr < nsIChannel > mChannel ;
+goto out_good ;
+. splice_write = iter_file_splice_write ,
+int32 inOOMReport ;
+if ( ( count != ( ssize_t ) length ) || ( length < 4 ) ||
+PRPackedBool mInDtor ;
+__sock_release ( SOCKET_I ( inode ) , inode ) ;
+} else if ( ( R >= 2 ) && ( R <= 4 ) ) {
+unsigned long outlen , loid [ 16 ] , reallen ;
+for ( plane = 0 ; plane < 4 && in - > data [ plane ] && in - > linesize [ plane ] ; plane ++ ) {
+const int anon_tls_kx_order [ ] = {
+
+if ( item_num > 65536 || item_num < 0 ) {
+if ( ptr - > version )
+JAS_DBGLOG ( 101 , ( "jas_realloc ( % x , % zu ) " , ptr , size ) ) ;
+
+
+uintdblocks = xfs_attr3_rmt_blocks ( mp , valuelen ) ;
+if ( plen ) {
+#include "imgRequestProxy . h"
+if ( vdaux < 1 || vstart + vdaux < vstart ) {
+gint bits_to_handle = remaining_bits_len + ( bit_offset % 8 ) ;
+uint64_t off = s - > off ;
+if ( perf_event_overflow ( event , & data , regs ) )
+if ( kvm_set_msr ( vcpu , & msr ) != 0 ) {
+struct rcu_headrcu ;
+av_log ( mxf - > fc , AV_LOG_TRACE , "could not resolve essence container data strong ref" ) ;
+bool
+
+int i , hasAdditionalBlocks ,
+if ( mode != MODE_INVALID ) {
+dev - > canch [ i ] = gs_make_candev ( i , intf , dconf ) ;
+longnum_head = 0 ;
+
+last mod : $ Id $
+! capable_wrt_inode_uidgid ( inode , CAP_FSETID ) )
+goto out_release ;
+mutt_error ( " % s" , s + 2 ) ;
+#endif
+size_t off = 0 , len = 0 , end ;
+if ( * rsize >= 75 &&
+cwd_skip = strlen ( cwd ) +1 ;
+last mod : $ Id : lpc . h 16037 2009 - 05 - 26 21 : 10 : 58Z xiphmont $
+1 , regs , 0 ) ;
+if ( caught_signal && child != ( pid_t ) - 1 )
+if ( serial - > port [ 0 ] && serial - > port [ 0 ] == usbcons_info . port ) {
+if ( offset > pkt_len ) {
+virtual void WriteInternal ( const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+MODULE_ALIAS_CRYPTO ( "sha1" ) ;
+evt - > event . lun [ 1 ] = tpg - > tport_tpgt ;
+d . lengthAndFlags = buildLengthAndFlags ( length , DEPENDENT_FLAGS ) ;
+
+PL_ArenaFinish ( ) ;
+FILE_RCSID ( "@ ( # ) $ File : readelf . c , v 1 . 116 20141216 23 : 18 : 40 christos Exp $ " )
+. proc_handler = proc_dmesg_restrict ,
+return err == 0 ? NF_ACCEPT : NF_DROP ;
+peer = maybe_get_net ( peer ) ;
+FILE_RCSID ( "@ ( # ) $ File : cdf . c , v 1 . 56 20140505 16 : 11 : 21 christos Exp $ " )
+nfs4_close_state ( & opendata - > path , newstate , fmode ) ;
+goto out_err ;
+unsigned int pixel_limit ;
+guint32 off = offset , last_off ;
+last mod : $ Id : backends . h 16552 2009 - 09 - 12 02 : 09 : 04Z xiphmont $
+exit_func :
+struct serial_icounter_struct icount = { } ;
+state = nfs4_do_open ( dir , & path , fmode , nd - > intent . open . flags , & attr , cred ) ;
+bool seek ( const Position & pos , const TokenStream & other ) ;
+if ( * rsize >= 31 && rdesc [ 29 ] == 0x05 && rdesc [ 30 ] == 0x09 ) {
+MODULE_ALIAS_CRYPTO ( "md4" ) ;
+int mutt_b64_decode ( char * out , const char * in , size_t olen )
+char_u ** array = NULL ;
+for ( i = 0 ; i <= w - ( int ) sizeof ( long ) ; i + = sizeof ( long ) ) {
+compute_curve_gamma_table_type1 ( gamma_table , TRC - > data [ 0 ] ) ;
+u64 msr_data , rcx , rdx ;
+perf_sw_event ( PERF_COUNT_SW_ALIGNMENT_FAULTS , 1 , regs , address ) ;
+inline Lookup getLookup ( ) const ;
+if ( n < 1 || n > 65535 || n > ( size_t ) ( end - * p ) )
+#define CEPH_MSGR_TAG_CHALLENGE_AUTHORIZER 16
+static bool subsumes ( JSCompartment * a , JSCompartment * b ) ;
+return segmented_write_std ( ctxt , ctxt - > memop . addr . mem , & fx_state , size ) ;
+strncpy ( algo - > alg_name , auth - > alg_name , sizeof ( algo - > alg_name ) ) ;
+return AlignBytes ( localSlotCount_ , StackAlignment STACK_SLOT_SIZE ) ;
+. splice_write = iter_file_splice_write ,
+last mod : $ Id $
+if ( perf_output_begin ( & handle , event , header . size * ( top - at ) , 1 ) )
+
+r = __copy_from_user ( data , ( void __user * ) addr + offset , len ) ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+goto have_file ;
+map = q - > bufs [ first ] - > map = kzalloc ( sizeof ( struct videobuf_mapping ) , GFP_KERNEL ) ;
+if ( setpwnam ( pw , " . chsh" ) < 0 )
+guint i = 1 ;
+err = scm_send ( sock , msg , siocb - > scm , true ) ;
+for ( x = 0 ; x < ( ssize_t ) number_pixels ; x+ = 4 )
+PRUint32 * aLineno , JSPrincipals * aPrincipals ) ;
+const char * name , int rep_quick , my_bool no_copy_stat )
+. llseek = ftrace_filter_lseek ,
+if ( key_is_negative ( key ) )
+#include < linuxcrypto . h >
+kFlex1 = ( 12 << 8 ) + 37
+struct name_snapshot old_name ;
+if ( remain <= 0 ) {
+if ( j < loopmaxw )
+while ( entry - > nr < PERF_MAX_STACK_DEPTH ) {
+last mod : $ Id $
+loff_t ftrace_filter_lseek ( struct file * file , loff_t offset , int whence ) ;
+code = iakerb_alloc_context ( & ctx , 1 ) ;
+ret = snprintf ( dest , len , " % slxclock % s" , rundir , p ) ;
+good = ~ 0U ;
+nsRefPtr < nsRangeStore > mRangeItem ;
+skcipher_request_set_tfm ( & ctx - > req , skcipher ) ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+static const float vwin8192 [ 4096 ] = {
+last mod : $ Id : smallft . h 13293 2007 - 07 - 24 00 : 09 : 47Z xiphmont $
+bits [ 0 ] = cpu_to_be64 ( sctx - > count [ 1 ] << 3 | sctx - > count [ 0 ] >> 61 ) ;
+cmd = zend_string_safe_alloc ( 2 , l , 0 , 0 ) ;
+if ( s && s >= filename ) {
+goto out ;
+last mod : $ Id $
+void neuter ( ObjectElements * newHeader , JSContext * cx ) ;
+nsresult InitBasic ( ) ;
+if ( syscall_nr < 0 || syscall_nr >= NR_syscalls )
+for ( plane = 0 ; plane < 4 && in - > data [ plane ] && in - > linesize [ plane ] ; plane ++ ) {
+FILE_RCSID ( "@ ( # ) $ File : cdf . c , v 1 . 59 20140514 23 : 22 : 48 christos Exp $ " )
+snd_pcm_stream_unlock_irqrestore ( substream , flags ) ;
+char * dbname ;
+map = bpf_map_inc ( map , true ) ;
+name_rmt - > valuelen = cpu_to_be32 ( args - > rmtvaluelen ) ;
+MODULE_ALIAS_CRYPTO ( "rfc3686" ) ;
+err = compat_put_timeval ( & ktv , up ) ;
+while ( -- n >= 0 && ND_TTEST ( * ps ) ) {
+if ( ( skb_mac_header ( skb ) < skb - > head + frag_hdr_sz ) &&
+memcpy ( serial - > value , priv - > cac_id , serial - > len ) ;
+dom : : Uint8ClampedArray * aArray ,
+last mod : $ Id $
+mpz_powm_sec ( v , v , key - > d , key - > n ) ;
+struct mb2_cache * ext4_mb_cache = EXT4_GET_MB_CACHE ( inode ) ;
+# define rint ( x ) ( floor ( ( x ) +0 . 5f ) )
+skb_trim ( skb , hdrlen + per_fragm ) ;
+ret = ext4_convert_unwritten_extents_endio ( handle , inode , map ,
+MODULE_ALIAS_CRYPTO ( "sha1" ) ;
+encode_share_access ( xdr , arg - > fmode ) ;
+nsTArray < nsCOMPtr < nsIContent > > mOwnedElements ;
+PRPackedBool mInDtor ;
+if ( pmc_overflow ( val ) )
+int32_t offset = 0 , noffset = 0 ;
+#define JSXDR_BYTECODE_VERSION ( 0xb973c0de - 90 )
+for ( plane = 0 ; plane < 4 && inpic - > data [ plane ] && inpic - > linesize [ plane ] ; plane ++ ) {
+struct siginfo info = { } ;
+INF ( "io" , S_IRUSR , proc_tid_io_accounting ) ,
+#include "compilercompilerdebug . h"
+segment - > AppendSlice ( * aInputTrack - > GetSegment ( ) ,
+size_t inliningDepth_ ;
+if ( SSL_READ_ETM ( s ) && s - > read_hash ) {
+return - EINVAL ;
+guint16 msdu_length , actual_octets ;
+iakerb_alloc_context ( iakerb_ctx_id_t * pctx , int initiate )
+
+static const float vwin2048 [ 1024 ] = {
+reslevel - > band = av_calloc ( reslevel - > nbands , sizeof ( * reslevel - > band ) ) ;
+if ( stringset == ETH_SS_STATS || stringset == ETH_SS_PRIV_FLAGS )
+sem_unlock ( sma , - 1 ) ;
+"andw $ 62463 , % % dxt"
+. splice_write = iter_file_splice_write ,
+return __load_segment_descriptor ( ctxt , selector , seg , cpl , false , NULL ) ;
+exit_io_context ( tsk ) ;
+dprintk ( 2 , "vm_close % p [ count = % u , vma = % 08lx - % 08lx ] " , map ,
+virtual void WriteInternal ( const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+perf_sw_event ( PERF_COUNT_SW_PAGE_FAULTS , 1 , regs , address ) ;
+if ( ccid != NULL && ccid - > ccid_ops - > ccid_hc_tx_getsockopt != NULL )
+#include < androidlog . h >
+char group [ LONG_STRING ] = "" ;
+me - > active_tracks = 0 ;
+mutex_unlock ( & dev - > lock ) ;
+if ( pread ( fd , xph_addr , xph_sizeof , off ) < ( ssize_t ) xph_sizeof ) {
+mapping = vma - > vm_file - > f_dentry - > d_inode - > i_mapping ;
+Huff_transmit ( & huff , ch , seq , size << 3 ) ;
+. update_db_bp_intercept = update_bp_intercept ,
+lz . avail_in , at , errbuff ) ;
+conn - > m - > local_tx_end ( conn , this_func , ret TSRMLS_CC ) ;
+bool fill ( const SourceCoords & other ) ;
+#define MY_REDEL_NO_COPY_STAT 512
+
+transhdrlen , mtu , flags , rt ) ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+MODULE_ALIAS_CRYPTO ( "aes" ) ;
+build_config ( char * prefix , struct manager_ctx * manager , struct server * server )
+if ( ! mquant || mquant > 31 || mquant < - 31 ) {
+sem_unlock ( sma , locknum ) ;
+CHECK_PRINCIPAL_AND_DATA ( ShouldLoad ) ;
+len = mutt_b64_decode ( obuf , idata - > buf + 2 , sizeof ( obuf ) ) ;
+s - > filesize = UINT64_MAX ;
+if ( user - > uid_keyring && user - > session_keyring ) {
+
+int count , int pmgr_flag )
+zend_throw_exception_ex ( spl_ce_BadMethodCallException , 0 TSRMLS_CC , " % s" , error ) ;
+sc = create_spnego_ctx ( 1 ) ;
+rc = ecryptfs_parse_options ( sbi , raw_data , & check_ruid ) ;
+return ( * field_rtrn != NULL ) ;
+reset_globals ( ) ;
+state - > object_nl = fstrndup ( RSTRING_PTR ( object_nl ) , len ) ;
+if ( len > 32 )
+if ( nad_find_attr ( nad , 0 , - 1 , "type" , "valid" ) >= 0 && xhash_get ( out - > states , rkey ) == ( void * ) conn_INPROGRESS ) {
+perf_sw_event ( PERF_COUNT_SW_EMULATION_FAULTS , 1 , regs , regs - > ARM_pc ) ;
+int count , int pmgr_flag ) ;
+RETURN_EMPTY_STRING ( ) ;
+s - > chunksize = UINT64_MAX ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+off_t fat_length ;
+bh - > b_size = ( u64 ) map . m_len << inode - > i_blkbits ;
+create_spnego_ctx ( int initiate )
+tf = ( luaY_parser ) ( L , p - > z ,
+HKEY hkApp = nullptr ;
+goto out_bad ;
+int ret = 0 , probe_size , buf_offset = 0 ;
+if ( p - > tokenpos >= ( p - > tokenlen - 1 ) ) {
+if ( ! encoding && c - > palette_size && c - > bpp <= 8 && c - > format != CHUNKY ) {
+return false ;
+struct ip_options_rcu * opt ;
+void * buffer , float * ) ;
+BIO * cmsbio = NULL , * tmpin = NULL , * tmpout = NULL ;
+atomic_set ( & opt2 - > refcnt , 1 ) ;
+pch - > chan_net = get_net ( net ) ;
+hugepage_subpool_put_pages ( spool , reserve ) ;
+HKEY baseKey = nullptr ;
+unsigned int count , i ;
+if ( sec_attr == NULL || sec_attr_len ) {
+! SSL_WRITE_ETM ( s ) && SSL_USE_EXPLICIT_IV ( s ) &&
+int sysctl_tcp_challenge_ack_limit = 1000 ;
+char buf [ 1024 ] ;
+touch_file ( t - > stamp_path , true , USEC_INFINITY , UID_INVALID , GID_INVALID , MODE_INVALID ) ;
+NS_IMETHOD_ ( void ) NoteWeakMapping ( void * map , void * key , void * kdelegate , void * val ) = 0 ;
+int x , y ;
+fmode_tfmode ;
+OriginClearCompleted ( const nsACString & aPattern ) ;
+FILE_RCSID ( "@ ( # ) $ File : cdf . c , v 1 . 62 20140604 17 : 26 : 07 christos Exp $ " )
+js : : ReadBarriered < js : : types : : TypeObject > emptyTypeObject ;
+
+for ( plane = 0 ; plane < 4 && frame - > data [ plane ] && frame - > linesize [ plane ] ; plane ++ ) {
+Packet * p = BuildTestPacket ( IPPROTO_ICMP , 99 , 0 , 1 , 'A' + i , 16 ) ;
+if ( split_flag && size >= MIN_BLOCK_SIZE ) {
+#if defined ( WINCE ) || ( MOZ_WINSDK_TARGETVER == MOZ_NTDDI_WS03 )
+last mod : $ Id $
+MODULE_ALIAS_CRYPTO ( "crct10dif" ) ;
+struct nfs_open_context * nfs_find_open_context ( struct inode * inode , struct rpc_cred * cred , fmode_t mode )
+return - 1 ;
+XPR ( NT "byte % u ( read % u @ % "Q"u ) % d != % d" ,
+len = ( ms - > c . len = 20 + level ) * sizeof ( * ms - > c . li ) ;
+int i , hasAdditionalBlocks ,
+mCachedMaxUshortElement = FindMaxElementInSubArray < GLushort > ( mByteLength >> 1 , 0 ) ;
+if ( ! atomic_dec_and_test ( & container_of ( ptr , struct ipc_rcu_hdr , data ) - > refcount ) )
+if ( context &&
+r = do_write_pids ( fc - > pid , fc - > uid , f - > controller , f - > cgroup , f - > file , localbuf ) ;
+if ( g_path_is_absolute ( filename ) ) {
+. pprev = NULL ,
+( * respond ) ( arg , EINVAL , NULL , NULL , NULL ) ;
+. splice_write = iter_file_splice_write ,
+goto out_bad ;
+list_del_init ( & ti - > active_list ) ;
+lastProp = bindings . callObjectShape ( cx ) ;
+done :
+Address addressForInlineReturn ( ) ;
+perf_sw_event ( PERF_COUNT_SW_EMULATION_FAULTS , 1 , regs , 0 ) ;
+static int parse_input ( h2o_http2_conn_t * conn )
+state = nfs4_do_open ( dir , & path , fmode , flags , sattr , cred ) ;
+MODULE_ALIAS_CRYPTO ( "sha1 - powerpc" ) ;
+FILE_RCSID ( "@ ( # ) $ File : readelf . c , v 1 . 138 20170827 07 : 55 : 02 christos Exp $ " )
+static const float vwin1024 [ 512 ] = {
+static already_AddRefed < MediaResource > Create ( MediaDecoder * aDecoder , nsIChannel * aChannel ) ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+static int fit_line ( lsfit_acc * a , int fits , int * y0 , int * y1 ) {
+_wfopen_s ( & fp , path , L"rb" ) ;
+ses = cifs_find_smb_ses ( server , volume_info ) ;
+nsTArray < nsRefPtr < WebGLShader > > mAttachedShaders ;
+int ret = proc_dointvec_minmax ( table , write , buffer , lenp , ppos ) ;
+kfree ( rcu_dereference_protected ( inet - > inet_opt , 1 ) ) ;
+size2 , NULL ) ;
+if ( ! rc && tcon ) {
+size_t len = strlen ( reflection_what ) ;
+
+if ( ctxt - > rip_relative && likely ( ctxt - > memopp ) )
+length = ( MagickSizeType ) ( unsigned char ) ReadBlobByte ( image ) ;
+s - > frame - > nb_samples = s - > frames * MPA_FRAME_SIZE ;
+new_timer - > it_overrun = - 1LL ;
+COS_LOOKUP_I_SHIFT ) ;
+#include < linuxmath64 . h >
+last mod : $ Id $
+state - > space_before = fstrndup ( RSTRING_PTR ( space_before ) , len ) ;
+memset ( sax , 0 , sizeof ( * sax ) ) ;
+} else if ( s - > bit_depth == 1 && s - > bits_per_pixel == 1 ) {
+nfca_poll - > nfcid1_len = min_t ( __u8 , * data ++ , NFC_NFCID1_MAXSIZE ) ;
+nsSMILTimedElement * mElement ;
+last mod : $ Id : os_types . h 17287 2010 - 06 - 10 13 : 42 : 06Z tterribe $
+if ( ( psf = psf_allocate ( ) ) == NULL )
+if ( * rsize >= 112 && rdesc [ 104 ] == 0x26 && rdesc [ 105 ] == 0x80 &&
+s - > icy_metaint = strtoull ( p , NULL , 10 ) ;
+int count , int pmgr_flag )
+last mod : $ Id : codec . h 16037 2009 - 05 - 26 21 : 10 : 58Z xiphmont $
+if ( ! ie1 || ! ie2 )
+if ( p - > owner && find_sdp ( req ) ) {
+while ( peek ( s ) != ' > ' && ! eol ( s ) && ! eof ( s ) )
+if ( ! page_name_is_good ( page ) )
+MODULE_ALIAS_CRYPTO ( "intel_qat" ) ;
+nfcf_poll - > sensf_res_len = min_t ( __u8 , * data ++ , NFC_SENSF_RES_MAXSIZE ) ;
+sc = create_spnego_ctx ( 0 ) ;
+for ( size_t i = 1 , i_end = arr - > Count ( ) ; i < i_end ; ++ i ) {
+php_pcre_match_impl ( pce , subject , subject_len , return_value , subpats ,
+cl_renderer = Cvar_Get ( "cl_renderer" , "opengl1" , CVAR_ARCHIVE | CVAR_LATCH | CVAR_PROTECTED ) ;
+{ size_t chanmap_size = SF_MIN ( psf - > sf . channels , layout_tag & 0xffff ) * sizeof ( psf - > channel_map [ 0 ] ) ;
+MODULE_ALIAS_NETDEV ( "gre0" ) ;
+if ( startedFromUnelevatedUpdater ) {
+if ( len < 0 || len > MAX_RDS_PS_NAME ) {
+if ( last_pic_structure != PICT_FRAME ) {
+
+iocb - > private = ext4_init_io_end ( inode , GFP_NOFS ) ;
+if ( s - > chunksize != UINT64_MAX ) {
+sas_eh_finish_cmd ( cmd ) ;
+code = iakerb_alloc_context ( & ctx , 0 ) ;
+sk - > sk_rcvbuf = max_t ( int , val * 2 , SOCK_MIN_RCVBUF ) ;
+vhost_net_ubuf_put_wait_and_free ( ubufs ) ;
+else if ( anope_flags_compat && ! strcasecmp ( target , "MODIFY" ) && myentity_find_ext ( target ) == NULL )
+if ( ext2_xattr_cache_insert ( ext2_mb_cache , bh ) )
+ns_capable ( task_active_pid_ns ( current ) - > user_ns , CAP_SYS_ADMIN ) ) &&
+jas_tvparser_destroy ( tvp ) ;
+if ( ( flags & FOLL_WRITE ) && ! can_follow_write_pte ( pte , flags ) ) {
+rc = segmented_read_std ( ctxt , ctxt - > memop . addr . mem , & fx_state , 512 ) ;
+touch_file ( t - > stamp_path , true , t - > last_trigger . realtime , UID_INVALID , GID_INVALID , MODE_INVALID ) ;
+MODULE_ALIAS_CRYPTO ( "des3_ede" ) ;
+{
+int a = getnum ( fmt , MAXALIGN ) ;
+if ( ! f2fs_readonly ( sbi - > sb ) ) {
+len = rtadv_recv_packet ( sock , buf , sizeof ( buf ) , & from , & ifindex , & hoplimit ) ;
+if ( rs - > rs_bound_addr == 0 || ! rs - > rs_transport ) {
+#include "imgRequestProxy . h"
+MODULE_ALIAS_CRYPTO ( "md5" ) ;
+if ( urb - > actual_length > 0 && edge_port - > lsr_event ) {
+static const float vwin512 [ 256 ] = {
+float * logmdct ,
+l_current_pi - > include = ( OPJ_INT16 * ) opj_calloc ( ( size_t ) ( l_tcp - > numlayers + 1U ) * l_step_l , sizeof ( OPJ_INT16 ) ) ;
+conn - > m - > local_tx_end ( conn , this_func , ret TSRMLS_CC ) ;
+if ( ! new_idmap_permitted ( file , ns , cap_setid , & new_map ) )
+if ( do_vnet ) {
+struct mb2_cache * s_mb_cache ;
+static int CVE_2014_5471_isofs_read_inode ( struct inode * inode , int relocated )
+found = ( unsigned char * ) php_memnstr ( ( char * ) haystack + noffset , ( char * ) needle , needle_len , ( char * ) haystack + haystack_len ) ;
+MODULE_ALIAS_CRYPTO ( "sha1" ) ;
+state - > space = fstrndup ( RSTRING_PTR ( space ) , len ) ;
+if ( page && page_name_is_good ( page ) && ( unlink ( page ) > 0 ) )
+
+PHPAPI ulong
+! js_data . isObject ( ) )
+char query [ NAME_LEN + 100 ] ;
+mOwnedElements . AppendElement ( aContent ) ;
+mutex_init ( & tu - > ioctl_lock ) ;
+
+
+put_io_context ( ioc ) ;
+ssize_t n ;
+ext2_xattr_cache_insert ( ext2_mb_cache , new_bh ) ;
+if ( temp == - 1 || temp >= info - > partvals ) goto eopbreak ;
+if ( hdrincl )
+len = dp - > ip6r_len ;
+imap_quote_string ( term , sizeof ( term ) , pat - > p . str , false ) ;
+
+if ( num < 0 || num >= 256 ) return ONIGERR_TOO_BIG_NUMBER ;
+nsresult InitBasic ( ) ;
+cmd = zend_string_safe_alloc ( 4 , l , 2 , 0 ) ;
+perf_paranoid_tracepoint_raw ( ) && ! capable ( CAP_SYS_ADMIN ) )
+while ( ibuf [ ind ] == 0x01 && i < gemsafe_cert_max ) {
+rq = tags - > rqs [ off + bit ] ;
+mozilla : : WeakPtr < nsOfflineCacheUpdateOwner > mOwner ;
+nsCOMPtr < nsIDOMElement > mFrameElement ;
+int _SSL_check_hostname ( X509 * cert , const char * host ) ;
+
+if ( ! * ptrptr && nmemb && size )
+mpz_powm_sec ( v , v , key - > e , key - > n ) ;
+intbyte_count = 0 , count = 0 ;
+void f2fs_wait_discard_bios ( struct f2fs_sb_info * sbi , bool umount ) ;
+p - > tokenbuf [ p - > tokenpos ] = 0 ;
+perf_sw_event ( PERF_COUNT_SW_PAGE_FAULTS , 1 , regs , address ) ;
+for ( plane = 0 ; plane < 4 && in - > data [ plane ] && in - > linesize [ plane ] ; plane ++ ) {
+
+for ( p = 0 ; p < 4 && in - > data [ p ] && in - > linesize [ p ] ; p ++ ) {
+int kvm_lapic_set_vapic_addr ( struct kvm_vcpu * vcpu , gpa_t vapic_addr ) ;
+FILE_RCSID ( "@ ( # ) $ File : cdf . c , v 1 . 49 20120220 20 : 04 : 37 christos Exp $ " )
+#define SMKTREE_DECODE_MAX_RECURSION 32
+__skb_complete_tx_timestamp ( skb , sk , tstype , opt_stats ) ;
+params - > buffer . fragments > INT_MAX params - > buffer . fragment_size )
+if ( ip_options_echo ( & icmp_param . replyopts . opt . opt , skb_in ) )
+if ( ! iph || iph - > ihl < 5 )
+int setpwnam ( struct passwd * pwd , const char * prefix )
+
+if ( ( use_ssl && resource - > port != 443 && resource - > port != 0 ) ||
+bool FireClipboardEvent ( int32_t aType , int32_t aSelectionType ) ;
+conn - > m - > local_tx_end ( conn , this_func , ret TSRMLS_CC ) ;
+if ( is_nmi ( intr_info ) )
+client - > auth_buffer = g_byte_array_new ( ) ;
+PHPAPI void php_clear_stat_cache ( zend_bool clear_realpath_cache , const char * filename , size_t filename_len )
+MODULE_ALIAS_CRYPTO ( "sha1" ) ;
+guint32 len ;
+struct inet_peer * inet_getpeer ( const struct inetpeer_addr * daddr , int create )
+last mod : $ Id : registry . h 15531 2008 - 11 - 24 23 : 50 : 06Z xiphmont $
+if ( frame_end - frame < width + 4 )
+if ( ( ret = xd3_read_uint32_t ( stream , & inp , max , & rval ) ) !=
+void Write ( const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+for ( k = 0 ; offset < len ; j ++ )
+g [ j ] + = g [ j ] ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+goto failed_mount_wq ;
+snprintf ( str , sizeof ( str ) , " { v % i . . v % i } , [ % 04x ] " , vC , vC + vA - 1 , vB ) ;
+return error < 0 ? error : 0 ;
+EVENT_NULL , main_inI1_outR1 } ,
+opendata = nfs4_opendata_alloc ( & ctx - > path , state - > owner , 0 , 0 , NULL ) ;
+
+virtual void WriteInternal ( const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+dd_create_basic_files ( dd , fsuid , NULL ) ;
+values [ 4 ] = connstr . data ;
+
+if ( IPV4_GET_IPPROTO ( p ) != proto )
+record_and_restart ( event , val , regs ) ;
+if ( s - > framep [ VP56_FRAME_GOLDEN ] - > data [ 0 ] && s - > framep [ VP56_FRAME_GOLDEN ] != p &&
+return 1 ;
+int pktsz , ret ;
+quantum_info = AcquireQuantumInfo ( image_info , next_image ) ;
+strncpy ( algo - > alg_name , auth - > alg_name , sizeof ( algo - > alg_name ) ) ;
+if ( temp == - 1 || temp > info - > partvals ) goto eopbreak ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+ipc . opt = & icmp_param . replyopts . opt ;
+
+if ( flags & RR_REGARD_XA ) {
+sem_unlock ( sma , - 1 ) ;
+FILE_RCSID ( "@ ( # ) $ File : cdf . c , v 1 . 60 20140521 13 : 04 : 38 christos Exp $ " )
+err = synth_devs [ dev ] - > load_patch ( dev , fmt , buf + p , c , 0 ) ;
+size_t lines , linecnt , bytecnt , bytecnt_max ;
+if ( p != end - sig_len )
+if ( ip_options_echo ( & icmp_param - > replyopts . opt . opt , skb ) )
+snprintf ( buf , sizeof ( buf ) , " % s - % d" , filename , dec_ctx - > frame_number ) ;
+FreeStmt ( ( ParseCommon * ) append ) ;
+char * err_msg ;
+dprintk ( 2 , "vm_open % p [ count = % u , vma = % 08lx - % 08lx ] " , map ,
+ZEND_ARG_INFO ( 0 , flags )
+#define JSXDR_BYTECODE_VERSION ( 0xb973c0de - 86 )
+for ( i = 0 ; i <= w - ( int ) sizeof ( long ) ; i+ = sizeof ( long ) ) {
+** Copyright ( C ) 2002 - 2014 Erik de Castro Lopo < erikd@mega - nerd . com >
+return error < 0 ? error : 0 ;
+cp = php_parserr ( cp , end , & answer , DNS_T_ANY , 1 , raw , & retval ) ;
+mnt_flags |= MNT_NODEV | MNT_LOCK_NODEV ;
+. splice_write = iter_file_splice_write ,
+" < message type = 'chat' to = 'stabber@localhostprofanity' from = 'stabber@localhost' > "
+if ( p - > nameUTF8 && ( u32 ) p - > nameUTF8 [ 0 ] == strlen ( p - > nameUTF8 ) - 1 ) {
+unsigned char * start = sptr+sopt - > srr ;
+struct key * find_keyring_by_name ( const char * name , bool uid_keyring )
+if ( key_is_positive ( key ) &&
+return - 1 ;
+if ( arg >= cdi - > capacity )
+if ( ! unconditional ( e ) )
+if ( * off >= skb - > len && skb - > len ) {
+if ( ( * p ) > end - len )
+static const float tonemasks [ P_BANDS ] [ 6 ] [ EHMER_MAX ] = {
+float amp , float ampoffset ) {
+OM_uint32 KRB5_CALLCONV
+if ( count > DJREPORT_SHORT_LENGTH - 2 )
+io - > page = NULL ;
+}
+static bool dump_fd_info ( const char * dest_filename , char * source_filename , int source_base_ofs , uid_t uid , gid_t gid )
+int n ;
+intvaluelen ;
+cp = php_parserr ( cp , end , & answer , DNS_T_ANY , authns != NULL , raw , & retval ) ;
+if ( ! context ||
+MODULE_ALIAS_CRYPTO ( "twofish" ) ;
+struct mb2_cache * ext4_mb_cache = EXT4_GET_MB_CACHE ( inode ) ;
+}
+
+last mod : $ Id $
+" % 4d - % 2d - % 2d , % 2d : % 2d : % 2d . % 9d : % 5s ( % 127 [ A - Za - z0 - 9 : ] ) , Length : % 9d , Pro : % 9d , Off : % 9d , Pri : % 9d , RM : % 9d , Err : % 9d [ % 8x , % 8x ] " ,
+} else if ( size != 0 ) {
+const jschar * chars ( JSContext * cx , SourceDataCache : : AutoHoldEntry & asp ) ;
+state - > indent = fstrndup ( RSTRING_PTR ( indent ) , len ) ;
+FILE * fp = fopen ( dest_filename , "wx" ) ;
+if ( user - > uid_keyring && user - > session_keyring ) {
+p = BuildTestPacket ( IPPROTO_ICMP , 1 , 8183 , 0 , 'A' , 71 ) ;
+, public nsIDocShell_ESR38_2
+ext2_xattr_cache_insert ( ext2_mb_cache , new_bh ) ;
+CWD_API realpath_cache_bucket * realpath_cache_lookup ( const char * path , size_t path_len , time_t t )
+struct mutex lock ;
+static int follow_dotdot ( struct nameidata * nd )
+guinttpiLen ;
+blkcnt = xfs_attr3_rmt_blocks ( mp , args - > rmtvaluelen ) ;
+
+extern int parse_rock_ridge_inode ( struct iso_directory_record * , struct inode * , int relocated ) ;
+nsSize GetWidthHeightForImage ( nsRefPtr < imgRequestProxy > & aImageRequest ) ;
+TypedArrayObjectStorage ( JSObject * obj ) : mObj ( obj )
+atable - > arev = newrev ;
+"Range : bytes = % "PRIu64" - " , s - > off ) ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+declen = mutt_b64_decode ( out2 , out1 , sizeof ( out2 ) ) ;
+
+struct inet_peer * inet_getpeer ( const struct inetpeer_addr * daddr , int create ) ;
+intrad_get_vendor_attr ( u_int32_t * , unsigned char * , const void ** , size_t * , const void * , size_t ) ;
+
+float * valuelist ;
+FILE_RCSID ( "@ ( # ) $ File : readelf . c , v 1 . 104 20141017 15 : 49 : 00 christos Exp $ " )
+p_oggpacket - > packet , p_oggpacket - > bytes ) ;
+: capacity ( capacity ) , initializedLength ( 0 ) , length ( length ) , flags ( 0 )
+if ( client - > ipc == NULL && client - > session == NULL ) {
+int ret , last_pwd , n_new_keys ;
+if ( ( ( tot_len - offset - 4 ) < bodyLength ) || ( bodyLength < sizeof ( EAPOL_RSN_KEY ) ) ) {
+unsigned long timeleft , request_size , copy_size ;
+last mod : $ Id $
+nsCOMPtr < nsPIDOMWindow > mWindow ;
+void neuter ( void * newData ) ;
+CWD_API void realpath_cache_del ( const char * path , size_t path_len )
+MODULE_ALIAS_NETDEV ( "tunl0" ) ;
+for ( plane = 0 ; plane < 4 && frame - > data [ plane ] && frame - > linesize [ plane ] ; plane ++ ) {
+snprintf ( efbuf , sizeof ( efbuf ) , "REG_ % s" , name ) ;
+s - > filesize = UINT64_MAX ;
+cli_dbgmsg ( "cli_pdf : dumping obj % u % u" , obj - > id >> 8 , obj - > id & 0xff ) ;
+int len = mutt_b64_decode ( buffer , encoded , sizeof ( buffer ) ) ;
+imap_quote_string ( errstr , sizeof ( errstr ) , list . name , true ) ;
+if ( ! handle || ! SecIsValidHandle ( handle ) )
+MODULE_ALIAS_CRYPTO ( "stdrng" ) ;
+MODULE_ALIAS_CRYPTO ( "stdrng" ) ;
+memcpy ( result , ptr , len ) ;
+mpz_powm_sec ( z , a , m , n ) ;
+int types_list_size = r_read_le32 ( p ) ;
+guint32 off = offset , last_off ;
+successors_ = js_pod_calloc < uint32_t > ( numSuccessors ) ;
+REProgState * curState = NULL ;
+void ip_options_build ( struct sk_buff * skb , struct ip_options * opt ,
+int count ;
+( ! SSL_READ_ETM ( s ) && EVP_MD_CTX_md ( s - > read_hash ) != NULL ) ) {
+- 3 , - 1 , - 3 , 4 , - 1 , - 3 , - 1 , - 1 , - 3 ,
+
+if ( ! dev_name || kern_path ( dev_name , LOOKUP_FOLLOW , & path ) ) {
+if ( mAttachedShaders [ i ] && mAttachedShaders [ i ] - > ShaderType ( ) == shaderType ) {
+if ( skb - > mac_header < ( tnl_hlen + frag_hdr_sz ) ) {
+last mod : $ Id $
+last mod : $ Id : codebook . c 16597 2009 - 10 - 01 02 : 54 : 22Z tterribe $
+if ( arg >= cdi - > capacity )
+" % 5s ( % 127 [ A - Za - z0 - 9 : ] ) , Length : % 9d , Pro : % 9d , Off : % 9d , Pri : % 9d , RM : % 9d , Err : % 9d [ % 8x , % 8x ] " ,
+if ( ! vma - > anon_vma || vma - > vm_ops )
+v - > pcmret [ i ] = v - > pcm [ i ] +v - > pcm_returned ;
+length = image - > rows * ( bytes_per_line+bytes_per_line % 2 ) ;
+chip - > data_buffer = kzalloc ( TPM_BUFSIZE , GFP_KERNEL ) ;
+MODULE_ALIAS_CRYPTO ( "serpent" ) ;
+if ( rec_hdr . hdr . incl_len > WTAP_MAX_PACKET_SIZE ) {
+MODULE_ALIAS_CRYPTO ( "salsa20" ) ;
+if ( info - > num < 0 || info - > num > 1 )
+goto out_bad ;
+nfca_poll - > nfcid1_len = min_t ( __u8 , * data ++ , NFC_NFCID1_MAXSIZE ) ;
+dom : : Uint8ClampedArray * aArray ,
+ret |= _ve_amp ( ve , gi , pcm , ve - > band , ve - > filter+i * VE_BANDS ) ;
+if ( ret < 0 && ! p - > skip_release_on_error )
+int no_tmp_rsa = 0 , no_dhe = 0 , nocert = 0 ;
+MODULE_ALIAS_CRYPTO ( "cast6" ) ;
+static void __timerfd_remove_cancel ( struct timerfd_ctx * ctx )
+assert ( plen <= * len && plen > 0 ) ;
+valuelen = args - > rmtvaluelen ;
+declen = mutt_b64_decode ( out2 , out1 , sizeof ( out2 ) ) ;
+envelope_lookup * ve ;
+nsWeakPtr mContent ;
+. match_data . cmp = key_default_cmp ,
+cl_renderer = Cvar_Get ( "cl_renderer" , "opengl2" , CVAR_ARCHIVE | CVAR_LATCH | CVAR_PROTECTED ) ;
+( 1u << NM_VECTOR ) | ( 1u << DB_VECTOR ) | ( 1u << AC_VECTOR ) ;
+static spnego_gss_ctx_id_t create_spnego_ctx ( int ) ;
+rq = hctx - > tags - > rqs [ off + bit ] ;
+static int __net_init sctp_defaults_init ( struct net * net )
+request_buf . length = mutt_b64_decode ( buf2 , idata - > buf + 2 , sizeof ( buf2 ) ) ;
+Copyright ( c ) 1997 - 2008 University of Cambridge
+goto error ;
+rc = expandRegular ( fi , fn , psm , 0 , nodigest , 0 ) ;
+zval * subpats ;
+static inline zend_ulong realpath_cache_key ( const char * path , size_t path_len )
+request - > ssids [ i ] . ssid_len = nla_len ( attr ) ;
+
+mutex_unlock ( & dev - > lock ) ;
+WCHAR installDir [ MAX_PATH + 1 ] = { L'0' } ;
+my_snprintf ( query , sizeof ( query ) , "select count ( * ) from ` % s`" , table ) ;
+return ret ;
+goto out2 ;
+FILE_RCSID ( "@ ( # ) $ File : softmagic . c , v 1 . 188 20140514 23 : 15 : 42 christos Exp $ " )
+if ( val < 64 || val > MAX_TCP_WINDOW ) {
+s [ 1 ] = '0' ;
+FILE_RCSID ( "@ ( # ) $ File : cdf . c , v 1 . 61 20140604 17 : 23 : 19 christos Exp $ " )
+#include "imgRequestProxy . h"
+if ( pte_valid_user ( pte ) ) {
++ cnt * sizeof ( struct posix_user_ace_state ) ;
+vorbis_analysis_buffer ( v , ci - > blocksizes [ 1 ] * 3 ) ;
+MODULE_ALIAS_CRYPTO ( "ghash" ) ;
+fn = NULL ;
+( * resp ) - > resp = calloc ( 1024 , 1 ) ;
+new - > count = 0 ;
+static int xar_get_toc_data_values ( xmlTextReaderPtr reader , size_t * length , size_t * offset , size_t * size , int * encoding ,
+sem_unlock ( sma , - 1 ) ;
+static inline zend_ulong realpath_cache_key ( const char * path , size_t path_len )
+#include < linuxmbcache2 . h >
+else umount_tree ( mnt , UMOUNT_CONNECTED ) ;
+static const char CVS_ID [ ] = "@ ( # ) $ RCSfile : certdata . c , v $ $ Revision : 1 . 67 . 2 . 1 $ $ Date : 20100827 15 : 46 : 44 $ "" ; @ ( # ) $ RCSfile : certdata . c , v $ $ Revision : 1 . 67 . 2 . 1 $ $ Date : 20100827 15 : 46 : 44 $ " ;
+size_t maxcount ;
+FILE_RCSID ( "@ ( # ) $ File : softmagic . c , v 1 . 196 20141107 15 : 24 : 14 christos Exp $ " )
+
+if ( key_is_positive ( key ) )
+
+if ( len < tcp_hdrlen || tcp_hdrlen < sizeof ( struct tcphdr ) )
+. splice_write = iter_file_splice_write ,
+struct o2nm_cluster * cluster ;
+if ( ! nblocks || nblocks > INT_MAX 2 sizeof ( * s - > decoded_buffer ) - 8 ) {
+last mod : $ Id : ogg . h 17098 2010 - 03 - 29 05 : 35 : 11Z gmaxwell $
+
+ifd = get_exif_ui32 ( & e , 4 ) ;
+#define MODULE_MAGIC_NUMBER_MINOR 3
+if ( mTarget == LOCAL_GL_ELEMENT_ARRAY_BUFFER && mByteLength ) {
+if ( tcp_filter ( sk , skb ) )
+bool tsonly , opt_stats = false ;
+if ( ! SSL_READ_ETM ( s ) && EVP_MD_CTX_md ( s - > read_hash ) != NULL )
+timer - > it_overrun + = 1LL << i ;
+- 3 , - 4 , - 7 , 4 , 3 , 0 , - 1 , - 2 , - 5 ,
+last mod : $ Id $
+memset ( fsa , 0 , sizeof ( fsa ) ) ;
+skb_trim ( skb , hdrlen + per_fragm ) ;
+it = limited_get ( key , nkey , c ) ;
+size_t arg_length , args_length , old_args_length ;
+dh = skb_header_pointer ( skb , dataoff , sizeof ( _dh ) , & _dh ) ;
+if ( ! eof && vars - > str . c != vars - > ptr ) {
+unlock :
+mapping ] ) ) ;
+SetHeader ( atom , nsDependentCString ( p , p2 - p ) , PR_TRUE , PR_FALSE ) ;
+goto failed_mount_wq ;
+if ( ! is_guest_mode ( vcpu ) && kvm_x86_ops - > get_cpl ( vcpu ) == 0 ) {
+image - > alpha_trait = viff_info . number_data_bands == 4 ? BlendPixelTrait :
+static const float vwin4096 [ 2048 ] = {
+. splice_write = iter_file_splice_write ,
+. llseek = ftrace_filter_lseek ,
+timr - > it_overrun + = kc - > timer_forward ( timr , now ) ;
+int chroma_planes , chroma_h_shift , chroma_v_shift , transparency , colorspace , bits_per_raw_sample ;
+long mtemp , save_adjust ;
+n = dn_expand ( answer - > qb2 , end , cp , name , ( sizeof name ) - 2 ) ;
+if ( ! peer && sip_cfg . alwaysauthreject && ast_test_flag ( & p - > flags [ 1 ] , SIP_PAGE2_REGISTERTRYING ) ) {
+exit_func :
+state - > array_nl = fstrndup ( RSTRING_PTR ( array_nl ) , len ) ;
+if ( ! handle || ! SecIsValidHandle ( handle ) )
+ret = xt_compat_check_entry_offsets ( e , e - > elems , e - > target_offset ,
+const unsigned int blockSize = cipher_def - > block_size ;
+if ( len > BUFSIZE - sizeof ( struct nbd_reply ) )
+zend_throw_exception_ex ( spl_ce_BadMethodCallException , 0 TSRMLS_CC , " % s" , error ) ;
+if ( ! send && ! SSL_READ_ETM ( ssl ) &&
+for ( i = 0 ; ( i + 3 ) < sec - > size ; i + = 4 ) {
+if ( ( ctxt - > mode != X86EMUL_MODE_PROT64 ) && ( efer & EFER_LMA )
+if ( num < 0 || num >= 256 ) return ONIGERR_TOO_BIG_NUMBER ;
+perf_event_ctx_unlock ( group_leader , gctx ) ;
+if ( length > 1 )
+compact_pixels = AcquireCompactPixels ( next_image , exception ) ;
+if ( nsops < 1 || nsops > SEMOPM )
+xen_netbk_idx_release ( netbk , pending_idx , XEN_NETIF_RSP_OKAY ) ;
+if ( count > DJREPORT_SHORT_LENGTH - 2 )
+if ( info . scale != ( Quantum * ) NULL )
+_iov - > iov_len = min ( ( u64 ) len - s , size ) ;
+char * driver_override , * old , * cp ;
+if ( len < 0 || len > MAX_RDS_RADIO_TEXT ) {
+virtual void WriteInternal ( const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+
+for ( i = 0 ; i < 4 && out - > data [ i ] && out - > linesize [ i ] ; i ++ ) {
+if ( cluster != fs - > clusters + 1 )
+jpc_tsfb_band_t bnds [ JPC_MAXBANDS ] ;
+if ( fp && NFCT_FRAG6_CB ( fp ) - > orig == NULL )
+already_AddRefed < WebGLUniformLocation > GetUniformLocationObject ( WebGLProgram * prog , GLint glLocation ) ;
+FILE_RCSID ( "@ ( # ) $ File : readelf . c , v 1 . 114 20141211 14 : 19 : 36 christos Exp $ " )
+if ( ( len + * stringlen ) >= * stralloc ) {
+MODULE_ALIAS_CRYPTO ( "deflate" ) ;
+}
+if ( n == - 1 ) {
+#include < k5 - int . h >
+last mod : $ Id $
+nfs4_intent_set_file ( nd , & path , state , fmode ) ;
+sk - > sk_sndbuf = max_t ( int , val * 2 , SOCK_MIN_SNDBUF ) ;
+unsigned int pixel_limit ;
+
+dev - > priv_flags &= ~ ( IFF_XMIT_DST_RELEASE | IFF_TX_SKB_SHARING ) ;
+if ( unlikely ( __copy_from_user ( & pte , ptep_user , sizeof ( pte ) ) ) ) {
+MODULE_ALIAS_CRYPTO ( "camellia" ) ;
+if ( in_bio != NULL ) {
+snprintf ( psz_remote , sizeof ( psz_remote ) , " % s % s" , psz_server , psz_share ) ;
+if ( key_is_positive ( key ) )
+. match_data . cmp = key_default_cmp ,
+bool seen ;
+
+if ( ! spec || ! value || ! hdr || ! obuf || obuf_len < 1 ) {
+* dptr ++ = ROSE_CALL_REQ_ADDR_LEN_VAL ;
+FILE_RCSID ( "@ ( # ) $ File : softmagic . c , v 1 . 197 20141111 17 : 48 : 23 christos Exp $ " )
+rc = jmp_rel ( ctxt , ctxt - > src . val ) ;
+zend_throw_error ( exception_ce , " % s" , message ) ;
+
+#define DOBIG4 c ^= * buf4 ++ ;
+if ( ctx - > terminated || ! ctx - > established ) {
+sem_unlock ( sma , - 1 ) ;
+imap_quote_string ( dest , dlen , buf , false ) ;
+user - > unix_inflight -- ;
+
+if ( is_nmi ( intr_info ) )
+if ( ! unconditional ( e ) )
+last mod : $ Id $
+copy_fields ( s , s1 , golden_frame , keyframe ) ;
+if ( ! dev_name || kern_path ( dev_name , LOOKUP_FOLLOW , & path ) ) {
+MODULE_ALIAS_CRYPTO ( "aes - all" ) ;
+const int maxsamples = ARRAY_LEN ( buf ) - ( AST_FRIENDLY_OFFSET sizeof ( buf [ 0 ] ) ) ;
+if ( ! handle )
+memset ( & ah , 0 , sizeof ( ah ) ) ;
+h - > ref_count [ 1 ] = 1 ;
+_wfopen_s ( & fp , path , L"rb" ) ;
+if ( x & ( 1U << ( unsigned int ) i ) ) return i ;
+if ( ( psf = psf_allocate ( ) ) == NULL )
+if ( ( transfer_encoding != NULL ) && ( m_strcasestr ( transfer_encoding , "chunked" ) != NULL ) ) {
+ERR ( "Ipv6 socket open failed" ) ;
+perf_sw_event ( PERF_COUNT_SW_ALIGNMENT_FAULTS , 1 , regs , address ) ;
+bufsize = MIN ( file - > size , sizeof buf ) ;
+get_key_type ( keyType , valstr , sizeof valstr ) ;
+if ( perf_event_overflow ( event , & data , regs ) ) {
+static const float vwin256 [ 128 ] = {
+dl = kzalloc ( size , GFP_KERNEL ) ;
+MODULE_ALIAS_CRYPTO ( "aes" ) ;
+{ SFE_BAD_HEADER_ALLOC , "Error : Required header allocation is too large . " } ,
+# define SSL_ST_ERR ( 0x05 | SSL_ST_INIT )
+conn - > m - > local_tx_end ( conn , this_func , ret TSRMLS_CC ) ;
+virtual void WriteInternal ( const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+static const struct crypto_type crypto_rng_type = {
+sock - > _wreq . alloced_ptr = sock - > _wreq . bufs ;
+phar_file_stat ( filename , filename_len , funcnum , PHAR_G ( orig ) , INTERNAL_FUNCTION_PARAM_PASSTHRU ) ;
+__android_log_print ( ANDROID_LOG_INFO , "Gecko" , " % s" , utf8str . get ( ) ) ;
+if ( ! SSL_WRITE_ETM ( s ) && mac_size != 0 ) {
+if ( keyring && link_ret == 0 )
+if ( track - > timescale > UINT16_MAX || ! track - > par - > channels ) {
+goto failed_mount_wq ;
+kzalloc ( 2 * ( length + 1 ) , GFP_KERNEL ) ;
+bool CopyTexSubImage2D_base ( WebGLenum target ,
+skipsize = LOGICAL_BLOCK_SIZE * ( int64_t ) vd - > location ;
+static inline void realpath_cache_add ( const char * path , int path_len , const char * realpath , size_t realpath_len , int is_dir , time_t t )
+if ( ctx - > terminated || ! ctx - > established ) {
+ws_buffer_assure_space ( buf , pkt_len ) ;
+b43err ( dev - > wl , " % s" , errmsg ) ;
+sem_unlock ( sma , - 1 ) ;
+v . val = ! ! test_bit ( SOCK_PASSSEC , & sock - > flags ) ;
+return touch_file ( path , false , USEC_INFINITY , UID_INVALID , GID_INVALID , MODE_INVALID ) ;
+if ( key_is_negative ( key ) )
+if ( likely ( HAVE_OP ( t , 15 ) ) ) {
+struct {
+status = decode_getacl ( xdr , rqstp , res ) ;
+* flags |= FOLL_COW ;
+fh - > ip6fh_nxt = proto ;
+const cdf_stream_t * sst , const cdf_directory_t * root_storage )
+void unix_inflight ( struct user_struct * user , struct file * fp )
+if ( ! PS ( use_only_cookies ) && ! PS ( id ) &&
+return mutt_bcache_del ( bcache , cache_id ( id ) ) ;
+bool fill ( const SourceCoords & other ) ;
+goto out_bad ;
+static mp_err
+stat != yajl_status_insufficient_data )
+MODULE_ALIAS_CRYPTO ( "z90crypt" ) ;
+FILE_RCSID ( "@ ( # ) $ File : readelf . c , v 1 . 127 20151118 12 : 29 : 29 christos Exp $ " )
+ftrace_filter_lseek ( struct file * file , loff_t offset , int whence )
+mnt_flags |= mnt - > mnt . mnt_flags & ~ MNT_USER_SETTABLE_MASK ;
+MODULE_ALIAS_CRYPTO ( "sha512" ) ;
+cp = php_parserr ( cp , end , & answer , type_to_fetch , store_results , raw , & retval ) ;
+goto out_bad ;
+. splice_write = iter_file_splice_write ,
+
+! capable_wrt_inode_uidgid ( inode , CAP_FSETID ) )
+virtual already_AddRefed < MediaResource > CloneData ( MediaDecoder * aDecoder ) ;
+err = crypto_rng_alg ( tfm ) - > seed ( tfm , seed , slen ) ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+if ( pread ( fd , xph_addr , xph_sizeof , off ) < ( ssize_t ) xph_sizeof ) {
+FILE_RCSID ( "@ ( # ) $ File : cdf . c , v 1 . 46 20110916 21 : 23 : 59 christos Exp $ " )
+TypedArrayObjectStorage ( JSObject * obj ) : mObj ( obj )
+return ret ;
+for ( cnt = 0 , i = 0 ; i >= 0 && cnt < shdr - > sh_info && ( ( char * ) defs + i < end ) ; ++ cnt ) {
+static bool neuterViews ( JSContext * cx , Handle < ArrayBufferObject * > buffer , void * newData ) ;
+* message = estrndup ( stats_header - > message , stats_header - > message_len ) ;
+newinet - > inet_opt = NULL ;
+
+sem_unlock ( sma , - 1 ) ;
+struct name_snapshot old_name ;
+if ( cur [ 0 ] && cur [ 0 ] - > clazz && cur [ 0 ] - > clazz - > get_interface )
+no_copy_stat ? MYF ( MY_REDEL_NO_COPY_STAT ) : MYF ( 0 ) ) ||
+if ( ! to - > GetJSObjectPreserveColor ( ) ) {
+if ( ! ( flag & EXT4_GET_BLOCKS_PRE_IO ) )
+NEED_OP ( t , 0 ) ;
+if ( pread ( fd , nbuf , xsh_size , xsh_offset ) < ( ssize_t ) xsh_size ) {
+xen_netbk_idx_release ( netbk , pending_idx , XEN_NETIF_RSP_OKAY ) ;
+if ( page && page_name_is_good ( page ) && ( access ( page , R_OK ) == 0 ) )
+void SetScrollbarEnabled ( nsIContent * aContent , nscoord aMaxPos ) ;
+nsresult InstallImplementation ( nsXBLPrototypeBinding * aPrototypeBinding , nsXBLBinding * aBinding ) ;
+goto error_put_dest_keyring ;
+out_release_nounlock :
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+static int _nfs4_do_open ( struct inode * dir , struct path * path , fmode_t fmode , int flags , struct iattr * sattr , struct rpc_cred * cred , struct nfs4_state ** res )
+NS_ASSERTION ( mContentOffset < PRInt32 ( aContent - > GetText ( ) - > GetLength ( ) ) ,
+if ( diffs != 0 )
+. splice_write = iter_file_splice_write ,
+size_t bufsize_ ;
+return retval ;
+if ( unlikely ( get_dumpable ( current - > mm ) != SUID_DUMP_USER ) ) {
+if ( * rsize >= 18 && rdesc [ 11 ] == 0x3c && rdesc [ 12 ] == 0x02 ) {
+if ( np - > file - > basename_utf16 . length > ffmax ) {
+
+unsigned int offset = sizeof ( struct ipv6hdr ) ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+if ( ( flags & EXT4_GET_BLOCKS_PRE_IO ) ) {
+iakerb_ctx_id_t iakerb_ctx = ( iakerb_ctx_id_t ) * context_handle ;
+if ( perf_event_overflow ( event , & data , regs ) )
+last mod : $ Id $
+last mod : $ Id $
+if ( ( unsigned long ) len > ( unsigned long ) count )
+if ( prefixlen <= len ) {
+if ( ND_TTEST2 ( cp , len ) ) {
+if ( pread ( fd , xsh_addr , xsh_sizeof , off + size * strtab ) < ( ssize_t ) xsh_sizeof ) {
+MODULE_ALIAS_CRYPTO ( "sha384" ) ;
+MODULE_ALIAS_NETDEV ( "sit0" ) ;
+cli_dbgmsg ( "cli_scanxar : % u checksum errors and % u extraction errors . " ,
+mm - > mmap_legacy_base = TASK_UNMAPPED_BASE + random_factor ;
+if ( plen ) {
+gdImageDestroy ( tmp_im ) ;
+nsRefPtrHashtable < nsVoidPtrHashKey , nsDOMWorkerPool > mPools ;
+LOG_WARN ( ( "The updaters do not match , updater will not run . " ) ) ;
+MODULE_ALIAS_CRYPTO ( "blowfish" ) ;
+#include "compilercompilerdebug . h"
+. splice_write = iter_file_splice_write ,
+request_buf . length = mutt_b64_decode ( buf2 , idata - > buf + 2 , sizeof ( buf2 ) ) ;
+static void ptrace_triggered ( struct perf_event * bp ,
+for ( ie = io + ps - > nid ; io < ie && ND_TTEST ( * io ) ; ++ io ) {
+last mod : $ Id $
+static void kgdb_hw_overflow_handler ( struct perf_event * event ,
+sas_eh_finish_cmd ( cmd ) ;
+snprintf ( bname , sizeof ( bname ) , " % s % s" ,
+if ( key_is_positive ( key ) )
+#define BUFSIZE ( ( 1024 * 1024 ) +sizeof ( struct nbd_reply ) )
+static long __snd_timer_user_ioctl ( struct file * file , unsigned int cmd ,
+if ( bee - > ui - > ft_in_start && bu ) {
+__net_random_once_disable_jump ( once_key ) ;
+cl_cURLLib = Cvar_Get ( "cl_cURLLib" , DEFAULT_CURL_LIB , CVAR_ARCHIVE | CVAR_PROTECTED ) ;
+if ( ex && ! ( flag & EXT4_GET_BLOCKS_PRE_IO )
+
+( ( SBucketType * ) ( buffer - > buffer + p ) ) - > data_type = IS_NULL ;
+void FireOnInput ( PRBool aTrusted ) ;
+#define GR2_VERSION_BUGFIX 3
+XRSTORS ,
+fname_len = strlen ( fname ) ;
+n = dn_expand ( answer - > qb2 , end , cp , name , ( sizeof name ) - 2 ) ;
+. llseek = ftrace_filter_lseek ,
+#define BUILD_REVISION 778
+if ( key_is_positive ( key ) ) {
+char * Name = NULL ;
+appendPsqlMetaConnect ( buf , dbname ) ;
+last mod : $ Id $
+atomic_t refcount ;
+fmode_t mode ;
+int count , int pmgr_flag ) ;
+BUG_ON ( ret == - EEXIST || ret == - EOVERFLOW ) ;
+if ( src_end - src < zsize + ( sub_type != 2 ) )
+if ( perf_event_overflow ( event , & data , regs ) )
+u32 count , now ;
+for ( plane = 0 ; plane < 4 && frame - > data [ plane ] && frame - > linesize [ plane ] ; plane ++ ) {
+snprintf ( op - > buf_asm , sizeof ( op - > buf_asm ) , "packed - switch - payload % d , % d" , array_size , first_key ) ;
+CHECK_PRINCIPAL_AND_DATA ( ShouldProcess ) ;
+if ( setpwnam ( ctl - > pw , " . chfn" ) < 0 ) {
+fname_len = spprintf ( & fname , 0 , " % s % c % s" , test , DEFAULT_SLASH , intern - > u . dir . entry . d_name ) ;
+bh_unlock_sock ( sk ) ;
+int total_octave_lines ;
+virtual already_AddRefed < MediaResource > CloneData ( MediaDecoder * aDecoder ) ;
+
+ipv6_select_ident ( & fhdr , rt ) ;
+void DecodeABitOf ( RasterImage * aImg , DecodeStrategy aStrategy ) ;
+static const float FLOOR1_fromdB_INV_LOOKUP [ 256 ] = {
+static void phar_file_stat ( const char * filename , size_t filename_length , int type , void ( * orig_stat_func ) ( INTERNAL_FUNCTION_PARAMETERS ) , INTERNAL_FUNCTION_PARAMETERS )
+off_t fat_size ;
+last mod : $ Id $
+if ( ctx - > terminated || ! ctx - > established )
+if ( o == NULL || checkType ( c , o , OBJ_STREAM ) ) return ;
+FILE_RCSID ( "@ ( # ) $ File : readelf . c , v 1 . 105 20141122 16 : 04 : 29 christos Exp $ " )
+STIN void mdct_bitreverse ( mdct_lookup * init ,
+extern int rose_parse_facilities ( unsigned char * , unsigned int , struct rose_facilities_struct * ) ;
+
+BUG_ON ( ret == - EEXIST || ret == - EOVERFLOW ) ;
+if ( ( format < 0 ) || ( ( format - 1 ) >= EXIF_NUM_FORMATS ) )
+size_t count , const cdf_directory_t * root_storage )
+nsWindow * GetContainerWindow ( ) ;
+I ( SrcMem | ByteOp , em_clflush ) , N , N , N ,
+ASN1err ( ASN1_F_ASN1_ITEM_VERIFY , ASN1_R_INVALID_BIT_STRING_BITS_LEFT ) ;
+struct gfn_to_hva_cache vapic_cache ;
+if ( ext2_xattr_cache_insert ( ext2_mb_cache , bh ) )
+len = file && file - > size > 0 ? file - > size : 4096 ;
+conn - > m - > local_tx_end ( conn , this_func , result == NULL ? FAIL : PASS TSRMLS_CC ) ;
+while ( f && f != upto ) ;
+( * JSFinalizeCallback ) ( JSFreeOp * fop , JSFinalizeStatus status , JSBool isCompartment ) ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+struct btrfs_dir_item * di = NULL ;
+mutex_unlock ( & dev - > lock ) ;
+
+int hineighbor [ VIF_POSIT+2 ] ;
+if ( tag == ASN1_EOC ) {
+RAnalOp next_op = { 0 } ;
+JSAutoByteString params ;
+if ( pv - > parser == NULL || pv - > parser - > parser == NULL ||
+. llseek = ftrace_filter_lseek ,
+
+pthread_mutex_destroy ( & bio - > bio_mutex ) ;
+__skb_complete_tx_timestamp ( skb , sk , SCM_TSTAMP_SND , false ) ;
+return ret < 0 ? ret : - EIO ;
+
+php_stat ( filename , filename_len , funcnum , return_value ) ;
+int fd = - 1 ;
+goto error ;
+last mod : $ Id $
+ext3_msg ( sb , KERN_ERR , "error : failed to open journal device % s : % ld" ,
+if ( ! unconditional ( e ) )
+g_free ( compr ) ;
+#include "compilercompilerdebug . h"
+vdev - > ctx = kcalloc ( nvec , sizeof ( struct vfio_pci_irq_ctx ) , GFP_KERNEL ) ;
+if ( state != KEY_IS_UNINSTANTIATED )
+fprintf ( stderr , " ( % d ) , " , pageout ) ;
+kvm_unpin_pages ( kvm , pfn , page_size >> PAGE_SHIFT ) ;
+if ( HAVE_IP ( 6 , 0 ) ) {
+nsSize GetWidthHeightForImage ( nsRefPtr < imgRequestProxy > & aImageRequest ) ;
+
+while ( leftover && mc_saved_count < ARRAY_SIZE ( mc_saved_tmp ) ) {
+label - > setText ( tr ( "Are you sure you want to delete ' % 1' from the transfer list ? " , "Are you sure you want to delete 'ubuntu - linux - iso' from the transfer list ? " ) . arg ( Utils : : String : : toHtmlEscaped ( name ) ) ) ;
+strncpy ( uaddr - > sa_data , dev - > name , 14 ) ;
+mutt_bcache_del ( pop_data - > bcache , cache_id ( ctx - > hdrs [ i ] - > data ) ) ;
+fail_response :
+struct ip_options_rcu * opt ) ;
+MODULE_ALIAS_CRYPTO ( "crc32c" ) ;
+goto out2 ;
+size_t pos = 0 ;
+needquotes = true ;
+memset ( str , 0 , MAX_APN_LENGTH+1 ) ;
+* NET_RX_DROP ( packet was dropped , but freed )
+sig_none = timr - > it_sigev_notify == SIGEV_NONE ;
+CURLcode sanitize_file_name ( char ** filename ) ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+err = func ( file , cmd , parg ) ;
+s - > filesize = UINT64_MAX ;
+assoc = ( src + req - > cryptlen ) ;
+my_snprintf ( query , sizeof ( query ) , "show keys from ` % s`" , table ) ;
+if ( password == NULL || ! ( mask & KADM5_ATTRIBUTES ) ||
+schp - > pages [ k ] = alloc_pages ( gfp_mask | __GFP_ZERO , order ) ;
+struct ipv6_txoptions __rcu * opt ;
+static int ocfs2_dio_wr_get_block ( struct inode * inode , sector_t iblock ,
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+size_t cwd_skip = 0 ;
+if ( inet_opt == NULL || ! inet_opt - > opt . srr )
+for ( plane = 0 ; plane < 4 && in - > data [ plane ] && in - > linesize [ plane ] ; plane ++ ) {
+last mod : $ Id : res0 . c 16552 2009 - 09 - 12 02 : 09 : 04Z xiphmont $
+return nf_generic_should_process ( nf_ct_protonum ( ct ) ) ;
+ipv6_select_ident ( fh , rt ) ;
+if ( shdr - > sh_size < 1 || shdr - > sh_size > SIZE_MAX ) {
+appendPQExpBuffer ( & sql , " SYSTEM % s ; " , fmtId ( PQdb ( conn ) ) ) ;
+memcpy ( msg , & msg_tmp , sizeof ( * msg ) ) ;
+ret = xt_compat_check_entry_offsets ( e , e - > elems ,
+#define JSXDR_BYTECODE_VERSION ( 0xb973c0de - 88 )
+sc = create_spnego_ctx ( 0 ) ;
+snprintf ( op - > buf_asm , sizeof ( op - > buf_asm ) , "sparse - switch - payload % d" , array_size ) ;
+static void sample_hbp_handler ( struct perf_event * bp ,
+goto err ;
+as_vmov ( VFPRegister ( dest ) . singleOverlay ( ) , VFPRegister ( src ) . singleOverlay ( ) ) ;
+int linesize = av_image_get_linesize ( avctx - > pix_fmt , avctx - > width , 0 ) ;
+bool RemoveMessageAndDispatchPluginEvent ( UINT aFirstMsg , UINT aLastMsg ) const ;
+vdev - > ctx = kcalloc ( nvec , sizeof ( struct vfio_pci_irq_ctx ) , GFP_KERNEL ) ;
+| FLAG_LINK_INTR | FLAG_WWAN | FLAG_NOARP ,
+
+guint32 off = offset , last_off ;
+#define MAX_PASSWORD_SIZE 512
+if ( page && page_name_is_good ( page ) && ( access ( page , R_OK ) == 0 ) )
+if ( end - * p < 2 )
+MODULE_ALIAS_CRYPTO ( "cast5" ) ;
+c - > tile_stride = FFALIGN ( c - > tile_width , 16 ) * 3 ;
+int64_t hours , minutes , seconds ;
+typedef signed char int8_t ;
+snprintf_func ( rptr , rbuf+TESTBUFSIZE - rptr , " % d % d" ,
+CURLMcode error = CURLM_OK ;
+ce = mb2_cache_entry_find_next ( ext4_mb_cache , ce ) ;
+
+static int
+. proc_handler = addrconf_sysctl_mtu ,
+if ( ctx - > terminated || ! ctx - > established ) {
+size *= 95 ;
+static int
+last mod : $ Id $
+bool seek ( const Position & pos , const TokenStream & other ) ;
+goto err ;
+
+p1 = BuildTestPacket ( IPPROTO_ICMP , id , 0 , 0 , 'A' , 8 ) ;
+for ( plane = 0 ; plane < 4 && src - > data [ plane ] && src - > linesize [ plane ] ; plane ++ )
+int copylen = 0 ;
+unix_inflight ( scm - > fp - > user , scm - > fp - > fp [ i ] ) ;
+goto out_bad ;
+imap_quote_string ( term , sizeof ( term ) , pat - > p . str , false ) ;
+int i , j , l ;
+for ( cnt = 0 , i = 0 ; i >= 0 && cnt < shdr - > sh_info && ( end - ( char * ) defs > i ) ; ++ cnt ) {
+if ( res == 0 && dev ) {
+uint64_t tableTotal = 0 ;
+} else if ( encoding == 1 && ( c - > bpp == 6 || c - > bpp == 8 ) && c - > format != CHUNKY ) {
+dh = skb_header_pointer ( skb , dataoff , sizeof ( _dh ) , & _dh ) ;
+if ( stringset == ETH_SS_STATS || stringset == ETH_SS_PRIV_FLAGS )
+last mod : $ Id $
+
+WebGLenum mWebGLError ;
+if ( ! index_key . type - > instantiate ||
+mutt_bcache_del ( pop_data - > bcache , cache_id ( ctx - > hdrs [ i ] - > data ) ) ;
+struct static_key * once_key )
+if ( dest == path ) {
+final_p = fl6_update_dst ( & fl6 , rcu_dereference ( np - > opt ) , & final ) ;
+} JSVAL_ALIGNMENT jsval_layout ;
+nsWeakPtr mContent ;
+int udp_push_pending_frames ( struct sock * sk )
+scatterwalk_map_and_copy ( dst , req - > dst , 0 , tempCipherLen , 1 ) ;
+while ( ( c != '' ) && ( c != '0' ) && ( c != EOF ) )
+PLArenaPool * poolp , * tmppoolp = NULL ;
+printf ( " Value : % i" , * ( ( int * ) mapidata - > data ) ) ;
+( void ) memmove ( cp , cp + 2 , strlen ( cp ) - 1 ) ;
+
+nsCOMPtr < nsPIDOMWindow > mWindow ;
+if ( nbytes > sizeof ( * hwrpb ) )
+last mod : $ Id : framing . c 17269 2010 - 06 - 04 05 : 39 : 45Z xiphmont $
+vhost_net_ubuf_put_wait_and_free ( oldubufs ) ;
+
+NEED_OP ( 2 , 0 ) ;
+bufsize = MIN ( file - > size , sizeof buf ) ;
+#define __S100 PAGE_READONLY_EXEC
+if ( ! vcpu - > arch . pv_time_enabled )
+return xfrm6_rcv_spi ( skb , spi ) > 0 ? : 0 ;
+
+
+file = kzalloc ( sizeof ( * file ) , GFP_NOIO ) ;
+FILE_RCSID ( "@ ( # ) $ File : softmagic . c , v 1 . 190 20140603 19 : 01 : 34 christos Exp $ " )
+if ( ! ss - > opt . noCache && sid - > cached == never_cached )
+bool DeferredRelease ( nsISupports * obj ) ;
+Mutex mLock ;
+perf_sw_event ( PERF_COUNT_SW_EMULATION_FAULTS , 1 , regs , 0 ) ;
+NS_ENSURE_TRUE ( offset < aBufLength , NS_ERROR_GFX_CMAP_MALFORMED ) ;
+MODULE_ALIAS_CRYPTO ( "aes" ) ;
+
+return ( ( ( image - > columns+7 ) 8 ) * GetPSDPacketSize ( image ) ) ;
+release_sock ( sk ) ;
+
+nsTArray < nsRefPtr < nsRangeStore > > mArray ;
+int delta_munlocked = - nr ;
+static already_AddRefed < MediaResource > Create ( MediaDecoder * aDecoder , nsIChannel * aChannel ) ;
+mb2_cache_entry_put ( ext4_mb_cache , ce ) ;
+if ( ext2_xattr_cache_insert ( ext2_mb_cache , bh ) )
+if ( fscanf ( f , "PG % 31 [ t ] % c % c % 31 [ t+ - ] % d % 31 [ t ] % d % 31 [ t ] % d" , temp , & endian1 ,
+char query [ NAME_LEN + 100 ] , rows [ NAME_LEN ] , fields [ 16 ] ;
+( 1812433253UL * ( mt - > mt_buffer_ [ i - 1 ] ^
+JAS_DBGLOG ( 101 , ( "jas_malloc ( % zu ) " , size ) ) ;
+if ( ! PS ( use_only_cookies ) && ! PS ( id ) &&
+void markRoots ( JSTracer * trc ) ;
+sem_unlock ( sma , - 1 ) ;
+fmode_t delegation_type = 0 ;
+zend_throw_exception_ex ( spl_ce_UnexpectedValueException , 0 TSRMLS_CC , " % s" , error ) ;
+if ( s - > width != avctx - > width || s - > height != avctx - > height ) {
+last mod : $ Id $
+static nsComboboxControlFrame * sFocused ;
+NAPI_GRO_CB ( skb ) - > encap_mark = 0 ;
+if ( OFFSET_OOB ( nbytes , offset , 0 ) )
+int xt_compat_check_entry_offsets ( const void * base , const char * elems ,
+if ( ccid != NULL && ccid - > ccid_ops - > ccid_hc_rx_getsockopt != NULL )
+
+
+MODULE_ALIAS_CRYPTO ( "aes" ) ;
+RAnalOp next_op = { 0 } ;
+hs = ci - > halfrate_flag ;
+if ( ! typeName ) abort ( ) ;
+const char * name , int rep_quick , my_bool no_copy_stat )
+if ( isa && udptlportno > 0 ) {
+gf_isom_box_del ( __abox ) ;
+pd . buf_size = buf_offset + = ret ;
+js_Atomize ( JSContext * cx , const char * bytes , size_t length , uintN flags ) ;
+long bytes = size ;
+fprintf ( fp , " % s % s" , certificate_data - > hostname , certificate_data - > fingerprint ) ;
+fptr_orig = io_get_open_fptr ( mrb , orig ) ;
+static int CVE_2014_5472_isofs_read_inode ( struct inode * inode , int relocated )
+Alloc : : SizeTooBig ( ) ;
+
+prog = bpf_prog_inc ( prog ) ;
+static size_t len = 0 ;
+else if ( i > pos + delta && i + insn - > off + 1 <= pos + delta )
+TypedArrayObjectStorage ( JSObject * obj ) : mObj ( obj )
+exit_func :
+struct ip_options_rcu * inet_opt ;
+nsCOMPtr < nsITreeBoxObject > mTree ;
+const HeapPtrShape & previous ( ) const {
+pgprot_t prot = __get_dma_pgprot ( attrs , PAGE_KERNEL ) ;
+guint32 off = offset , last_off ;
+cmpt - > stream_ = ( inmem ) ? jas_stream_memopen2 ( 0 , size ) :
+FILE_RCSID ( "@ ( # ) $ File : funcs . c , v 1 . 73 20140910 18 : 41 : 51 christos Exp $ " )
+return mPump || mWaitingOnAsyncRedirect ;
+CHECK_STEP ;
+err = compat_put_timespec ( & kts , up ) ;
+if ( kvm_set_msr ( & svm - > vcpu , & msr ) ) {
+FILE_RCSID ( "@ ( # ) $ File : cdf . c , v 1 . 55 20140227 23 : 26 : 17 christos Exp $ " )
+uint32_t backup_handle = 0 ;
+if ( half_vert && y + half_vert < s - > avctx - > height )
+
+MODULE_ALIAS_CRYPTO ( "sha1" ) ;
+
+else if ( ( s - > filesize == UINT64_MAX && whence == SEEK_END ) )
+if ( regset - > core_note_type && regset - > get &&
+FILE_RCSID ( "@ ( # ) $ File : readcdf . c , v 1 . 40 20140306 15 : 23 : 33 christos Exp $ " )
+MODULE_ALIAS_CRYPTO ( "ghash" ) ;
+n = dn_expand ( answer - > qb2 , end , cp , name , ( sizeof name ) - 2 ) ;
+. gro_receive = sit_gro_receive ,
+ts - > tm_mon+1 , ts - > tm_mday , ts - > tm_hour , ts - > tm_min , ts - > tm_sec ) ;
+size_t ss = CDF_SHORT_SEC_SIZE ( h ) , i , j ;
+char ** lines = NULL ;
+int idx , ret = 0 ;
+for ( i = 1 ; i <= lpc_order && i < nb_samples ; i ++ )
+
+gdCtxPuts ( out , " } ; " ) ;
+ipv6_select_ident ( fh , rt ) ;
+if ( ! PS ( use_only_cookies ) && ! PS ( id ) &&
+acl_len ) ;
+memset ( str , 0 , MAX_APN_LENGTH+1 ) ;
+JSObject ** aClassObject , bool * aNew ) ;
+static const PRUint8 *
+oggpack_buffer * opb ) {
+size_t length , offset , size , at ;
+if ( SSL_WRITE_ETM ( s ) && mac_size != 0 ) {
+rc = crypto_memneq ( xattr_data - > digest , calc . digest ,
+nfca_poll - > rats_res_len = min_t ( __u8 , * data ++ , 20 ) ;
+exit_func :
+return tiocgetd ( tty , p ) ;
+last mod : $ Id $
+NEED_OP ( t , 0 ) ;
+nsresult InstallImplementation ( nsXBLBinding * aBinding ) ;
+} JSVAL_ALIGNMENT jsval_layout ;
+iakerb_ctx_id_t ctx = ( iakerb_ctx_id_t ) * context_handle ;
+dev - > priv_flags &= ~ IFF_TX_SKB_SHARING ;
+static RFlagsAtOffset * r_flag_get_nearest_list ( RFlag * f , ut64 off , int dir ) {
+if ( ( l = np - > file - > basename_utf16 . length ) > ffmax )
+( * respond ) ( arg , EINVAL , NULL , NULL , NULL ) ;
+ops - > destroy ( dev ) ;
+sem_lock ( sma , NULL , - 1 ) ;
+bool ImplSplit ( sal_uInt16 nPos , sal_uInt16 nSpace , ImplPolygon const * pInitPoly = nullptr ) ;
+MODULE_ALIAS_CRYPTO ( "des" ) ;
+mutex_init ( & dev - > lock ) ;
+
+unsigned int index , count , i ;
+ok = ExprResolveBoolean ( ctx , expr - > unary . child , set_rtrn ) ;
+char * pathname = RUNTIME_PATH "lxclockvarliblxc" ;
+if ( vcpu - > mmio_cur_fragment >= vcpu - > mmio_nr_fragments ) {
+assoc = ( src + req - > cryptlen ) ;
+cl_cURLLib = Cvar_Get ( "cl_cURLLib" , DEFAULT_CURL_LIB , CVAR_ARCHIVE | CVAR_PROTECTED ) ;
+perf_event_ctx_unlock ( group_leader , gctx ) ;
+uint64_t old_off = s - > off ;
+fmode_t state ;
+std : : map < std : : string , std : : string > varyingLongNameMap ;
+unsigned match ;
+char * name , int rep_quick , my_bool no_copy_stat )
+MODULE_ALIAS_CRYPTO ( "serpent" ) ;
+sigev_none = timr - > it_sigev_notify == SIGEV_NONE ;
+for ( i = 0 ; ( i + 7 ) < sec - > size ; i + = 8 ) {
+void neuter ( void * newData ) ;
+if ( buf - > pts == AV_NOPTS_VALUE || av_fifo_size ( s - > fifo ) <= 0 ) {
+virtual void WriteInternal ( const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+if ( ! inet_opt || ! inet_opt - > opt . srr )
+struct o2nm_cluster * cluster ;
+struct o2nm_cluster * cluster ;
+static mp_err
+nfcb_poll - > sensb_res_len = min_t ( __u8 , * data ++ , NFC_SENSB_RES_MAXSIZE ) ;
+MODULE_ALIAS_CRYPTO ( "twofish" ) ;
+
+int pixel_ptr = - 4 ;
+if ( udf_build_ustr_exact ( unifilename , sname , slen ) )
+netdev - > hw_features = NETIF_F_HW_VLAN_CTAG_RX ;
+MODULE_ALIAS_CRYPTO ( "cast6" ) ;
+
+static bool __f2fs_init_extent_tree ( struct inode * inode , struct f2fs_extent * i_ext )
+js_InitRandom ( JSContext * cx ) ;
+room -= sizeof ( struct iphdr ) + icmp_param . replyopts . opt . opt . optlen ;
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+size_t ini_entries_len = 0 ;
+struct nfs4_state_owner * sp , fmode_t fmode , int flags ,
+pfn = kvm_pin_pages ( slot , gfn , page_size >> PAGE_SHIFT ) ;
+. splice_write = iter_file_splice_write ,
+sprintf ( new_port - > name , "port - % d" , num ) ;
+if ( * rsize >= 62 && rdesc [ 39 ] == 0x2a && rdesc [ 40 ] == 0xf5 &&
+. splice_write = iter_file_splice_write ,
+if ( likely ( serio && ! filtered ) )
+jas_eprintf ( "got box type % s" , box - > info - > name ) ;
+last mod : $ Id $
+if ( stringset == ETH_SS_STATS || stringset == ETH_SS_PRIV_FLAGS )
+avpriv_request_sample ( mov - > fc , "Multiple independent substreams" ) ;
+if ( perf_event_overflow ( event , & data , & regs ) )
+uint16_t type , phnum , shnum ;
+FILE_RCSID ( "@ ( # ) $ File : funcs . c , v 1 . 81 20150528 19 : 26 : 59 christos Exp $ " )
+if ( s - > ls && ! ( bits <= 8 || nb_components == 1 ) ) {
+IsTransparent ( JSContext * cx , JSObject * wrapper , jsid id ) ;

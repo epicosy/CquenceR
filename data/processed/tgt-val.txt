@@ -1,0 +1,446 @@
+__android_log_print(ANDROID_LOG_INFO , "Gecko" , " % s" , NS_ConvertUTF16toUTF8(aStr ) . get( ) ) ;
+mpz_powm_sec (v , v , key -> e , key -> n ) ;
+if (isa && udptlportno > 0 ) {
+MODULE_ALIAS_CRYPTO("blowfish" ) ;
+FILE_RCSID("@(# ) $ File : cdf . c , v 1 . 62 20140604 17 : 26 : 07 christos Exp $ " )
+
+RETURN_EMPTY_STRING( ) ;
+goto err ;
+sas_eh_finish_cmd(cmd ) ;
+const char * dbname ;
+bool DummyFramebufferOperation(const char * info ) ;
+size_t arg_length , args_length , old_args_length ;
+if (sec_attr == NULL || sec_attr_len ) {
+av_log(mxf -> fc , AV_LOG_TRACE , "could not resolve essence container data strong ref" ) ;
+dh = skb_header_pointer(skb , dataoff , sizeof(_dh ) , & _dh ) ;
+
+static bool __f2fs_init_extent_tree(struct inode * inode , struct f2fs_extent * i_ext )
+sc = create_spnego_ctx(1 ) ;
+ok = ExprResolveBoolean(ctx , expr -> unary . child , set_rtrn ) ;
+bits [ 0 ] = cpu_to_be64(sctx -> count [ 1 ] << 3 | sctx -> count [ 0 ] >> 61 ) ;
+int count , int pmgr_flag ) ;
+virtual void WriteInternal(const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+. splice_write = iter_file_splice_write ,
+ops -> destroy(dev ) ;
+int delta_munlocked = - nr ;
+FILE_RCSID("@(# ) $ File : cdf . c , v 1 . 64 20140724 19 : 35 : 39 christos Exp $ " )
+ret |= _ve_amp(ve , gi , pcm , ve -> band , ve -> filter + i * VE_BANDS ) ;
+php_pcre_match_impl(pce , subject , subject_len , return_value , subpats ,
+if ((l = np -> file -> basename_utf16 . length ) > ffmax )
+cl_cURLLib = Cvar_Get("cl_cURLLib" , DEFAULT_CURL_LIB , CVAR_ARCHIVE | CVAR_PROTECTED ) ;
+s -> filesize = UINT64_MAX ;
+s [ 1 ] = '0' ;
+rc = jmp_rel(ctxt , ctxt -> src . val ) ;
+. splice_write = iter_file_splice_write ,
+snprintf(charbuf , sizeof(charbuf ) , " % s_thumb_ % 03d" , rootname , index ) ;
+FILE_RCSID("@(# ) $ File : readelf . c , v 1 . 127 20151118 12 : 29 : 29 christos Exp $ " )
+buff [ MIN((size_t ) r , (sizeof buff ) - 1 ) ] = '0' ;
+if (np -> file -> basename_utf16 . length > ffmax ) {
+if ((use_ssl && resource -> port != 443 && resource -> port != 0 ) ||
+skcipher -> setkey = skcipher_setkey ;
+
+zend_throw_exception_ex(phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+data -> o_arg . fmode ) ;
+was called on block *
+int a = getnum(fmt , MAXALIGN ) ;
+touch_file(t -> stamp_path , true , USEC_INFINITY , UID_INVALID , GID_INVALID , MODE_INVALID ) ;
+while (ibuf [ ind ] == 0x01 && i < gemsafe_cert_max ) {
+last mod : $ Id $
+(1u << NM_VECTOR ) | (1u << DB_VECTOR ) | (1u << AC_VECTOR ) ;
+: capacity(capacity ) , initializedLength(0 ) , length(length ) , flags(0 )
+while (peek(s ) != ' > ' && ! eol(s ) && ! eof(s ) )
+nsCOMPtr < nsPIDOMWindow > mWindow ;
+FILE_RCSID("@(# ) $ File : cdf . c , v 1 . 60 20140521 13 : 04 : 38 christos Exp $ " )
+NS_CreateJSTimeoutHandler(nsGlobalWindow * aWindow ,
+cp = php_parserr(cp , end , & answer , DNS_T_ANY , authns != NULL , raw , & retval ) ;
+err = crypto_rng_alg(tfm ) -> seed(tfm , seed , slen ) ;
+return __load_segment_descriptor(ctxt , selector , seg , cpl , false , NULL ) ;
+
+err = compat_put_timeval( & ktv , up ) ;
+p = BuildTestPacket(IPPROTO_ICMP , 1 , 8183 , 0 , 'A' , 71 ) ;
+if (indev && indev -> ifa_list ) {
+int count ;
+NEED_OP(t , 0 ) ;
+
+return ret ;
+rc = jmp_rel(ctxt , ctxt -> src . val ) ;
+return 1 ;
+if ( ! to -> GetJSObjectPreserveColor( ) ) {
+if (body -> nested . part && body -> nested . part -> next && body -> nested . part -> next -> body . parameter -> value ) {
+ce = mb2_cache_entry_find_next(ext4_mb_cache , ce ) ;
+last mod : $ Id $
+uint16_t type , phnum , shnum ;
+if (key_is_negative(key ) )
+cgc . cmd [ 9 ] = cgc . buflen & 0xff ;
+mozilla : : WeakPtr < nsOfflineCacheUpdateOwner > mOwner ;
+longnum_head = 0 ;
+for (x = 0 ; x < (ssize_t ) number_pixels ; x + = 4 )
+gf_isom_box_del(__abox ) ;
+len = mutt_b64_decode(obuf , idata -> buf + 2 , sizeof(obuf ) ) ;
+TypedArrayObjectStorage(JSObject * obj ) : mObj(obj )
+goto err ;
+static bool dump_fd_info(const char * dest_filename , char * source_filename , int source_base_ofs , uid_t uid , gid_t gid )
+virtual void WriteInternal(const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ;
+MODULE_ALIAS_CRYPTO("camellia" ) ;
+. match_data . cmp = key_default_cmp ,
+ipv6_select_ident(fptr , (struct rt6_info * ) skb_dst(skb ) ) ;
+NS_ENSURE_TRUE(offset < aBufLength , NS_ERROR_GFX_CMAP_MALFORMED ) ;
+new_timer -> it_overrun = - 1LL ;
+if ( ! ssid_ie || ssid_ie -> len > IEEE80211_MAX_SSID_LEN )
+
+if(nad_find_attr(nad , 0 , - 1 , "type" , "valid" ) >= 0 && xhash_get(out -> states , rkey ) == (void * ) conn_INPROGRESS ) {
+if (res == 0 && dev ) {
+ASN1err(ASN1_F_ASN1_ITEM_VERIFY , ASN1_R_INVALID_BIT_STRING_BITS_LEFT ) ;
+while ((c != '' ) && (c != '0' ) && (c != EOF ) )
+last mod : $ Id $
+rc = segmented_read_std(ctxt , ctxt -> memop . addr . mem , & fx_state , 512 ) ;
+int copylen = 0 ;
+#define DOBIG4 c ^= * buf4 + + ;
+if (c -> mpeg4_studio_profile )
+return mutt_bcache_del(bcache , cache_id(id ) ) ;
+sem_unlock(sma , - 1 ) ;
+nfs4_intent_set_file(nd , & path , state , fmode ) ;
+void SetQuotes(PRBool aNotify ) ;
+nsresult InstallImplementation(nsXBLPrototypeBinding * aPrototypeBinding , nsXBLBinding * aBinding ) ;
+
+declen = mutt_b64_decode(out2 , out1 , sizeof(out2 ) ) ;
+ext2_xattr_cache_insert(ext2_mb_cache , new_bh ) ;
+last mod : $ Id $
+guint16 msdu_length , actual_octets ;
+if ((flags & FOLL_WRITE ) && ! can_follow_write_pte(pte , flags ) ) {
+guint32 off = offset , last_off ;
+. splice_write = iter_file_splice_write ,
+gdImageDestroy(tmp_im ) ;
+ws_buffer_assure_space(buf , pkt_len ) ;
+s -> icy_metaint = strtoull(p , NULL , 10 ) ;
+iakerb_ctx_id_t ctx = (iakerb_ctx_id_t ) * context_handle ;
+print_as("Notification setup not supported , won't be able to reconnect after failure" ) ;
+dsize + = svbranch . len + 1 ;
+FILE_RCSID("@(# ) $ File : readelf . c , v 1 . 116 20141216 23 : 18 : 40 christos Exp $ " )
+zval * subpats ;
+if (num < 0 || num >= 256 ) return ONIGERR_TOO_BIG_NUMBER ;
+char ** lines = NULL ;
+last mod : $ Id $
+| FLAG_LINK_INTR | FLAG_WWAN ,
+
+MODULE_ALIAS_CRYPTO("z90crypt" ) ;
+for (plane = 0 ; plane < 4 && frame -> data [ plane ] && frame -> linesize [ plane ] ; plane + + ) {
+last mod : $ Id $
+HKEY hkApp = nullptr ;
+struct name_snapshot old_name ;
+for (p = 0 ; p < 4 && in -> data [ p ] && in -> linesize [ p ] ; p + + ) {
+v -> pcmret [ i ] = v -> pcm [ i ] + v -> pcm_returned ;
+last mod : $ Id : os_types . h 17287 2010 - 06 - 10 13 : 42 : 06Z tterribe $
+ADVANCE_BLOCK( ) ;
+bufsize = MIN(file -> size , sizeof buf ) ;
+FILE_RCSID("@(# ) $ File : readelf . c , v 1 . 114 20141211 14 : 19 : 36 christos Exp $ " )
+acl_len ) ;
+nsTArray < nsRefPtr < nsRangeStore > > mArray ;
+if(j < loopmaxw )
+dom : : Uint8ClampedArray * aArray ,
+dh = skb_header_pointer(skb , dataoff , sizeof(_dh ) , & _dh ) ;
+if (ND_TTEST2(cp , len ) ) {
+map = bpf_map_inc(map , true ) ;
+last mod : $ Id $
+WebGLenum mWebGLError ;
+struct {
+size_t bytes , copied , len , cur_len ;
+fptr_orig = io_get_open_fptr(mrb , orig ) ;
+struct serial_icounter_struct icount = { } ;
+conn -> m -> local_tx_end(conn , this_func , result == NULL ? FAIL : PASS TSRMLS_CC ) ;
+unsigned int pixel_limit ;
+if (can_open_cached(data -> state , data -> o_arg . fmode , data -> o_arg . open_flags ) )
+values [ 4 ] = connstr . data ;
+if ( ! encoding && c -> palette_size && c -> bpp <= 8 && c -> format != CHUNKY ) {
+ip4h . ip_proto = proto ;
+
+mpz_powm_sec (v , v , key -> d , key -> n ) ;
+MODULE_ALIAS_CRYPTO("cast5" ) ;
+pthread_mutex_destroy( & bio -> bio_mutex ) ;
+struct name_snapshot old_name ;
+if (s && s >= filename ) {
+goto out ;
+} JSVAL_ALIGNMENT jsval_layout ;
+if ( ! spec || ! value || ! hdr || ! obuf || obuf_len < 1 ) {
+#include "compilercompilerdebug . h"
+perf_paranoid_tracepoint_raw( ) && ! capable(CAP_SYS_ADMIN ) )
+encode_share_access(xdr , arg -> fmode ) ;
+if (vdaux < 1 || vstart + vdaux < vstart ) {
+ext3_msg(sb , KERN_ERR , "error : invalid sb specification : % s" ,
+goto err ;
+kern_unmount(ns -> proc_mnt ) ;
+it = limited_get(key , nkey , c ) ;
+sem_unlock(sma , - 1 ) ;
+as_vmov(VFPRegister(dest ) . singleOverlay( ) , VFPRegister(src ) . singleOverlay( ) ) ;
+if (bee -> ui -> ft_in_start && bu ) {
+{
+if ( ! unconditional(e ) )
+static void ptrace_hbptriggered(struct perf_event * bp ,
+( ! SSL_READ_ETM(s ) && EVP_MD_CTX_md(s -> read_hash ) != NULL ) ) {
+skipsize = LOGICAL_BLOCK_SIZE * (int64_t ) vd -> location ;
+pfn = kvm_pin_pages(slot , gfn , page_size >> PAGE_SHIFT ) ;
+last mod : $ Id $
+uintdblocks = xfs_attr3_rmt_blocks(mp , valuelen ) ;
+if ( ! handle )
+last mod : $ Id $
+long bytes = size ;
+if (nsops < 1 || nsops > SEMOPM )
+if ( ! eof && vars -> str . c != vars -> ptr ) {
+conn -> m -> local_tx_end(conn , this_func , result == NULL ? FAIL : PASS TSRMLS_CC ) ;
+reset_globals( ) ;
+#endif
+MODULE_ALIAS_CRYPTO("md5" ) ;
+size_t cwd_skip = 0 ;
+int i , hasAdditionalBlocks ,
+if (OFFSET_OOB(nbytes , offset , 0 ) )
+goto out_bad ;
+out_release_nounlock :
+struct siginfo info = { } ;
+cmd = zend_string_safe_alloc(4 , l , 2 , 0 ) ;
+
+void imap_quote_string(char * dest , size_t dlen , const char * src , bool quote_backtick ) ;
+r = do_write_pids(fc -> pid , fc -> uid , f -> controller , f -> cgroup , f -> file , localbuf ) ;
+mutt_bcache_del(pop_data -> bcache , cache_id(ctx -> hdrs [ i ] -> data ) ) ;
+for (i = 0 ; i <= w - (int ) sizeof(long ) ; i + = sizeof(long ) ) {
+s -> filesize = UINT64_MAX ;
+perf_sw_event(PERF_COUNT_SW_PAGE_FAULTS , 1 , regs , address ) ;
+ext2_xattr_cache_insert(ext2_mb_cache , new_bh ) ;
+memset(str , 0 , MAX_APN_LENGTH + 1 ) ;
+if (track -> timescale > UINT16_MAX || ! track -> par -> channels ) {
+if (perf_event_overflow(event , & data , & regs ) )
+goto error ;
+if ( ! PS(use_only_cookies ) && ! PS(id ) &&
+struct mutex ioctl_lock ;
+guint32 len ;
+#include "nsIPKCS11 . h"
+if (caught_signal && child != (pid_t ) - 1 )
+int res = 0 ;
+JSAutoByteString params ;
+char group [ LONG_STRING ] = "" ;
+
+fmode_t state ;
+if (pv -> parser == NULL || pv -> parser -> parser == NULL ||
+nsWeakPtr mContent ;
+nfcb_poll - > attrib_res_len = min_t ( __u8 , * data ++ , 50 ) ;
+XPCWrappedNativeJSClass mJSClass ;
+__android_log_print ( ANDROID_LOG_INFO , "Gecko" , " % s" , NS_ConvertUTF16toUTF8 ( aStr ) . get ( ) ) ;
+eWOFF_warn_no_such_table = 0x4000
+if ( * value == 0 || value [ strlen ( value ) - 1 ] == ' , ' ) {
+size_t fname_len ;
+static struct fsnotify_group * inotify_new_group ( unsigned int max_events )
+FILE_RCSID ( "@ ( # ) $ File : readelf . c , v 1 . 143 20180609 16 : 00 : 06 christos Exp $ " )
+rc = jmp_rel ( ctxt , ctxt - > src . val ) ;
+conn - > m - > local_tx_end ( conn , this_func , result == NULL ? FAIL : PASS TSRMLS_CC ) ;
+goto out_bad ;
+if ( last_pic_structure != PICT_FRAME ) {
+dsize + = svbranch . len + 1 ;
+ModuleEntry ( JSContext * cx ) : mozilla : : Module ( ) , obj ( cx ) , thisObjectKey ( cx ) {
+if ( ( offsets [ 1 ] - offsets [ 0 ] < 0 ) || pcre_get_substring_list ( subject , offsets , count , & stringlist ) < 0 ) {
+mpz_powm_sec ( b , b , key - > e , key - > n ) ;
+void SetQuotes ( PRBool aNotify ) ;
+assert_se ( touch_file ( path , true , USEC_INFINITY , UID_INVALID , GID_INVALID , MODE_INVALID ) == 0 ) ;
+if ( sa && portno > 0 ) {
+mutex_unlock ( & dev - > lock ) ;
+return - EINVAL ;
+MODULE_ALIAS_CRYPTO ( "crc32c" ) ;
+size_t j , len = apdu . resp [ i+1 ] ;
+
+dom : : Uint8ClampedArray * aArray ,
+mutex_unlock ( & dev - > lock ) ;
+ip4h . ip_proto = proto ;
+sctp_add_cmd_sf ( commands , SCTP_CMD_SET_ASOC , SCTP_ASOC ( new_asoc ) ) ;
+static struct mount * last_dest , * first_source , * last_source , * dest_master ;
+if ( skb - > mac_header < ( tnl_hlen + frag_hdr_sz ) ) {
+while ( isdigit ( ( unsigned char ) * s ) && ( ptmp != ( tmp + sizeof ( tmp ) - 1 ) ) )
+if ( ( skb_mac_header ( skb ) < skb - > head + frag_hdr_sz ) &&
+void ResetDirectionSetByTextNode ( nsTextNode * aTextNode , bool aNullParent ) ;
+static inline realpath_cache_bucket * realpath_cache_find ( const char * path , size_t path_len , time_t t )
+if ( hdrincl )
+cl_renderer = Cvar_Get ( "cl_renderer" , "opengl1" , CVAR_ARCHIVE | CVAR_LATCH | CVAR_PROTECTED ) ;
+if ( shdr - > sh_size < 1 || shdr - > sh_size > SIZE_MAX ) {
+struct dump_dir * dd = dd_create ( path , g_settings_privatereports ? 0 : client_uid , DEFAULT_DUMP_DIR_MODE ) ;
+if ( h0 - > cur_pic_ptr - > tf . owner == h0 - > avctx ) {
+} JSVAL_ALIGNMENT jsval_layout ;
+bitmap_zero ( ioapic - > rtc_status . dest_map . map , KVM_MAX_VCPU_ID ) ;
+if ( ! mp - > ports && ! mp - > mglist && mp - > timer_armed &&
+extern struct key * find_keyring_by_name ( const char * name , bool uid_keyring ) ;
+
+kvm_iommu_put_pages ( kvm , slot - > base_gfn , gfn - slot - > base_gfn ) ;
+
+EVENT_NULL , aggr_inI1_outR1 } ,
+buff [ MIN ( ( size_t ) r , ( sizeof buff ) - 1 ) ] = '0' ;
+iakerb_gss_import_sec_context ,
+NS_CreateJSTimeoutHandler ( nsGlobalWindow * aWindow ,
+void * const sys_call_table [ __NR_syscalls ] __aligned ( 4096 ) = {
+static void ptrace_hbptriggered ( struct perf_event * bp ,
+
+bool growPendingArray ( JSContext * cx ) ;
+if ( so == & slirp - > udb || so - > so_lport != uh - > uh_sport ||
+while ( ( i < to_read ) && ( tmpName [ i ] != 0 ) ) {
+* rowp ++ = * -- stackp & mColorMask ;
+if ( ! gsasl_server_support_p ( ctx - > gsasl_ctx , mech ) || ( ctx - > cb ) ( sx_sasl_cb_CHECK_MECH , ( void * ) mech , NULL , s , ctx - > cbarg ) != sx_sasl_ret_OK ) {
+if ( key_is_positive ( key ) )
+ret = xt_compat_check_entry_offsets ( e , e - > elems ,
+zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
+if ( be32_to_cpu ( btree [ blk - > index ] . hashval ) == lasthash )
+int undos = 0 , alter = 0 , max , locknum ;
+cgc . cmd [ 9 ] = cgc . buflen & 0xff ;
+for ( pad = ( w % 4 ) ? ( 4 - w % 4 ) : 0 ; pad > 0 ; pad -- )
+. splice_write = iter_file_splice_write ,
+* rowp ++ = suffix [ code ] & mColorMask ;
+if ( pskb_expand_head ( skb_out , 0 , size - skb_out - > len , GFP_ATOMIC ) < 0 ) {
+while ( * tail ) tail = & ( * tail ) - > next ;
+if ( buf_size < 26 ) {
+pgprot_t prot = __get_dma_pgprot ( attrs , PAGE_KERNEL ) ;
+if ( key - > state != KEY_IS_UNINSTANTIATED ) {
+
+
+copy_flags |= CL_SHARED_TO_SLAVE | CL_UNPRIVILEGED ;
+ldblk+1 , sizeof ( * BImgBuff ) ) ;
+for ( i = 0 ; i <= w - ( int ) sizeof ( long ) ; i+ = sizeof ( long ) ) {
+skipsize = LOGICAL_BLOCK_SIZE * ( int64_t ) vd - > location ;
+case EXIT_REASON_INVEPT : case EXIT_REASON_INVVPID :
+ipv6_select_ident ( fptr , ( struct rt6_info * ) skb_dst ( skb ) ) ;
+FILE_RCSID ( "@ ( # ) $ File : cdf . c , v 1 . 64 20140724 19 : 35 : 39 christos Exp $ " )
+return ret_value ;
+size_t nchars , idstrlength , gsoplength , vlength , vsharplength , curlen ;
+Copyright ( c ) 2009 , 2016 , MariaDB
+if ( c - > mpeg4_studio_profile )
+ADVANCE_BLOCK ( ) ;
+MODULE_ALIAS_CRYPTO ( "ccm ( aes ) " ) ;
+f = xfmkstemp ( & tmpname , NULL , "test" ) ;
+SECOidTag hashid ;
+skcipher - > setkey = skcipher_setkey ;
+
+goto out_bad ;
+ext3_msg ( sb , KERN_ERR , "error : invalid sb specification : % s" ,
+last mod : $ Id $
+hrtimer_try_to_cancel ( & stime - > hrt ) ;
+mask = ( JAS_CAST ( uint_fast32_t , 1 ) << numbps ) - 1 ;
+OM_uint32 KRB5_CALLCONV
+| FLAG_LINK_INTR | FLAG_WWAN ,
+
+
+last mod : $ Id $
+int ipc_rcu_getref ( void * ptr ) ;
+int res = 0 ;
+mpz_powm_sec ( r , key - > g , k , key - > p ) ;
+Packet * p = BuildTestPacket ( IPPROTO_ICMP , i , 0 , 1 , 'A' + i , 16 ) ;
+memcpy ( m , name , nlen + 1 ) ;
+if ( ( strlen ( ptr ) > 2 ) && ( * ++ ptr == '"' ) && ( strchr ( & ptr [ 1 ] , '"' ) != NULL ) ) {
+CKM_INVALID_MECHANISM , UNSUPPORTED_CERT_EXTENSION ) ,
+ThrowReaderException ( ResourceLimitError , "ImproperImageHeader" ) ;
+print_as ( "Notification setup not supported , won't be able to reconnect after failure" ) ;
+overrun = timer_overrun_to_int ( timr , 0 ) ;
+mc - > id = idr_alloc ( & multicast_idr , NULL , 0 , 0 , GFP_KERNEL ) ;
+rc = jmp_rel ( ctxt , ctxt - > src . val ) ;
+if ( body - > nested . part && body - > nested . part - > next && body - > nested . part - > next - > body . parameter - > value ) {
+if ( newIndex < newLen )
+#include "compilercompilerdebug . h"
+struct ip_options_rcu * opt ;
+blocks_ = js_pod_calloc < IonBlockCounts > ( numBlocks ) ;
+name_rmt - > valuelen = cpu_to_be32 ( args - > rmtvaluelen ) ;
+ret = copy_to_user ( uattr , attr , attr - > size ) ;
+was called on block *
+#include < linuxmbcache2 . h >
+
+goto out_bad ;
+kern_unmount ( ns - > proc_mnt ) ;
+JSObject ** aClassObject , bool * aNew ) ;
+snprintf_func ( ecmd , TESTBUFSIZE , " % s % s - f % s % s % s % s % s % s % s" ,
+s - > filesize = UINT64_MAX ;
+if ( ! npages || base_gfn != old . base_gfn ) {
+if ( ! ssid_ie || ssid_ie - > len > IEEE80211_MAX_SSID_LEN )
+SKB_EXT_ERR ( skb ) - > opt_stats )
+if ( i + bs > ( int ) rec - > length )
+return kvm_vcpu_has_lapic ( vcpu ) && vcpu - > arch . apic - > pending_events ;
+MODULE_ALIAS_CRYPTO ( "sha1" ) ;
+struct mutex ioctl_lock ;
+void imap_quote_string ( char * dest , size_t dlen , const char * src , bool quote_backtick ) ;
+take_dentry_name_snapshot ( & old_name , old_dentry ) ;
+MODULE_ALIAS_CRYPTO ( "cast5" ) ;
+fname_len = Z_STRLEN_P ( value ) ;
+goto loser ;
+band - > prec = av_calloc ( reslevel - > num_precincts_x *
+if ( eindex < 0 || eindex >= MAX_EVENTS ) {
+. match_preparse = dns_resolver_match_preparse ,
+! js_data . isObject ( ) )
+print_bpf_insn ( env , insn ) ;
+
+size_t newpos ;
+: lastBinding ( NULL ) , nargs ( 0 ) , nvars ( 0 ) , nupvars ( 0 ) , hasDup_ ( false )
+nickname = NULL ;
+while ( s [ l ] && l < len ) {
+size_t ffmax , parent_len ;
+goto err ;
+return ret ;
+last mod : $ Id $
+return ntohl ( daddr - > a4 + saddr - > a4 ) ;
+while ( isdigit ( ( unsigned char ) * s ) && ( ptmp != ( tmp + sizeof ( tmp ) - 1 ) ) )
+
+% SetImageProperty ( ) .
+
+p - > flags |= mrb_obj_ptr ( self ) - > flags & MRB_FLAG_IS_FROZEN ;
+encode_share_access ( xdr , arg - > fmode ) ;
+PHPAPI void php_stat ( const char * filename , size_t filename_length , int type , zval * return_value )
+scatterwalk_map_and_copy ( dst , req - > dst , 0 , tempCipherLen , 1 ) ;
+if ( client - > type == USER_CLIENT && client - > data . user . fifo )
+u64 event_id = event - > attr . config ;
+unsigned int index , count , i ;
+bool DummyFramebufferOperation ( const char * info ) ;
+std : : vector < TBuiltInFunction > mFunctions ;
+
+struct serial_icounter_struct icount = { } ;
+type == NT_GNU_BUILD_ID && ( descsz >= 4 && descsz <= 20 ) ) {
+unix_notinflight ( scm - > fp - > user , scm - > fp - > fp [ i ] ) ;
+
+sbi - > s_mb_cache = ext4_xattr_create_cache ( ) ;
+if ( attr >= 0 && xhash_get ( in - > states , rkey ) == ( void * ) conn_INPROGRESS ) {
+float * qA , float * qB ) {
+
+last mod : $ Id $
+#include "nsIPKCS11 . h"
+
+if ( ! list_empty ( & asoc - > asocs ) ) {
+const char * dbname ;
+if ( ss - > ssl3 . hs . ws != wait_cert_verify ) {
+if ( ( psf = psf_allocate ( ) ) == NULL )
+remaining = tvb_reported_length_remaining ( tvb , offset ) ;
+fname_len = strlen ( fname ) ;
+last mod : $ Id $
+goto error ;
+! change_apphead ? "" :
+if ( src_end - src < zsize + ( sub_type != 2 ) )
+last mod : $ Id : bitrate . h 13293 2007 - 07 - 24 00 : 09 : 47Z xiphmont $
+nanojit : : LIns * args [ ] , bool rooted ) ;
+eprintf ( "DWARF : Unexpected pointer size : % u" , ( unsigned ) hdr - > pointer_size ) ;
+p = cmd [ 0 ] ? find_eoq ( cmd + 1 ) : NULL ;
+if ( ( ! cpu_has_feature ( CPU_FTR_TM ) ) || ( tsk != current ) )
+
+if ( ! mp - > ports && ! mp - > mglist && mp - > timer_armed &&
+if ( stringset == ETH_SS_STATS || stringset == ETH_SS_PRIV_FLAGS )
+ogg_packet * op ) {
+MODULE_ALIAS_CRYPTO ( "ghash" ) ;
+. splice_write = iter_file_splice_write ,
+if ( s && s >= filename ) {
+void doRemoveChild ( bool aNotify ) ;
+
+if ( fchmod ( fileno ( fp ) , 0666 & ~ curumsk ) < 0 ) {
+DBG_RETURN ( ret ) ;
+dh = skb_header_pointer ( skb , dataoff , sizeof ( _dh ) , & _dh ) ;
+struct page * page ;
+MODULE_ALIAS_CRYPTO ( "aes" ) ;
+
+struct ip_options_rcu __rcu * inet_opt ;
+} ;
+strncpy ( hid - > name , req - > name , sizeof ( req - > name ) - 1 ) ;
+nfs4_close_sync ( path , state , fmode & ( FMODE_READ | FMODE_WRITE ) ) ;
+if ( peer != NULL )
+
+snprintf ( charbuf , sizeof ( charbuf ) , " % s_thumb_ % 03d" , rootname , index ) ;
+data - > o_arg . fmode ) ;
+
+
+
+perf_sw_event ( PERF_COUNT_SW_EMULATION_FAULTS , 1 , regs , address ) ;
+f2fs_wait_discard_bios ( sbi , false ) ;
