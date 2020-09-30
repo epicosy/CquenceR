@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from pathlib import Path
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import List, Union
 
 
@@ -59,3 +59,33 @@ class Configuration:
 
     def validate(self):
         return self.root.exists() and self.data_paths.validate()
+
+
+@dataclass
+class Stats:
+    total_patches: int
+    total_tests: int
+    comp_time: float = 0
+    pos_tests_time: float = 0
+    neg_tests_time: float = 0
+    success_comp: int = 0
+    comp_attempts: int = 0
+    fixes: List[str] = field(default_factory=lambda: [])
+    patches_sizes: List[int] = field(default_factory=lambda: [])
+    pos_tests_exec: int = 0
+    neg_tests_exec: int = 0
+
+    def success_ratio(self):
+        return self.success_comp / self.comp_attempts
+
+    def average_comp_time(self):
+        return self.comp_time / self.comp_attempts
+
+    def tests_time(self):
+        return self.pos_tests_time + self.neg_tests_time
+
+    def average_tests_time(self):
+        return self.tests_time() / self.total_tests
+
+    def average_patch_size(self):
+        return round(sum(self.patches_sizes) / self.total_patches)

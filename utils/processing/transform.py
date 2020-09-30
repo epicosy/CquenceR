@@ -65,8 +65,6 @@ def truncate(source: str, limit: int) -> Union[str, None]:
 def tokenizer(code):
     tokenized: List[str] = []
 
-    # Remove comments
-    code = remove_comments(code)
     # code = codecs.getdecoder("unicode_escape")(code)[0]
     # Remove newlines & tabs
     code = re.sub('(\n)|(\\\\n)|(\\\\)|(\\t)|(/)|(\\r)', '', code)
@@ -123,7 +121,8 @@ def tokenize_vuln(snippet: List[str], vuln_line: int):
 
     for i, line in enumerate(snippet):
         if i+1 == vuln_line:
-            source_hunk.append("TOKENIZER_START_VULN " + line.replace('-', ' ', 1).strip() + "TOKENIZER_END_VULN ")
+            print(line)
+            source_hunk.append("TOKENIZER_START_VULN " + line.strip() + "TOKENIZER_END_VULN ")
         else:
             source_hunk.append(line.strip() + " ")
 

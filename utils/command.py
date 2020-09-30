@@ -2,6 +2,8 @@
 
 import subprocess
 import sys
+import time
+
 
 from pathlib import Path
 from typing import Tuple, Union, AnyStr, List
@@ -31,7 +33,7 @@ class Command(object):
                  command: Union[str, List],
                  cwd: str = None,
                  file: Path = None,
-                 exit_err: bool = False) -> Tuple[Union[str, None], Union[str, None]]:
+                 exit_err: bool = False) -> Tuple[Union[str, None], Union[str, None], float]:
 
         # based on https://stackoverflow.com/a/28319191
         with subprocess.Popen(args=command,
@@ -39,14 +41,14 @@ class Command(object):
                               stdout=subprocess.PIPE,
                               stderr=subprocess.PIPE,
                               cwd=cwd) as proc:
-
+            exec_time = time.time()
             out, err = self._exec(proc, file=file if file else self.log_file)
+            exec_time = time.time() - exec_time
 
             if exit_err and err:
-                print(err, file=sys.stderr)
                 exit(proc.returncode)
 
-            return out, err
+            return out, err, exec_time
 
     def _exec(self, proc: subprocess.Popen, file: Path = None) -> Tuple[str, Union[str, None]]:
         out = []
@@ -64,13 +66,16 @@ class Command(object):
                 self.log_file = file
                 self.log(decoded)
                 self.log_file = tmp
-        proc.wait(timeout=5)
+        proc.wait(timeout=1)
         if proc.returncode and proc.returncode != 0:
             proc.kill()
             err = proc.stderr.read().decode()
 
+            if not err:
+                err = f"Return code: {proc.returncode}"
+
             if self.verbose:
-                print(err)
+                print(err, file=sys.stderr)
 
             if file and err:
                 tmp = self.log_file

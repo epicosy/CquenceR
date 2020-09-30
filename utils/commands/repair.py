@@ -2,16 +2,17 @@
 
 from pathlib import Path
 from typing import NoReturn, List
-import time
 
 from utils.command import Command
+from utils.patch import Patch, Test
 from utils.processing.transform import tokenize_vuln, truncate
-from processing.post.generate_patches import apply_predictions
+from processing.post.generate_patches import predictions_to_patches
+from utils.results import Results
 
 
 class Repair(Command):
     def __init__(self, working_dir: str, src_path: str, vuln_line: int, compile_script: str, test_script: str,
-                 pos_tests: int, neg_tests: int, seed: int = 0, beam_size: int = None, **kwargs):
+                 pos_tests: int, neg_tests: int, seed: int = 0, beam_size: int = None, cont: bool = False, **kwargs):
         super().__init__(**kwargs)
         self.working_dir = Path(working_dir)
         self.source = self.working_dir / Path(src_path)
@@ -22,11 +23,17 @@ class Repair(Command):
         self.compile_script = compile_script
         self.test_script = test_script
         self.root = self.configs.data_paths.root
-        self.model_path = self.configs.data_paths.model / Path('final-model_step_1000.pt')
+        self.model_path = self.configs.data_paths.model / Path('final-model_step_2000.pt')
         self.out_path = self.configs.data_paths.root
         self.limit = self.configs.trunc_limit
-        self.beam = beam_size if beam_size else self.configs.onmt_args.translate['beam_size']
-        print(self.working_dir.name)
+        self.cont = cont
+        self.beam = self.configs.onmt_args.translate['beam_size']
+
+        if beam_size:
+            self.beam = beam_size
+            self.configs.onmt_args.translate['beam_size'] = self.beam
+            self.configs.onmt_args.translate['n_best'] = self.beam
+
         self.temp_path = self.configs.temp_path / Path(f"{self.working_dir.name}_{seed}")
         self.temp_path.mkdir()
 
@@ -41,56 +48,27 @@ class Repair(Command):
 
         # Generate predictions
         predictions = self._predict(pp_source)
+
         # Post Process
         self._postprocess()
 
         # Generate patches
         patches = self._patch(predictions)
 
-        # check syntax gcc main.c -fsyntax-only
-        # The technically best way to do this is to simply compile each file.
-        # Setting up all those compiles is either easy (because you have the build scripts) or will be
-        # h--- if you don't have them, and the difference may drive your choice of solution.
-        # For C, you pretty much need to run them through a compiler with the preprocessor enabled.
-        # If you don't do that, the typical C code containg macros and preprocessor conditionals won't be parsable at all.
-        # Compile
-        compilation_results = {'success': [], 'fail': []}
-        elapsed = 0
-        fix = None
-
-        for patch in patches:
-            start = time.time()
-            if self._compile(patch):
-                end = time.time()
-                elapsed += (end - start)
-                compilation_results['success'].append(patch.parent.name)
-                # Pos Test
-                passed = self._test([f"p{pt}" for pt in range(1, self.pos_tests+1)])
-                if not passed:
-                    continue
-                # Neg Test
-                passed = self._test([f"n{nt}" for nt in range(1, self.neg_tests+1)])
-                if not passed:
-                    continue
-                else:
-                    fix = patch.parent.name
-                    break
-            else:
-                compilation_results['fail'].append(patch.parent.name)
-
-        print(f"Compilation success ratio: {len(compilation_results['success'])/len(compilation_results['success']+compilation_results['fail'])}")
-        print(f"Compilation time elapsed: {elapsed}")
-        if fix:
-            print(f"Patch found: {fix}.")
-        else:
-            print(f"No patch found.")
+        results = self._test_patches(patches=patches)
+        print(results)
 
     def _check_onmt(self):
-        out, err = super().__call__(command=f"command -v onmt_translate > /dev/null; echo $?;", exit_err=True)
+        out, err, _ = super().__call__(command=f"command -v onmt_translate > /dev/null; echo $?;", exit_err=True)
 
         if out.splitlines()[0] != '0':
             print(f"onmt_translate not found: install OpenNMT-py")
             exit(1)
+
+    def _get_tests(self, pos=True):
+        if pos:
+            return [Test(name=f"p{pt}") for pt in range(1, self.pos_tests + 1)]
+        return [Test(name=f"n{nt}") for nt in range(1, self.neg_tests + 1)]
 
     def _preprocess(self) -> Path:
         if not self.working_dir.exists():
@@ -120,8 +98,8 @@ class Repair(Command):
         cmd_str = f"onmt_translate -model {self.model_path} -src {preprocessed} {mutable_args} " \
                   f"-output {predictions_file} 2>&1"
 
-        out, err = super().__call__(command=cmd_str,
-                                    file=Path(self.out_path / Path('translate.out')))
+        out, err, _ = super().__call__(command=cmd_str,
+                                       file=Path(self.out_path / Path('translate.out')))
         if err:
             self.status('onmt_translate: something went wrong.')
             exit(1)
@@ -132,32 +110,75 @@ class Repair(Command):
         pass
 
     def _patch(self, predictions_file: Path):
-        patches = apply_predictions(target_file=self.source, vuln_line_number=self.vuln_line,
-                                    predictions_file=predictions_file, out_path=self.temp_path)
+        patches = predictions_to_patches(target_file=self.source, vuln_line_number=self.vuln_line,
+                                         predictions_file=predictions_file, out_path=self.temp_path)
 
         return patches
 
-    def _compile(self, patch: Path):
-        compile_cmd = self.compile_script.replace("__SOURCE_NAME__", str(patch))
-        out, err = super().__call__(command=f"{compile_cmd} > /dev/null; echo $?;", exit_err=True)
-        print(compile_cmd)
-        if err or out.splitlines()[0] != '0':
-            print(f"compiling: something went wrong: {out} {err}")
-            return False
+    # check syntax gcc main.c -fsyntax-only
+    # The technically best way to do this is to simply compile each file.
+    # Setting up all those compiles is either easy (because you have the build scripts) or will be
+    # h--- if you don't have them, and the difference may drive your choice of solution.
+    # For C, you pretty much need to run them through a compiler with the preprocessor enabled.
+    # If you don't do that, the typical C code containg macros and preprocessor conditionals won't be parsable at all.
+    def _compile(self, patch_file: Path):
+        print(f"Compiling patch {patch_file.stem}.")
+        compile_cmd = self.compile_script.replace("__SOURCE_NAME__", str(patch_file))
+        out, err, exec_time = super().__call__(command=f"{compile_cmd}")
 
-        return True
+        if self.verbose:
+            print(f"Command: {compile_cmd}\nOutput: {out}")
+        if err:
+            print(f"compiling: something went wrong: {err}")
+            return False, exec_time
+        return True, exec_time
 
-    def _test(self, tests: List[str]):
+    def _test(self, tests: List[Test]):
+        print(f"Testing:")
         for test in tests:
-            test_cmd = self.test_script.replace("__TEST_NAME__", test)
-            out, err = super().__call__(command=f"{test_cmd} > /dev/null; echo $?;", exit_err=True)
+            test_cmd = self.test_script.replace("__TEST_NAME__", test.name)
+            out, err, exec_time = super().__call__(command=f"{test_cmd}")
+            test.time = exec_time
 
-            if err or out.splitlines()[0] != '0':
-                print(f"{test}: 0")
+            if self.verbose:
+                print(f"Command: {test_cmd}\nOutput: {out}")
+            if err:
+                print(f"\t{test}: 0")
+                test.passed = False
                 return False
-
-            print(f"{test}: 1")
+            test.passed = True
+            print(f"\t{test}: 1")
         return True
+
+    def _test_patches(self, patches: List[Patch]):
+        results = Results(patches, pos_tests=self.pos_tests, neg_tests=self.neg_tests)
+
+        for patch in patches:
+            # Compile
+            patch.compiles, patch.compile_time = self._compile(patch.path)
+            # Pos Test
+            pos_tests = self._get_tests()
+            patch.pos_tests = pos_tests
+            # Neg Test
+            neg_tests = self._get_tests(pos=False)
+            patch.neg_tests = neg_tests
+
+            if not patch.compiles:
+                continue
+
+            if not self._test(tests=pos_tests):
+                continue
+
+            if self._test(tests=neg_tests):
+                patch(is_fix=True)
+
+                if not self.cont:
+                    break
+            else:
+                patch(is_fix=False)
+
+        results()
+        return results
 
     @staticmethod
     def definition() -> dict:
@@ -176,5 +197,7 @@ class Repair(Command):
         cmd_parser.add_argument('-s', '--seed', type=int, default=0,
                                 help='Set random seed used for better reproducibility between experiments.')
         cmd_parser.add_argument('-wd', '--working_dir', help='Working directory.', type=str, required=True)
+        cmd_parser.add_argument('--cont', action='store_true', default=False,
+                                help='Continue search after repair has been found.')
         cmd_parser.add_argument('-bs', '--beam_size', help='Number of predictions to be generated.', type=str,
                                 required=False)
