@@ -6,7 +6,7 @@ from utils.patch import Patch
 
 def predictions_to_patches(target_file: Path, vuln_line_number: int, predictions_file: Path, out_path: Path) -> List[Patch]:
     patches = []
-    with target_file.open(mode="r") as tf, predictions_file.open(mode="r") as pf:
+    with (out_path / target_file).open(mode="r") as tf, predictions_file.open(mode="r") as pf:
         code_lines = tf.readlines()
         predictions = pf.readlines()
         vuln_line = code_lines[vuln_line_number-1]
@@ -14,7 +14,7 @@ def predictions_to_patches(target_file: Path, vuln_line_number: int, predictions
 
         for i, prediction in enumerate(predictions):
             patch_dir = f"{i}".zfill(6)
-            out_file = out_path / Path(patch_dir, target_file.name)
+            out_file = out_path / Path(patch_dir) / target_file
             out_file.parent.mkdir(parents=True)
 
             with out_file.open(mode="w") as of:

@@ -16,6 +16,7 @@ class Repair(Command):
         super().__init__(**kwargs)
         self.working_dir = Path(working_dir)
         self.source = self.working_dir / Path(src_path)
+        self.src_path = Path(src_path)
         self.seed = seed
         self.vuln_line = vuln_line
         self.pos_tests = pos_tests
@@ -28,14 +29,12 @@ class Repair(Command):
         self.limit = self.configs.trunc_limit
         self.cont = cont
         self.beam = self.configs.onmt_args.translate['beam_size']
+        self.repair_dir = self.working_dir / Path("repair")
 
         if beam_size:
             self.beam = beam_size
             self.configs.onmt_args.translate['beam_size'] = self.beam
             self.configs.onmt_args.translate['n_best'] = self.beam
-
-        self.temp_path = self.configs.temp_path / Path(f"{self.working_dir.name}_{seed}")
-        self.temp_path.mkdir()
 
         if pos_tests == 0 or neg_tests == 0:
             raise ValueError('Insufficient number of tests.')
@@ -85,7 +84,7 @@ class Repair(Command):
             result = tokenize_vuln(code, self.vuln_line)
             result = truncate(result, self.limit)
 
-        source_pre_proc = self.temp_path / Path(f"{self.source.stem}_preprocessed.txt")
+        source_pre_proc = self.working_dir / Path(f"{self.source.stem}_preprocessed_{self.seed}.txt")
 
         with source_pre_proc.open(mode="w") as spp:
             spp.write(result)
@@ -93,7 +92,7 @@ class Repair(Command):
         return source_pre_proc
 
     def _predict(self, preprocessed: Path):
-        predictions_file = self.temp_path / Path(f"predictions_{self.beam}.txt")
+        predictions_file = self.working_dir / Path(f"predictions_{self.beam}_{self.seed}.txt")
         mutable_args = self.configs.onmt_args.unpack(name='translate', string=True)
         cmd_str = f"onmt_translate -model {self.model_path} -src {preprocessed} {mutable_args} " \
                   f"-output {predictions_file} 2>&1"
@@ -110,8 +109,8 @@ class Repair(Command):
         pass
 
     def _patch(self, predictions_file: Path):
-        patches = predictions_to_patches(target_file=self.source, vuln_line_number=self.vuln_line,
-                                         predictions_file=predictions_file, out_path=self.temp_path)
+        patches = predictions_to_patches(target_file=self.src_path, vuln_line_number=self.vuln_line,
+                                         predictions_file=predictions_file, out_path=self.working_dir)
 
         return patches
 
@@ -171,6 +170,12 @@ class Repair(Command):
 
             if self._test(tests=neg_tests):
                 patch(is_fix=True)
+                patch_file_path = self.repair_dir / self.src_path
+                patch_file_path.parent.mkdir(parents=True, exist_ok=True)
+
+                # if is patch, write to the repair folder the file
+                with patch.path.open(mode='r') as pp, patch_file_path.open(mode="w") as pf:
+                    pf.write(pp.read())
 
                 if not self.cont:
                     break
