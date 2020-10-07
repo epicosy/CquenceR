@@ -1,7 +1,7 @@
 # CquenceR
 Automatic Program Repair tool based on Sequence-to-Sequence Learning.
 
-###### The current version patches one-line single-file vulnerabilities.
+###### The current version patches multi-line and multi-file vulnerabilities.
 
 The tool is based and extends to C programs the original technique called (SequenceR)[https://github.com/KTH/chai].
 
@@ -39,15 +39,19 @@ $ ./CquenceR.py train
 
 ### Repair
 This operation uses the model previously generated to predict fixes and applies them to the source code.
-Make sure you supply the absolute paths.
+Make sure you supply the manifest path that respects the format (file_path:hunk_start,hunk_end;hunk_start,hunk_end;).
+For example: 
+``` text
+src/accelfunc.c:143,144;
+src/accel.c:525,526;
+```
 The default compiler command must contain the keyword __SOURCE_NAME__, which is replaced with the patched files generated.
 The default test command must contain the keyword __TEST_NAME__, which is replaced with the test names. These have the format "p#" and "n#" where # is the number of the test case and p is for positive test cases and n is for negative test cases.
 The test that don't pass must raise an error code.
 
 ``` console
-$ ./CquenceR.py repair --working_dir /tmp/Barcoder/ --src_path Barcoder/src/main.c --vuln_line 176 --compile_script "cb_repair.py compile -wd /tmp/Barcoder -cn Barcoder -if /tmp/Barcoder/Barcoder/src/main.c -ffs __SOURCE_NAME__ -v" --test_script "/home/epicosy/thesis/implementation/repair/SecureThemAll/benchmark/cb-repair/src/cb_repair.py test -wd /tmp/Barcoder -cn Barcoder -tn __TEST_NAME__ -v -ef -np" --pos_tests 10 --neg_tests 1
-```
+$ ./CquenceR.py repair --beam_size 50 --compile_script "cb_repair.py compile -wd /tmp/Accel_0 -cn Accel -ifs /tmp/Accel_0/build/Accel/CMakeFiles/Accel.dir/src/accelfunc.c /tmp/Accel_0/build/Accel/CMakeFiles/Accel.dir/src/accel.c -ffs __SOURCE_NAME__" --test_script "cb_repair.py test -wd /tmp/Accel_0 -cn Accel -tn __TEST_NAME__ -ef -np" --working_dir /tmp/Accel_0 --seed 0 --verbose --manifest_path /tmp/Accel_0/Accel/manifest.txt --prefix /tmp/Accel_0/Accel/ --pos_tests 10 --neg_tests 1```
 
 ## Dataset
 
-Dataset contains one line patches from various projects. Check [PatchBundle](https://github.com/epicosy/PatchBundle) for more information and details about the dataset.
+Dataset contains multi line patches from various projects. Check [PatchBundle](https://github.com/epicosy/PatchBundle) for more information and details about the dataset.

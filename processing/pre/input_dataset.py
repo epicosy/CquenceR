@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Hashable
 
-from utils.processing.transform import truncate, tokenize
+from utils.processing.c_tokenizer import truncate, tokenize
 from pandas import DataFrame
 
 
@@ -34,6 +34,7 @@ class InputDataset:
                 try:
                     tmp.write(source_tokens.strip() + '\n')
                 except Exception as e:
+                    print(e)
                     self._drop(index=index)
                     continue
 

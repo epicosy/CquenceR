@@ -1,28 +1,49 @@
-
 from pathlib import Path
-from typing import List
-from utils.patch import Patch
+from typing import Dict, Tuple
+from utils.patch import Patch, PatchFile
+from utils.processing.c_tokenizer import NEW_LINE_TOKEN, TAB_TOKEN
 
 
-def predictions_to_patches(target_file: Path, vuln_line_number: int, predictions_file: Path, out_path: Path) -> List[Patch]:
-    patches = []
-    with (out_path / target_file).open(mode="r") as tf, predictions_file.open(mode="r") as pf:
-        code_lines = tf.readlines()
-        predictions = pf.readlines()
-        vuln_line = code_lines[vuln_line_number-1]
-        line_indentation = vuln_line[0:vuln_line.find(vuln_line.lstrip())]
+def tokens_to_source(tokens: str) -> str:
+    source = tokens.replace(TAB_TOKEN, "\t")
+    source = source.replace(NEW_LINE_TOKEN, "\n")
 
-        for i, prediction in enumerate(predictions):
-            patch_dir = f"{i}".zfill(6)
-            out_file = out_path / Path(patch_dir) / target_file
-            out_file.parent.mkdir(parents=True)
+    return source
+
+
+def prediction_to_patch(prefix: Path, manifest: Dict[str, Dict[int, Tuple[int, int]]],
+                        predictions_files: Dict[str, Dict[int, Path]], prediction_number: int, out_path: Path) -> Patch:
+    patch = Patch(number=prediction_number, root_path=out_path)
+
+    for target_file, pred_hunks in predictions_files.items():
+        target_file_path = prefix / Path(target_file)
+        with target_file_path.open() as tfp:
+            code_lines = tfp.readlines()
+            hunks = manifest[target_file]
+            changes = []
+            shift = 0
+            for hunk_id, pred_hunk in pred_hunks.items():
+                with pred_hunk.open() as ph:
+                    prediction = ph.read().splitlines()[prediction_number]
+                    prediction = tokens_to_source(prediction)
+                    changes.append(prediction)
+                    start, end = hunks[hunk_id]
+                    hunk_size = end - start
+                    prediction_lines = prediction.splitlines(keepends=True)
+                    code_lines[start+shift: end+shift] = prediction_lines
+
+                    if hunk_size > len(prediction_lines):
+                        shift -= hunk_size - len(prediction_lines)
+                    elif hunk_size < len(prediction_lines):
+                        shift += len(prediction_lines) - hunk_size
+
+            out_file = out_path / target_file
+            out_file.parent.mkdir(parents=True, exist_ok=True)
 
             with out_file.open(mode="w") as of:
-                for j, line in enumerate(code_lines):
-                    if j+1 == vuln_line_number:
-                        of.write(line_indentation+prediction)
-                    else:
-                        of.write(line)
+                of.write(''.join(code_lines))
 
-            patches.append(Patch(name=patch_dir, path=out_file, change=line_indentation+prediction))
-    return patches
+            patch_file = PatchFile(target_file, path=out_file, changes=changes)
+            patch.add(patch_file)
+
+    return patch

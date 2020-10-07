@@ -9,7 +9,7 @@ ROOT_DIR = dirname(dirname(abspath(__file__)))
 
 ONMT_ARGS = {'preprocess': {
         'src_seq_length': 1010,
-        'tgt_seq_length': 100,
+        'tgt_seq_length': 200,
         'src_vocab_size': 1000,
         'tgt_vocab_size': 1000,
         'dynamic_dict': True,

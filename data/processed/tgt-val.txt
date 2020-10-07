@@ -1,435 +1,126 @@
-samples_per_pixel , 0 , 0 ) ;
-mod_loc_name = estrdup ( loc_name ) ;
-UINT32 extra = 0 ;
-if ( code == gcode && wordlist [ key ] . index > = 0 )
-
-XPCWrappedNativeJSClass mJSClass ;
-oggpack_buffer * b ) {
-CALL_AND_WAIT ( bt_interface -> enable ( false ) , adapter_state_changed ) ;
-#line 1229 "extstandardvar_unserializer . c"
-state -> object_nl = fstrndup ( RSTRING_PTR ( object_nl ) , len ) ;
-#endif
-ssize_t ret = TEMP_FAILURE_RETRY ( read ( fd , btpan_cb . congest_packet , sizeof ( btpan_cb . congest_packet ) ) ) ;
-for ( i = 0 ; i < length && * data ; i ++ , data ++ )
-# ifdef PNG_SAVE_UNKNOWN_CHUNKS_SUPPORTED
-std : : string name_ ;
-dom : : Uint8ClampedArray * aArray ,
-base : : WeakPtr < Delegate> delegate_ ;
-if ( ( png_ptr -> mode & PNG_HAVE_IDAT ) == 0 )
-
-if ( ( ret = ff_set_dimensions ( avctx , s -> width , s -> height ) ) < 0 ) {
-rc = foreach_shareopt ( shareopts , get_linux_shareopts_cb ,
-if ( length != 0 && png_ptr -> current_buffer_size != 0 )
-const char * base_path = NULL ;
-ssplit ( key , " = " , & value ) ;
-void NavigateBackForwardSoon ( int offset , bool has_user_gesture ) override ;
-rate2 += vp9_get_switchable_rate ( cpi , xd ) ;
-#include "compilercompilerdebug . h"
-void neuter ( void * newData ) ;
-struct GPU_EXPORT LevelInfo {
-isoclns_print ( ndo , p , l2info . length ) ;
-
-if ( ( png_ptr -> transformations & PNG_INTERLACE ) == 0 )
-modifier_current_encoding ( const png_modifier * pm , color_encoding * ce )
-if ( ( png_ptr -> transformations & PNG_COMPOSE ) != 0 )
-
-if ( mprWriteJsonObj ( app -> config , key , abilities ) < 0 ) {
-lastProp = bindings . callObjectShape ( cx ) ;
-class MODULES_EXPORT BodyStreamBuffer final : public UnderlyingSourceBase , public WebDataConsumerHandle : : Client {
-#include "basecallback_old . h"
-printf ( " % d tests including % d overflows , % d passed , % d failed ( % d 64 - bit "
-bool CopyTexSubImage2D_base ( WebGLenum target ,
-for ( ; ; )
-if ( strict != 0 )
-_gdImageWebpCtx ( im , out , quality ) ;
-nsWeakPtr mContent ;
-
-class HoverButton ;
-#endif
-
-WebCore : : Timer < LayerTreeCoordinator> m_releaseInactiveAtlasesTimer ;
-if ( ! js_doregexec ( J , re -> prog , text , & m , 0 ) )
-
-if ( ( dmbuf = ( unsigned char * ) AcquireQuantumMemory ( dmsx , dmsy ) ) == NULL ) {
-
-dev -> priv_flags &= ~ ( IFF_XMIT_DST_RELEASE | IFF_TX_SKB_SHARING ) ;
-struct control * control = voidcast ( struct control * , file -> alloc_ptr ) ;
-std : : unique_ptr < WebRunnerContentBrowserClient> browser_client_ ;
-
-? get_uv_tx_size ( & mi [ 0 ] . mbmi , plane )
-#line 1083 "extstandardvar_unserializer . c"
-static INLINE void write_buffer_4x4 ( tran_low_t * output , __m128i * res ) {
-if ( ( existing = mprReadJsonObj ( obj , name ) ) != 0 ) {
-dst_name = safe_calloc ( strlen ( name ) * 2 + 16 ) ;
-ND_PRINT ( ( ndo , " % s" , rpl_tstr ) ) ;
-if ( num_unknowns != 0 )
-bool fill ( const SourceCoords & other ) ;
-const image_transform ** that , png_byte colour_type , png_byte bit_depth )
-std : : vector < TBuiltInFunction> mFunctions ;
-virtual void OnChannelConnected ( int32 peer_pid ) OVERRIDE ;
-zend_throw_exception_ex ( spl_ce_BadMethodCallException , 0 TSRMLS_CC , " % s" , error ) ;
-@stability Stable
-* bp ++ = ( png_byte ) value ;
-#define MODULE_MAGIC_NUMBER_MINOR 3
-memset ( cpi -> gf_active_flags , 1 , ( cm -> mb_rows * cm -> mb_cols ) ) ;
-mpz_powm_sec ( v , v , key -> e , key -> n ) ;
-static mp_err
-" [ - P pkcs11_whitelist ] [ - t life ] [ command [ arg . . . ] ] "
-ps_dec -> u4_first_slice_in_pic = 1 ;
-PHP_FUNCTION ( locale_get_display_script )
-zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
-
-#define INTERLACE_FROM_ID ( id ) ( ( png_byte ) ( ( ( id ) >> 13 ) & 0x3 ) )
-WCHAR installDir [ MAX_PATH + 1 ] = { L'0' } ;
-ENGINE_SET_INVALID_EVENT ( p , IPV6_TRUNC_EXTHDR ) ;
-
-parse_rock_ridge_inode ( de , inode , relocated ) ;
-if ( ' % ' == * ptr && ptr [ 1 ] ) {
-virtual bool requiresLayer ( ) const OVERRIDE { return isRoot ( ) | | isOutOfFlowPositioned ( ) | | isRelPositioned ( ) | | isTransparent ( ) | | hasOverflowClip ( ) | | hasTransform ( ) | | hasHiddenBackface ( ) | | hasMask ( ) | | hasReflection ( ) | | hasFilter ( ) | | style ( ) -> specifiesColumns ( ) ; }
-HeapObjectHeader : : fromPayload ( m_raw ) -> checkHeader ( ) ;
-
-display -> local_row ) ) ;
-
-HistoryContentsProvider ( AutocompleteProviderListener * listener ,
-#include "basecallback_old . h"
-if ( ( MagickSizeType ) ( MATLAB_HDR . ObjectSize + filepos ) > = GetBlobSize ( image ) )
-et_save , et_lastsubtype } ;
-#include "chromebrowseruiviewsinfobarsinfobar_view . h"
-
-@stability Evolving
-#include "basecallback_old . h"
-syslog ( LOG_WARNING , _ ( " ( % d ) Unhandeled control packet type : % d , length : % d" ) , curconn -> seskey , cpkt . cptype , cpkt . length ) ;
-#endif
-snprintf ( psz_remote , sizeof ( psz_remote ) , " % s % s" , psz_server , psz_share ) ;
-#endif
-im -> alphaBlendingFlag = alphablending_bak ;
-
-
-fname_len = strlen ( fname ) ;
-dwc3_gadget_del_and_unmap_request ( dep , req , ret ) ;
-while ( ( current_element != NULL ) && ( current_element -> string != NULL ) && ( strcmp ( name , current_element -> string ) != 0 ) )
-std : : make_unique < CanonicalCookie> (
-const vpx_prob vp9_kf_partition_probs [ PARTITION_CONTEXTS ]
-int ret = TEMP_FAILURE_RETRY ( select ( ( max_curr_s + 1 ) , & curr_set , NULL , NULL , NULL ) ) ;
-class KeyboardLibrary ;
-static const sp < IMediaPlayerService> getMediaPlayerService ( ) ;
-public :
-@stability Evolving
-PHP_FUNCTION ( locale_get_display_region )
-if ( TEMP_FAILURE_RETRY ( recv ( fd , & cmd , sizeof ( cmd ) , MSG_WAITALL ) ) != sizeof ( cmd ) )
-if ( skb -> mac_header < ( tnl_hlen + frag_hdr_sz ) ) {
-const unsigned char * , uint32_t , size_t , struct magic * ) ;
-if ( val < 64 | | val > MAX_TCP_WINDOW ) {
-row_bytes = 4 * image -> columns ;
-s -> smart_selftest_count = 1 ;
-u_int atype , const u_char * pptr , u_int len , const unsigned attr_set_level )
-class BASE_API FilePath {
-last mod : $ Id : codebook . c 16597 2009 - 10 - 01 02 : 54 : 22Z tterribe $
-
-size_t j , len = apdu . resp [ i + 1 ] ;
-zlib -> window_bits = ( ( file_bits > 15 ) ? 15 : file_bits ) ;
-nsresult InstallImplementation ( nsXBLPrototypeBinding * aPrototypeBinding , nsXBLBinding * aBinding ) ;
-MockPrinter * printer ( ) ;
-if ( pskb_expand_head ( skb_out , 0 , size - skb_out -> len , GFP_ATOMIC ) < 0 ) {
-#include " . vpx_dsp_rtcd . h"
-PNG_CONST int index = component ( row , x , 0 , bit_depth , 1 ) ;
-__android_log_print ( ANDROID_LOG_INFO , "Gecko" , " % s" , utf8str . get ( ) ) ;
-if ( drop_it | | TEMP_FAILURE_RETRY ( ioctl ( sock -> our_fd , FIONREAD , & size ) ) != 0 | | size == 0 )
-#if ENABLE_BGP_VNC_ATTR
-field = ssplit ( sclone ( argv [ i ] ) , " : " , & typeString ) ;
-#define PNG_FORMAT_FLAG_LINEAR 0x04U
-segment -> AppendSlice ( * aInputTrack -> GetSegment ( ) ,
-if ( compose != 0 )
-
-extern int perf_event_overflow ( struct perf_event * event ,
-
-if ( ! ( buf = g_try_malloc0 ( size ) ) ) {
-if ( ( png_ptr -> mode & PNG_HAVE_PLTE ) == 0 )
-memset ( cpi -> frames , 0 , max_frames * sizeof ( YV12_BUFFER_CONFIG * ) ) ;
-vpx_clear_system_state ( ) ;
-if ( ( png_ptr -> mode & PNG_HAVE_IDAT ) == 0 )
-blocks_ = js_pod_calloc < IonBlockCounts> ( numBlocks ) ;
-vdev -> ctx = kcalloc ( nvec , sizeof ( struct vfio_pci_irq_ctx ) , GFP_KERNEL ) ;
-while ( ( RAW != ' ) ' ) && ( ctxt -> instate != XML_PARSER_EOF ) ) {
-BUG_ON ( ret == - EEXIST | | ret == - EOVERFLOW ) ;
-#define PACKAGE_VERSION "2 . 12 . 6"
-if ( Ascending && WalkState -> AscendingCallback != NULL )
-{
-mapping ] ) ) ;
-ret = sscanf ( argv [ i ] + 1 , "protos = % 490s" , buf ) ;
-struct serial_icounter_struct icount = { } ;
-#include "third_partyblinkrendererplatformgraphicspaintproperty_tree_state . h"
-cgc . cmd [ 9 ] = cgc . buflen & 0xff ;
-const image_transform ** that , png_byte colour_type , png_byte bit_depth )
-#line 585 "extstandardvar_unserializer . re"
-class BASE_API Pickle {
-if ( rec_hdr . hdr . incl_len > WTAP_MAX_PACKET_SIZE ) {
-
-
-void vp9_iht8x8_add ( TX_TYPE tx_type , const tran_low_t * input , uint8_t * dest ,
-int i , hasAdditionalBlocks ,
-#include "corehtmlformsKeyboardClickableInputTypeView . h"
-opendata = nfs4_opendata_alloc ( & ctx -> path , state -> owner , 0 , 0 , NULL ) ;
-if ( ( res = ctx -> iface -> enc . encode ( get_alg_priv ( ctx ) , img , pts ,
-( void ) ResetMagickMemory ( imbuf , background_color_index , ( size_t ) imsx * imsy ) ;
-file_fmttime ( p -> q + m -> num_mask , FILE_T_WINDOWS , tbuf ) ) == - 1 )
-( void ) SetImageType ( image , BilevelType ) ;
-TEMP_FAILURE_RETRY ( recv ( uipc_main . signal_fds [ 0 ] , & sig_recv , sizeof ( sig_recv ) , MSG_WAITALL ) ) ;
-const net : : IPEndPoint & remote_address ,
-
-ND_TCHECK2 ( bp [ hlen ] , 16 ) ;
-if ( len < 5 | | p [ 0 ] != 0x80 | | p [ 1 ] != 0x01 ) {
-vpx_idct4_columns_add_blk_dspr2 ( & temp_in [ 0 ] , dest , dest_stride ) ;
-strncpy ( rrng . type , "rng" , sizeof ( rrng . type ) ) ;
-
-if ( image -> channel_map [ channel ] . traits == UndefinedPixelTrait )
-#define LIBRAW_PATCH_VERSION 8
-nsWeakPtr mContent ;
-if ( png_rtran_ok ( png_ptr , 0 ) == 0 )
-
-if ( compressed == 0 )
-#endif
-unsigned int pixel_limit ;
-if ( warn != 0 )
-bool hasSource ( ) const { return ! m_sources . empty ( ) ; }
-if ( avctx -> codec && avctx -> codec -> close &&
-nsRefPtr < nsRangeStore> mRangeItem ;
-if ( ( png_ptr -> row_number & 0x01 ) == 0 )
-state -> space = fstrndup ( RSTRING_PTR ( space ) , len ) ;
-
-if ( png_crc_finish ( png_ptr , 0 ) != 0 )
-js : : ReadBarriered < js : : types : : TypeObject> emptyTypeObject ;
-last mod : $ Id $
-memset ( ypred_ptr , yleft_col [ r ] , 16 ) ;
-in_what -> stride ) ;
-#endif
-codebook * b , oggpack_buffer * opb , int maptype ) {
-buffer = zend_string_safe_alloc ( 1 , len , 0 , 0 ) ;
-Result AskUserForSettings ( gfx : : NativeView parent_view , int max_pages ,
-ND_TCHECK2 ( * ext , sizeof ( a ) ) ;
-if ( image -> ping == MagickFalse )
-perf_sw_event ( PERF_COUNT_SW_PAGE_FAULTS , 1 , regs , address ) ;
-if ( png_ptr -> transformations != 0 )
-if ( TEMP_FAILURE_RETRY ( ioctl ( socket -> fd , FIONREAD , & size ) ) == - 1 )
-int notify_id ) ;
-static BOOL nsc_encode_argb_to_aycocg ( NSC_CONTEXT * context , const BYTE * data ,
-mOwnedElements . AppendElement ( aContent ) ;
-uint64_t tableTotal = 0 ;
-last mod : $ Id $
-for ( i = 0 ; ( i + 3 ) < sec -> size ; i += 4 ) {
-if ( png_rtran_ok ( png_ptr , 0 ) == 0 )
-fPtr = sk_malloc_throw ( size ) ;
-key = ssplit ( term , " = " , & value ) ;
-conn -> m -> local_tx_end ( conn , this_func , ret TSRMLS_CC ) ;
-if ( ( transforms & PNG_TRANSFORM_SWAP_ALPHA ) != 0 )
-#include "vpx_dspvariance . h"
-
-TEMP_FAILURE_RETRY ( recv ( signal_fds [ 0 ] , & sig_recv , sizeof ( sig_recv ) , MSG_WAITALL ) ) ;
-u64 vmacache_seqnum ;
-public InfoBarView {
-sclone scmp scopy sfmt sfmtv slen slower smatch sstarts sncaselesscmp sncmp sncopy stok strim supper
-} else {
-php_pcre_match_impl ( pce , subject , subject_len , return_value , subpats ,
-return 1 ;
-class BASE_API NonThreadSafeImpl {
-void LeaveTabletMode ( wm : : WindowState * window_state , bool was_in_overview ) ;
-h -> ref_count [ 1 ] = 1 ;
-@stability Stable
-byte = ( unsigned int ) ( * p ++ ) ;
-last mod : $ Id $
-tcmur_unregister_dbus_handler ( handler ) ;
-clip_mask -> background_color . alpha = ( MagickRealType ) TransparentAlpha ;
-
-Vector < uint32_t> mTimeToSample ;
-#include "third_partyblinkpublicwebwindow_features . mojom . h"
-void SetInlineInstallWebstoreData ( const std : : string & localized_user_count ,
-if ( endptr - buf <= 12 )
-if ( js_doregexec ( J , re -> prog , source , & m , 0 ) ) {
-#error "gperf generated tables don't work with this execution character set . Please report a bug to < bug - gnu - gperf@gnu . org> . "
-if ( ( ( mask & PNG_FREE_ICCP ) & info_ptr -> free_me ) != 0 )
-SensorReadingSharedBuffer * reading_buffer ,
-if ( ! context | |
-char buf [ 100 ] ;
-, public nsIDocShell_ESR38_2
-} else if ( tga -> bits == TGA_BPP_32 && tga -> alphabits ) {
-int64 iskew = ( int64 ) imagew - ( int64 ) tilew ;
-round = ( vpx_codec_pts_t ) 10000000
-msg -> fp = mutt_bcache_put ( pop_data -> bcache , cache_id ( h -> data ) ) ;
-stat != yajl_status_insufficient_data )
-while ( ( i < ( int ) header_buf_used ) && ( header_buf [ i ] == 'r' | | header_buf [ i ] == '' ) )
-p_dev -> fd = TEMP_FAILURE_RETRY ( open ( dev_path , O_RDWR | O_CLOEXEC ) ) ;
-ret = fscrypt_get_encryption_info ( dir ) ;
-
-vp9_coeff_probs_model * const probs = cm -> fc -> coef_probs [ tx_size ] ;
-RD_BOOL ber_parse_header ( STREAM s , int tagval , uint32 * length ) ;
-perf_sw_event ( PERF_COUNT_SW_EMULATION_FAULTS , 1 , regs , 0 ) ;
-PHPAPI ulong
-for ( i = 0 ; i < TTABLE_SIZE ; ++ i ) if ( transform_info [ i ] . name != NULL )
-&& ( ps_dec -> s_bit_stream . u4_offset < ps_dec -> s_bit_stream . u4_max_offset ) )
-if ( png_set_text_2 ( png_ptr , info_ptr , & text_info , 1 ) != 0 )
-static const float vwin1024 [ 512 ] = {
-WRITE32 ( 0 ) ;
-num_chunks = ( unsigned int ) ( sizeof chunks_to_ignore ) 5U ;
-URLRequestContext * context_ ;
-pval *= fixed_divide [ count [ k ] ] ;
-if ( JAS_CAST ( jas_uint , jas_stream_write ( out , ( char * ) ppm -> data , ppm -> len ) ) != ppm -> len ) {
-if ( recip != 0 ) d = 1d ;
-uint32_t nestsize = ( uint32_t ) ms -> nest_size [ ms -> nest_level ] ;
-qrio_set_gpio ( QRIO_GPIO_A , FPGA_PROG_L , 1 ) ;
-if ( ! ps_dec -> u1_first_slice_in_stream && ps_dec -> u4_first_slice_in_pic )
-size_t pos , const char * msg )
-void DidFocus ( blink : : WebLocalFrame * calling_frame ) override ;
-state -> indent = fstrndup ( RSTRING_PTR ( indent ) , len ) ;
-#endif
-size_t blocks ;
-CALL_AND_WAIT ( bt_interface -> enable ( false ) , adapter_state_changed ) ;
-
-snprintf ( buf , L_BUFSIZE , " % s . data . % d" , gplot -> rootname , gplot -> nplots ) ;
-#line 1087 "extstandardvar_unserializer . c"
-if ( png_ptr -> save_buffer_size != 0 )
-extern void isoclns_print ( netdissect_options * , const u_char * , u_int ) ;
-#include < mediastagefrightfoundationADebug . h>
-zend_throw_exception_ex ( phar_ce_PharException , 0 TSRMLS_CC , " % s" , error ) ;
-
-TypedArrayObjectStorage ( JSObject * obj ) : mObj ( obj )
-#include "third_partyblinkpublicwebwindow_features . mojom . h"
-
-goto softfail ;
-last mod : $ Id $
-if ( set_location ( png_ptr , my_user_chunk_data , have_sTER ) != 0 )
-uint32_t * track_size ;
-bufsize = MIN ( file -> size , sizeof buf ) ;
-ssize_t ret = TEMP_FAILURE_RETRY ( sendmsg ( socket -> fd , & msg , MSG_DONTWAIT ) ) ;
-#endif
-class BASE_API FileEnumerator {
-for ( i = 0 ; i < SERDES_MAX ; i ++ ) {
-for ( ii = 0 ; ( ii < rbuf [ 1 ] - offs ) && ( ii + offs + 2 < sizeof ( rbuf ) ) ; ii ++ )
-ENGINE_SET_INVALID_EVENT ( p , IPV6_TRUNC_EXTHDR ) ;
-( info_ptr -> colorspace . flags & PNG_COLORSPACE_HAVE_ENDPOINTS ) != 0 )
-CONTENT_EXPORT void OnAllowBindings ( int enabled_bindings_flags ) ;
-@stability Evolving
-return roundedIntPoint ( mapPoint ( FloatPoint ( p ) ) ) ;
-const jschar * chars ( JSContext * cx , SourceDataCache : : AutoHoldEntry & asp ) ;
-len -= cut + 1 ;
-#endif
-}
-do_init_search , cost_list , vfp , use_mvcost ,
-gint bits_to_handle = remaining_bits_len + ( bit_offset % 8 ) ;
-return object -> isText ( ) | | object -> isFloating ( ) | | object -> isOutOfFlowPositioned ( ) | | object -> isReplaced ( ) ;
-if ( ( flags & PNG_FLAG_FILLER_AFTER ) != 0 )
-last mod : $ Id $
-AudioDeviceThread audio_thread_ ;
-
-#line 917 "extstandardvar_unserializer . c"
-void ** p , void * end , void ** obuf , size_t olen )
-ret = safe_mount ( path , destpath , "none" , MS_BIND , NULL , conf -> rootfs . mount ) ;
-size_t str_len = 0 ;
-if ( ( b -> opts & ACCUMULATE ) == 0 )
-ENGINE_SET_INVALID_EVENT ( p , IPV6_EXTHDR_INVALID_OPTLEN ) ;
-char * outname = create_output_name ( f [ i ] -> filename ) ;
-js_Atomize ( JSContext * cx , const char * bytes , size_t length , uintN flags ) ;
-#include "platformmediastreamMediaStreamSource . h"
-TRACK_RUN_IN_THIS_SCOPED_REGION ( member_func ) ;
-TRACK_RUN_IN_THIS_SCOPED_REGION ( member_func ) ;
-- 3 , - 1 , - 3 , 4 , - 1 , - 3 , - 1 , - 1 , - 3 ,
-jas_uchar buf [ RAS_MAGICLEN ] ;
-
-dev -> priv_flags &= ~ ( IFF_XMIT_DST_RELEASE | IFF_TX_SKB_SHARING ) ;
-static void filter_selectively_vert_row2 ( int subsampling_factor ,
-if ( arg > = cdi -> capacity )
-if ( TEMP_FAILURE_RETRY ( poll ( & pfd , 1 , 0 ) ) == 0 )
-#include "basemacros . h"
-if ( ( png_ptr -> mng_features_permitted & PNG_FLAG_MNG_FILTER_64 ) != 0 &&
-
-b * data . blue_coefficient - 2 . 32768 - out_qe ;
-
-char buf [ ME_MAX_FNAME + 1 ] ;
-return AlignBytes ( localSlotCount_ , StackAlignment STACK_SLOT_SIZE ) ;
-memset ( xd -> segment_feature_data , 0 , sizeof ( xd -> segment_feature_data ) ) ;
-bool refresh_flag [ kVp9NumRefFrames ] ;
-void ptrace_triggered ( struct perf_event * bp ,
-
-img = ctx -> iface -> dec . get_frame ( get_alg_priv ( ctx ) , iter ) ;
-v_fn_ptr . vf = vpx_mse16x16 ;
-return 1 ;
-if ( size < 0 ) return ( NULL ) ;
-int len = 0 ;
-void start ( WebPage * initiatingWebPage ) ;
-std : : make_unique < CanonicalCookie> (
-if ( text_length != 0 )
-#define LIBXML_MODULE_EXTENSION " . dll"
-if ( ( routes = mprReadJsonObj ( prop , "routes" ) ) != 0 ) {
-int output_8bit ;
-memset ( & bsi , 0 , sizeof ( bsi ) ) ;
-while ( isdigit ( ( unsigned char ) * s ) && ( ptmp != ( tmp + sizeof ( tmp ) - 1 ) ) )
-nsWindow * GetContainerWindow ( ) ;
-return ( status ) ;
-char buf [ L_BUFSIZE ] ;
-SecurityClient security ;
-
-if ( ( transforms & PNG_TRANSFORM_PACKSWAP ) != 0 )
-( ( image -> ping == MagickFalse ) && ( jp2_image -> comps [ i ] . data == NULL ) ) )
-if ( ( transforms & PNG_TRANSFORM_INVERT_ALPHA ) != 0 )
-CALL_AND_WAIT ( bt_interface -> enable ( false ) , adapter_state_changed ) ;
-PREDICTION_MODE mode_selected = ZEROMV ;
-newinet -> inet_opt = ireq -> opt ;
-AudioOutputAuthorizationHandler ( media : : AudioSystem * audio_system ,
-isoclns_print ( ndo , p + 1 , length - 1 ) ;
-int fd = TEMP_FAILURE_RETRY ( accept ( s , ( struct sockaddr * ) & client_address , & clen ) ) ;
-static const char * const cfg = " -- target = x86 - linux - gcc -- disable - sse4_1 -- disable - avx -- disable - avx2 -- as = yasm -- enable - external - build -- enable - realtime - only -- enable - pic -- disable - runtime - cpu - detect -- disable - install - docs -- size - limit = 4096x3072" ;
-- ( void ) dismissModals ;
-void SetRenderer ( int process_host_id ,
-char buf [ L_BUFSIZE ] ;
-if ( ( png_ptr -> row_number & 0x03 ) != 0 | | png_ptr -> width < 3 )
-@stability Evolving
-size_t nchars , idstrlength , gsoplength , vlength , vsharplength , curlen ;
-#include "compilercompilerdebug . h"
-PREDICTION_MODE modes [ 4 ] ;
-if ( ( api_id < USB_API_WINUSBX ) | | ( api_id > = USB_API_MAX ) ) {
-if ( shift == 0 )
-if ( HeapOverflowSanityCheck ( count , quantum ) != MagickFalse )
-#include "vpx_dspvariance . h"
-void * buffer , float * ) ;
-if ( user_png_ver == NULL | | user_png_ver [ i ] != png_libpng_ver [ i ] )
-perf_sw_event ( PERF_COUNT_SW_CONTEXT_SWITCHES , 1 , NULL , 0 ) ;
-
-#line 526 "extstandardvar_unserializer . re"
-
-const TransformPaintPropertyNode * local_transform_space = nullptr ;
-if ( ! send && ! SSL_READ_ETM ( ssl ) &&
-if ( ! ( flags & SOCK_THREAD_FD_EXCEPTION ) | | ( TEMP_FAILURE_RETRY ( ioctl ( sock -> our_fd , FIONREAD , & size ) )
-if ( syscall_nr < 0 | | syscall_nr > = NR_syscalls )
-bool setDecodeArgs (
-return TEMP_FAILURE_RETRY ( write ( fd , & event , sizeof ( event ) ) ) ;
-p = GetVirtualPixels ( image , 0 , y , image -> columns , 1 , & image -> exception ) ;
-fd = TEMP_FAILURE_RETRY ( open ( uinput_dev_path [ x ] , O_RDWR ) ) ;
-
-( unsigned long ) next -> size , ( const void * ) ( next + 1 ) ) ;
-bool growPendingArray ( JSContext * cx ) ;
-while ( * s && ( * s != '"' ) && ( ptmp != ( tmp + sizeof ( tmp ) - 1 ) ) )
-const int16_t * filter = vp9_down2_symodd_half_filter ;
-next_char = get_next_char ( charset , old , oldlen , cursor , & status ) ;
-LongSeek ( mp4 , qtsize - 8 ) ;
-png_crc_finish ( png_ptr , ( int ) length - num * 3 ) ;
-#endif
-if ( js_doregexec ( J , re -> prog , a , & m , a > text ? REG_NOTBOL : 0 ) )
-DECLARE_ALIGNED ( 16 , unsigned char , FData2 [ 4 * 9 ] ) ;
-last mod : $ Id : codec . h 16037 2009 - 05 - 26 21 : 10 : 58Z xiphmont $
-TransformChange calculateLocalTransform ( ) override ;
-#line 1190 "ntp_parser . y"
-return_ACPI_STATUS ( ReturnStatus ) ;
-
-else
-
-while ( ( RAW != '>' ) && ( ctxt -> instate != XML_PARSER_EOF ) ) {
-perf_sw_event ( PERF_COUNT_SW_CPU_MIGRATIONS , 1 , NULL , 0 ) ;
-
-perf_sw_event ( PERF_COUNT_SW_EMULATION_FAULTS , 1 , regs , 0 ) ;
-if ( num_in == 0 )
-static VPX_INLINE void mem_put_le24 ( void * vmem , MEM_VALUE_T val ) {
-
-vpx_write ( w , sign , mvcomp -> sign ) ;
-res = ctx -> iface -> dec . set_fb_fn ( get_alg_priv ( ctx ) , cb_get , cb_release ,
-# define rint ( x ) ( floor ( ( x ) + 0 . 5f ) )
-if ( TEMP_FAILURE_RETRY ( send ( common -> ctrl_fd , & cmd , 1 , MSG_NOSIGNAL ) ) == - 1 )
-
+static const double stereo_threshholds [ ] = { 0 . 0 , . 5 , 1 . 0 , 1 . 5 , 2 . 5 , 4 . 5 , 8 . 5 , 16 . 5 , 9e10 } ; <NEW_LINE>static const double stereo_threshholds_limited [ ] = { 0 . 0 , . 5 , 1 . 0 , 1 . 5 , 2 . 0 , 2 . 5 , 4 . 5 , 8 . 5 , 9e10 } ; <NEW_LINE>
+hs = ci -> halfrate_flag ; <NEW_LINE>
+if ( buf -> pts == AV_NOPTS_VALUE || av_fifo_size ( s -> fifo ) <= 0 ) { <NEW_LINE>
+size_t arg_length , args_length , old_args_length ; <NEW_LINE>
+<TAB> DBG_RETURN ( ret ) ; <NEW_LINE>
+<TAB> <TAB> if ( ret < 0 ) <NEW_LINE><TAB> <TAB> <TAB> goto error ; <NEW_LINE>
+create_spnego_ctx ( int initiate ) <NEW_LINE>
+<TAB> unsigned int offset = sizeof ( struct ipv6hdr ) ; <NEW_LINE>
+<TAB> void * syscall_page = ( void * ) get_zeroed_page ( GFP_ATOMIC ) ; <NEW_LINE><TAB> syscall_pages [ 0 ] = virt_to_page ( syscall_page ) ; <NEW_LINE>
+if ( gData -> stateStackTop ) <NEW_LINE> -- gData -> stateStackTop ; <NEW_LINE>
+<TAB> <TAB> vhost_net_ubuf_put_wait_and_free ( ubufs ) ; <NEW_LINE>
+<TAB> <TAB> umode_t mode ; <NEW_LINE><TAB> <TAB> error = posix_acl_update_mode ( inode , & mode , & acl ) ; <NEW_LINE><TAB> <TAB> if ( error ) <NEW_LINE><TAB> <TAB> <TAB> return error ; <NEW_LINE>
+MODULE_ALIAS_NETDEV ( "gre0" ) ;
+if ( num < 0 || num >= 256 ) return ONIGERR_TOO_BIG_NUMBER ; <NEW_LINE>
+int xt_check_entry_offsets ( const void * base , const char * elems , <NEW_LINE>
+MODULE_ALIAS_CRYPTO ( "des3_ede" ) ; <NEW_LINE>MODULE_ALIAS_CRYPTO ( "des3_ede - asm" ) ; <NEW_LINE>MODULE_ALIAS_CRYPTO ( "des" ) ; <NEW_LINE>MODULE_ALIAS_CRYPTO ( "des - asm" ) ; <NEW_LINE>
+static void xen_netbk_idx_release ( struct xen_netbk * netbk , u16 pending_idx , <NEW_LINE><TAB> <TAB> <TAB> <TAB> u8 status ) <NEW_LINE>
+<NEW_LINE>
+extern struct mb2_cache * ext2_xattr_create_cache ( void ) ; <NEW_LINE>extern void ext2_xattr_destroy_cache ( struct mb2_cache * cache ) ; <NEW_LINE>
+int chroma_planes , chroma_h_shift , chroma_v_shift , transparency , colorspace , bits_per_raw_sample ; <NEW_LINE>
+<NEW_LINE><NEW_LINE><NEW_LINE><NEW_LINE>l_data_size = 2 + ( OPJ_UINT32 ) ( ( p_code_block -> x1 - p_code_block -> x0 ) * <NEW_LINE>
+ippSetValueTag ( job -> attrs , & attr , IPP_TAG_KEYWORD ) ; <NEW_LINE>ippSetString ( job -> attrs , & attr , 0 , "no - hold" ) ; <NEW_LINE>
+virtual void WriteInternal ( const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ; <NEW_LINE>
+len = rtadv_recv_packet ( sock , buf , sizeof ( buf ) , & from , & ifindex , & hoplimit ) ; <NEW_LINE>
+<NEW_LINE>
+<NEW_LINE><NEW_LINE><NEW_LINE><NEW_LINE>virtual nsresult OpenContentStream ( PRBool async , nsIInputStream ** stream , <NEW_LINE>nsIChannel ** channel ) = 0 ;
+<TAB> u64 event_id = event -> attr . config ; <NEW_LINE>
+iakerb_alloc_context ( iakerb_ctx_id_t * pctx , int initiate ) <NEW_LINE>
+PL_ArenaFinish ( ) ; <NEW_LINE>
+<TAB> __net_random_once_disable_jump ( once_key ) ; <NEW_LINE>
+<TAB> if ( pte_valid_user ( pte ) ) { <NEW_LINE>
+size_t size = bytes + CHK_OVERHEAD_SIZE ; <NEW_LINE>if ( size < bytes ) { <NEW_LINE>return NULL ; <NEW_LINE> } <NEW_LINE>uint8_t * buffer = ( uint8_t * ) dlmalloc ( size ) ; <NEW_LINE>
+<TAB> pgprot_t prot = __get_dma_pgprot ( attrs , PAGE_KERNEL ) ; <NEW_LINE>
+<TAB> rcu_read_lock ( ) ; <NEW_LINE><TAB> final_p = fl6_update_dst ( fl6 , rcu_dereference ( np -> opt ) , & final ) ; <NEW_LINE><TAB> rcu_read_unlock ( ) ; <NEW_LINE>
+<TAB> <TAB> if ( hlist_unhashed ( & mp -> mglist ) ) <NEW_LINE><TAB> <TAB> <TAB> hlist_add_head ( & mp -> mglist , & br -> mglist ) ; <NEW_LINE>
+<TAB> if ( key_is_negative ( key ) ) <NEW_LINE>
+<TAB> return skb_append_datato_frags ( sk , skb , getfrag , from , <NEW_LINE><TAB> <TAB> <TAB> <TAB> ( length - transhdrlen ) ) ; <NEW_LINE>
+if ( status == NULL ) <NEW_LINE>status = "UNKNOWN_REASON" ; <NEW_LINE>
+pd . buf_size = buf_offset += ret ; <NEW_LINE>
+virtual void WriteInternal ( const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) ; <NEW_LINE>
+<NEW_LINE>already_AddRefed < nsIDOMSVGLength > GetItemAt ( uint32_t aIndex ) ; <NEW_LINE>
+<TAB> struct name_snapshot old_name ; <NEW_LINE>
+MODULE_ALIAS_CRYPTO ( "aes - all" ) ; <NEW_LINE>
+CWD_API void realpath_cache_del ( const char * path , size_t path_len ) <NEW_LINE>
+<TAB> <TAB> <NEW_LINE><TAB> <TAB> if ( bp && ( xfs_da_shrink_inode ( args , 0 , bp ) != 0 ) ) <NEW_LINE>
+<NEW_LINE>
+<TAB> <TAB> if ( tsa && tportno > 0 ) { <NEW_LINE>
+if ( ( status = lstat ( filename , filestats ) ) != 0 ) <NEW_LINE>
+const jschar * chars ( JSContext * cx , SourceDataCache : : AutoHoldEntry & asp ) ; <NEW_LINE>
+sr -> fd_file = fd ; <NEW_LINE>sr -> fd_is_fdt = MK_FALSE ; <NEW_LINE>
+p -> tokenbuf [ p -> tokenpos ] = 0 ; <NEW_LINE>
+<TAB> struct serial_icounter_struct icount = { } ; <NEW_LINE>
+<TAB> if ( ! sctp_verify_asconf ( asoc , chunk , true , & err_param ) ) <NEW_LINE>
+<TAB> ( unsigned char * ) e + sizeof ( struct compat_ipt_entry ) >= limit || <NEW_LINE><TAB> ( unsigned char * ) e + e -> next_offset > limit ) { <NEW_LINE>
+extern int udf_get_filename ( struct super_block * , uint8_t * , int , uint8_t * , <NEW_LINE><TAB> <TAB> <TAB> int ) ; <NEW_LINE>
+{ <NEW_LINE>scanline = ( unsigned char * ) RelinquishMagickMemory ( scanline ) ; <NEW_LINE>ThrowReaderException ( ResourceLimitError , "MemoryAllocationFailed" ) ; <NEW_LINE> } <NEW_LINE>
+<TAB> <TAB> <TAB> if ( npix > 0 ) WritePixel ( i , & context , casspecial ) ; <NEW_LINE><TAB> <TAB> <TAB> npix -- ; <NEW_LINE>
+<TAB> bool tsonly , opt_stats = false ; <NEW_LINE>
+nsWeakPtr mContent ; <NEW_LINE>
+return 1 ; <NEW_LINE>
+<TAB> copy_file_as_user ( src , dest , getuid ( ) , getgid ( ) , S_IRUSR | S_IWUSR ) ; <NEW_LINE><TAB> fs_logger2 ( "clone" , dest ) ; <NEW_LINE>
+last mod : $ Id $ <NEW_LINE>
+<TAB> int <TAB> yy , mm , dd , hr , min , sec , csec , pkt_len ; <NEW_LINE>
+char group [ LONG_STRING ] = "" ; <NEW_LINE>
+<NEW_LINE>
+if ( gData -> stateStackTop ) <NEW_LINE> -- gData -> stateStackTop ; <NEW_LINE>
+<TAB> <TAB> int vdaux = verdef -> vd_aux ; <NEW_LINE><TAB> <TAB> if ( vdaux < 1 ) { <NEW_LINE><TAB> <TAB> <TAB> sdb_free ( sdb_verdef ) ; <NEW_LINE><TAB> <TAB> <TAB> goto out_error ; <NEW_LINE><TAB> <TAB> } <NEW_LINE><TAB> <TAB> vstart += vdaux ; <NEW_LINE>
+<TAB> dprintk ( 2 , "vm_open % p [ count = % u , vma = % 08lx - % 08lx ] \n" , map , <NEW_LINE>
+<TAB> if ( getaddrs . addr_num <= 0 || <NEW_LINE><TAB> getaddrs . addr_num >= ( INT_MAX / sizeof ( union sctp_addr ) ) ) <NEW_LINE><TAB> <TAB> return - EINVAL ; <NEW_LINE>
+if ( ! retval ) <NEW_LINE>r = k5memdup0 ( realm , rlen , & retval ) ; <NEW_LINE>
+<TAB> <TAB> if ( np -> file -> basename_utf16 . length > ffmax ) { <NEW_LINE>
+for ( plane = 0 ; plane < 4 && inpic -> data [ plane ] && inpic -> linesize [ plane ] ; plane + + ) { <NEW_LINE>
+<TAB> if ( likely ( serio && ! filtered ) ) <NEW_LINE>
+<TAB> cherokee_buffer_is_empty ( & conn -> validator -> user ) || <NEW_LINE><TAB> cherokee_buffer_is_empty ( & conn -> validator -> passwd ) ) <NEW_LINE>
+<TAB> case 'u' : <NEW_LINE><TAB> if ( enableSessionTickets ) { <NEW_LINE><TAB> <TAB> if ( sendSessionTicketDuringResumption ) { <NEW_LINE><TAB> <TAB> fprintf ( stderr , " - u option given too many times . \n" ) ; <NEW_LINE><TAB> <TAB> fprintf ( stderr , "Run ' % s - h' for usage information . \n" , progName ) ; <NEW_LINE><TAB> <TAB> exit ( 54 ) ; <NEW_LINE><TAB> <TAB> } <NEW_LINE><TAB> <TAB> sendSessionTicketDuringResumption = PR_TRUE ; <NEW_LINE><TAB> } else { <NEW_LINE><TAB> <TAB> enableSessionTickets = PR_TRUE ; <NEW_LINE><TAB> } <NEW_LINE><TAB> break ; <NEW_LINE>
+<TAB> <TAB> size_t j , len = apdu . resp [ i + 1 ] ; <NEW_LINE>
+<TAB> int res = 0 ; <NEW_LINE>
+last mod : $ Id $ <NEW_LINE>
+gss_buffer_desc client_name = GSS_C_EMPTY_BUFFER ; <NEW_LINE>gss_buffer_desc service_name = GSS_C_EMPTY_BUFFER ; <NEW_LINE>
+AutoInfallibleTArray < TemplateRule , 10 > mTemplateRules ; <NEW_LINE>
+MODULE_ALIAS_CRYPTO ( "aes" ) ;
+<TAB> <TAB> rc = jmp_rel ( ctxt , ctxt -> src . val ) ; <NEW_LINE>
+lz . avail_in , at , errbuff ) ; <NEW_LINE>
+unsigned match ; <NEW_LINE>
+<TAB> <TAB> sc = create_spnego_ctx ( 0 ) ; <NEW_LINE>
+<TAB> params -> buffer . fragments > INT_MAX / params -> buffer . fragment_size ) <NEW_LINE>
+<TAB> if ( serial -> num_bulk_out < 2 ) { <NEW_LINE><TAB> <TAB> dev_err ( & serial -> interface -> dev , "missing bulk out endpoints\n" ) ; <NEW_LINE><TAB> <TAB> return - ENODEV ; <NEW_LINE><TAB> } <NEW_LINE>
+<TAB> <TAB> <TAB> <TAB> <NEW_LINE><TAB> <TAB> <TAB> <TAB> if ( pirlvl -> prcwidthexpn + pi -> picomp -> numrlvls > <NEW_LINE><TAB> <TAB> <TAB> <TAB> JAS_UINTFAST32_NUMBITS - 2 || <NEW_LINE><TAB> <TAB> <TAB> <TAB> pirlvl -> prcheightexpn + pi -> picomp -> numrlvls > <NEW_LINE><TAB> <TAB> <TAB> <TAB> JAS_UINTFAST32_NUMBITS - 2 ) { <NEW_LINE><TAB> <TAB> <TAB> <TAB> <TAB> return - 1 ; <NEW_LINE><TAB> <TAB> <TAB> <TAB> } <NEW_LINE><TAB> <TAB> <TAB> <TAB> xstep = picomp -> hsamp * ( JAS_CAST ( uint_fast32_t , 1 ) << <NEW_LINE><TAB> <TAB> <TAB> <TAB> ( pirlvl -> prcwidthexpn + picomp -> numrlvls - rlvlno - 1 ) ) ; <NEW_LINE><TAB> <TAB> <TAB> <TAB> ystep = picomp -> vsamp * ( JAS_CAST ( uint_fast32_t , 1 ) << <NEW_LINE><TAB> <TAB> <TAB> <TAB> ( pirlvl -> prcheightexpn + picomp -> numrlvls - rlvlno - 1 ) ) ; <NEW_LINE>
+<TAB> <TAB> <TAB> <TAB> <TAB> goto error ; <NEW_LINE>
+<TAB> mpz_powm_sec ( v1 , key -> g , u1 , key -> p ) ; <NEW_LINE><TAB> mpz_powm_sec ( v2 , key -> y , u2 , key -> p ) ; <NEW_LINE>
+<TAB> rcu_read_lock ( ) ; <NEW_LINE><TAB> final_p = fl6_update_dst ( fl6 , rcu_dereference ( np -> opt ) , & final ) ; <NEW_LINE><TAB> rcu_read_unlock ( ) ; <NEW_LINE>
+js : : ObjectSet cycleDetectorSet ; <NEW_LINE>
+<NEW_LINE>
+<TAB> hlist_del_init ( & pin -> m_list ) ; <NEW_LINE><TAB> hlist_del_init ( & pin -> s_list ) ; <NEW_LINE>
+static void ptrace_hbptriggered ( struct perf_event * bp , <NEW_LINE>
+ldblk + 1 , sizeof ( * BImgBuff ) ) ; <NEW_LINE>
+<TAB> <TAB> goto out_err ; <NEW_LINE>
+<TAB> <TAB> else if ( i > pos + delta && i + insn -> off + 1 <= pos + delta ) <NEW_LINE>
+<TAB> number = image . ncolors ; <NEW_LINE><TAB> for ( i = 0 ; i < number ; i + + ) { <NEW_LINE><TAB> <TAB> if ( ! image . colorTable [ i ] . c_color ) { <NEW_LINE><TAB> <TAB> <TAB> goto done ; <NEW_LINE><TAB> <TAB> } <NEW_LINE><TAB> } <NEW_LINE>
+loff_t ftrace_filter_lseek ( struct file * file , loff_t offset , int whence ) ; <NEW_LINE>
+<TAB> if ( inode -> i_crypt_info ) <NEW_LINE><TAB> <TAB> return 0 ; <NEW_LINE><NEW_LINE>
+if ( ! fmtint ( sbuffer , buffer , & currlen , maxlen , value , 10 , min , <NEW_LINE>max , flags ) ) <NEW_LINE>return 0 ; <NEW_LINE>
+<TAB> <TAB> err = compat_put_timespec ( & kts , up ) ; <NEW_LINE>
+* <TAB> NET_RX_DROP ( packet was dropped , but freed ) <NEW_LINE>
+imap_quote_string ( dest , dlen , buf , false ) ; <NEW_LINE>
+<TAB> r = __copy_from_user ( data , ( void __user * ) addr + offset , len ) ; <NEW_LINE>
+void SetScrollbarEnabled ( nsIContent * aContent , nscoord aMaxPos ) ; <NEW_LINE>
+ippSetValueTag ( job -> attrs , & attr , IPP_TAG_KEYWORD ) ; <NEW_LINE>ippSetString ( job -> attrs , & attr , 0 , "no - hold" ) ; <NEW_LINE>
+% SetImageProperty ( ) . <NEW_LINE>
+MODULE_ALIAS_CRYPTO ( "sha1" ) ;
+size_t input_forwards_size , <NEW_LINE>size_t input_backwards_size , <NEW_LINE>
+for ( i = 0 ; i <= w - ( int ) sizeof ( long ) ; i += sizeof ( long ) ) { <NEW_LINE>
+nsresult SetUpDocument ( DocumentFlavor aFlavor , <NEW_LINE>const char * aCharset , <NEW_LINE>const char * aContentType , <NEW_LINE>nsIDOMDocument ** aResult , <NEW_LINE>nsIChannel ** aChannel , <NEW_LINE>nsIStreamListener ** aListener ) ; <NEW_LINE>
+MODULE_ALIAS_CRYPTO ( "sha384" ) ; <NEW_LINE>MODULE_ALIAS_CRYPTO ( "sha512" ) ;
+snprintf ( buf , sizeof ( buf ) , " % s - % d" , filename , dec_ctx -> frame_number ) ; <NEW_LINE>
+<TAB> <TAB> " . section . fixup , \"ax\"\n" <TAB> <TAB> <TAB> <TAB> \ <NEW_LINE>"3 : xor"itype" % "rtype"0 , % "rtype"0\n" <TAB> <TAB> \ <NEW_LINE><TAB> <TAB> " jmp 2b\n" <TAB> <TAB> <TAB> <TAB> <TAB> \ <NEW_LINE><TAB> <TAB> " . previous\n" <TAB> <TAB> <TAB> <TAB> <TAB> \ <NEW_LINE><TAB> <TAB> _ASM_EXTABLE_EX ( 1b , 3b ) <TAB> <TAB> <TAB> <TAB> \ <NEW_LINE>
+<TAB> <TAB> <TAB> memset ( & cu -> dies [ cu -> length ] . attr_values [ i ] , 0 , sizeof ( cu -> dies [ cu -> length ] . attr_values [ i ] ) ) ; <NEW_LINE>
+<TAB> tilemap_size = x_size * y_size * sizeof ( struct map_tile ) ; <NEW_LINE><TAB> if ( x_size == 0 || tilemap_size / x_size / sizeof ( struct map_tile ) != y_size <NEW_LINE><TAB> <TAB> || ! ( tilemap = malloc ( tilemap_size ) ) ) <NEW_LINE>
+<TAB> <TAB> <TAB> <TAB> if ( conn_opt -> val != NULL && conn_opt -> val [ 0 ] != '\0' && <NEW_LINE><TAB> <TAB> <TAB> <TAB> <TAB> strcmp ( conn_opt -> keyword , "dbname" ) != 0 ) <NEW_LINE>
+"Range : bytes = % "PRIu64" - " , s -> off ) ; <NEW_LINE>
+XPCWrappedNativeJSClass * clasp = <NEW_LINE> ( XPCWrappedNativeJSClass * ) js : : GetObjectClass ( cur ) ; <NEW_LINE>
+for ( plane = 0 ; plane < 4 && in -> data [ plane ] && in -> linesize [ plane ] ; plane + + ) { <NEW_LINE>
+ThrowBinaryException ( ResourceLimitError , "InvalidLength" , image -> filename ) ; <NEW_LINE>
+PRPackedBool mInDtor ; <NEW_LINE>
+<TAB> <TAB> char * arch = strdup ( info -> arch ) ; <NEW_LINE><TAB> <TAB> char * cpu = info -> cpu ? strdup ( info -> cpu ) : NULL ; <NEW_LINE>
+<NEW_LINE>

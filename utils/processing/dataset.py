@@ -19,7 +19,7 @@ def train_val_test_split(dataset: DataFrame, shuffle: bool = True) -> dict:
 
 
 def train_val_split(dataset: DataFrame, shuffle: bool = True) -> dict:
-    train, val = train_test_split(dataset, test_size=1 - SPLIT_RATIOS[0], shuffle=shuffle)
+    train, val = train_test_split(dataset, test_size=SPLIT_RATIOS[2], shuffle=shuffle)
 
     train = train.reset_index(drop=True)
     val = val.reset_index(drop=True)

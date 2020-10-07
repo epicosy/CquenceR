@@ -1,4 +1,0 @@
-[2020-09-28 00:24:21,093 INFO] Translating shard 0.
-/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  var = torch.tensor(arr, dtype=self.dtype, device=device)
-[2020-09-28 00:24:21,903 INFO] PRED AVG SCORE: -0.4821, PRED PPL: 1.6194
