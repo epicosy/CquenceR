@@ -34,7 +34,7 @@ pip3 install OpenNMT-py
 command -v onmt_train > /dev/null
 [[ $? -eq 1 ]] && echo "[Error] OpenNMT not installed" && exit 1 ;
 # preprocess dataset
-./CquenceR.py preprocess --split train_val
+# ./CquenceR.py preprocess --split train_val
 # train
-./CquenceR.py train
+# ./CquenceR.py train
 echo "CquenceR successfully initialized"
