@@ -7,8 +7,10 @@ from utils.command import Command
 
 
 class Train(Command):
-    def __init__(self, **kwargs):
+    def __init__(self, gpu: bool = False, **kwargs):
         super().__init__(**kwargs)
+        if gpu:
+            self.config.onmt_args.train['gpu_ranks'] = 0
         self.in_path = self.configs.data_paths.input
         self.out_path = self.configs.data_paths.model
 
@@ -38,9 +40,4 @@ class Train(Command):
 
     @staticmethod
     def add_arguments(cmd_parser) -> NoReturn:
-        # cmd_parser.add_argument('-sp', '--src_path', help='Source dataset path.', type=str, required=None)
-        # cmd_parser.add_argument('-op', '--out_path', help='Destination path.', type=str, default=None)
-        # cmd_parser.add_argument('-s', '--split', help='Split dataset.', choices=list_of_split_choices, default=None)
-        # cmd_parser.add_argument('-tl', '--truncation_limit', help='Truncation limit for the number of tokens.', type=int,
-        #                        choices=[500, 1000, 1500], default=500)
-        pass
+        cmd_parser.add_argument('--gpu', action='store_true', default=False, help='Enables GPU training.')

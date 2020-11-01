@@ -12,7 +12,8 @@ from utils.results import Results
 
 class Repair(Command):
     def __init__(self, working_dir: str, prefix: str, manifest_path: str, compile_script: str, test_script: str,
-                 pos_tests: int, neg_tests: int, seed: int = 0, beam_size: int = None, cont: bool = False, **kwargs):
+                 compile_args: str, pos_tests: int, neg_tests: int, seed: int = 0, beam_size: int = None,
+                 cont: bool = False, **kwargs):
         super().__init__(**kwargs)
         self.working_dir = Path(working_dir)
         self.manifest_path = Path(manifest_path)
@@ -21,6 +22,7 @@ class Repair(Command):
         self.pos_tests = pos_tests
         self.neg_tests = neg_tests
         self.compile_script = compile_script
+        self.compile_args = compile_args
         self.test_script = test_script
         self.root = self.configs.data_paths.root
         self.model_path = self.configs.data_paths.model / Path('final-model_step_2000.pt')
@@ -40,16 +42,13 @@ class Repair(Command):
 
     def __call__(self, **kwargs):
         self._check_onmt()
-
+        self._sanity_check()
         # Tokenize and truncate
         self._preprocess()
-
         # Generate predictions
         self._predict()
-
         # Post Process
         self._postprocess()
-
         self.results = Results(total_patches=self.beam, pos_tests=self.pos_tests, neg_tests=self.neg_tests)
         # Generate patches
         for i in range(self.beam):
@@ -73,6 +72,23 @@ class Repair(Command):
         if pos:
             return [Test(name=f"p{pt}") for pt in range(1, self.pos_tests + 1)]
         return [Test(name=f"n{nt}") for nt in range(1, self.neg_tests + 1)]
+
+    def _sanity_check(self):
+        print("Performing sanity check.")
+
+        compiles, _ = self._compile()
+        if not compiles:
+            print("Sanity check failed: compile failure.")
+            exit(1)
+
+        # Positive Tests
+        pos_tests = self._get_tests()
+        # Negative Tests
+        neg_tests = self._get_tests(pos=False)
+
+        if not self._test(tests=neg_tests) and not self._test(tests=pos_tests):
+            print("Sanity check failed: test failure.")
+            exit(1)
 
     def _preprocess(self):
         if not self.working_dir.exists():
@@ -131,9 +147,15 @@ class Repair(Command):
     # h--- if you don't have them, and the difference may drive your choice of solution.
     # For C, you pretty much need to run them through a compiler with the preprocessor enabled.
     # If you don't do that, the typical C code containg macros and preprocessor conditionals won't be parsable at all.
-    def _compile(self, patch: Patch):
-        print(f"Compiling patch {patch.number}.")
-        compile_cmd = self.compile_script.replace("__SOURCE_NAME__", str(patch))
+    def _compile(self, patch: Patch = None):
+        compile_cmd = self.compile_script
+
+        if patch:
+            print(f"Compiling patch {patch.number}.")
+            compile_cmd += " " + self.compile_args.replace('__SOURCE_NAME__', str(patch))
+        else:
+            print("Compiling")
+
         out, err, exec_time = super().__call__(command=f"{compile_cmd}")
 
         if self.verbose:
@@ -163,16 +185,16 @@ class Repair(Command):
     def _test_patch(self, patch: Patch) -> bool:
         # Compile
         patch.compiles, patch.compile_time = self._compile(patch)
-        # Pos Test
+        # Positive Tests
         pos_tests = self._get_tests()
         patch.pos_tests = pos_tests
-        # Neg Test
+        # Negative Tests
         neg_tests = self._get_tests(pos=False)
         patch.neg_tests = neg_tests
 
         if patch.compiles:
-            if self._test(tests=pos_tests):
-                if self._test(tests=neg_tests):
+            if self._test(tests=neg_tests):
+                if self._test(tests=pos_tests):
                     patch(is_fix=True)
                     for pf in patch:
                         repair_file_path = self.repair_dir / Path(pf.target_file)
@@ -196,6 +218,8 @@ class Repair(Command):
         cmd_parser.add_argument('-mp', '--manifest_path', type=str, required=True,
                                 help='File with the vulnerable files and respective hunks lines.')
         cmd_parser.add_argument('-cs', '--compile_script', help='Compile script to be used.', type=str, required=True)
+        cmd_parser.add_argument('-ca', '--compile_args', type=str, required=True,
+                                help='Arguments to be used for compiling the patches.')
         cmd_parser.add_argument('-pf', '--prefix', help='Prefix for source files.', type=str, required=True)
         cmd_parser.add_argument('-ts', '--test_script', help='Test script to be used.', type=str, required=True)
         cmd_parser.add_argument('-pt', '--pos_tests', help='Number of positive tests.', type=int, required=True)

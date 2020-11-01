@@ -17,14 +17,14 @@ class InputDataset:
         self.to_drop = []
         self.processed = 0
 
-    def write(self, trunc_limit):
+    def write(self, trunc_limit: int = None):
         with self.src.open(mode="a", encoding="utf-8") as src, self.tgt.open(mode="a", encoding="utf-8") as tgt, \
                 self.tmp.open(mode="a", encoding="utf-8") as tmp:
 
             for index, row in self.dataset.iterrows():
                 source_tokens, target_tokens = tokenize(row[self.column])
 
-                if len(source_tokens) > trunc_limit:
+                if trunc_limit and len(source_tokens) > trunc_limit:
                     source_tokens = truncate(source_tokens, trunc_limit)
 
                     if not source_tokens:

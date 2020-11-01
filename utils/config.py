@@ -29,7 +29,6 @@ ONMT_ARGS = {'preprocess': {
         'reuse_copy_attn': True,
         'train_steps': 2000,
         'save_checkpoint_steps': 1000
-#        'gpu_ranks': 0
     },
     'translate': {
         'beam_size': 50,
@@ -49,4 +48,5 @@ data_paths = DataPaths(root=data_path,
 onmt_args = ONMTArguments(preprocess=ONMT_ARGS['preprocess'], train=ONMT_ARGS['train'], translate=ONMT_ARGS['translate'])
 configuration = Configuration(root=Path(ROOT_DIR),
                               data_paths=data_paths,
-                              onmt_args=onmt_args)
+                              onmt_args=onmt_args,
+                              trunc_limit=200)

@@ -5,8 +5,10 @@ from collections import Callable
 
 from utils.command import Command
 from utils.commands.preprocess import Preprocess
+from utils.commands.test import Test
 from utils.commands.train import Train
 from utils.commands.repair import Repair
+from utils.commands.stats import Stats
 
 COMMANDS = {}
 
@@ -36,7 +38,9 @@ def register(definition: Callable, arguments: Callable):
 
 register(definition=Preprocess.definition, arguments=Preprocess.add_arguments)
 register(definition=Train.definition, arguments=Train.add_arguments)
+register(definition=Test.definition, arguments=Test.add_arguments)
 register(definition=Repair.definition, arguments=Repair.add_arguments)
+register(definition=Stats.definition, arguments=Stats.add_arguments)
 
 
 def run(command: Command, **kwargs):

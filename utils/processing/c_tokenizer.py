@@ -93,6 +93,7 @@ def tokenizer(code: str):
     return tokenized
 
 
+'''
 def tokenize_leading_spaces(line: str):
     removed_spaces = line.lstrip()
     strip_start = line.find(removed_spaces)
@@ -105,8 +106,10 @@ def tokenize_leading_spaces(line: str):
     tabs_escaped = leading_tabs.replace('\t', ' TOKENIZER_TAB ')
 
     return tabs_escaped + removed_spaces
+'''
 
 
+# TODO: Segregate hunk identification from tokenizing
 def tokenize(snippet: str):
     no_comments = remove_comments(snippet)
     new_line_escape = no_comments.replace('\n', ' TOKENIZER_NEW_LINE \n')
@@ -120,17 +123,17 @@ def tokenize(snippet: str):
             if not vuln_start:
                 vuln_start = True
                 source_hunk.append("TOKENIZER_START_VULN ")
-            source_hunk.append(tokenize_leading_spaces(line.replace('-', '', 1)).strip())
+            source_hunk.append(line.replace('-', '', 1).strip())
         elif line.startswith("+"):
             if vuln_start:
                 source_hunk.append(" TOKENIZER_END_VULN ")
                 vuln_start = False
-            target_line += tokenize_leading_spaces(line.replace('+', '', 1).strip())
+            target_line += line.replace('+', '', 1).strip()
         else:
             if vuln_start:
                 source_hunk.append(" TOKENIZER_END_VULN ")
                 vuln_start = False
-            source_hunk.append(tokenize_leading_spaces(line).strip() + " ")
+            source_hunk.append(line.strip() + " ")
 
     if vuln_start:
         source_hunk.append(" TOKENIZER_END_VULN ")
@@ -144,12 +147,13 @@ def tokenize(snippet: str):
 
     tokens = tokenizer(target_line)
     target_tokens = ' '.join(tokens)
-    target_tokens = target_tokens.replace("TOKENIZER_TAB", TAB_TOKEN)
+    # target_tokens = target_tokens.replace("TOKENIZER_TAB", TAB_TOKEN)
     target_tokens = target_tokens.replace("TOKENIZER_NEW_LINE", NEW_LINE_TOKEN)
 
     return source_tokens, target_tokens
 
 
+# TODO: merge this with previous function or refactor to remove code duplication
 def tokenize_hunks(snippet: str, hunks: Dict[int, Tuple[int, int]], truncation_limit: int):
     # TODO: REMOVE COMMENTS
     new_line_escape = snippet.replace('\n', ' TOKENIZER_NEW_LINE \n')
@@ -159,7 +163,7 @@ def tokenize_hunks(snippet: str, hunks: Dict[int, Tuple[int, int]], truncation_l
     size_snippet = len(hunk_file_lines)
 
     for line in hunk_file_lines:
-        source_tokens.append(tokenize_leading_spaces(line).strip() + " ")
+        source_tokens.append(line.strip() + " ")
 
     for h_id, hunk in hunks.items():
         start, end = hunk
@@ -184,7 +188,7 @@ def tokenize_hunks(snippet: str, hunks: Dict[int, Tuple[int, int]], truncation_l
 
 
 def replace_source_tokens(source_tokens: str) -> str:
-    source_tokens = source_tokens.replace("TOKENIZER_TAB", TAB_TOKEN)
+    # source_tokens = source_tokens.replace("TOKENIZER_TAB", TAB_TOKEN)
     source_tokens = source_tokens.replace("TOKENIZER_NEW_LINE", NEW_LINE_TOKEN)
     source_tokens = source_tokens.replace("TOKENIZER_START_VULN", START_TOKEN)
     source_tokens = source_tokens.replace("TOKENIZER_END_VULN", END_TOKEN)

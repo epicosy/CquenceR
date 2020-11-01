@@ -10,7 +10,7 @@ from processing.pre.metadata import Metadata
 from processing.pre.input_dataset import InputDataset
 
 
-def process_dataset(dataset_path: Path, out_path: Path, truncation_limit: int, split: str = None):
+def process_dataset(dataset_path: Path, out_path: Path, truncation_limit: int = None, split: str = None):
     dataset = pd.read_pickle(dataset_path)
     metadata = Metadata(len(dataset))
 

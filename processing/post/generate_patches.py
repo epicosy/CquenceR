@@ -1,12 +1,12 @@
 from pathlib import Path
 from typing import Dict, Tuple
 from utils.patch import Patch, PatchFile
-from utils.processing.c_tokenizer import NEW_LINE_TOKEN, TAB_TOKEN
+from utils.processing.c_tokenizer import NEW_LINE_TOKEN
 
 
 def tokens_to_source(tokens: str) -> str:
-    source = tokens.replace(TAB_TOKEN, "\t")
-    source = source.replace(NEW_LINE_TOKEN, "\n")
+    # source = tokens.replace(TAB_TOKEN, "\t")
+    source = tokens.replace(NEW_LINE_TOKEN, "\n")
 
     return source
 
