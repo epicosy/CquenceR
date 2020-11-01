@@ -10,7 +10,7 @@ class Train(Command):
     def __init__(self, gpu: bool = False, **kwargs):
         super().__init__(**kwargs)
         if gpu:
-            self.config.onmt_args.train['gpu_ranks'] = 0
+            self.configs.onmt_args.train['gpu_ranks'] = 0
         self.in_path = self.configs.data_paths.input
         self.out_path = self.configs.data_paths.model
 

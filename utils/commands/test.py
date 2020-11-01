@@ -11,7 +11,8 @@ from utils.plots import Plotter
 class Test(Command):
     def __init__(self, src_path: str = None, hist: bool = False, **kwargs):
         super().__init__(**kwargs)
-        self.model_path = self.configs.data_paths.model / Path('final-model_step_2000.pt')
+        self.steps = self.configs.onmt_args.train["steps"]
+        self.model_path = self.configs.data_paths.model / Path(f"final-model_step_{self.train_steps}.pt")
         self.src_path = src_path if src_path else self.configs.data_paths.processed
         self.src_test = self.src_path / Path('src-test.txt')
         self.tgt_test = self.src_path / Path('tgt-test.txt')
@@ -54,10 +55,10 @@ class Test(Command):
 
             matches_found_total = 0
             matches_found_no_repeat = 0
-            found = 0
             similarity_pred = []
 
             for i, target_line in enumerate(target_lines):
+                found = 0
 
                 for i in range(beam):
                     patch_line = p.readline()
