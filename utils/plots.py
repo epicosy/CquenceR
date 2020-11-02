@@ -71,6 +71,20 @@ class Plotter:
         self.file_name = "histogram"
         self.show()
 
+    def subplots(self, x_data: List, y_data: List[List], fig_title: str, x_label: str, y_labels: List[AnyStr]):
+        nrows = len(y_data)
+        fig, rows = plt.subplots(nrows, 1)
+        fig.suptitle(fig_title)
+
+        for y, row, y_label, color in zip(y_data, rows, y_labels, self.colors):
+            row.plot(x_data, y, '.-', color=color)
+            row.set_ylabel(y_label)
+
+        rows[-1].set_xlabel(x_label)
+
+        self.file_name = "subplots"
+        self.show()
+
     # source https://stackoverflow.com/a/18975065
     def bars(self, data: List[int], index: List[AnyStr], bar_label: str, y_label: str):
         s = pd.Series(data, index=index)

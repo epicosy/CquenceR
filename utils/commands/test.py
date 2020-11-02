@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 import Levenshtein
+import statistics
+
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import NoReturn
 
@@ -9,10 +12,10 @@ from utils.plots import Plotter
 
 
 class Test(Command):
-    def __init__(self, src_path: str = None, hist: bool = False, **kwargs):
+    def __init__(self, src_path: str = None, hist: bool = False, gpu: bool = False, **kwargs):
         super().__init__(**kwargs)
-        self.steps = self.configs.onmt_args.train["steps"]
-        self.model_path = self.configs.data_paths.model / Path(f"final-model_step_{self.train_steps}.pt")
+        self.steps = self.configs.onmt_args.train["train_steps"]
+        self.model_path = self.configs.data_paths.model / Path(f"final-model_step_{self.steps}.pt")
         self.src_path = src_path if src_path else self.configs.data_paths.processed
         self.src_test = self.src_path / Path('src-test.txt')
         self.tgt_test = self.src_path / Path('tgt-test.txt')
@@ -20,6 +23,9 @@ class Test(Command):
         self.hist = hist
         self.plotter = Plotter()
         self.predictions = self.out_path / Path('cquencer_test_predictions')
+
+        if gpu:
+            self.configs.onmt_args.translate['gpu'] = 0
 
         if not self.src_test.exists():
             raise ValueError("src-test.txt not found")
@@ -71,10 +77,11 @@ class Test(Command):
                         similarity_pred.append(1)
                     else:
                         similarity_pred.append(Levenshtein.ratio(patch_line, target_line))
+                        #similarity_pred.append(SequenceMatcher(None, patch_line, target_line).ratio())
 
             print(f"Similarity total average: {round(sum(similarity_pred) / len(similarity_pred), 3)}")
-            print(
-                f"Found fixes for {matches_found_no_repeat} vulnerabilities ({round(matches_found_no_repeat / len(target_lines), 3)}%)")
+            print(f"Similarity median: {round(statistics.median(similarity_pred), 3)}")
+            print(f"Found fixes for {matches_found_no_repeat} vulnerabilities ({round(matches_found_no_repeat / len(target_lines), 3)}%)")
             print(f"Found {matches_found_total} total fixes")
             print(f"Analized {len(target_lines)} total changes")
 
@@ -92,3 +99,4 @@ class Test(Command):
     def add_arguments(cmd_parser) -> NoReturn:
         cmd_parser.add_argument('-sp', '--src_path', help='Source dataset path.', type=str, default=None)
         cmd_parser.add_argument('--hist', help='Plots similarity histogram.', action="store_true", required=False)
+        cmd_parser.add_argument('--gpu', action='store_true', default=False, help='Enables GPU translation.')
