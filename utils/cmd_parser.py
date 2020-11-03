@@ -9,6 +9,7 @@ from utils.commands.test import Test
 from utils.commands.train import Train
 from utils.commands.repair import Repair
 from utils.commands.stats import Stats
+from utils.commands.clean import Clean
 
 COMMANDS = {}
 
@@ -43,6 +44,7 @@ register(definition=Train.definition, arguments=Train.add_arguments)
 register(definition=Test.definition, arguments=Test.add_arguments)
 register(definition=Repair.definition, arguments=Repair.add_arguments)
 register(definition=Stats.definition, arguments=Stats.add_arguments)
+register(definition=Clean.definition, arguments=Clean.add_arguments)
 
 
 def run(command: Command, **kwargs):
