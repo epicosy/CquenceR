@@ -20,7 +20,7 @@ class Clean(Command):
                     continue
                 if value.is_dir():
                     cmd_str = f"rm -rf {value} 2>&1"
-                    out, err, _ = super().__call__(command=cmd_str, file=self.out_file)
+                    out, err, _ = super().__call__(command=cmd_str)
 
                     if err:
                         self.status('clean: something went wrong.')
