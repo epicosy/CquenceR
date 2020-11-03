@@ -15,7 +15,7 @@ class Stats(Command):
         self.analyzer = DatasetAnalyzer(src=self.src_path / Path('src-dataset.txt'),
                                         tgt=self.src_path / Path('tgt-dataset.txt'), verbose=self.verbose)
         self.plotter = Plotter(save)
-        mapping = {'zipf': self.zipf, 'hist': self.histogram, 'bars': self.bars, 'train_stats': self.train_stats}
+        mapping = {'zipf': self.zipf, 'hist': self.histogram, 'bars': self.bars}
         self.plots = {name: func for name, func in mapping.items() if name in plots} if plots else mapping
 
     def __call__(self, **kwargs):
@@ -47,6 +47,6 @@ class Stats(Command):
         cmd_parser.add_argument('-sp', '--src_path', help='Source dataset path.', type=str, required=None)
         cmd_parser.add_argument('--save', help='Saves the plots to specified path.', type=str, required=False)
         cmd_parser.add_argument('--plots', help='Flag for specifying the available plots to be shown.',
-                                choices=['zipf', 'hist', 'bars', 'train_stats'],
+                                choices=['zipf', 'hist', 'bars'],
                                 default=None)
 
