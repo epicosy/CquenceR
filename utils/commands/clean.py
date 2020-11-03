@@ -10,12 +10,14 @@ class Clean(Command):
         super().__init__(**kwargs)
         self.mapping = {'train': [self.configs.data_paths.model],
                         'preprocess': [self.configs.data_paths.input, self.configs.data_paths.processed],
-                        'test': [self.configs.data_paths.input,  Path('/tmp', 'cquencer_test_predictions')]}
+                        'test': [Path('/tmp', 'cquencer_test_predictions')]}
         self.commands = {command: self.mapping[command]} if command else self.mapping
 
     def __call__(self, **kwargs):
         for command, values in self.commands.items():
             for value in values:
+                if not value.exists():
+                    continue
                 if value.is_dir():
                     cmd_str = f"rm -rf {value} 2>&1"
                     out, err, _ = super().__call__(command=cmd_str, file=self.out_file)
