@@ -18,10 +18,12 @@ def scatter(x: list, y: list, x_label: str, y_label: str):
 
 
 class Plotter:
-    def __init__(self, save_path: str = None):
+    def __init__(self, save_path: str = None, fig_width: int = 20, fig_height: int = 10):
         self.save_path = Path(save_path) if save_path else None
-        self.colors = ['steelblue', 'coral', 'seagreen', 'tomato', 'gold', 'plum', 'slategray', 'purple', 'teal', 'salmon']
+        self.colors = ['steelblue', 'coral', 'seagreen', 'gold', 'teal', 'tomato', 'slategray', 'plum', 'salmon',
+                       'pink', 'purple', 'red']
         self.file_name = None
+        self.fig_size = (fig_width, fig_height)
 
         if self.save_path and not self.save_path.exists():
             self.save_path.mkdir()
@@ -39,7 +41,7 @@ class Plotter:
         ranks = arange(1, len(counts) + 1)
         idxs = argsort(-counts)
         frequencies = counts[idxs]
-        plt.figure(figsize=(8, 6))
+        plt.figure(figsize=self.fig_size)
         plt.ylim(1, 10 ** 6)
         plt.xlim(1, 10 ** 6)
         loglog(ranks, frequencies, marker=".")
@@ -58,27 +60,30 @@ class Plotter:
         self.show()
 
     def multi_histogram(self, data: List[List], labels: List[AnyStr], interval: Tuple[int, int], bins_size: int = 100,
-                        x_label: str = "",  y_label: str = "", pdf: bool = False):
+                        x_label: str = "",  y_label: str = "", pdf: bool = False, file_name: str = None):
         bins = np.linspace(interval[0], interval[1], bins_size)
-        for lst, label in zip(data, labels):
-            n, x, _ = plt.hist(lst, bins=bins, label=label, alpha=0.8, density=pdf)
+        plt.figure(figsize=self.fig_size)
+        for i, (lst, label) in enumerate(zip(data, labels)):
+            n, x, _ = plt.hist(lst, bins=bins, label=label, alpha=0.8, density=pdf, color=self.colors[i])
             if pdf:
                 density = stats.gaussian_kde(lst)
-                plt.plot(x, density(x), color='r')
-        plt.ylabel(x_label)
-        plt.xlabel(y_label)
+                plt.plot(x, density(x), color=self.colors[-(i+1)], label=f"{label}_kde")
+        plt.xlabel(x_label)
+        plt.ylabel(y_label)
         plt.legend(loc='upper right')
-        self.file_name = "histogram"
+        self.file_name = "histogram" if not file_name else file_name
         self.show()
 
     def subplots(self, x_data: List, y_data: List[List], fig_title: str, x_label: str, y_labels: List[AnyStr]):
         nrows = len(y_data)
         fig, rows = plt.subplots(nrows, 1)
         fig.suptitle(fig_title)
+        fig.set_size_inches(self.fig_size[0], self.fig_size[1], forward=True)
 
         for y, row, y_label, color in zip(y_data, rows, y_labels, self.colors):
             row.plot(x_data, y, '.-', color=color)
             row.set_ylabel(y_label)
+            # row.tick_params(labelrotation=20)
 
         rows[-1].set_xlabel(x_label)
 
@@ -92,22 +97,11 @@ class Plotter:
         # Set descriptions:
         plt.ylabel(y_label)
         plt.xlabel(bar_label)
+        plt.figure(figsize=self.fig_size)
 
         # Plot the data:
         s.plot.bar(color=self.colors, alpha=0.7)
         self.file_name = "bars"
-        self.show()
-
-    def color_map(self, values: list):
-        # generate 2 2d grids for the x & y bounds
-        size = len(values)
-        y, x = np.meshgrid(np.linspace(0, 1, size), np.linspace(0, 1, size))
-        c = plt.pcolormesh(x, y, values, cmap='RdBu', vmin=min(values), vmax=max(values))
-        # set the limits of the plot to the limits of the data
-        plt.axis([x.min(), x.max(), y.min(), y.max()])
-        plt.colorbar(c)
-
-        self.file_name = "color_map"
         self.show()
 
     def show(self):

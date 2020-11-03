@@ -19,11 +19,13 @@ class Command(object):
                  name: str,
                  configs: Configuration,
                  log_file: str = None,
+                 seed: int = 0,
                  verbose: bool = False,
                  **kwargs):
         self.name = name
         self.configs = configs
         self.verbose = verbose
+        self.seed = seed
         self.log_file = Path(log_file) if log_file else log_file
 
         if kwargs:
@@ -34,7 +36,8 @@ class Command(object):
                  cwd: str = None,
                  file: Path = None,
                  exit_err: bool = False) -> Tuple[Union[str, None], Union[str, None], float]:
-
+        if self.verbose:
+            print(command)
         # based on https://stackoverflow.com/a/28319191
         with subprocess.Popen(args=command,
                               shell=isinstance(command, str),

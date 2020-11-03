@@ -19,6 +19,7 @@ class Preprocess(Command):
         self.split = split
         self.no_onmt = no_onmt
         self.no_truncation = no_truncation
+        self.out_file = Path(self.onmt_input_path / Path(f"preprocess.{self.seed}.out"))
 
     def __call__(self, **kwargs):
         if self.source.is_dir():
@@ -44,13 +45,13 @@ class Preprocess(Command):
             valid_src = self.out / Path('src-val.txt')
             valid_tgt = self.out / Path('tgt-val.txt')
             save_data = self.onmt_input_path / Path('final')
+            self.configs.onmt_args.preprocess['seed'] = self.seed
             mutable_options = self.configs.onmt_args.unpack(name='preprocess', string=True)
 
             cmd_str = f"onmt_preprocess -train_src {train_src} -train_tgt {train_tgt} -valid_src {valid_src} " \
                       f"-valid_tgt {valid_tgt} {mutable_options} " \
                       f"--save_data {save_data} 2>&1"
-            out, err, _ = super().__call__(command=cmd_str,
-                                           file=Path(self.onmt_input_path / Path('preprocess.out')))
+            out, err, _ = super().__call__(command=cmd_str, file=self.out_file)
 
             if err:
                 self.status('train: something went wrong.')

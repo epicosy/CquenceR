@@ -17,6 +17,8 @@ parser = argparse.ArgumentParser(prog="CquenceR",
 main_parser = argparse.ArgumentParser(add_help=False)
 
 main_parser.add_argument('-v', '--verbose', help='Verbose output.', action='store_true')
+main_parser.add_argument('-seed', required=False, action='store_true',
+                         help='Seed used for better reproducibility between experiments')
 main_parser.add_argument('-l', '--log_file', type=str, default=None, help='Log file to write the results to.')
 
 subparsers = parser.add_subparsers()

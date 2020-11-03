@@ -28,6 +28,8 @@ ONMT_ARGS = {'preprocess': {
         'copy_attn': True,
         'reuse_copy_attn': True,
         'train_steps': 2000,
+        'valid_steps': 50,
+        'early_stopping': 200,
         'save_checkpoint_steps': 1000
     },
     'translate': {

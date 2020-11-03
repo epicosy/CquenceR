@@ -46,6 +46,11 @@ class DatasetAnalyzer:
             return [len(line) for line in self.target]
         return [len(line) for line in self.source]
 
+    def tokens_size(self, tgt: bool = False):
+        if tgt:
+            return [[len(token) for token in line] for line in self.target]
+        return [[len(token) for token in line] for line in self.source]
+
     def hunk_size(self):
         total = {'1': 0, '2': 0, '3': 0, '4-10': 0, '11+': 0}
         no_vuln = 0

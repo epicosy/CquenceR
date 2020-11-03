@@ -12,7 +12,7 @@ from utils.plots import Plotter
 
 
 class Test(Command):
-    def __init__(self, src_path: str = None, hist: bool = False, gpu: bool = False, **kwargs):
+    def __init__(self, src_path: str = None, plot: bool = False, gpu: bool = False, **kwargs):
         super().__init__(**kwargs)
         self.steps = self.configs.onmt_args.train["train_steps"]
         self.model_path = self.configs.data_paths.model / Path(f"final-model_step_{self.steps}.pt")
@@ -20,8 +20,8 @@ class Test(Command):
         self.src_test = self.src_path / Path('src-test.txt')
         self.tgt_test = self.src_path / Path('tgt-test.txt')
         self.out_path = Path('/tmp')
-        self.hist = hist
-        self.plotter = Plotter()
+        self.out_file = self.out_path / Path(f"translate.{self.seed}.out")
+        self.plot = plot
         self.predictions = self.out_path / Path('cquencer_test_predictions')
 
         if gpu:
@@ -41,11 +41,11 @@ class Test(Command):
                 print(f"onmt_translate not found: install OpenNMT-py")
                 exit(1)
 
+            self.configs.onmt_args.translate['seed'] = self.seed
             onmt_translate_args = self.configs.onmt_args.unpack(name='translate', string=True)
             cmd_str = f"onmt_translate -model {self.model_path} -src {self.src_test} {onmt_translate_args} " \
                       f"-output {self.predictions} 2>&1"
-
-            out, err, _ = super().__call__(command=cmd_str, file=self.out_path / Path('translate.out'))
+            out, err, _ = super().__call__(command=cmd_str, file=self.out_file)
 
             if err:
                 self.status('onmt_translate: something went wrong.')
@@ -62,12 +62,18 @@ class Test(Command):
             matches_found_total = 0
             matches_found_no_repeat = 0
             similarity_pred = []
+            all_tgt_tokens = []
+            all_prd_tokens = []
 
             for i, target_line in enumerate(target_lines):
                 found = 0
+                tgt_tokens = [len(token) for token in target_line.split()]
+                all_tgt_tokens.extend(tgt_tokens)
 
                 for i in range(beam):
                     patch_line = p.readline()
+                    pred_tokens = [len(token) for token in patch_line.split()]
+                    all_prd_tokens.extend(pred_tokens)
 
                     if patch_line == target_line:
                         matches_found_total += 1
@@ -76,18 +82,27 @@ class Test(Command):
                         found = 1
                         similarity_pred.append(1)
                     else:
-                        similarity_pred.append(Levenshtein.ratio(patch_line, target_line))
-                        #similarity_pred.append(SequenceMatcher(None, patch_line, target_line).ratio())
+                        similarity_pred.append(Levenshtein.seqratio(patch_line.split(), target_line.split()))
+                        # similarity_pred.append(SequenceMatcher(None, patch_line, target_line).ratio())
 
             print(f"Similarity total average: {round(sum(similarity_pred) / len(similarity_pred), 3)}")
             print(f"Similarity median: {round(statistics.median(similarity_pred), 3)}")
-            print(f"Found fixes for {matches_found_no_repeat} vulnerabilities ({round(matches_found_no_repeat / len(target_lines), 3)}%)")
+            print(f"Average target token size: {round(sum(all_tgt_tokens) / len(all_tgt_tokens), 3)}")
+            print(f"Average predicted token size: {round(sum(all_prd_tokens) / len(all_prd_tokens), 3)}")
+            print(f"Median predicted token size: {round(statistics.median(all_prd_tokens), 3)}")
+            print(f"Median Target Token Size: {round(statistics.median(all_tgt_tokens), 3)}")
+            print(
+                f"Found fixes for {matches_found_no_repeat} vulnerabilities ({round(matches_found_no_repeat / len(target_lines), 3)}%)")
             print(f"Found {matches_found_total} total fixes")
-            print(f"Analized {len(target_lines)} total changes")
+            print(f"Analyzed {len(target_lines)} total changes")
 
-            if self.hist:
-                self.plotter.multi_histogram([similarity_pred], labels=['predictions'], x_label="Frequency",
-                                             interval=(0, 1), y_label="similarity", bins_size=100, pdf=True)
+            if self.plot:
+                plotter = Plotter(str(self.configs.root / Path('test_plots')))
+                plotter.multi_histogram([similarity_pred], labels=['predictions'], x_label="similarity",
+                                        interval=(0, 1), y_label="Frequency", bins_size=100, pdf=True)
+                plotter.multi_histogram([all_tgt_tokens, all_prd_tokens], labels=['target', 'prediction'],
+                                        x_label="Size", interval=(0, 35), y_label="Frequency",
+                                        bins_size=100, pdf=True, file_name='tokens_size_histogram')
 
     @staticmethod
     def definition() -> dict:
@@ -98,5 +113,5 @@ class Test(Command):
     @staticmethod
     def add_arguments(cmd_parser) -> NoReturn:
         cmd_parser.add_argument('-sp', '--src_path', help='Source dataset path.', type=str, default=None)
-        cmd_parser.add_argument('--hist', help='Plots similarity histogram.', action="store_true", required=False)
+        cmd_parser.add_argument('--plot', help='Plots stats about testing.', action="store_true", required=False)
         cmd_parser.add_argument('--gpu', action='store_true', default=False, help='Enables GPU translation.')
