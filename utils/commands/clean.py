@@ -6,12 +6,12 @@ from utils.command import Command
 
 
 class Clean(Command):
-    def __init__(self, command: str = None, **kwargs):
+    def __init__(self, cmd: str = None, **kwargs):
         super().__init__(**kwargs)
         self.mapping = {'train': [self.configs.data_paths.model],
                         'preprocess': [self.configs.data_paths.input, self.configs.data_paths.processed],
                         'test': [Path('/tmp', 'cquencer_test_predictions')]}
-        self.commands = {command: self.mapping[command]} if command else self.mapping
+        self.commands = {cmd: self.mapping[cmd]} if cmd else self.mapping
 
     def __call__(self, **kwargs):
         for command, values in self.commands.items():
@@ -38,5 +38,5 @@ class Clean(Command):
 
     @staticmethod
     def add_arguments(cmd_parser) -> NoReturn:
-        cmd_parser.add_argument('--command', help='Flag for specifying the command.', default=None,
+        cmd_parser.add_argument('--cmd', help='Flag for specifying the command.', default=None,
                                 choices=['train', 'preprocess', 'test'])
