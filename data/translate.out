@@ -1,0 +1,92 @@
+[2020-10-07 19:01:35,974 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-07 19:01:37,578 INFO] PRED AVG SCORE: -1.2612, PRED PPL: 3.5296
+[2020-10-07 19:02:32,413 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-07 19:02:33,708 INFO] PRED AVG SCORE: -1.2984, PRED PPL: 3.6635
+[2020-10-07 19:04:25,324 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-07 19:04:26,655 INFO] PRED AVG SCORE: -1.2562, PRED PPL: 3.5120
+[2020-10-07 21:20:51,900 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-07 21:20:52,941 INFO] PRED AVG SCORE: -0.4653, PRED PPL: 1.5924
+[2020-10-08 16:45:44,047 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-08 16:45:45,050 INFO] PRED AVG SCORE: -0.4682, PRED PPL: 1.5971
+[2020-10-08 16:46:06,110 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-08 16:46:06,717 INFO] PRED AVG SCORE: -0.3233, PRED PPL: 1.3817
+[2020-10-08 16:47:34,868 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-08 16:47:35,676 INFO] PRED AVG SCORE: -0.4717, PRED PPL: 1.6027
+[2020-10-16 10:40:15,886 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-16 10:40:17,163 INFO] PRED AVG SCORE: -0.5150, PRED PPL: 1.6736
+[2020-10-16 11:11:09,256 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-16 11:11:10,042 INFO] PRED AVG SCORE: -0.4657, PRED PPL: 1.5931
+[2020-10-16 11:22:15,118 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-16 11:22:15,926 INFO] PRED AVG SCORE: -0.4682, PRED PPL: 1.5971
+[2020-10-16 11:24:09,061 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-16 11:24:09,672 INFO] PRED AVG SCORE: -0.3281, PRED PPL: 1.3883
+[2020-10-16 14:50:28,052 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-16 14:50:29,419 INFO] PRED AVG SCORE: -0.4653, PRED PPL: 1.5924
+[2020-10-18 12:38:48,347 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-18 12:38:49,382 INFO] PRED AVG SCORE: -0.4682, PRED PPL: 1.5971
+[2020-10-18 12:48:42,810 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-18 12:48:43,682 INFO] PRED AVG SCORE: -0.4657, PRED PPL: 1.5931
+[2020-10-18 14:20:27,072 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-18 14:20:28,047 INFO] PRED AVG SCORE: -0.4658, PRED PPL: 1.5933
+[2020-10-18 14:21:25,645 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-18 14:21:26,595 INFO] PRED AVG SCORE: -0.5550, PRED PPL: 1.7419
+[2020-10-18 15:25:20,695 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-18 15:25:23,295 INFO] PRED AVG SCORE: -0.3281, PRED PPL: 1.3883
+[2020-10-29 18:53:06,589 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-10-29 18:53:08,204 INFO] PRED AVG SCORE: -2.4615, PRED PPL: 11.7227
+[2020-11-05 20:22:43,656 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-11-05 20:22:44,081 INFO] PRED AVG SCORE: -0.4474, PRED PPL: 1.5643
+[2020-11-08 12:34:38,992 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-11-08 12:34:39,412 INFO] PRED AVG SCORE: -0.4358, PRED PPL: 1.5463
+[2020-11-08 12:37:43,010 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-11-08 12:37:43,332 INFO] PRED AVG SCORE: -2.4536, PRED PPL: 11.6304
+[2020-11-08 12:47:39,110 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-11-08 12:47:39,373 INFO] PRED AVG SCORE: -2.0081, PRED PPL: 7.4495
+[2020-11-09 19:12:40,548 INFO] Translating shard 0.
+/usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+[2020-11-09 19:12:41,079 INFO] PRED AVG SCORE: -1.6846, PRED PPL: 5.3904

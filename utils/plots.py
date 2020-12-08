@@ -74,15 +74,18 @@ class Plotter:
         self.file_name = "histogram" if not file_name else file_name
         self.show()
 
-    def subplots(self, x_data: List, y_data: List[List], fig_title: str, x_label: str, y_labels: List[AnyStr]):
+    def subplots(self, x_data: List, y_data: List[List[List]], fig_title: str, x_label: str, y_labels: List[AnyStr],
+                 legend: List):
         nrows = len(y_data)
         fig, rows = plt.subplots(nrows, 1)
         fig.suptitle(fig_title)
         fig.set_size_inches(self.fig_size[0], self.fig_size[1], forward=True)
 
-        for y, row, y_label, color in zip(y_data, rows, y_labels, self.colors):
-            row.plot(x_data, y, '.-', color=color)
+        for y, row, y_label in zip(y_data, rows, y_labels):
+            for line in y:
+                row.plot(x_data, line, '.-')
             row.set_ylabel(y_label)
+            row.legend(legend, loc='best')
             # row.tick_params(labelrotation=20)
 
         rows[-1].set_xlabel(x_label)

@@ -12,3 +12,29 @@
 [2020-10-06 16:23:17,708 INFO] Building & saving validation data...
 [2020-10-06 16:23:17,727 INFO] Building shard 0.
 [2020-10-06 16:23:17,742 INFO]  * saving 0th valid data shard to /home/epicosy/thesis/implementation/repair/SecureThemAll/repair_tools/CquenceR/data/input/final.valid.0.pt.
+[2020-10-30 21:45:32,364 INFO] Extracting features...
+[2020-10-30 21:45:32,364 INFO]  * number of source features: 0.
+[2020-10-30 21:45:32,364 INFO]  * number of target features: 0.
+[2020-10-30 21:45:32,364 INFO] Building `Fields` object...
+[2020-10-30 21:45:32,364 INFO] Building & saving training data...
+[2020-10-30 21:45:32,365 WARNING] Shards for corpus train already exist, won't be overwritten, pass the `-overwrite` option if you want to.
+[2020-10-30 21:45:32,365 INFO] Building & saving validation data...
+[2020-10-30 21:45:32,365 WARNING] Shards for corpus valid already exist, won't be overwritten, pass the `-overwrite` option if you want to.
+Traceback (most recent call last):
+  File "/usr/local/bin/onmt_preprocess", line 11, in <module>
+    load_entry_point('OpenNMT-py==1.1.1', 'console_scripts', 'onmt_preprocess')()
+  File "/usr/local/lib/python3.7/dist-packages/OpenNMT_py-1.1.1-py3.7.egg/onmt/bin/preprocess.py", line 318, in main
+    preprocess(opt)
+  File "/usr/local/lib/python3.7/dist-packages/OpenNMT_py-1.1.1-py3.7.egg/onmt/bin/preprocess.py", line 259, in preprocess
+    ArgumentParser.validate_preprocess_args(opt)
+  File "/usr/local/lib/python3.7/dist-packages/OpenNMT_py-1.1.1-py3.7.egg/onmt/utils/parse.py", line 144, in validate_preprocess_args
+    assert os.path.isfile(file), "Please check path of %s" % file
+AssertionError: Please check path of /tmp/dataset/src-train.txt
+Return code: 1[2020-11-03 16:00:34,368 INFO] Extracting features...
+[2020-11-03 16:00:34,368 INFO]  * number of source features: 0.
+[2020-11-03 16:00:34,368 INFO]  * number of target features: 0.
+[2020-11-03 16:00:34,368 INFO] Building `Fields` object...
+[2020-11-03 16:00:34,368 INFO] Building & saving training data...
+[2020-11-03 16:00:34,368 WARNING] Shards for corpus train already exist, won't be overwritten, pass the `-overwrite` option if you want to.
+[2020-11-03 16:00:34,369 INFO] Building & saving validation data...
+[2020-11-03 16:00:34,369 WARNING] Shards for corpus valid already exist, won't be overwritten, pass the `-overwrite` option if you want to.
