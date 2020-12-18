@@ -13,11 +13,12 @@ from utils.results import Results
 class Repair(Command):
     def __init__(self, working_dir: str, prefix: str, manifest_path: str, compile_script: str, test_script: str,
                  compile_args: str, pos_tests: int, neg_tests: int, seed: int = 0, beam_size: int = None,
-                 cont: bool = False, **kwargs):
+                 cont: bool = False, skip_check: bool = False, **kwargs):
         super().__init__(**kwargs)
         self.working_dir = Path(working_dir)
         self.manifest_path = Path(manifest_path)
         self.seed = seed
+        self.skip_check = skip_check
         self.prefix = prefix
         self.pos_tests = pos_tests
         self.neg_tests = neg_tests
@@ -42,7 +43,9 @@ class Repair(Command):
 
     def __call__(self, **kwargs):
         self._check_onmt()
-        self._sanity_check()
+
+        if not self.skip_check:
+            self._sanity_check()
         # Tokenize and truncate
         self._preprocess()
         # Generate predictions
@@ -224,6 +227,7 @@ class Repair(Command):
         cmd_parser.add_argument('-ts', '--test_script', help='Test script to be used.', type=str, required=True)
         cmd_parser.add_argument('-pt', '--pos_tests', help='Number of positive tests.', type=int, required=True)
         cmd_parser.add_argument('-nt', '--neg_tests', help='Number of negative tests.', type=int, required=True)
+        cmd_parser.add_argument('--skip_check', help='Skips sanity check.', action='store_true', required=False)
         cmd_parser.add_argument('-s', '--seed', type=int, default=0,
                                 help='Set random seed used for better reproducibility between experiments.')
         cmd_parser.add_argument('-wd', '--working_dir', help='Working directory.', type=str, required=True)

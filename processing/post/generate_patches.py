@@ -1,14 +1,13 @@
 from pathlib import Path
 from typing import Dict, Tuple
 from utils.patch import Patch, PatchFile
-from utils.processing.c_tokenizer import NEW_LINE_TOKEN
+from utils.processing.c_tokenizer import NEW_LINE_TOKEN, detokenize
 
 
 def tokens_to_source(tokens: str) -> str:
     # source = tokens.replace(TAB_TOKEN, "\t")
-    source = tokens.replace(NEW_LINE_TOKEN, "\n")
-
-    return source
+    source = detokenize(tokens)
+    return source.replace(NEW_LINE_TOKEN, "\n")
 
 
 def prediction_to_patch(prefix: Path, manifest: Dict[str, Dict[int, Tuple[int, int]]],
@@ -28,6 +27,8 @@ def prediction_to_patch(prefix: Path, manifest: Dict[str, Dict[int, Tuple[int, i
                     prediction = tokens_to_source(prediction)
                     changes.append(prediction)
                     start, end = hunks[hunk_id]
+                    if start == end:
+                        end += 1
                     hunk_size = end - start
                     prediction_lines = prediction.splitlines(keepends=True)
                     code_lines[start+shift: end+shift] = prediction_lines

@@ -10,7 +10,7 @@ TAB_TOKEN = "<TAB>"
 
 operators3 = {'<<=', '>>='}
 operators2 = {
-    '->', '++', '--', '**',
+    '->', '++', '--', '**', '::',
     '!~', '<<', '>>', '<=', '>=',
     '==', '!=', '&&', '||', '+=',
     '-=', '*=', '/=', '%=', '&=', '^=', '|='
@@ -29,6 +29,23 @@ def to_regex(lst):
 
 
 regex_split_operators = to_regex(operators3) + to_regex(operators2) + to_regex(operators1)
+operators = set(operators1).union(operators2).union(operators3)
+tokenized_operators = {f" {op} ": op for op in operators}
+
+
+def detokenize(tokens: str) -> str:
+    for tokenized, detokenized in tokenized_operators.items():
+        lstrip = tokenized.lstrip()
+        rstrip = tokenized.rstrip()
+
+        if tokenized in tokens:
+            tokens = tokens.replace(tokenized, detokenized)
+        elif lstrip in tokens:
+            tokens = tokens.replace(lstrip, detokenized)
+        elif rstrip in tokens:
+            tokens = tokens.replace(rstrip, detokenized)
+
+    return tokens
 
 
 def truncate(source: str, limit: int) -> Union[str, None]:
