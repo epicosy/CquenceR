@@ -71,6 +71,13 @@ class Repair(Command):
             print(f"onmt_translate not found: install OpenNMT-py")
             exit(1)
 
+    def _check_syntax(self, file_path: Path):
+        out, err, _ = super().__call__(command=f"gcc -c -fsyntax-only {file_path} >/dev/null 2>&1; echo $?;")
+        print(out, err)
+        if out.splitlines()[0] != '0':
+            return False
+        return True
+
     def _get_tests(self, pos=True):
         if pos:
             return [Test(name=f"p{pt}") for pt in range(1, self.pos_tests + 1)]
@@ -89,7 +96,10 @@ class Repair(Command):
         # Negative Tests
         neg_tests = self._get_tests(pos=False)
 
-        if not self._test(tests=neg_tests) and not self._test(tests=pos_tests):
+        if not self._test(tests=neg_tests, neg_tests=True, should_fail=True):
+            print("Sanity check failed: test failure.")
+            exit(1)
+        if not self._test(tests=pos_tests):
             print("Sanity check failed: test failure.")
             exit(1)
 
@@ -168,7 +178,7 @@ class Repair(Command):
             return False, exec_time
         return True, exec_time
 
-    def _test(self, tests: List[Test]):
+    def _test(self, tests: List[Test], neg_tests: bool = False, should_fail: bool = False):
         print(f"Testing:")
         for test in tests:
             test_cmd = self.test_script.replace("__TEST_NAME__", test.name)
@@ -177,12 +187,19 @@ class Repair(Command):
 
             if self.verbose:
                 print(f"Command: {test_cmd}\nOutput: {out}")
-            if err:
+            if err and not neg_tests:
+                print(f"\t{test}: 0")
+                test.passed = False
+                return False
+            if neg_tests and not err and should_fail:
                 print(f"\t{test}: 0")
                 test.passed = False
                 return False
             test.passed = True
-            print(f"\t{test}: 1")
+            if neg_tests:
+                print(f"\t{test}: 0")
+            else:
+                print(f"\t{test}: 1")
         return True
 
     def _test_patch(self, patch: Patch) -> bool:
@@ -196,7 +213,7 @@ class Repair(Command):
         patch.neg_tests = neg_tests
 
         if patch.compiles:
-            if self._test(tests=neg_tests):
+            if self._test(tests=neg_tests, neg_tests=True):
                 if self._test(tests=pos_tests):
                     patch(is_fix=True)
                     for pf in patch:
