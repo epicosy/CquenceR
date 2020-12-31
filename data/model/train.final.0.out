@@ -1,12 +1,7 @@
-command -v onmt_train > /dev/null; echo $?;
-0
-onmt_train -data /content/CquenceR/data/input/final --encoder_type brnn --enc_layers 2 --decoder_type rnn --dec_layers 2 --rnn_size 256 --global_attention general --batch_size 32 --word_vec_size 256 --bridge --copy_attn --reuse_copy_attn --train_steps 2000 --valid_steps 50 --early_stopping 200 --save_checkpoint_steps 1000 --seed 0 -save_model /content/CquenceR/data/model/final-model 2>&1
-/usr/local/lib/python3.7/dist-packages/torch/cuda/__init__.py:52: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 10010). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at  /pytorch/c10/cuda/CUDAFunctions.cpp:100.)
-  return torch._C._cuda_getDeviceCount() > 0
-[2020-11-03 17:09:45,022 INFO]  * src vocab size = 1004
-[2020-11-03 17:09:45,022 INFO]  * tgt vocab size = 1004
-[2020-11-03 17:09:45,023 INFO] Building model...
-[2020-11-03 17:09:45,068 INFO] NMTModel(
+[2020-12-31 04:09:01,885 INFO]  * src vocab size = 1004
+[2020-12-31 04:09:01,885 INFO]  * tgt vocab size = 1004
+[2020-12-31 04:09:01,886 INFO] Building model...
+[2020-12-31 04:09:06,062 INFO] NMTModel(
   (encoder): RNNEncoder(
     (embeddings): Embeddings(
       (make_embedding): Sequential(
@@ -47,323 +42,429 @@ onmt_train -data /content/CquenceR/data/input/final --encoder_type brnn --enc_la
     (linear_copy): Linear(in_features=256, out_features=1, bias=True)
   )
 )
-[2020-11-03 17:09:45,069 INFO] encoder: 1179136
-[2020-11-03 17:09:45,069 INFO] decoder: 2026733
-[2020-11-03 17:09:45,069 INFO] * number of parameters: 3205869
-[2020-11-03 17:09:45,072 INFO] Starting training on CPU, could be very slow
-[2020-11-03 17:09:45,072 INFO] Start training loop and validate every 50 steps...
-[2020-11-03 17:09:45,072 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:09:45,338 INFO] number of examples: 2142
-/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+[2020-12-31 04:09:06,064 INFO] encoder: 1179136
+[2020-12-31 04:09:06,064 INFO] decoder: 2026733
+[2020-12-31 04:09:06,064 INFO] * number of parameters: 3205869
+[2020-12-31 04:09:06,065 INFO] Starting training on GPU: [0]
+[2020-12-31 04:09:06,065 INFO] Start training loop and validate every 50 steps...
+[2020-12-31 04:09:06,066 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:09:06,831 INFO] number of examples: 6081
+/usr/local/lib/python3.6/dist-packages/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
   var = torch.tensor(arr, dtype=self.dtype, device=device)
-[2020-11-03 17:10:56,988 INFO] Step 50/ 2000; acc:   9.63; ppl: 227.84; xent: 5.43; lr: 1.00000; 1320/375 tok/s;     72 sec
-[2020-11-03 17:10:56,989 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:10:57,030 INFO] number of examples: 255
-[2020-11-03 17:11:00,713 INFO] Validation perplexity: 56.8809
-[2020-11-03 17:11:00,714 INFO] Validation accuracy: 13.4829
-[2020-11-03 17:11:00,714 INFO] Model is improving ppl: inf --> 56.8809.
-[2020-11-03 17:11:00,714 INFO] Model is improving acc: -inf --> 13.4829.
-[2020-11-03 17:11:17,159 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:11:17,409 INFO] number of examples: 2142
-[2020-11-03 17:12:07,238 INFO] Step 100/ 2000; acc:  13.99; ppl: 92.35; xent: 4.53; lr: 1.00000; 1264/365 tok/s;    142 sec
-[2020-11-03 17:12:07,239 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:12:07,270 INFO] number of examples: 255
-[2020-11-03 17:12:10,878 INFO] Validation perplexity: 41.1572
-[2020-11-03 17:12:10,878 INFO] Validation accuracy: 17.7815
-[2020-11-03 17:12:10,878 INFO] Model is improving ppl: 56.8809 --> 41.1572.
-[2020-11-03 17:12:10,878 INFO] Model is improving acc: 13.4829 --> 17.7815.
-[2020-11-03 17:12:45,582 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:12:45,872 INFO] number of examples: 2142
-[2020-11-03 17:13:13,617 INFO] Step 150/ 2000; acc:  18.95; ppl: 48.69; xent: 3.89; lr: 1.00000; 1309/387 tok/s;    209 sec
-[2020-11-03 17:13:13,618 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:13:13,648 INFO] number of examples: 255
-[2020-11-03 17:13:17,203 INFO] Validation perplexity: 38.9746
-[2020-11-03 17:13:17,203 INFO] Validation accuracy: 19.6058
-[2020-11-03 17:13:17,203 INFO] Model is improving ppl: 41.1572 --> 38.9746.
-[2020-11-03 17:13:17,203 INFO] Model is improving acc: 17.7815 --> 19.6058.
-[2020-11-03 17:14:12,535 INFO] Step 200/ 2000; acc:  23.83; ppl: 30.30; xent: 3.41; lr: 1.00000; 1395/436 tok/s;    267 sec
-[2020-11-03 17:14:12,535 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:14:12,567 INFO] number of examples: 255
-[2020-11-03 17:14:16,111 INFO] Validation perplexity: 24.5258
-[2020-11-03 17:14:16,111 INFO] Validation accuracy: 30.0273
-[2020-11-03 17:14:16,111 INFO] Model is improving ppl: 38.9746 --> 24.5258.
-[2020-11-03 17:14:16,111 INFO] Model is improving acc: 19.6058 --> 30.0273.
-[2020-11-03 17:14:16,826 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:14:17,136 INFO] number of examples: 2142
-[2020-11-03 17:15:23,467 INFO] Step 250/ 2000; acc:  29.84; ppl: 20.31; xent: 3.01; lr: 1.00000; 1326/378 tok/s;    338 sec
-[2020-11-03 17:15:23,467 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:15:23,498 INFO] number of examples: 255
-[2020-11-03 17:15:27,108 INFO] Validation perplexity: 16.6913
-[2020-11-03 17:15:27,108 INFO] Validation accuracy: 33.1726
-[2020-11-03 17:15:27,108 INFO] Model is improving ppl: 24.5258 --> 16.6913.
-[2020-11-03 17:15:27,108 INFO] Model is improving acc: 30.0273 --> 33.1726.
-[2020-11-03 17:15:43,663 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:15:43,986 INFO] number of examples: 2142
-[2020-11-03 17:16:31,116 INFO] Step 300/ 2000; acc:  38.26; ppl: 13.68; xent: 2.62; lr: 1.00000; 1328/382 tok/s;    406 sec
-[2020-11-03 17:16:31,117 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:16:31,153 INFO] number of examples: 255
-[2020-11-03 17:16:34,597 INFO] Validation perplexity: 15.3335
-[2020-11-03 17:16:34,597 INFO] Validation accuracy: 42.2101
-[2020-11-03 17:16:34,597 INFO] Model is improving ppl: 16.6913 --> 15.3335.
-[2020-11-03 17:16:34,597 INFO] Model is improving acc: 33.1726 --> 42.2101.
-[2020-11-03 17:17:09,860 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:17:10,118 INFO] number of examples: 2142
-[2020-11-03 17:17:32,217 INFO] Step 350/ 2000; acc:  42.67; ppl: 11.38; xent: 2.43; lr: 1.00000; 1349/412 tok/s;    467 sec
-[2020-11-03 17:17:32,217 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:17:32,250 INFO] number of examples: 255
-[2020-11-03 17:17:35,667 INFO] Validation perplexity: 15.1572
-[2020-11-03 17:17:35,667 INFO] Validation accuracy: 34.5984
-[2020-11-03 17:17:35,667 INFO] Stalled patience: 199/200
-[2020-11-03 17:18:34,937 INFO] Step 400/ 2000; acc:  44.43; ppl:  9.76; xent: 2.28; lr: 1.00000; 1367/416 tok/s;    530 sec
-[2020-11-03 17:18:34,938 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:18:34,967 INFO] number of examples: 255
-[2020-11-03 17:18:38,507 INFO] Validation perplexity: 7.99473
-[2020-11-03 17:18:38,507 INFO] Validation accuracy: 51.7928
-[2020-11-03 17:18:38,507 INFO] Model is improving ppl: 15.3335 --> 7.99473.
-[2020-11-03 17:18:38,507 INFO] Model is improving acc: 42.2101 --> 51.7928.
-[2020-11-03 17:18:39,854 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:18:40,152 INFO] number of examples: 2142
-[2020-11-03 17:19:44,814 INFO] Step 450/ 2000; acc:  49.15; ppl:  8.20; xent: 2.10; lr: 1.00000; 1336/380 tok/s;    600 sec
-[2020-11-03 17:19:44,815 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:19:44,848 INFO] number of examples: 255
-[2020-11-03 17:19:48,432 INFO] Validation perplexity: 9.04249
-[2020-11-03 17:19:48,432 INFO] Validation accuracy: 51.2267
-[2020-11-03 17:19:48,432 INFO] Decreasing patience: 199/200
-[2020-11-03 17:20:06,112 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:20:06,430 INFO] number of examples: 2142
-[2020-11-03 17:20:51,601 INFO] Step 500/ 2000; acc:  50.98; ppl:  7.71; xent: 2.04; lr: 1.00000; 1349/389 tok/s;    667 sec
-[2020-11-03 17:20:51,601 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:20:51,633 INFO] number of examples: 255
-[2020-11-03 17:20:55,051 INFO] Validation perplexity: 7.81862
-[2020-11-03 17:20:55,052 INFO] Validation accuracy: 48.1862
-[2020-11-03 17:20:55,052 INFO] Stalled patience: 199/200
-[2020-11-03 17:21:31,117 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:21:31,445 INFO] number of examples: 2142
-[2020-11-03 17:21:52,000 INFO] Step 550/ 2000; acc:  53.68; ppl:  6.94; xent: 1.94; lr: 1.00000; 1362/415 tok/s;    727 sec
-[2020-11-03 17:21:52,000 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:21:52,035 INFO] number of examples: 255
-[2020-11-03 17:21:55,541 INFO] Validation perplexity: 6.36437
-[2020-11-03 17:21:55,541 INFO] Validation accuracy: 55.2317
-[2020-11-03 17:21:55,541 INFO] Model is improving ppl: 7.99473 --> 6.36437.
-[2020-11-03 17:21:55,541 INFO] Model is improving acc: 51.7928 --> 55.2317.
-[2020-11-03 17:22:53,990 INFO] Step 600/ 2000; acc:  55.55; ppl:  6.25; xent: 1.83; lr: 1.00000; 1402/425 tok/s;    789 sec
-[2020-11-03 17:22:53,991 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:22:54,022 INFO] number of examples: 255
-[2020-11-03 17:22:57,505 INFO] Validation perplexity: 7.13822
-[2020-11-03 17:22:57,506 INFO] Validation accuracy: 50.0734
-[2020-11-03 17:22:57,506 INFO] Decreasing patience: 199/200
-[2020-11-03 17:23:00,055 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:23:00,324 INFO] number of examples: 2142
-[2020-11-03 17:24:03,107 INFO] Step 650/ 2000; acc:  57.24; ppl:  5.74; xent: 1.75; lr: 1.00000; 1337/381 tok/s;    858 sec
-[2020-11-03 17:24:03,107 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:24:03,139 INFO] number of examples: 255
-[2020-11-03 17:24:06,649 INFO] Validation perplexity: 6.41811
-[2020-11-03 17:24:06,649 INFO] Validation accuracy: 56.7415
-[2020-11-03 17:24:06,649 INFO] Stalled patience: 199/200
-[2020-11-03 17:24:25,785 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:24:26,130 INFO] number of examples: 2142
-[2020-11-03 17:25:10,793 INFO] Step 700/ 2000; acc:  58.81; ppl:  5.34; xent: 1.67; lr: 1.00000; 1340/386 tok/s;    926 sec
-[2020-11-03 17:25:10,794 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:25:10,824 INFO] number of examples: 255
-[2020-11-03 17:25:14,317 INFO] Validation perplexity: 6.7435
-[2020-11-03 17:25:14,317 INFO] Validation accuracy: 57.6221
-[2020-11-03 17:25:14,317 INFO] Stalled patience: 198/200
-[2020-11-03 17:25:51,242 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:25:51,596 INFO] number of examples: 2142
-[2020-11-03 17:26:10,542 INFO] Step 750/ 2000; acc:  59.53; ppl:  5.18; xent: 1.65; lr: 1.00000; 1357/419 tok/s;    985 sec
-[2020-11-03 17:26:10,542 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:26:10,577 INFO] number of examples: 255
-[2020-11-03 17:26:14,120 INFO] Validation perplexity: 5.2925
-[2020-11-03 17:26:14,120 INFO] Validation accuracy: 61.4594
-[2020-11-03 17:26:14,120 INFO] Model is improving ppl: 6.36437 --> 5.2925.
-[2020-11-03 17:26:14,120 INFO] Model is improving acc: 55.2317 --> 61.4594.
-[2020-11-03 17:27:13,201 INFO] Step 800/ 2000; acc:  61.70; ppl:  4.68; xent: 1.54; lr: 1.00000; 1407/421 tok/s;   1048 sec
-[2020-11-03 17:27:13,201 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:27:13,235 INFO] number of examples: 255
-[2020-11-03 17:27:16,654 INFO] Validation perplexity: 5.98279
-[2020-11-03 17:27:16,654 INFO] Validation accuracy: 59.7819
-[2020-11-03 17:27:16,654 INFO] Decreasing patience: 199/200
-[2020-11-03 17:27:20,417 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:27:20,741 INFO] number of examples: 2142
-[2020-11-03 17:28:22,204 INFO] Step 850/ 2000; acc:  63.59; ppl:  4.22; xent: 1.44; lr: 1.00000; 1319/381 tok/s;   1117 sec
-[2020-11-03 17:28:22,204 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:28:22,241 INFO] number of examples: 255
-[2020-11-03 17:28:25,773 INFO] Validation perplexity: 6.45746
-[2020-11-03 17:28:25,773 INFO] Validation accuracy: 59.6771
-[2020-11-03 17:28:25,773 INFO] Decreasing patience: 198/200
-[2020-11-03 17:28:46,527 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:28:46,829 INFO] number of examples: 2142
-[2020-11-03 17:29:30,926 INFO] Step 900/ 2000; acc:  64.19; ppl:  4.11; xent: 1.41; lr: 1.00000; 1338/381 tok/s;   1186 sec
-[2020-11-03 17:29:30,927 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:29:30,961 INFO] number of examples: 255
-[2020-11-03 17:29:34,435 INFO] Validation perplexity: 4.95216
-[2020-11-03 17:29:34,435 INFO] Validation accuracy: 61.061
-[2020-11-03 17:29:34,435 INFO] Stalled patience: 199/200
-[2020-11-03 17:30:11,760 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:30:12,072 INFO] number of examples: 2142
-[2020-11-03 17:30:30,064 INFO] Step 950/ 2000; acc:  64.51; ppl:  4.01; xent: 1.39; lr: 1.00000; 1371/427 tok/s;   1245 sec
-[2020-11-03 17:30:30,064 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:30:30,097 INFO] number of examples: 255
-[2020-11-03 17:30:33,623 INFO] Validation perplexity: 4.94211
-[2020-11-03 17:30:33,623 INFO] Validation accuracy: 62.3401
-[2020-11-03 17:30:33,623 INFO] Model is improving ppl: 5.2925 --> 4.94211.
-[2020-11-03 17:30:33,623 INFO] Model is improving acc: 61.4594 --> 62.3401.
-[2020-11-03 17:31:31,861 INFO] Step 1000/ 2000; acc:  66.75; ppl:  3.64; xent: 1.29; lr: 1.00000; 1421/422 tok/s;   1307 sec
-[2020-11-03 17:31:31,862 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:31:31,893 INFO] number of examples: 255
-[2020-11-03 17:31:35,357 INFO] Validation perplexity: 4.95242
-[2020-11-03 17:31:35,357 INFO] Validation accuracy: 62.2143
-[2020-11-03 17:31:35,357 INFO] Decreasing patience: 199/200
-[2020-11-03 17:31:35,400 INFO] Saving checkpoint /content/CquenceR/data/model/final-model_step_1000.pt
-[2020-11-03 17:31:40,013 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:31:40,343 INFO] number of examples: 2142
-[2020-11-03 17:32:39,181 INFO] Step 1050/ 2000; acc:  67.39; ppl:  3.47; xent: 1.25; lr: 1.00000; 1334/388 tok/s;   1374 sec
-[2020-11-03 17:32:39,181 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:32:39,211 INFO] number of examples: 255
-[2020-11-03 17:32:42,602 INFO] Validation perplexity: 5.44503
-[2020-11-03 17:32:42,602 INFO] Validation accuracy: 60.2432
-[2020-11-03 17:32:42,602 INFO] Decreasing patience: 198/200
-[2020-11-03 17:33:04,796 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:33:05,061 INFO] number of examples: 2142
-[2020-11-03 17:33:47,204 INFO] Step 1100/ 2000; acc:  67.88; ppl:  3.36; xent: 1.21; lr: 1.00000; 1348/384 tok/s;   1442 sec
-[2020-11-03 17:33:47,204 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:33:47,284 INFO] number of examples: 255
-[2020-11-03 17:33:50,882 INFO] Validation perplexity: 7.1112
-[2020-11-03 17:33:50,882 INFO] Validation accuracy: 62.3821
-[2020-11-03 17:33:50,883 INFO] Stalled patience: 199/200
-[2020-11-03 17:34:30,422 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:34:30,682 INFO] number of examples: 2142
-[2020-11-03 17:34:48,405 INFO] Step 1150/ 2000; acc:  68.73; ppl:  3.28; xent: 1.19; lr: 1.00000; 1353/419 tok/s;   1503 sec
-[2020-11-03 17:34:48,405 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:34:48,438 INFO] number of examples: 255
-[2020-11-03 17:34:51,986 INFO] Validation perplexity: 4.73512
-[2020-11-03 17:34:51,986 INFO] Validation accuracy: 61.9417
-[2020-11-03 17:34:51,986 INFO] Stalled patience: 198/200
-[2020-11-03 17:35:50,827 INFO] Step 1200/ 2000; acc:  70.79; ppl:  2.98; xent: 1.09; lr: 1.00000; 1412/417 tok/s;   1566 sec
-[2020-11-03 17:35:50,827 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:35:50,859 INFO] number of examples: 255
-[2020-11-03 17:35:54,395 INFO] Validation perplexity: 4.91636
-[2020-11-03 17:35:54,395 INFO] Validation accuracy: 64.4789
-[2020-11-03 17:35:54,395 INFO] Model is improving ppl: 4.94211 --> 4.91636.
-[2020-11-03 17:35:54,395 INFO] Model is improving acc: 62.3401 --> 64.4789.
-[2020-11-03 17:35:59,643 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:35:59,963 INFO] number of examples: 2142
-[2020-11-03 17:36:57,929 INFO] Step 1250/ 2000; acc:  70.98; ppl:  2.88; xent: 1.06; lr: 1.00000; 1332/387 tok/s;   1633 sec
-[2020-11-03 17:36:57,930 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:36:57,962 INFO] number of examples: 255
-[2020-11-03 17:37:01,383 INFO] Validation perplexity: 5.39765
-[2020-11-03 17:37:01,383 INFO] Validation accuracy: 63.2837
-[2020-11-03 17:37:01,383 INFO] Decreasing patience: 199/200
-[2020-11-03 17:37:24,877 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:37:25,195 INFO] number of examples: 2142
-[2020-11-03 17:38:04,582 INFO] Step 1300/ 2000; acc:  71.48; ppl:  2.86; xent: 1.05; lr: 1.00000; 1349/393 tok/s;   1700 sec
-[2020-11-03 17:38:04,582 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:38:04,614 INFO] number of examples: 255
-[2020-11-03 17:38:08,080 INFO] Validation perplexity: 5.03097
-[2020-11-03 17:38:08,081 INFO] Validation accuracy: 64.437
-[2020-11-03 17:38:08,081 INFO] Decreasing patience: 198/200
-[2020-11-03 17:38:50,169 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:38:50,484 INFO] number of examples: 2142
-[2020-11-03 17:39:06,805 INFO] Step 1350/ 2000; acc:  72.03; ppl:  2.79; xent: 1.03; lr: 1.00000; 1344/409 tok/s;   1762 sec
-[2020-11-03 17:39:06,805 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:39:06,837 INFO] number of examples: 255
-[2020-11-03 17:39:10,344 INFO] Validation perplexity: 5.2612
-[2020-11-03 17:39:10,344 INFO] Validation accuracy: 61.8788
-[2020-11-03 17:39:10,344 INFO] Decreasing patience: 197/200
-[2020-11-03 17:40:10,319 INFO] Step 1400/ 2000; acc:  72.89; ppl:  2.67; xent: 0.98; lr: 1.00000; 1391/413 tok/s;   1825 sec
-[2020-11-03 17:40:10,319 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:40:10,354 INFO] number of examples: 255
-[2020-11-03 17:40:13,866 INFO] Validation perplexity: 5.07729
-[2020-11-03 17:40:13,866 INFO] Validation accuracy: 65.3386
-[2020-11-03 17:40:13,866 INFO] Stalled patience: 199/200
-[2020-11-03 17:40:20,135 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:40:20,393 INFO] number of examples: 2142
-[2020-11-03 17:41:18,355 INFO] Step 1450/ 2000; acc:  73.95; ppl:  2.52; xent: 0.92; lr: 1.00000; 1329/382 tok/s;   1893 sec
-[2020-11-03 17:41:18,356 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:41:18,388 INFO] number of examples: 255
-[2020-11-03 17:41:21,916 INFO] Validation perplexity: 5.32765
-[2020-11-03 17:41:21,916 INFO] Validation accuracy: 62.6546
-[2020-11-03 17:41:21,916 INFO] Decreasing patience: 196/200
-[2020-11-03 17:41:45,229 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:41:45,531 INFO] number of examples: 2142
-[2020-11-03 17:42:24,302 INFO] Step 1500/ 2000; acc:  73.89; ppl:  2.50; xent: 0.92; lr: 1.00000; 1352/395 tok/s;   1959 sec
-[2020-11-03 17:42:24,302 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:42:24,333 INFO] number of examples: 255
-[2020-11-03 17:42:27,754 INFO] Validation perplexity: 5.46099
-[2020-11-03 17:42:27,754 INFO] Validation accuracy: 63.9128
-[2020-11-03 17:42:27,755 INFO] Decreasing patience: 195/200
-[2020-11-03 17:43:10,264 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:43:10,582 INFO] number of examples: 2142
-[2020-11-03 17:43:25,774 INFO] Step 1550/ 2000; acc:  75.02; ppl:  2.41; xent: 0.88; lr: 1.00000; 1372/415 tok/s;   2021 sec
-[2020-11-03 17:43:25,775 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:43:25,804 INFO] number of examples: 255
-[2020-11-03 17:43:29,351 INFO] Validation perplexity: 6.32964
-[2020-11-03 17:43:29,351 INFO] Validation accuracy: 64.5209
-[2020-11-03 17:43:29,351 INFO] Stalled patience: 198/200
-[2020-11-03 17:44:27,879 INFO] Step 1600/ 2000; acc:  75.51; ppl:  2.38; xent: 0.87; lr: 1.00000; 1400/421 tok/s;   2083 sec
-[2020-11-03 17:44:27,879 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:44:27,917 INFO] number of examples: 255
-[2020-11-03 17:44:31,468 INFO] Validation perplexity: 4.92512
-[2020-11-03 17:44:31,468 INFO] Validation accuracy: 65.087
-[2020-11-03 17:44:31,468 INFO] Stalled patience: 197/200
-[2020-11-03 17:44:39,398 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:44:39,750 INFO] number of examples: 2142
-[2020-11-03 17:45:37,647 INFO] Step 1650/ 2000; acc:  76.38; ppl:  2.27; xent: 0.82; lr: 1.00000; 1322/376 tok/s;   2153 sec
-[2020-11-03 17:45:37,648 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:45:37,680 INFO] number of examples: 255
-[2020-11-03 17:45:41,224 INFO] Validation perplexity: 5.76384
-[2020-11-03 17:45:41,224 INFO] Validation accuracy: 66.1355
-[2020-11-03 17:45:41,224 INFO] Stalled patience: 196/200
-[2020-11-03 17:46:05,041 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:46:05,313 INFO] number of examples: 2142
-[2020-11-03 17:46:41,204 INFO] Step 1700/ 2000; acc:  76.54; ppl:  2.22; xent: 0.80; lr: 1.00000; 1357/403 tok/s;   2216 sec
-[2020-11-03 17:46:41,204 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:46:41,235 INFO] number of examples: 255
-[2020-11-03 17:46:44,811 INFO] Validation perplexity: 5.2411
-[2020-11-03 17:46:44,811 INFO] Validation accuracy: 64.8144
-[2020-11-03 17:46:44,811 INFO] Stalled patience: 195/200
-[2020-11-03 17:47:30,253 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:47:30,568 INFO] number of examples: 2142
-[2020-11-03 17:47:42,225 INFO] Step 1750/ 2000; acc:  77.80; ppl:  2.11; xent: 0.75; lr: 1.00000; 1377/418 tok/s;   2277 sec
-[2020-11-03 17:47:42,225 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:47:42,261 INFO] number of examples: 255
-[2020-11-03 17:47:45,742 INFO] Validation perplexity: 5.27314
-[2020-11-03 17:47:45,743 INFO] Validation accuracy: 62.8434
-[2020-11-03 17:47:45,743 INFO] Decreasing patience: 194/200
-[2020-11-03 17:48:46,181 INFO] Step 1800/ 2000; acc:  77.65; ppl:  2.14; xent: 0.76; lr: 1.00000; 1395/411 tok/s;   2341 sec
-[2020-11-03 17:48:46,182 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:48:46,211 INFO] number of examples: 255
-[2020-11-03 17:48:49,637 INFO] Validation perplexity: 5.46324
-[2020-11-03 17:48:49,637 INFO] Validation accuracy: 62.5917
-[2020-11-03 17:48:49,637 INFO] Decreasing patience: 193/200
-[2020-11-03 17:48:59,046 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:48:59,364 INFO] number of examples: 2142
-[2020-11-03 17:49:55,298 INFO] Step 1850/ 2000; acc:  78.21; ppl:  2.10; xent: 0.74; lr: 1.00000; 1322/382 tok/s;   2410 sec
-[2020-11-03 17:49:55,299 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:49:55,333 INFO] number of examples: 255
-[2020-11-03 17:49:58,863 INFO] Validation perplexity: 5.08762
-[2020-11-03 17:49:58,864 INFO] Validation accuracy: 65.2757
-[2020-11-03 17:49:58,864 INFO] Stalled patience: 194/200
-[2020-11-03 17:50:24,672 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:50:24,963 INFO] number of examples: 2142
-[2020-11-03 17:51:00,032 INFO] Step 1900/ 2000; acc:  77.96; ppl:  2.08; xent: 0.73; lr: 1.00000; 1350/394 tok/s;   2475 sec
-[2020-11-03 17:51:00,033 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:51:00,104 INFO] number of examples: 255
-[2020-11-03 17:51:03,505 INFO] Validation perplexity: 5.42158
-[2020-11-03 17:51:03,505 INFO] Validation accuracy: 66.0516
-[2020-11-03 17:51:03,505 INFO] Stalled patience: 193/200
-[2020-11-03 17:51:50,061 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
-[2020-11-03 17:51:50,324 INFO] number of examples: 2142
-[2020-11-03 17:51:56,068 INFO] Step 1950/ 2000; acc:  79.34; ppl:  1.99; xent: 0.69; lr: 1.00000; 1421/454 tok/s;   2531 sec
-[2020-11-03 17:51:56,069 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:51:56,100 INFO] number of examples: 255
-[2020-11-03 17:51:59,580 INFO] Validation perplexity: 5.59881
-[2020-11-03 17:51:59,580 INFO] Validation accuracy: 64.9402
-[2020-11-03 17:51:59,581 INFO] Stalled patience: 192/200
-[2020-11-03 17:53:05,045 INFO] Step 2000/ 2000; acc:  79.57; ppl:  1.98; xent: 0.68; lr: 1.00000; 1356/383 tok/s;   2600 sec
-[2020-11-03 17:53:05,046 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
-[2020-11-03 17:53:05,080 INFO] number of examples: 255
-[2020-11-03 17:53:08,511 INFO] Validation perplexity: 5.41217
-[2020-11-03 17:53:08,511 INFO] Validation accuracy: 65.7371
-[2020-11-03 17:53:08,511 INFO] Stalled patience: 191/200
-[2020-11-03 17:53:08,555 INFO] Saving checkpoint /content/CquenceR/data/model/final-model_step_2000.pt
+[2020-12-31 04:09:14,249 INFO] Step 50/ 4000; acc:   9.62; ppl: 271.76; xent: 5.60; lr: 1.00000; 12308/3415 tok/s;      8 sec
+[2020-12-31 04:09:14,250 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:09:14,331 INFO] number of examples: 716
+[2020-12-31 04:09:16,194 INFO] Validation perplexity: 189.148
+[2020-12-31 04:09:16,194 INFO] Validation accuracy: 11.2707
+[2020-12-31 04:09:16,194 INFO] Model is improving ppl: inf --> 189.148.
+[2020-12-31 04:09:16,194 INFO] Model is improving acc: -inf --> 11.2707.
+[2020-12-31 04:09:24,193 INFO] Step 100/ 4000; acc:  12.55; ppl: 102.27; xent: 4.63; lr: 1.00000; 9881/2972 tok/s;     18 sec
+[2020-12-31 04:09:24,193 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:09:24,274 INFO] number of examples: 716
+[2020-12-31 04:09:26,120 INFO] Validation perplexity: 134.608
+[2020-12-31 04:09:26,120 INFO] Validation accuracy: 16.3174
+[2020-12-31 04:09:26,121 INFO] Model is improving ppl: 189.148 --> 134.608.
+[2020-12-31 04:09:26,121 INFO] Model is improving acc: 11.2707 --> 16.3174.
+[2020-12-31 04:09:33,306 INFO] Step 150/ 4000; acc:  14.76; ppl: 54.40; xent: 4.00; lr: 1.00000; 9565/2780 tok/s;     27 sec
+[2020-12-31 04:09:33,306 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:09:33,389 INFO] number of examples: 716
+[2020-12-31 04:09:35,288 INFO] Validation perplexity: 44.6472
+[2020-12-31 04:09:35,288 INFO] Validation accuracy: 17.3613
+[2020-12-31 04:09:35,289 INFO] Model is improving ppl: 134.608 --> 44.6472.
+[2020-12-31 04:09:35,289 INFO] Model is improving acc: 16.3174 --> 17.3613.
+[2020-12-31 04:09:41,650 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:09:42,561 INFO] number of examples: 6081
+[2020-12-31 04:09:44,021 INFO] Step 200/ 4000; acc:  21.86; ppl: 29.89; xent: 3.40; lr: 1.00000; 9550/2654 tok/s;     38 sec
+[2020-12-31 04:09:44,022 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:09:44,198 INFO] number of examples: 716
+[2020-12-31 04:09:46,069 INFO] Validation perplexity: 17.162
+[2020-12-31 04:09:46,069 INFO] Validation accuracy: 33.3804
+[2020-12-31 04:09:46,069 INFO] Model is improving ppl: 44.6472 --> 17.162.
+[2020-12-31 04:09:46,069 INFO] Model is improving acc: 17.3613 --> 33.3804.
+[2020-12-31 04:09:53,626 INFO] Step 250/ 4000; acc:  31.11; ppl: 17.00; xent: 2.83; lr: 1.00000; 10399/2974 tok/s;     48 sec
+[2020-12-31 04:09:53,626 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:09:53,709 INFO] number of examples: 716
+[2020-12-31 04:09:55,561 INFO] Validation perplexity: 15.8709
+[2020-12-31 04:09:55,561 INFO] Validation accuracy: 32.0932
+[2020-12-31 04:09:55,561 INFO] Stalled patience: 9/10
+[2020-12-31 04:10:03,197 INFO] Step 300/ 4000; acc:  37.18; ppl: 12.61; xent: 2.53; lr: 1.00000; 9909/2947 tok/s;     57 sec
+[2020-12-31 04:10:03,198 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:10:03,275 INFO] number of examples: 716
+[2020-12-31 04:10:05,169 INFO] Validation perplexity: 10.3259
+[2020-12-31 04:10:05,169 INFO] Validation accuracy: 42.2259
+[2020-12-31 04:10:05,169 INFO] Model is improving ppl: 17.162 --> 10.3259.
+[2020-12-31 04:10:05,169 INFO] Model is improving acc: 33.3804 --> 42.2259.
+[2020-12-31 04:10:12,824 INFO] Step 350/ 4000; acc:  41.47; ppl: 10.93; xent: 2.39; lr: 1.00000; 9393/2788 tok/s;     67 sec
+[2020-12-31 04:10:12,824 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:10:12,909 INFO] number of examples: 716
+[2020-12-31 04:10:14,778 INFO] Validation perplexity: 14.9912
+[2020-12-31 04:10:14,778 INFO] Validation accuracy: 35.2249
+[2020-12-31 04:10:14,779 INFO] Decreasing patience: 9/10
+[2020-12-31 04:10:19,308 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:10:20,211 INFO] number of examples: 6081
+[2020-12-31 04:10:22,752 INFO] Step 400/ 4000; acc:  45.76; ppl:  8.97; xent: 2.19; lr: 1.00000; 9623/2750 tok/s;     77 sec
+[2020-12-31 04:10:22,752 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:10:22,828 INFO] number of examples: 716
+[2020-12-31 04:10:24,705 INFO] Validation perplexity: 9.76267
+[2020-12-31 04:10:24,705 INFO] Validation accuracy: 41.5195
+[2020-12-31 04:10:24,705 INFO] Stalled patience: 9/10
+[2020-12-31 04:10:33,011 INFO] Step 450/ 4000; acc:  49.82; ppl:  7.75; xent: 2.05; lr: 1.00000; 10201/2943 tok/s;     87 sec
+[2020-12-31 04:10:33,011 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:10:33,092 INFO] number of examples: 716
+[2020-12-31 04:10:34,982 INFO] Validation perplexity: 7.39492
+[2020-12-31 04:10:34,982 INFO] Validation accuracy: 50.5376
+[2020-12-31 04:10:34,982 INFO] Model is improving ppl: 10.3259 --> 7.39492.
+[2020-12-31 04:10:34,982 INFO] Model is improving acc: 42.2259 --> 50.5376.
+[2020-12-31 04:10:42,329 INFO] Step 500/ 4000; acc:  51.63; ppl:  7.36; xent: 2.00; lr: 1.00000; 9513/2813 tok/s;     96 sec
+[2020-12-31 04:10:42,330 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:10:42,520 INFO] number of examples: 716
+[2020-12-31 04:10:44,406 INFO] Validation perplexity: 6.98368
+[2020-12-31 04:10:44,407 INFO] Validation accuracy: 53.8419
+[2020-12-31 04:10:44,407 INFO] Model is improving ppl: 7.39492 --> 6.98368.
+[2020-12-31 04:10:44,407 INFO] Model is improving acc: 50.5376 --> 53.8419.
+[2020-12-31 04:10:51,629 INFO] Step 550/ 4000; acc:  54.75; ppl:  6.84; xent: 1.92; lr: 1.00000; 10183/2840 tok/s;    106 sec
+[2020-12-31 04:10:51,629 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:10:51,709 INFO] number of examples: 716
+[2020-12-31 04:10:53,614 INFO] Validation perplexity: 5.2983
+[2020-12-31 04:10:53,614 INFO] Validation accuracy: 57.264
+[2020-12-31 04:10:53,614 INFO] Model is improving ppl: 6.98368 --> 5.2983.
+[2020-12-31 04:10:53,614 INFO] Model is improving acc: 53.8419 --> 57.264.
+[2020-12-31 04:10:57,290 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:10:58,283 INFO] number of examples: 6081
+[2020-12-31 04:11:02,226 INFO] Step 600/ 4000; acc:  55.70; ppl:  6.11; xent: 1.81; lr: 1.00000; 9342/2729 tok/s;    116 sec
+[2020-12-31 04:11:02,226 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:11:02,303 INFO] number of examples: 716
+[2020-12-31 04:11:04,170 INFO] Validation perplexity: 6.48204
+[2020-12-31 04:11:04,170 INFO] Validation accuracy: 53.269
+[2020-12-31 04:11:04,170 INFO] Decreasing patience: 9/10
+[2020-12-31 04:11:12,412 INFO] Step 650/ 4000; acc:  57.54; ppl:  5.78; xent: 1.75; lr: 1.00000; 9781/2934 tok/s;    126 sec
+[2020-12-31 04:11:12,412 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:11:12,491 INFO] number of examples: 716
+[2020-12-31 04:11:14,356 INFO] Validation perplexity: 4.5679
+[2020-12-31 04:11:14,356 INFO] Validation accuracy: 64.469
+[2020-12-31 04:11:14,356 INFO] Model is improving ppl: 5.2983 --> 4.5679.
+[2020-12-31 04:11:14,356 INFO] Model is improving acc: 57.264 --> 64.469.
+[2020-12-31 04:11:21,503 INFO] Step 700/ 4000; acc:  59.27; ppl:  5.41; xent: 1.69; lr: 1.00000; 10139/2835 tok/s;    135 sec
+[2020-12-31 04:11:21,503 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:11:21,584 INFO] number of examples: 716
+[2020-12-31 04:11:23,455 INFO] Validation perplexity: 5.16409
+[2020-12-31 04:11:23,455 INFO] Validation accuracy: 63.4723
+[2020-12-31 04:11:23,455 INFO] Decreasing patience: 9/10
+[2020-12-31 04:11:30,596 INFO] Step 750/ 4000; acc:  60.46; ppl:  5.28; xent: 1.66; lr: 1.00000; 10281/2940 tok/s;    145 sec
+[2020-12-31 04:11:30,597 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:11:30,676 INFO] number of examples: 716
+[2020-12-31 04:11:32,564 INFO] Validation perplexity: 4.54037
+[2020-12-31 04:11:32,564 INFO] Validation accuracy: 61.6985
+[2020-12-31 04:11:32,564 INFO] Stalled patience: 9/10
+[2020-12-31 04:11:34,941 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:11:35,888 INFO] number of examples: 6081
+[2020-12-31 04:11:41,757 INFO] Step 800/ 4000; acc:  62.05; ppl:  4.81; xent: 1.57; lr: 1.00000; 9120/2658 tok/s;    156 sec
+[2020-12-31 04:11:41,758 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:11:41,952 INFO] number of examples: 716
+[2020-12-31 04:11:43,822 INFO] Validation perplexity: 4.38823
+[2020-12-31 04:11:43,822 INFO] Validation accuracy: 66.4469
+[2020-12-31 04:11:43,822 INFO] Model is improving ppl: 4.5679 --> 4.38823.
+[2020-12-31 04:11:43,822 INFO] Model is improving acc: 64.469 --> 66.4469.
+[2020-12-31 04:11:51,586 INFO] Step 850/ 4000; acc:  62.73; ppl:  4.70; xent: 1.55; lr: 1.00000; 9783/3007 tok/s;    166 sec
+[2020-12-31 04:11:51,586 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:11:51,666 INFO] number of examples: 716
+[2020-12-31 04:11:53,533 INFO] Validation perplexity: 4.34489
+[2020-12-31 04:11:53,533 INFO] Validation accuracy: 66.5568
+[2020-12-31 04:11:53,533 INFO] Model is improving ppl: 4.38823 --> 4.34489.
+[2020-12-31 04:11:53,533 INFO] Model is improving acc: 66.4469 --> 66.5568.
+[2020-12-31 04:12:00,968 INFO] Step 900/ 4000; acc:  63.65; ppl:  4.56; xent: 1.52; lr: 1.00000; 9899/2765 tok/s;    175 sec
+[2020-12-31 04:12:00,968 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:12:01,047 INFO] number of examples: 716
+[2020-12-31 04:12:02,897 INFO] Validation perplexity: 3.83985
+[2020-12-31 04:12:02,897 INFO] Validation accuracy: 67.9538
+[2020-12-31 04:12:02,897 INFO] Model is improving ppl: 4.34489 --> 3.83985.
+[2020-12-31 04:12:02,897 INFO] Model is improving acc: 66.5568 --> 67.9538.
+[2020-12-31 04:12:09,981 INFO] Step 950/ 4000; acc:  63.57; ppl:  4.48; xent: 1.50; lr: 1.00000; 10135/3066 tok/s;    184 sec
+[2020-12-31 04:12:09,981 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:12:10,061 INFO] number of examples: 716
+[2020-12-31 04:12:11,972 INFO] Validation perplexity: 3.95475
+[2020-12-31 04:12:11,972 INFO] Validation accuracy: 68.6838
+[2020-12-31 04:12:11,972 INFO] Stalled patience: 9/10
+[2020-12-31 04:12:12,759 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:12:13,742 INFO] number of examples: 6081
+[2020-12-31 04:12:20,634 INFO] Step 1000/ 4000; acc:  66.42; ppl:  3.95; xent: 1.37; lr: 1.00000; 9421/2597 tok/s;    195 sec
+[2020-12-31 04:12:20,634 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:12:20,711 INFO] number of examples: 716
+[2020-12-31 04:12:22,602 INFO] Validation perplexity: 3.92462
+[2020-12-31 04:12:22,603 INFO] Validation accuracy: 64.0217
+[2020-12-31 04:12:22,603 INFO] Decreasing patience: 9/10
+[2020-12-31 04:12:30,700 INFO] Step 1050/ 4000; acc:  65.65; ppl:  4.01; xent: 1.39; lr: 1.00000; 9997/3014 tok/s;    205 sec
+[2020-12-31 04:12:30,700 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:12:30,779 INFO] number of examples: 716
+[2020-12-31 04:12:32,676 INFO] Validation perplexity: 4.2048
+[2020-12-31 04:12:32,676 INFO] Validation accuracy: 68.4091
+[2020-12-31 04:12:32,676 INFO] Stalled patience: 8/10
+[2020-12-31 04:12:39,787 INFO] Step 1100/ 4000; acc:  66.67; ppl:  3.95; xent: 1.37; lr: 1.00000; 9721/2756 tok/s;    214 sec
+[2020-12-31 04:12:39,787 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:12:39,977 INFO] number of examples: 716
+[2020-12-31 04:12:41,932 INFO] Validation perplexity: 3.72437
+[2020-12-31 04:12:41,932 INFO] Validation accuracy: 66.9806
+[2020-12-31 04:12:41,932 INFO] Stalled patience: 7/10
+[2020-12-31 04:12:48,929 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:12:49,962 INFO] number of examples: 6081
+[2020-12-31 04:12:50,565 INFO] Step 1150/ 4000; acc:  66.87; ppl:  3.79; xent: 1.33; lr: 1.00000; 9015/2586 tok/s;    224 sec
+[2020-12-31 04:12:50,565 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:12:50,647 INFO] number of examples: 716
+[2020-12-31 04:12:52,554 INFO] Validation perplexity: 3.44378
+[2020-12-31 04:12:52,554 INFO] Validation accuracy: 68.88
+[2020-12-31 04:12:52,554 INFO] Model is improving ppl: 3.83985 --> 3.44378.
+[2020-12-31 04:12:52,555 INFO] Model is improving acc: 67.9538 --> 68.88.
+[2020-12-31 04:13:00,030 INFO] Step 1200/ 4000; acc:  68.65; ppl:  3.51; xent: 1.25; lr: 1.00000; 10426/3008 tok/s;    234 sec
+[2020-12-31 04:13:00,031 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:13:00,111 INFO] number of examples: 716
+[2020-12-31 04:13:01,975 INFO] Validation perplexity: 3.63327
+[2020-12-31 04:13:01,975 INFO] Validation accuracy: 65.2461
+[2020-12-31 04:13:01,975 INFO] Decreasing patience: 9/10
+[2020-12-31 04:13:10,104 INFO] Step 1250/ 4000; acc:  68.28; ppl:  3.53; xent: 1.26; lr: 1.00000; 9946/2882 tok/s;    244 sec
+[2020-12-31 04:13:10,104 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:13:10,184 INFO] number of examples: 716
+[2020-12-31 04:13:12,090 INFO] Validation perplexity: 3.9927
+[2020-12-31 04:13:12,090 INFO] Validation accuracy: 69.9867
+[2020-12-31 04:13:12,090 INFO] Stalled patience: 9/10
+[2020-12-31 04:13:19,262 INFO] Step 1300/ 4000; acc:  68.10; ppl:  3.71; xent: 1.31; lr: 1.00000; 9024/2802 tok/s;    253 sec
+[2020-12-31 04:13:19,263 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:13:19,343 INFO] number of examples: 716
+[2020-12-31 04:13:21,261 INFO] Validation perplexity: 3.73107
+[2020-12-31 04:13:21,262 INFO] Validation accuracy: 63.9667
+[2020-12-31 04:13:21,262 INFO] Decreasing patience: 8/10
+[2020-12-31 04:13:26,840 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:13:27,797 INFO] number of examples: 6081
+[2020-12-31 04:13:29,780 INFO] Step 1350/ 4000; acc:  69.22; ppl:  3.35; xent: 1.21; lr: 1.00000; 9804/2705 tok/s;    264 sec
+[2020-12-31 04:13:29,780 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:13:29,977 INFO] number of examples: 716
+[2020-12-31 04:13:31,908 INFO] Validation perplexity: 3.45337
+[2020-12-31 04:13:31,909 INFO] Validation accuracy: 69.0605
+[2020-12-31 04:13:31,909 INFO] Stalled patience: 8/10
+[2020-12-31 04:13:39,707 INFO] Step 1400/ 4000; acc:  70.52; ppl:  3.21; xent: 1.17; lr: 1.00000; 10070/2875 tok/s;    274 sec
+[2020-12-31 04:13:39,708 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:13:39,788 INFO] number of examples: 716
+[2020-12-31 04:13:41,683 INFO] Validation perplexity: 3.31537
+[2020-12-31 04:13:41,683 INFO] Validation accuracy: 70.4811
+[2020-12-31 04:13:41,683 INFO] Model is improving ppl: 3.44378 --> 3.31537.
+[2020-12-31 04:13:41,683 INFO] Model is improving acc: 68.88 --> 70.4811.
+[2020-12-31 04:13:49,399 INFO] Step 1450/ 4000; acc:  70.13; ppl:  3.31; xent: 1.20; lr: 1.00000; 9969/2923 tok/s;    283 sec
+[2020-12-31 04:13:49,399 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:13:49,479 INFO] number of examples: 716
+[2020-12-31 04:13:51,353 INFO] Validation perplexity: 4.30233
+[2020-12-31 04:13:51,353 INFO] Validation accuracy: 60.3956
+[2020-12-31 04:13:51,353 INFO] Decreasing patience: 9/10
+[2020-12-31 04:13:58,800 INFO] Step 1500/ 4000; acc:  69.71; ppl:  3.34; xent: 1.21; lr: 1.00000; 9432/2770 tok/s;    293 sec
+[2020-12-31 04:13:58,801 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:13:58,881 INFO] number of examples: 716
+[2020-12-31 04:14:00,748 INFO] Validation perplexity: 3.1472
+[2020-12-31 04:14:00,748 INFO] Validation accuracy: 73.55
+[2020-12-31 04:14:00,748 INFO] Model is improving ppl: 3.31537 --> 3.1472.
+[2020-12-31 04:14:00,748 INFO] Model is improving acc: 70.4811 --> 73.55.
+[2020-12-31 04:14:04,901 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:14:05,889 INFO] number of examples: 6081
+[2020-12-31 04:14:08,964 INFO] Step 1550/ 4000; acc:  70.85; ppl:  3.12; xent: 1.14; lr: 1.00000; 9598/2780 tok/s;    303 sec
+[2020-12-31 04:14:08,965 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:14:09,044 INFO] number of examples: 716
+[2020-12-31 04:14:10,921 INFO] Validation perplexity: 3.77219
+[2020-12-31 04:14:10,921 INFO] Validation accuracy: 72.3648
+[2020-12-31 04:14:10,921 INFO] Decreasing patience: 9/10
+[2020-12-31 04:14:19,217 INFO] Step 1600/ 4000; acc:  72.06; ppl:  3.01; xent: 1.10; lr: 1.00000; 9907/2868 tok/s;    313 sec
+[2020-12-31 04:14:19,217 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:14:19,298 INFO] number of examples: 716
+[2020-12-31 04:14:21,191 INFO] Validation perplexity: 3.30246
+[2020-12-31 04:14:21,192 INFO] Validation accuracy: 69.0291
+[2020-12-31 04:14:21,192 INFO] Decreasing patience: 8/10
+[2020-12-31 04:14:28,684 INFO] Step 1650/ 4000; acc:  72.03; ppl:  2.95; xent: 1.08; lr: 1.00000; 10015/2815 tok/s;    323 sec
+[2020-12-31 04:14:28,684 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:14:28,889 INFO] number of examples: 716
+[2020-12-31 04:14:30,775 INFO] Validation perplexity: 3.19281
+[2020-12-31 04:14:30,775 INFO] Validation accuracy: 68.4169
+[2020-12-31 04:14:30,775 INFO] Decreasing patience: 7/10
+[2020-12-31 04:14:38,004 INFO] Step 1700/ 4000; acc:  71.89; ppl:  3.02; xent: 1.11; lr: 1.00000; 10110/2889 tok/s;    332 sec
+[2020-12-31 04:14:38,004 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:14:38,095 INFO] number of examples: 716
+[2020-12-31 04:14:39,976 INFO] Validation perplexity: 3.33961
+[2020-12-31 04:14:39,976 INFO] Validation accuracy: 71.0776
+[2020-12-31 04:14:39,976 INFO] Decreasing patience: 6/10
+[2020-12-31 04:14:42,936 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:14:43,965 INFO] number of examples: 6081
+[2020-12-31 04:14:48,803 INFO] Step 1750/ 4000; acc:  72.52; ppl:  2.90; xent: 1.07; lr: 1.00000; 9082/2657 tok/s;    343 sec
+[2020-12-31 04:14:48,804 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:14:48,884 INFO] number of examples: 716
+[2020-12-31 04:14:50,763 INFO] Validation perplexity: 3.1544
+[2020-12-31 04:14:50,763 INFO] Validation accuracy: 72.9142
+[2020-12-31 04:14:50,763 INFO] Decreasing patience: 5/10
+[2020-12-31 04:14:58,757 INFO] Step 1800/ 4000; acc:  73.81; ppl:  2.81; xent: 1.03; lr: 1.00000; 9677/2956 tok/s;    353 sec
+[2020-12-31 04:14:58,758 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:14:58,840 INFO] number of examples: 716
+[2020-12-31 04:15:00,728 INFO] Validation perplexity: 2.86715
+[2020-12-31 04:15:00,728 INFO] Validation accuracy: 74.4526
+[2020-12-31 04:15:00,728 INFO] Model is improving ppl: 3.1472 --> 2.86715.
+[2020-12-31 04:15:00,728 INFO] Model is improving acc: 73.55 --> 74.4526.
+[2020-12-31 04:15:08,021 INFO] Step 1850/ 4000; acc:  73.83; ppl:  2.72; xent: 1.00; lr: 1.00000; 9943/2796 tok/s;    362 sec
+[2020-12-31 04:15:08,022 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:15:08,103 INFO] number of examples: 716
+[2020-12-31 04:15:09,986 INFO] Validation perplexity: 3.58014
+[2020-12-31 04:15:09,987 INFO] Validation accuracy: 68.2835
+[2020-12-31 04:15:09,987 INFO] Decreasing patience: 9/10
+[2020-12-31 04:15:17,580 INFO] Step 1900/ 4000; acc:  72.61; ppl:  2.92; xent: 1.07; lr: 1.00000; 10101/2874 tok/s;    372 sec
+[2020-12-31 04:15:17,581 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:15:17,662 INFO] number of examples: 716
+[2020-12-31 04:15:19,538 INFO] Validation perplexity: 2.94949
+[2020-12-31 04:15:19,538 INFO] Validation accuracy: 72.7494
+[2020-12-31 04:15:19,539 INFO] Decreasing patience: 8/10
+[2020-12-31 04:15:21,080 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:15:22,040 INFO] number of examples: 6081
+[2020-12-31 04:15:28,651 INFO] Step 1950/ 4000; acc:  73.48; ppl:  2.76; xent: 1.02; lr: 1.00000; 8957/2612 tok/s;    383 sec
+[2020-12-31 04:15:28,651 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:15:28,731 INFO] number of examples: 716
+[2020-12-31 04:15:30,627 INFO] Validation perplexity: 2.98611
+[2020-12-31 04:15:30,628 INFO] Validation accuracy: 73.5657
+[2020-12-31 04:15:30,628 INFO] Decreasing patience: 7/10
+[2020-12-31 04:15:38,462 INFO] Step 2000/ 4000; acc:  74.38; ppl:  2.72; xent: 1.00; lr: 1.00000; 9784/2987 tok/s;    392 sec
+[2020-12-31 04:15:38,463 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:15:38,544 INFO] number of examples: 716
+[2020-12-31 04:15:40,415 INFO] Validation perplexity: 3.00161
+[2020-12-31 04:15:40,415 INFO] Validation accuracy: 72.9064
+[2020-12-31 04:15:40,415 INFO] Decreasing patience: 6/10
+[2020-12-31 04:15:40,516 INFO] Saving checkpoint /content/CquenceR/data/model/final-model_step_2000.pt
+[2020-12-31 04:15:48,007 INFO] Step 2050/ 4000; acc:  73.83; ppl:  2.73; xent: 1.01; lr: 1.00000; 9637/2761 tok/s;    402 sec
+[2020-12-31 04:15:48,007 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:15:48,089 INFO] number of examples: 716
+[2020-12-31 04:15:50,010 INFO] Validation perplexity: 2.96717
+[2020-12-31 04:15:50,010 INFO] Validation accuracy: 72.9456
+[2020-12-31 04:15:50,011 INFO] Decreasing patience: 5/10
+[2020-12-31 04:15:57,294 INFO] Step 2100/ 4000; acc:  73.80; ppl:  2.72; xent: 1.00; lr: 1.00000; 10028/2938 tok/s;    411 sec
+[2020-12-31 04:15:57,295 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:15:57,376 INFO] number of examples: 716
+[2020-12-31 04:15:59,247 INFO] Validation perplexity: 2.95392
+[2020-12-31 04:15:59,247 INFO] Validation accuracy: 74.3819
+[2020-12-31 04:15:59,247 INFO] Decreasing patience: 4/10
+[2020-12-31 04:15:59,416 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:16:00,381 INFO] number of examples: 6081
+[2020-12-31 04:16:07,755 INFO] Step 2150/ 4000; acc:  76.29; ppl:  2.45; xent: 0.90; lr: 1.00000; 9682/2660 tok/s;    422 sec
+[2020-12-31 04:16:07,755 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:16:07,834 INFO] number of examples: 716
+[2020-12-31 04:16:09,736 INFO] Validation perplexity: 3.09497
+[2020-12-31 04:16:09,736 INFO] Validation accuracy: 74.1386
+[2020-12-31 04:16:09,736 INFO] Decreasing patience: 3/10
+[2020-12-31 04:16:17,929 INFO] Step 2200/ 4000; acc:  75.16; ppl:  2.60; xent: 0.96; lr: 1.00000; 9764/2937 tok/s;    432 sec
+[2020-12-31 04:16:17,929 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:16:18,136 INFO] number of examples: 716
+[2020-12-31 04:16:20,053 INFO] Validation perplexity: 2.90504
+[2020-12-31 04:16:20,053 INFO] Validation accuracy: 73.809
+[2020-12-31 04:16:20,053 INFO] Decreasing patience: 2/10
+[2020-12-31 04:16:27,178 INFO] Step 2250/ 4000; acc:  75.14; ppl:  2.57; xent: 0.94; lr: 1.00000; 9514/2751 tok/s;    441 sec
+[2020-12-31 04:16:27,178 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:16:27,265 INFO] number of examples: 716
+[2020-12-31 04:16:29,156 INFO] Validation perplexity: 3.33265
+[2020-12-31 04:16:29,156 INFO] Validation accuracy: 71.8389
+[2020-12-31 04:16:29,156 INFO] Decreasing patience: 1/10
+[2020-12-31 04:16:35,577 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:16:36,592 INFO] number of examples: 6081
+[2020-12-31 04:16:38,033 INFO] Step 2300/ 4000; acc:  74.44; ppl:  2.64; xent: 0.97; lr: 1.00000; 9398/2620 tok/s;    452 sec
+[2020-12-31 04:16:38,033 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:16:38,120 INFO] number of examples: 716
+[2020-12-31 04:16:39,991 INFO] Validation perplexity: 2.90346
+[2020-12-31 04:16:39,991 INFO] Validation accuracy: 74.8842
+[2020-12-31 04:16:39,991 INFO] Stalled patience: 9/10
+[2020-12-31 04:16:47,276 INFO] Step 2350/ 4000; acc:  77.07; ppl:  2.36; xent: 0.86; lr: 1.00000; 10360/3013 tok/s;    461 sec
+[2020-12-31 04:16:47,276 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:16:47,357 INFO] number of examples: 716
+[2020-12-31 04:16:49,237 INFO] Validation perplexity: 2.78082
+[2020-12-31 04:16:49,237 INFO] Validation accuracy: 75.8104
+[2020-12-31 04:16:49,237 INFO] Model is improving ppl: 2.86715 --> 2.78082.
+[2020-12-31 04:16:49,237 INFO] Model is improving acc: 74.4526 --> 75.8104.
+[2020-12-31 04:16:57,198 INFO] Step 2400/ 4000; acc:  76.08; ppl:  2.43; xent: 0.89; lr: 1.00000; 9884/2846 tok/s;    471 sec
+[2020-12-31 04:16:57,198 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:16:57,281 INFO] number of examples: 716
+[2020-12-31 04:16:59,194 INFO] Validation perplexity: 2.82736
+[2020-12-31 04:16:59,195 INFO] Validation accuracy: 75.7633
+[2020-12-31 04:16:59,195 INFO] Decreasing patience: 9/10
+[2020-12-31 04:17:06,740 INFO] Step 2450/ 4000; acc:  75.83; ppl:  2.55; xent: 0.93; lr: 1.00000; 9426/2833 tok/s;    481 sec
+[2020-12-31 04:17:06,740 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:17:06,940 INFO] number of examples: 716
+[2020-12-31 04:17:08,840 INFO] Validation perplexity: 2.90369
+[2020-12-31 04:17:08,840 INFO] Validation accuracy: 75.5278
+[2020-12-31 04:17:08,840 INFO] Decreasing patience: 8/10
+[2020-12-31 04:17:13,618 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:17:14,665 INFO] number of examples: 6081
+[2020-12-31 04:17:17,000 INFO] Step 2500/ 4000; acc:  76.53; ppl:  2.41; xent: 0.88; lr: 1.00000; 9283/2681 tok/s;    491 sec
+[2020-12-31 04:17:17,000 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:17:17,082 INFO] number of examples: 716
+[2020-12-31 04:17:18,971 INFO] Validation perplexity: 2.8225
+[2020-12-31 04:17:18,971 INFO] Validation accuracy: 74.5153
+[2020-12-31 04:17:18,971 INFO] Decreasing patience: 7/10
+[2020-12-31 04:17:27,288 INFO] Step 2550/ 4000; acc:  76.94; ppl:  2.35; xent: 0.86; lr: 1.00000; 10290/2919 tok/s;    501 sec
+[2020-12-31 04:17:27,288 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:17:27,370 INFO] number of examples: 716
+[2020-12-31 04:17:29,250 INFO] Validation perplexity: 2.98703
+[2020-12-31 04:17:29,250 INFO] Validation accuracy: 74.9392
+[2020-12-31 04:17:29,250 INFO] Decreasing patience: 6/10
+[2020-12-31 04:17:36,683 INFO] Step 2600/ 4000; acc:  76.46; ppl:  2.41; xent: 0.88; lr: 1.00000; 9492/2799 tok/s;    511 sec
+[2020-12-31 04:17:36,683 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:17:36,767 INFO] number of examples: 716
+[2020-12-31 04:17:38,656 INFO] Validation perplexity: 2.99431
+[2020-12-31 04:17:38,656 INFO] Validation accuracy: 74.4918
+[2020-12-31 04:17:38,656 INFO] Decreasing patience: 5/10
+[2020-12-31 04:17:46,110 INFO] Step 2650/ 4000; acc:  76.66; ppl:  2.43; xent: 0.89; lr: 1.00000; 10108/2844 tok/s;    520 sec
+[2020-12-31 04:17:46,111 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:17:46,194 INFO] number of examples: 716
+[2020-12-31 04:17:48,077 INFO] Validation perplexity: 2.85442
+[2020-12-31 04:17:48,077 INFO] Validation accuracy: 75.5906
+[2020-12-31 04:17:48,077 INFO] Decreasing patience: 4/10
+[2020-12-31 04:17:51,808 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:17:52,845 INFO] number of examples: 6081
+[2020-12-31 04:17:56,857 INFO] Step 2700/ 4000; acc:  77.11; ppl:  2.34; xent: 0.85; lr: 1.00000; 9152/2666 tok/s;    531 sec
+[2020-12-31 04:17:56,858 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:17:56,940 INFO] number of examples: 716
+[2020-12-31 04:17:58,879 INFO] Validation perplexity: 2.8298
+[2020-12-31 04:17:58,879 INFO] Validation accuracy: 73.652
+[2020-12-31 04:17:58,879 INFO] Decreasing patience: 3/10
+[2020-12-31 04:18:07,099 INFO] Step 2750/ 4000; acc:  77.35; ppl:  2.30; xent: 0.83; lr: 1.00000; 9647/2916 tok/s;    541 sec
+[2020-12-31 04:18:07,099 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:18:07,300 INFO] number of examples: 716
+[2020-12-31 04:18:09,273 INFO] Validation perplexity: 2.88457
+[2020-12-31 04:18:09,273 INFO] Validation accuracy: 75.9987
+[2020-12-31 04:18:09,273 INFO] Stalled patience: 9/10
+[2020-12-31 04:18:16,684 INFO] Step 2800/ 4000; acc:  77.89; ppl:  2.26; xent: 0.81; lr: 1.00000; 9689/2701 tok/s;    551 sec
+[2020-12-31 04:18:16,684 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:18:16,766 INFO] number of examples: 716
+[2020-12-31 04:18:18,672 INFO] Validation perplexity: 2.98383
+[2020-12-31 04:18:18,673 INFO] Validation accuracy: 75.9517
+[2020-12-31 04:18:18,673 INFO] Stalled patience: 8/10
+[2020-12-31 04:18:25,888 INFO] Step 2850/ 4000; acc:  77.31; ppl:  2.32; xent: 0.84; lr: 1.00000; 10137/2894 tok/s;    560 sec
+[2020-12-31 04:18:25,888 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:18:25,971 INFO] number of examples: 716
+[2020-12-31 04:18:27,905 INFO] Validation perplexity: 2.81476
+[2020-12-31 04:18:27,906 INFO] Validation accuracy: 75.881
+[2020-12-31 04:18:27,906 INFO] Stalled patience: 7/10
+[2020-12-31 04:18:30,419 INFO] Loading dataset from /content/CquenceR/data/input/final.train.0.pt
+[2020-12-31 04:18:31,444 INFO] number of examples: 6081
+[2020-12-31 04:18:37,344 INFO] Step 2900/ 4000; acc:  77.13; ppl:  2.29; xent: 0.83; lr: 1.00000; 8883/2587 tok/s;    571 sec
+[2020-12-31 04:18:37,344 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:18:37,425 INFO] number of examples: 716
+[2020-12-31 04:18:39,347 INFO] Validation perplexity: 2.85626
+[2020-12-31 04:18:39,347 INFO] Validation accuracy: 75.3787
+[2020-12-31 04:18:39,347 INFO] Decreasing patience: 2/10
+[2020-12-31 04:18:47,263 INFO] Step 2950/ 4000; acc:  77.72; ppl:  2.29; xent: 0.83; lr: 1.00000; 9709/3001 tok/s;    581 sec
+[2020-12-31 04:18:47,263 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:18:47,344 INFO] number of examples: 716
+[2020-12-31 04:18:49,244 INFO] Validation perplexity: 2.72895
+[2020-12-31 04:18:49,244 INFO] Validation accuracy: 74.6409
+[2020-12-31 04:18:49,244 INFO] Stalled patience: 6/10
+[2020-12-31 04:18:56,782 INFO] Step 3000/ 4000; acc:  78.43; ppl:  2.22; xent: 0.80; lr: 1.00000; 9818/2729 tok/s;    591 sec
+[2020-12-31 04:18:56,783 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:18:56,865 INFO] number of examples: 716
+[2020-12-31 04:18:58,796 INFO] Validation perplexity: 2.86259
+[2020-12-31 04:18:58,796 INFO] Validation accuracy: 75.1354
+[2020-12-31 04:18:58,796 INFO] Decreasing patience: 1/10
+[2020-12-31 04:19:05,973 INFO] Step 3050/ 4000; acc:  76.69; ppl:  2.34; xent: 0.85; lr: 1.00000; 9886/2966 tok/s;    600 sec
+[2020-12-31 04:19:05,974 INFO] Loading dataset from /content/CquenceR/data/input/final.valid.0.pt
+[2020-12-31 04:19:06,182 INFO] number of examples: 716
+[2020-12-31 04:19:08,087 INFO] Validation perplexity: 2.80062
+[2020-12-31 04:19:08,087 INFO] Validation accuracy: 75.724
+[2020-12-31 04:19:08,087 INFO] Decreasing patience: 0/10
+[2020-12-31 04:19:08,087 INFO] Training finished after not improving. Early Stop!
+[2020-12-31 04:19:08,087 INFO] Best model found at step 2350
+[2020-12-31 04:19:08,189 INFO] Saving checkpoint /content/CquenceR/data/model/final-model_step_3050.pt

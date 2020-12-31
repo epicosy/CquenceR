@@ -1,0 +1,358 @@
+class BASE_API NonThreadSafeImpl { <NEW_LINE>
+UINT16 buflen = ( UINT16 ) ( len + BTA_HH_MIN_OFFSET + sizeof ( BT_HDR ) ) ; <NEW_LINE>if ( buflen < len ) { <NEW_LINE>android_errorWriteWithInfoLog ( 0x534e4554 , "28672558" , - 1 , NULL , 0 ) ; <NEW_LINE>return NULL ; <NEW_LINE> } <NEW_LINE>BT_HDR * p_buf = GKI_getbuf ( buflen ) ; <NEW_LINE>
+return throwVMError ( exec , createNotEnoughArgumentsError ( exec ) ) ; <NEW_LINE>
+BASE_API bool ResolveShortcut ( FilePath * path ) ;
+void gestureWillBegin ( const WebCore::IntPoint & , bool & canBeginPanning ) ; <NEW_LINE>void gestureDidScroll ( const WebCore::IntSize & , bool & atBeginningOrEndOfDocument ) ; <NEW_LINE>
+#endif <NEW_LINE>
+nsPNGDecoder::WriteInternal ( const char * aBuffer , uint32_t aCount , DecodeStrategy ) <NEW_LINE>
+#include "platform / win / HWndDC . h" <NEW_LINE>
+eprintf ( " [ ERROR ] Size Mismatch - Stream data is larger than file size ! \n" ) ; <NEW_LINE>
+va_list args ) <NEW_LINE>
+extern bool capable_wrt_inode_uidgid ( const struct inode * inode , int cap ) ; <NEW_LINE>
+int contextual_cards_version ) ; <NEW_LINE>
+DECLARE_ALIGNED ( 4 , short , FData [ 24 * 16 ] ) ; <NEW_LINE>
+guint16 msdu_length , actual_octets ; <NEW_LINE>
+d0u8 = vdup_n_u8 ( bifilter4_coeff [ xoffset ] [ 0 ] ) ; <NEW_LINE>d1u8 = vdup_n_u8 ( bifilter4_coeff [ xoffset ] [ 1 ] ) ; <NEW_LINE>
+s [ 2 ] = _mm_add_epi16 ( p [ 3 ] , t [ 2 ] ) ; <NEW_LINE>s [ 3 ] = _mm_sub_epi16 ( p [ 3 ] , t [ 2 ] ) ; <NEW_LINE>s [ 4 ] = _mm_sub_epi16 ( p [ 4 ] , t [ 5 ] ) ; <NEW_LINE>s [ 5 ] = _mm_add_epi16 ( p [ 4 ] , t [ 5 ] ) ; <NEW_LINE>
+header , false , false ) ; <NEW_LINE>
+if ( body -> nested . part && body -> nested . part -> next && body -> nested . part -> next -> body . parameter -> value ) { <NEW_LINE>
+( unsigned long ) next -> size , ( const void * ) ( next + 1 ) ) ;
+* tp = ns_to_timespec ( nsec ) ; <NEW_LINE>tp -> tv_sec += sgi_clock_offset . tv_sec ; <NEW_LINE>
+AssertIsOnIOThread ( ) ; <NEW_LINE>
+void vp9_temporal_filter_init ( void ) ; <NEW_LINE>void vp9_temporal_filter ( VP9_COMP * cpi , int distance ) ; <NEW_LINE>
+return std::unique_ptr < PK_Ops::Signature > ( new ECDSA_Signature_Operation ( * this , params , rng ) ) ; <NEW_LINE>
+efree ( ImageInfo -> Thumbnail . data ) ; <NEW_LINE>ImageInfo -> Thumbnail . data = NULL ; <NEW_LINE> } else { <NEW_LINE>exif_thumbnail_build ( ImageInfo TSRMLS_CC ) ; <NEW_LINE>
+if ( ! context || <NEW_LINE>
+#define INTERLACE_FROM_ID ( id ) ( ( png_byte ) ( ( ( id ) >> 13 ) & 0x3 ) ) <NEW_LINE>
+if ( a -> type == szMAPI_BINARY ) { <NEW_LINE>body [ j ] = XMALLOC ( VarLenData , 1 ) ; <NEW_LINE>body [ j ] -> len = a -> values [ j ] . len ; <NEW_LINE>body [ j ] -> data = CHECKED_XCALLOC ( unsigned char , a -> values [ j ] . len ) ; <NEW_LINE>memmove ( body [ j ] -> data , a -> values [ j ] . data . buf , body [ j ] -> len ) ; <NEW_LINE> } <NEW_LINE>
+PNG_CONST int index = component ( row , x , 0 , bit_depth , 1 ) ; <NEW_LINE>
+if ( full_quantize != 0 ) <NEW_LINE>
+<NEW_LINE>
+memset ( context_counters , 0 , sizeof ( context_counters ) ) ; <NEW_LINE>
+modification , hasListeners , PR_TRUE , nsnull ) ; <NEW_LINE>
+{ <NEW_LINE>zval dval ; <NEW_LINE>dval = ** tmp ; <NEW_LINE>zval_copy_ctor ( & dval ) ; <NEW_LINE>convert_to_double ( & dval ) ; <NEW_LINE>m2 [ i ] = Z_DVAL ( dval ) ; <NEW_LINE> } <NEW_LINE>
+#include "third_party / blink / public / web / window_features . mojom . h" <NEW_LINE>
+<NEW_LINE>mp4 -> filepos += len ; <NEW_LINE>LongSeek ( mp4 , qtsize - 8 - len ) ; <NEW_LINE>
+static nsresult GetContextAndScope ( nsIDocument * aOldDocument , <NEW_LINE>nsIDocument * aNewDocument , <NEW_LINE>JSContext ** aCx , JSObject ** aNewScope ) ; <NEW_LINE>
+if ( have_alpha != 0 ) <NEW_LINE>
+} else if ( cpkt . cptype == MT_CPTYPE_PASSWORD && cpkt . length == 17 ) { <NEW_LINE>
+<NEW_LINE>if ( depth == 10 ) <NEW_LINE>ND_PRINT ( ( ndo , " ( too many nested levels , not recursing ) " ) ) ; <NEW_LINE>else <NEW_LINE>buf2 = smb_fdata ( ndo , buf , fmt , maxbuf , unicodestr ) ; <NEW_LINE>
+memset ( q , 0 , 2 * sizeof ( q [ 0 ] ) ) ; <NEW_LINE>
+nsresult rv = proxyEnv . getOrSetFakeOrigin ( ( nsCSecurityContext * ) securityContext ) ; <NEW_LINE>if ( NS_SUCCEEDED ( rv ) ) <NEW_LINE>secureEnv -> CallStaticMethod ( jvoid_type , clazz , method -> mMethodID , args , & unusedValue , securityContext ) ; <NEW_LINE>
+<NEW_LINE><NEW_LINE>nsRefPtr < DOMSVGNumberList > animVal = mAList -> mAnimVal ; <NEW_LINE>
+{ eCSSProperty_##_prop , & nsComputedDOMStyle::Get##_method , PR_FALSE } <NEW_LINE>#define COMPUTED_STYLE_MAP_ENTRY_LAYOUT ( _prop , _method ) \ <NEW_LINE> { eCSSProperty_##_prop , & nsComputedDOMStyle::Get##_method , PR_TRUE } <NEW_LINE>
+memset ( denoiser -> yv12_running_avg [ i ] . buffer_alloc , 0 , <NEW_LINE>denoiser -> yv12_running_avg [ i ] . frame_size ) ; <NEW_LINE>
+int len , nb_components , i , width , height , bits , pix_fmt_id , ret ; <NEW_LINE>
+#line 10214 "dcraw / dcraw . c" <NEW_LINE>
+if ( ! EnsureStringLength ( output , resultLen ) ) <NEW_LINE>return NS_ERROR_OUT_OF_MEMORY ; <NEW_LINE>
+if ( u4_numCoeffs > 64 ) <NEW_LINE> { <NEW_LINE>return IMPEG2D_MB_TEX_DECODE_ERR ; <NEW_LINE> } <NEW_LINE><NEW_LINE>
+if ( ( tf = fopen_safe ( tfile -> file_path , "w" ) ) ) { <NEW_LINE>
+result = mUndoStack -> Pop ( getter_AddRefs ( item ) ) ; <NEW_LINE>
+#include "platform / win / SystemInfo . h" <NEW_LINE>
+dev -> priv_flags	 &= ~ ( IFF_XMIT_DST_RELEASE | IFF_TX_SKB_SHARING ) ; <NEW_LINE>
+void SetRenderer ( int process_host_id , <NEW_LINE>
+int linesize = av_image_get_linesize ( avctx -> pix_fmt , avctx -> width , 0 ) ; <NEW_LINE>
+png_warning ( png_ptr , "sPLT chunk requires too much memory" ) ; <NEW_LINE>return ; <NEW_LINE>
+if ( ! ptrace_attach_thread ( pid , tid ) ) { <NEW_LINE>
+<NEW_LINE><NEW_LINE><NEW_LINE><NEW_LINE>bool ProcessingTasksAllowed ( ) const ; <NEW_LINE><NEW_LINE>
+delete [ ] cluster_list_ ; <NEW_LINE>
+for ( ObjectValueMap::Enum e ( table -> map ) ; ! e . empty ( ) ; e . popFront ( ) ) { <NEW_LINE>
+header -> checkHeader ( ) ; <NEW_LINE>
+#ifndef BASE_EVENT_TYPES_H_ <NEW_LINE>#define BASE_EVENT_TYPES_H_ <NEW_LINE>
+<NEW_LINE>
+<NEW_LINE>#define MAXDATELEN		128 <NEW_LINE><NEW_LINE>#define MAXDATEFIELDS	25 <NEW_LINE><NEW_LINE>#define TOKMAXLEN		10 <NEW_LINE>
+if ( mPresShell ) { <NEW_LINE>nsRefPtr < PresShell > shell = mPresShell ; <NEW_LINE>shell -> ProcessSynthMouseMoveEvent ( mFromScroll ) ; <NEW_LINE> } <NEW_LINE>
+#endif <NEW_LINE>
+long bytes = size ; <NEW_LINE>
+if ( png_ptr != NULL && info_ptr != NULL && <NEW_LINE> ( info_ptr -> valid & PNG_INFO_hIST ) != 0 && hist != NULL ) <NEW_LINE>
+data = safe_calloc ( blk_sz * n_blks ) ; <NEW_LINE>
+printf ( " % d tests including % d overflows , % d passed , % d failed ( % d 64 - bit " <NEW_LINE>
+#include "third_party / blink / public / web / window_features . mojom . h" <NEW_LINE>
+char buf [ L_BUFSIZE ] ; <NEW_LINE>
+} \ <NEW_LINE>JS_FRIEND_API ( JSObject * ) js::Unwrap ## Name ## Array ( JSObject * obj ) \ <NEW_LINE> { \ <NEW_LINE>obj = CheckedUnwrap ( obj ) ; \ <NEW_LINE>if ( ! obj ) \ <NEW_LINE>return NULL ; \ <NEW_LINE>const Class * clasp = obj -> getClass ( ) ; \ <NEW_LINE>if ( clasp == & TypedArray::classes [ TypedArrayTemplate < NativeType > ::ArrayTypeID ( ) ] ) \ <NEW_LINE>return obj ; \ <NEW_LINE>return NULL ; \ <NEW_LINE> } \ <NEW_LINE>JS_FRIEND_DATA ( const js::Class * const ) js::detail::Name ## ArrayClassPtr = \ <NEW_LINE> & js::TypedArray::classes [ TypedArrayTemplate < NativeType > ::ArrayTypeID ( ) ] ; <NEW_LINE>
+void ResolveWithMediaTrackConstraints ( ScriptValue constraints , <NEW_LINE>
+<NEW_LINE>obj_bucket -> bucket . obj . handlers = Z_OBJ_HT_P ( zobject ) ; <NEW_LINE>
+{ <NEW_LINE>TempPopScope tps ; <NEW_LINE>if ( type == TOK_LET && ! tps . popBlock ( cx , cg ) ) <NEW_LINE>return JS_FALSE ; <NEW_LINE>if ( ! js_EmitTree ( cx , cg , pn2 -> pn_right ) ) <NEW_LINE>return JS_FALSE ; <NEW_LINE>if ( type == TOK_LET && ! tps . repushBlock ( cx , cg ) ) <NEW_LINE>return JS_FALSE ; <NEW_LINE> } <NEW_LINE>
+RANGE_CHECK_HI ( cfg , rc_undershoot_pct , 100 ) ; <NEW_LINE>RANGE_CHECK_HI ( cfg , rc_overshoot_pct , 100 ) ; <NEW_LINE>
+if ( png_get_sBIT ( read_ptr , read_info_ptr , & sig_bit ) != 0 ) <NEW_LINE>
+clone_info -> stroke . alpha = ( MagickRealType ) TransparentAlpha ; <NEW_LINE>
+memmove ( mWriteBuffer , buffer , sizeof ( const FLAC__int32 * const ) * getChannels ( ) ) ; <NEW_LINE>
+sad_array [ t ] += mvsad_err_cost ( x , & this_mv , & fcenter_mv , <NEW_LINE>sad_per_bit ) ; <NEW_LINE>
+<NEW_LINE>
+frame -> navigationScheduler ( ) -> scheduleLocationChange ( securityOrigin ( ) , blankURL ( ) , String ( ) ) ; <NEW_LINE>
+<NEW_LINE>return ( MBEDTLS_ERR_X509_FATAL_ERROR ) ; <NEW_LINE>
+ap_log_rerror ( APLOG_MARK , APLOG_INFO , rv , f -> r , APLOGNO ( 01590 ) <NEW_LINE>"Error reading chunk % s " , <NEW_LINE> ( APR_ENOSPC == rv ) ? " ( overflow ) " : "" ) ; <NEW_LINE>
+NS_IMPL_CYCLE_COLLECTION_TRAVERSE_NSTARRAY_OF_NSCOMPTR ( mOwnedElements ) <NEW_LINE>
+if ( h0 -> s . avctx -> pix_fmt != get_pixel_format ( h0 ) ) <NEW_LINE>must_reinit = 1 ; <NEW_LINE>
+<NEW_LINE>overflow: <NEW_LINE>JS_free ( cx , vsharp ) ; <NEW_LINE>free ( chars ) ; <NEW_LINE>chars = NULL ; <NEW_LINE>goto error ; <NEW_LINE>
+delete [ ] dst ; <NEW_LINE>
+#include "base / macros . h" <NEW_LINE>
+pStorage -> mbLayer = ( macroblockLayer_t * ) H264SwDecMalloc ( size , 1 ) ; <NEW_LINE>
+ContentEncoding::GetCompressionByIndex ( unsigned long idx ) const { <NEW_LINE>
+<NEW_LINE>
+ResourceRequestInfoImpl * CreateRequestInfo ( int child_id , <NEW_LINE>int render_view_route_id , <NEW_LINE>int render_frame_route_id , <NEW_LINE>int frame_tree_node_id , <NEW_LINE>PreviewsState previews_state , <NEW_LINE>bool download , <NEW_LINE>ResourceContext * context ) ; <NEW_LINE>
+if ( js_CStringsAreUTF8 ) { <NEW_LINE>if ( ! js_InflateStringToBuffer ( cx , bytes , nbytes , NULL , & nchars ) ) <NEW_LINE>
+if ( ! tokenStream . seek ( position , parser -> tokenStream ) ) <NEW_LINE>return false ; <NEW_LINE>
+JS_ASSERT ( js::IsObjectInContextCompartment ( wrapper , cx ) ) ; <NEW_LINE>
+double mat_freq [ 14 ] ; <NEW_LINE>
+const TransformPaintPropertyNode * local_transform_space = nullptr ; <NEW_LINE>
+if ( need_crc != 0 ) <NEW_LINE>
+gdImageAALine ( im , x1 , y1 , x2 , y2 , im -> AA_color ) ; <NEW_LINE>
+stat != yajl_status_insufficient_data ) <NEW_LINE>
+void OnTexturesCreated ( const std::vector < int > & textures ) ; <NEW_LINE>
+if ( ! boundHandler ) { <NEW_LINE>listener -> ForgetHandler ( ) ; <NEW_LINE> } else if ( listener -> EventName ( ) == nsGkAtoms::onerror && win ) { <NEW_LINE>
+if ( ni ) <NEW_LINE>lnet_ni_notify_locked ( ni , lp ) ; <NEW_LINE>
+class TickClock ; <NEW_LINE>
+const MB_MODE_INFO * const above_mbmi = xd -> above_mbmi ; <NEW_LINE>const MB_MODE_INFO * const left_mbmi = xd -> left_mbmi ; <NEW_LINE>const int has_above = xd -> up_available ; <NEW_LINE>const int has_left = xd -> left_available ;
+return wantsStrutOnBlock && block . allowsPaginationStrut ( ) ; <NEW_LINE>
+sendNewSessionTicket = <NEW_LINE>ssl3_ExtensionNegotiated ( ss , ssl_session_ticket_xtn ) && <NEW_LINE> ( sid == NULL <NEW_LINE>#ifndef NSS_SSL_NO_TEST_ONLY_FUNCTIONALITY <NEW_LINE> || ss -> opt . serverRefreshSessionTicketDuringResume <NEW_LINE>#endif <NEW_LINE> ) ; <NEW_LINE>if ( sendNewSessionTicket ) { <NEW_LINE>
+} <NEW_LINE><NEW_LINE>masm . cmp32 ( temp , Imm32 ( 0 ) ) ; <NEW_LINE>if ( ! bailoutIf ( Assembler::LessThan , lir -> snapshot ( ) ) ) <NEW_LINE>return false ; <NEW_LINE><NEW_LINE>if ( min != 0 ) { <NEW_LINE>
+request -> ssids [ i ] . ssid_len = nla_len ( attr ) ; <NEW_LINE>
+js_SaveAndClearRegExpStatics ( cx , & statics , & tvr ) ; <NEW_LINE>
+#include "platform / mediastream / MediaStreamSource . h" <NEW_LINE>
+jsuint start = 0 , end = length ; <NEW_LINE>jsint step = 1 ; <NEW_LINE>
+TaskRunnerTimer < ImageLoader > m_derefElementTimer ; <NEW_LINE>
+throttle_event . header . size , 0 ) ; <NEW_LINE>
+mb2_cache_entry_delete_block ( ext4_mb_cache , hash , <NEW_LINE>bs -> bh -> b_blocknr ) ; <NEW_LINE>
+<NEW_LINE>
+memcpy ( this_frame , & next_frame , sizeof ( * this_frame ) ) ; <NEW_LINE>
+buf = safe_calloc ( sz + 1 ) ; <NEW_LINE>
+<NEW_LINE><NEW_LINE>DECLARE_ALIGNED ( 16 , int16_t , y_quant_fp [ QINDEX_RANGE ] [ 8 ] ) ; <NEW_LINE>DECLARE_ALIGNED ( 16 , int16_t , uv_quant_fp [ QINDEX_RANGE ] [ 8 ] ) ; <NEW_LINE>DECLARE_ALIGNED ( 16 , int16_t , y_round_fp [ QINDEX_RANGE ] [ 8 ] ) ; <NEW_LINE>DECLARE_ALIGNED ( 16 , int16_t , uv_round_fp [ QINDEX_RANGE ] [ 8 ] ) ; <NEW_LINE><NEW_LINE>
+if ( * obuf == NULL ) { <NEW_LINE> * obuf = kmalloc ( len , GFP_NOFS ) ; <NEW_LINE>if ( ! * obuf ) <NEW_LINE>return - ENOMEM ; <NEW_LINE>olen = len ; <NEW_LINE> } <NEW_LINE><NEW_LINE>ret = ceph_decrypt2 ( secret , & head , & head_len , * obuf , & olen , * p , len ) ; <NEW_LINE>
+test_pixel . have_tRNS = dp -> this . is_transparent != 0 ; <NEW_LINE>
+seg -> update_map = 0 ; <NEW_LINE>seg -> update_data = 0 ; <NEW_LINE>
+const api::permissions::Permissions & permissions , <NEW_LINE>bool allow_file_access , <NEW_LINE>std::string * error ) ; <NEW_LINE>
+! ReportBadReturn ( context , tc , pn , JSREPORT_WARNING | JSREPORT_STRICT , <NEW_LINE>
+( static_cast < txElementHandler * > ( popPtr ( eElementHandler ) ) ) ; <NEW_LINE>
+preserve , webgl_version , want_depth_buffer , want_stencil_buffer , <NEW_LINE>
+if ( png_ptr -> idat_size != 0 && png_ptr -> current_buffer_size != 0 ) <NEW_LINE>
+<NEW_LINE>#include < jasper / jas_config . h > <NEW_LINE><NEW_LINE>
+nsContentUtils::AddScriptRunner ( <NEW_LINE>NS_NewRunnableMethod ( this , & nsXULTemplateBuilder::UninitTrue ) ) ; <NEW_LINE>
+if ( nPortIndex < m_sInPortDef . nBufferCountActual && <NEW_LINE>BITMASK_PRESENT ( & m_inp_bm_count , nPortIndex ) ) { <NEW_LINE>
+last_row = ( unsigned char * ) RelinquishMagickMemory ( last_row ) ; <NEW_LINE>
+PRBool AllocateBuffers ( ) { <NEW_LINE>return ( mGlyphs . SetLength ( mMaxGlyphs ) && <NEW_LINE>mClusters . SetLength ( mItemLength + 1 ) && <NEW_LINE>mAttr . SetLength ( mMaxGlyphs ) ) ; <NEW_LINE> } <NEW_LINE><NEW_LINE>
+sp < Sample > findSample_l ( int sampleID ) ; <NEW_LINE>
+<NEW_LINE>
+DEBUGLOG ( 5 , "Building ML table ( remaining space : % i ) " , ( int ) ( oend - op ) ) ; <NEW_LINE>
+if ( ! ( * pkthdr ) -> len || ( * pkthdr ) -> len < ( * pkthdr ) -> caplen ) { <NEW_LINE>fprintf ( stderr , "safe_pcap_next_ex ERROR: Invalid packet length in % s: % s ( ) line % d: packet length = % u capture length = % u\n" , <NEW_LINE>
+if ( val < 64 || val > MAX_TCP_WINDOW ) { <NEW_LINE>
+if ( cmd == OMX_CommandStateSet ) { <NEW_LINE><NEW_LINE><NEW_LINE>mSailed = true ; <NEW_LINE> } <NEW_LINE>const sp < GraphicBufferSource > bufferSource ( getGraphicBufferSource ( ) ) ; <NEW_LINE>
+vpx_fixed_buf_t two_pass_stats_in ; <NEW_LINE>
+offset = ( MagickOffsetType ) bmp_info . ba_offset ; <NEW_LINE>if ( offset != 0 ) <NEW_LINE>if ( ( offset < TellBlob ( image ) ) || <NEW_LINE> ( SeekBlob ( image , offset , SEEK_SET ) != offset ) ) <NEW_LINE>ThrowReaderException ( CorruptImageError , "ImproperImageHeader" ) ; <NEW_LINE>
+LOG_WARN ( ( "The updaters do not match , updater will not run . " ) ) ; <NEW_LINE>
+if ( l > ( unsigned ) ( buf + n - p ) ) { <NEW_LINE>
+ippSetString ( job -> attrs , & attr , 0 , Classification ) ; <NEW_LINE>
+int64_t aTimeThreshold ) <NEW_LINE>
+#include "common . h" <NEW_LINE>#include "qrio . h" <NEW_LINE>
+if ( ( routes = mprReadJsonObj ( prop , "routes" ) ) != 0 ) { <NEW_LINE>
+<NEW_LINE>if ( pbi -> decoding_thread_count > num_token_partitions - 1 ) { <NEW_LINE>pbi -> decoding_thread_count = num_token_partitions - 1 ; <NEW_LINE> } <NEW_LINE>if ( pbi -> decoding_thread_count > pbi -> common . mb_rows - 1 ) { <NEW_LINE>pbi -> decoding_thread_count = pbi -> common . mb_rows - 1 ; <NEW_LINE> } <NEW_LINE>
+memset ( ( void * ) ctx -> fragments . ptrs , 0 , sizeof ( ctx -> fragments . ptrs ) ) ; <NEW_LINE>memset ( ctx -> fragments . sizes , 0 , sizeof ( ctx -> fragments . sizes ) ) ; <NEW_LINE>
+spin_lock ( & unix_gc_lock ) ; <NEW_LINE><NEW_LINE>
+testErrorHandler , testErrorHandler , ctxt ) ; <NEW_LINE>
+JS_StackFramePrincipals ( cx , caller ) , <NEW_LINE>
+char linebuf [ L_BUFSIZE ] ; <NEW_LINE>
+if ( widget -> mInDtor ) { <NEW_LINE>
+* aRet = xpc_UnmarkGrayObject ( JSVAL_TO_OBJECT ( v ) ) ; <NEW_LINE>
+container -> psvi = XSLT_RVT_LOCAL ; <NEW_LINE>
+AutoPushJSContext cx ( scx ? scx -> GetNativeContext ( ) : nullptr ) ; <NEW_LINE>
+static void local_socket_close ( asocket * s ) { <NEW_LINE>D ( "entered local_socket_close . LS ( % d ) fd = % d" , s -> id , s -> fd ) ; <NEW_LINE>std::lock_guard < std::recursive_mutex > lock ( local_socket_list_lock ) ; <NEW_LINE>
+return V8Proxy::throwNotEnoughArgumentsError ( args . GetIsolate ( ) ) ; <NEW_LINE>
+v -> pcmret [ i ] = v -> pcm [ i ] + v -> pcm_returned ; <NEW_LINE>
+#elif CPU ( MIPS ) <NEW_LINE><NEW_LINE><NEW_LINE><NEW_LINE>#define YIELD_PROCESSOR __asm__ __volatile__ ( " . word 0x00000140" ) <NEW_LINE>#elif CPU ( MIPS64 ) && __mips_isa_rev >= 2 <NEW_LINE><NEW_LINE><NEW_LINE>
+NS_ENSURE_NATIVE_COLUMN ( aCol ) ; <NEW_LINE>
+if ( ! ND_TTEST2 ( * tptr , 2 ) ) <NEW_LINE>
+spl_filesystem_object * intern = ( spl_filesystem_object * ) zend_object_store_get_object ( getThis ( ) TSRMLS_CC ) ; <NEW_LINE>
+ND_PRINT ( ( ndo , " % s" , icmp6_tstr ) ) ; <NEW_LINE>
+curves [ oc ] , <NEW_LINE>max , <NEW_LINE>p -> octave [ i ] - p -> firstoc , <NEW_LINE>p -> total_octave_lines , <NEW_LINE>p -> eighth_octave_lines , <NEW_LINE>dBoffset ) ; <NEW_LINE>
+<NEW_LINE>#if defined ( __CYGWIN__ ) <NEW_LINE>
+virtual bool GetURLAndTitle ( FilenameToURLPolicy policy , <NEW_LINE>GURL * url , <NEW_LINE>base::string16 * title ) const = 0 ; <NEW_LINE>
+int32_t idx = parent -> IndexOf ( adoptedNode ) ; <NEW_LINE>MOZ_ASSERT ( idx >= 0 ) ; <NEW_LINE>parent -> RemoveChildAt ( idx , true ) ; <NEW_LINE>
+|| style -> isFloating ( ) || style -> isOutOfFlowPositioned ( ) ; <NEW_LINE>
+if ( ! JS_SetPrototype ( cx , mJSObject , xpc_UnmarkGrayObject ( proto ) ) ) { <NEW_LINE>
+if ( ( max_value == 0 ) || ( max_value > 4294967295 ) ) <NEW_LINE>ThrowReaderException ( CorruptImageError , "ImproperImageHeader" ) ; <NEW_LINE>for ( depth = 1 ; ( GetQuantumRange ( depth ) + 1 ) < max_value ; depth ++ ) ; <NEW_LINE>
+ECDSA_PrivateKey::create_signature_op ( RandomNumberGenerator & rng , <NEW_LINE>
+size_t alloc_size = 0 ; <NEW_LINE><NEW_LINE>if ( MUL_OVERFLOW ( sizeof ( TEE_Attribute ) , param_count , & alloc_size ) ) <NEW_LINE>return TEE_ERROR_OVERFLOW ; <NEW_LINE><NEW_LINE>params = malloc ( alloc_size ) ; <NEW_LINE>
+if ( ! m_element || ! ATK_IS_TEXT ( m_element ) ) <NEW_LINE>return JSStringCreateWithCharacters ( 0 , 0 ) ; <NEW_LINE><NEW_LINE>GOwnPtr < gchar > text ( atk_text_get_text ( ATK_TEXT ( m_element ) , 0 , - 1 ) ) ; <NEW_LINE>GOwnPtr < gchar > textWithReplacedCharacters ( replaceCharactersForResults ( text . get ( ) ) ) ; <NEW_LINE>GOwnPtr < gchar > axValue ( g_strdup_printf ( "AXValue: % s" , textWithReplacedCharacters . get ( ) ) ) ; <NEW_LINE><NEW_LINE>return JSStringCreateWithUTF8CString ( axValue . get ( ) ) ; <NEW_LINE>
+return V8Proxy::throwNotEnoughArgumentsError ( args . GetIsolate ( ) ) ; <NEW_LINE>
+mOwnedElements . AppendElement ( aContent ) ; <NEW_LINE>
+nsBoxFrame::FireChromeDOMEvent ( nsIPresContext * aPresContext , const nsAString & aDOMEventName ) <NEW_LINE>
+if ( cs >= CQSPI_MAX_CHIPSELECT ) { <NEW_LINE>
+task_event -> event_id . header . size , 0 ) ; <NEW_LINE>
+#ifndef BASE_TIME_DEFAULT_TICK_CLOCK_H_ <NEW_LINE>#define BASE_TIME_DEFAULT_TICK_CLOCK_H_ <NEW_LINE>
+memset ( lfi -> lfthr [ lvl ] . lim , block_inside_limit , SIMD_WIDTH ) ; <NEW_LINE>memset ( lfi -> lfthr [ lvl ] . mblim , ( 2 * ( lvl + 2 ) + block_inside_limit ) , <NEW_LINE>SIMD_WIDTH ) ; <NEW_LINE>
+PRBool DownloadableFontsEnabled ( ) ; <NEW_LINE><NEW_LINE><NEW_LINE>PRBool SanitizeDownloadedFonts ( ) ; <NEW_LINE>
+EWK_FRAME_SD_GET ( ewk_view_frame_main_get ( smartData -> view ) , mainSmartData ) ; <NEW_LINE>if ( mainSmartData -> frame == smartData -> frame ) <NEW_LINE>smartData -> frame -> loader ( ) -> detachFromParent ( ) ; <NEW_LINE>
+int32_t sessionId __unused , <NEW_LINE>int32_t ioId __unused , <NEW_LINE>
+LongSeek ( mp4 , lastsize - 8 - 8 ) ; <NEW_LINE>
+mprWriteJson ( params , sfmt ( "FILE_ % d_FILENAME" , index ) , file -> filename ) ; <NEW_LINE>mprWriteJson ( params , sfmt ( "FILE_ % d_CLIENT_FILENAME" , index ) , file -> clientFilename ) ; <NEW_LINE>mprWriteJson ( params , sfmt ( "FILE_ % d_CONTENT_TYPE" , index ) , file -> contentType ) ; <NEW_LINE>mprWriteJson ( params , sfmt ( "FILE_ % d_NAME" , index ) , file -> name ) ; <NEW_LINE>mprWriteJson ( params , sfmt ( "FILE_ % d_SIZE" , index ) , sfmt ( " % zd" , file -> size ) ) ; <NEW_LINE>
+#include "base / callback_old . h" <NEW_LINE>
+if ( ( AcquireMagickResource ( WidthResource , image -> columns ) == MagickFalse ) || <NEW_LINE> ( AcquireMagickResource ( HeightResource , image -> rows ) == MagickFalse ) ) <NEW_LINE>ThrowReaderException ( ImageError , "WidthOrHeightExceedsLimit" ) ;
+if ( ! ssl_cipher_get_evp ( s -> session , & c , & hash , & mac_type , & mac_secret_size , <NEW_LINE> & comp , s -> tlsext_use_etm ) ) { <NEW_LINE>
+vpx_idct4_columns_add_blk_dspr2 ( & temp_in [ 0 ] , dest , dest_stride ) ; <NEW_LINE>
+virtual void LastPluginRefWasDeleted ( ) ; <NEW_LINE>
+return V8Proxy::throwNotEnoughArgumentsError ( args . GetIsolate ( ) ) ; <NEW_LINE>
+lwp_write ( fout , "error" ) ; <NEW_LINE>lwp_write_int32 ( fout , EPROTO ) ; <NEW_LINE>
+const image_transform ** that , png_byte colour_type , png_byte bit_depth ) <NEW_LINE>
+thissad = vfp -> sdf ( what , what_stride , this_offset , in_what_stride ) ; <NEW_LINE>
+IPC_STRUCT_TRAITS_MEMBER ( preview_ui_id ) <NEW_LINE>
+while ( ! vct_iscrlf ( p ) ) <NEW_LINE>
+s -> smart_selftest_count = 1 ; <NEW_LINE>
+static int get_down2_steps ( int in_length , int out_length ) { <NEW_LINE>
+return throwVMError ( exec , createNotEnoughArgumentsError ( exec ) ) ; <NEW_LINE>
+aValue -> mMethods . IsEmpty ( ) ) { <NEW_LINE>
+<NEW_LINE>
+if ( content -> IsHTML ( ) && <NEW_LINE>content -> IsInHTMLDocument ( ) ) { <NEW_LINE>
+if ( perf_event_overflow ( event , data , regs ) ) <NEW_LINE>
+return throwError ( exec , createNotEnoughArgumentsError ( exec ) ) ; <NEW_LINE>
+if ( png_crc_finish ( png_ptr , 0 ) != 0 ) <NEW_LINE>
+if ( ( png_ptr -> flags & PNG_FLAG_BENIGN_ERRORS_WARN ) != 0 ) <NEW_LINE>
+const jschar * chars ( JSContext * cx , SourceDataCache::AutoHoldEntry & asp ) ; <NEW_LINE>
+pd . buf_size = buf_offset += ret ; <NEW_LINE>
+AccessControlStatus CalculateAccessControlStatus ( const SecurityOrigin * ) const ; <NEW_LINE>
+if ( ( q + PSDQuantum ( count ) + 12 ) < ( datum + length - 16 ) ) <NEW_LINE> { <NEW_LINE> ( void ) CopyMagickMemory ( q , q + PSDQuantum ( count ) + 12 , length - <NEW_LINE> ( PSDQuantum ( count ) + 12 ) - ( q - datum ) ) ; <NEW_LINE>SetStringInfoLength ( bim_profile , length - ( PSDQuantum ( count ) + 12 ) ) ; <NEW_LINE> } <NEW_LINE>
+aDesiredSize . height = aReflowState . ComputedHeight ( ) != NS_UNCONSTRAINEDSIZE <NEW_LINE> ? aReflowState . ComputedHeight ( ) <NEW_LINE>
+rv = DumpChain ( certHandle , name , <NEW_LINE>certutil . options [ opt_ASCIIForIO ] . activated ) ; <NEW_LINE>
+#define KDB_TL_USER_INFO 0xff <NEW_LINE>
+void DecodeABitOf ( RasterImage * aImg , DecodeStrategy aStrategy ) ;
+tmp2 = ( LPSTR ) realloc ( tmp , ds * sizeof ( CHAR ) ) ; <NEW_LINE>if ( ! tmp2 ) <NEW_LINE>free ( tmp ) ; <NEW_LINE>tmp = tmp2 ; <NEW_LINE>
+static int encode_frame ( vpx_codec_ctx_t * codec , <NEW_LINE>vpx_image_t * img , <NEW_LINE>int frame_index , <NEW_LINE>VpxVideoWriter * writer ) { <NEW_LINE>int got_pkts = 0 ; <NEW_LINE>
+#ifndef BASE_ANDROID_LIBRARY_LOADER_LIBRARY_LOADER_HOOKS_H_ <NEW_LINE>#define BASE_ANDROID_LIBRARY_LOADER_LIBRARY_LOADER_HOOKS_H_ <NEW_LINE>
+vp8_clear_system_state ( ) ; <NEW_LINE>
+zend_throw_exception_ex ( spl_ce_BadMethodCallException , 0 TSRMLS_CC , " % s" , error ) ; <NEW_LINE>
+const int bwl = b_width_log2_lookup [ plane_bsize ] ; <NEW_LINE>
+buf . trimStart ( static_cast < size_t > ( kPlaintextHeaderSize ) + length ) ; <NEW_LINE>
+RefPtr < SharedBuffer > testData = readFile ( decodersTestingDir , "bad - initial - code . gif" ) ; <NEW_LINE>
+if ( isOutOfFlowPositioned ( ) ) { <NEW_LINE>
+extern const char kWebViewSandboxedRenderer [ ] ; <NEW_LINE>
+mono_reflection_shutdown ( ) ; <NEW_LINE>
+return & i . scopeChain ( ) -> global ( ) ; <NEW_LINE>
+rootPC -> RequestUpdatePluginGeometry ( ) ; <NEW_LINE>
+if ( pn && onlyXML && ! callerFrame ) { <NEW_LINE>
+return createFragmentForTransformToFragment ( resultString , resultMIMEType , outputDoc ) ; <NEW_LINE>
+} else { <NEW_LINE><NEW_LINE>
+const int row8x8_remaining = tile -> mi_row_end - mi_row ; <NEW_LINE>const int col8x8_remaining = tile -> mi_col_end - mi_col ; <NEW_LINE>
+delete [ ] track_entries_ ; <NEW_LINE>
+default: { <NEW_LINE>TProtocolException::throwInvalidSkipType ( arg_type ) ; <NEW_LINE> } <NEW_LINE>
+key , png_const_charp text , int compression ) , PNG_EMPTY ) ; <NEW_LINE>
+<NEW_LINE>
+int protocol , bufferlist & authorizer , <NEW_LINE>bufferlist & authorizer_reply , <NEW_LINE>bool & isvalid , CryptoKey & session_key , <NEW_LINE>std::unique_ptr < AuthAuthorizerChallenge > * challenge ) override { <NEW_LINE>
+<NEW_LINE>if ( obj -> isRegExp ( ) ) { <NEW_LINE>AddTypeProperty ( cx , type , "source" , types::Type::StringType ( ) ) ; <NEW_LINE>AddTypeProperty ( cx , type , "global" , types::Type::BooleanType ( ) ) ; <NEW_LINE>AddTypeProperty ( cx , type , "ignoreCase" , types::Type::BooleanType ( ) ) ; <NEW_LINE>AddTypeProperty ( cx , type , "multiline" , types::Type::BooleanType ( ) ) ; <NEW_LINE>AddTypeProperty ( cx , type , "sticky" , types::Type::BooleanType ( ) ) ; <NEW_LINE>AddTypeProperty ( cx , type , "lastIndex" , types::Type::Int32Type ( ) ) ; <NEW_LINE> } <NEW_LINE><NEW_LINE>if ( obj -> isString ( ) ) <NEW_LINE>AddTypeProperty ( cx , type , "length" , Type::Int32Type ( ) ) ; <NEW_LINE>
+const FetchInitiatorInfo & , <NEW_LINE>Resource::Type ) ; <NEW_LINE>
+if ( ( transforms & PNG_TRANSFORM_SWAP_ENDIAN ) != 0 ) <NEW_LINE>
+void AddRef ( ) { <NEW_LINE>if ( mRefCnt == PR_UINT32_MAX ) { <NEW_LINE>NS_WARNING ( "refcount overflow , leaking nsCSSValue::URL" ) ; <NEW_LINE>return ; <NEW_LINE> } <NEW_LINE> ++ mRefCnt ; <NEW_LINE> } <NEW_LINE>void Release ( ) { <NEW_LINE>if ( mRefCnt == PR_UINT32_MAX ) { <NEW_LINE>NS_WARNING ( "refcount overflow , leaking nsCSSValue::URL" ) ; <NEW_LINE>return ; <NEW_LINE> } <NEW_LINE>if ( -- mRefCnt == 0 ) <NEW_LINE>delete this ; <NEW_LINE> } <NEW_LINE>
+RefPtr < TestNode > imp = WTF::getPtr ( proxyImp -> locationWithException ( ) ) ; <NEW_LINE>
+listBoxBodyFrame -> OnContentRemoved ( aPresContext , aContainer , <NEW_LINE>aChildFrame , aIndexInContainer ) ; <NEW_LINE>
+FILE * fp ; <NEW_LINE>#if _POSIX_C_SOURCE >= 1 || _XOPEN_SOURCE || _POSIX_SOURCE <NEW_LINE>int fd = open ( filename , O_CREAT , S_IRUSR | S_IWUSR ) ; <NEW_LINE>if ( fd == - 1 ) { <NEW_LINE><NEW_LINE>return - 1 ; <NEW_LINE> } <NEW_LINE>fp = fdopen ( fd , "wt" ) ; <NEW_LINE>#else <NEW_LINE>fp = fopen ( filename , "wt" ) ; <NEW_LINE>#endif <NEW_LINE>
+#endif
+f = fopen ( filepath , "r" ) ; <NEW_LINE>
+if ( ! mOffsets . SetLength ( mNumGlyphs ) || <NEW_LINE> ! mAdvances . SetLength ( mNumGlyphs ) ) { <NEW_LINE>return E_OUTOFMEMORY ; <NEW_LINE> } <NEW_LINE>
+<NEW_LINE>
+static nsIScriptSecurityManager_1_9_2 * sSecurityManager ; <NEW_LINE>
+{ <NEW_LINE> ( void ) ThrowMagickException ( exception , GetMagickModule ( ) , <NEW_LINE>OptionError , "ImageSequenceRequired" , "` % s'" , option ) ; <NEW_LINE>new_images = DestroyImage ( new_images ) ; <NEW_LINE>status = MagickFalse ; <NEW_LINE>break ; <NEW_LINE> } <NEW_LINE>
+static void _php_mb_regex_set_options ( OnigOptionType options , OnigSyntaxType * syntax , OnigOptionType * prev_options , OnigSyntaxType ** prev_syntax TSRMLS_DC ) <NEW_LINE>
+if ( ps_parse -> s_sei_params . i4_sei_user_data_cnt >= USER_DATA_MAX ) <NEW_LINE> { <NEW_LINE>for ( i = 0 ; i < u4_payload_size / 4 ; i ++ ) <NEW_LINE> { <NEW_LINE>ihevcd_bits_flush ( ps_bitstrm , 4 * 8 ) ; <NEW_LINE> } <NEW_LINE><NEW_LINE>ihevcd_bits_flush ( ps_bitstrm , ( u4_payload_size - i * 4 ) * 8 ) ; <NEW_LINE> } <NEW_LINE>else <NEW_LINE> { <NEW_LINE>ihevcd_parse_user_data_registered_itu_t_t35 ( ps_codec , <NEW_LINE>u4_payload_size ) ; <NEW_LINE> } <NEW_LINE>
+#endif <NEW_LINE>
+<NEW_LINE><NEW_LINE>if ( document && <NEW_LINE> ( win = document -> GetInnerWindow ( ) ) && win -> IsInnerWindow ( ) ) { <NEW_LINE>
+memcpy ( temp_area + i * dest_pitch , temp_area + ( i - 1 ) * dest_pitch , dest_pitch ) ; <NEW_LINE>
+SkAutoFree buffer ( sk_malloc_canfail ( size ) ) ; <NEW_LINE>
+err = TEMP_FAILURE_RETRY ( ioctl ( sk , SIOCGIFHWADDR , & ifr ) ) ; <NEW_LINE>
+size_t len = 0 ; <NEW_LINE>size_t lenDelim = delim . size ( ) ; <NEW_LINE>
+<NEW_LINE>
+else <NEW_LINE>
+is_directional_ ( other . is_directional_ ) <NEW_LINE>
+vorbis_analysis_buffer ( v , ci -> blocksizes [ 1 ] * 3 ) ; <NEW_LINE>
+virtual bool requiresLayer ( ) const OVERRIDE { return isRoot ( ) || isOutOfFlowPositioned ( ) || isRelPositioned ( ) || isTransparent ( ) || hasOverflowClip ( ) || hasTransform ( ) || hasHiddenBackface ( ) || hasMask ( ) || hasReflection ( ) || hasFilter ( ) || style ( ) -> specifiesColumns ( ) ; } <NEW_LINE>
+class BeforeTranslateInfoBar : public TranslateInfoBarBase , <NEW_LINE>public views::ViewMenuDelegate { <NEW_LINE>
+const int * src [ FLACParser::kMaxChannels ] , <NEW_LINE>
+uint8_t * const buffers [ MAX_MB_PLANE ] = { src -> y_buffer , src -> u_buffer , <NEW_LINE>src -> v_buffer } ; <NEW_LINE>const int strides [ MAX_MB_PLANE ] = { src -> y_stride , src -> uv_stride , <NEW_LINE>src -> uv_stride } ; <NEW_LINE>
+mpz_powm_sec ( v1 , key -> g , u1 , key -> p ) ; <NEW_LINE>mpz_powm_sec ( v2 , key -> y , u2 , key -> p ) ; <NEW_LINE>
+IsFragmentGraphWithUnreachableGCThing ( JSContext * cx , TreeFragment * f ) <NEW_LINE> { <NEW_LINE>bool hasUnrechable = IsFragmentGraphWithUnreachableGCThingImpl ( cx , f ) ; <NEW_LINE>
+#include "vpx_ports / arm . h" <NEW_LINE>#include " . / vpx_config . h" <NEW_LINE><NEW_LINE>#ifdef WINAPI_FAMILY <NEW_LINE>#include < winapifamily . h > <NEW_LINE>#if ! WINAPI_FAMILY_PARTITION ( WINAPI_PARTITION_DESKTOP ) <NEW_LINE>#define getenv ( x ) NULL <NEW_LINE>#endif <NEW_LINE>#endif <NEW_LINE>
+Copyright ( c ) 2013 - 2016 , The Linux Foundation . All rights reserved . <NEW_LINE>
+nsCOMPtr < nsIContent > content = do_QueryInterface ( mCanvasElement ) ; <NEW_LINE>
+#include "base / macros . h" <NEW_LINE>
+CALL_AND_WAIT ( bt_interface -> enable ( false ) , adapter_state_changed ) ; <NEW_LINE>
+sscanf ( sb , " % u" , & contentlen ) ; <NEW_LINE>if ( contentlen > LINESIZE * 1024 ) contentlen = 0 ; <NEW_LINE>
+if ( sf -> adaptive_mode_search ) <NEW_LINE>if ( ( x -> source_variance << num_pels_log2_lookup [ bsize ] ) > best_pred_sse ) <NEW_LINE>continue ; <NEW_LINE><NEW_LINE>
+const VideoColorSpace & eotf , <NEW_LINE>
+return throwVMError ( exec , createNotEnoughArgumentsError ( exec ) ) ; <NEW_LINE>
+static const size_t interfaceSizesByVersion [ 5 ] ; <NEW_LINE>
+<NEW_LINE>
+rv = ReadScript ( uri , cx , target_obj , charset , ( char * ) uriStr . get ( ) , serv , <NEW_LINE>principal , & scriptObj ) ; <NEW_LINE>
+if ( gData -> stateStackTop ) <NEW_LINE> -- gData -> stateStackTop ; <NEW_LINE>
+& loc_name , & loc_name_len , <NEW_LINE>
+( ( ( n ) != NULL ) && ( ( n ) -> type == XML_ELEMENT_NODE ) && \ <NEW_LINE> ( ( n ) -> ns != NULL ) && ( xmlStrEqual ( ( n ) -> ns -> href , XSLT_NAMESPACE ) ) )
+if ( child -> isOutOfFlowPositioned ( ) ) { <NEW_LINE>
+std::cout << " GenerateWord32 and Crop\n" ;
+MetadataTags ** aTags ) <NEW_LINE>
+void DidFocus ( blink::WebLocalFrame * calling_frame ) override { <NEW_LINE>view_test_client ( ) -> DidFocus ( calling_frame ) ; <NEW_LINE>Base::DidFocus ( calling_frame ) ; <NEW_LINE>
+<NEW_LINE><NEW_LINE>const node_t * node = node_get_by_id ( ( const char * ) rst -> exclude_id ) ; <NEW_LINE>if ( node && guard_in_node_family ( guard , node ) ) <NEW_LINE>return 0 ; <NEW_LINE><NEW_LINE>
+#endif <NEW_LINE>
+RefPtr < DocumentFragment > fragment = createContextualFragment ( markup , toHTMLElement ( parent ) , AllowScriptingContent ) ; <NEW_LINE>
+SensorReadingSharedBuffer * reading_buffer , <NEW_LINE>
+MOZ_ASSERT ( aTerminated || <NEW_LINE>mDocument -> GetReadyStateEnum ( ) == <NEW_LINE>
+vorbis_info * vi , oggpack_buffer * opb ) { <NEW_LINE>
+return TEMP_FAILURE_RETRY ( send ( ts [ h ] . cmd_fdw , & cmd , sizeof ( cmd ) , 0 ) ) == sizeof ( cmd ) ; <NEW_LINE>
+int total_octave_lines ; <NEW_LINE>
+@stability Stable <NEW_LINE>
+if ( mask != ( Image * ) NULL ) <NEW_LINE> { <NEW_LINE>mask -> matte = MagickFalse ; <NEW_LINE>channel_image = mask ; <NEW_LINE> } <NEW_LINE>
+! equalIgnoringASCIICase ( getAttribute ( aria_hiddenAttr ) , "false" ) ) { <NEW_LINE>
+d . lengthAndFlags = buildLengthAndFlags ( length , DEPENDENT_FLAGS ) ; <NEW_LINE>
+ovpsnr = sse_to_psnr ( ( double ) stream -> psnr_samples_total , peak , <NEW_LINE>
+MOZ_ASSERT ( aCx == nsContentUtils::GetCurrentJSContext ( ) ) ; <NEW_LINE>
+WebCore::Timer < LayerTreeCoordinator > m_releaseInactiveAtlasesTimer ; <NEW_LINE>
+nsWSAdmissionManager ( ) : mSessionCount ( 0 ) <NEW_LINE>
+const MB_MODE_INFO * const above_mbmi = xd -> above_mbmi ; <NEW_LINE>const MB_MODE_INFO * const left_mbmi = xd -> left_mbmi ; <NEW_LINE>const int has_above = xd -> up_available ; <NEW_LINE>const int has_left = xd -> left_available ; <NEW_LINE>
+<NEW_LINE>nsCOMPtr < nsIDOMHTMLCanvasElement > mCanvasElement ; <NEW_LINE>nsHTMLCanvasElement * HTMLCanvasElement ( ) { <NEW_LINE>return static_cast < nsHTMLCanvasElement * > ( mCanvasElement . get ( ) ) ; <NEW_LINE> } <NEW_LINE>
+if ( gData -> stateStackTop ) <NEW_LINE> -- gData -> stateStackTop ; <NEW_LINE>
+key = ssplit ( header , ": " , & value ) ; <NEW_LINE>
+pkt = ctx -> iface -> enc . get_cx_data ( get_alg_priv ( ctx ) , iter ) ; <NEW_LINE>
+IDBObjectStore::ClearCloneReadInfo ( mCloneReadInfos [ index ] ) ; <NEW_LINE>
+const GURL & alternate_nav_url ( ) const { return alternate_nav_url_ ; } <NEW_LINE>
+if ( object -> isOutOfFlowPositioned ( ) ) <NEW_LINE>
+memset ( ybf -> y_buffer - 1 - ybf -> y_stride , 127 , ybf -> y_width + 5 ) ; <NEW_LINE>memset ( ybf -> u_buffer - 1 - ybf -> uv_stride , 127 , ybf -> uv_width + 5 ) ; <NEW_LINE>memset ( ybf -> v_buffer - 1 - ybf -> uv_stride , 127 , ybf -> uv_width + 5 ) ; <NEW_LINE>
+if ( imp_dbh -> pmysql ) <NEW_LINE>do_error ( dbh , mysql_errno ( imp_dbh -> pmysql ) , <NEW_LINE>mysql_error ( imp_dbh -> pmysql ) , mysql_sqlstate ( imp_dbh -> pmysql ) ) ; <NEW_LINE>
+VALIDATE_OMX_PARAM_DATA ( paramData , OMX_PRIORITYMGMTTYPE ) ; <NEW_LINE>
+<NEW_LINE>
+m_pending [ i ] . first -> setStartTime ( m_pending [ i ] . second , false ) ; <NEW_LINE>
+typedef void ( * perf_overflow_handler_t ) ( struct perf_event * , <NEW_LINE>
+<NEW_LINE>#define SINGLE_AND_MULTI_THREAD_TEST_F ( TEST_FIXTURE_NAME ) \ <NEW_LINE>TEST_F ( TEST_FIXTURE_NAME , runSingleThread ) \ <NEW_LINE> { \ <NEW_LINE>runTest ( false ) ; \ <NEW_LINE> } \ <NEW_LINE>TEST_F ( TEST_FIXTURE_NAME , runMultiThread ) \ <NEW_LINE> { \ <NEW_LINE>runTest ( true ) ; \ <NEW_LINE> } <NEW_LINE><NEW_LINE>SINGLE_AND_MULTI_THREAD_TEST_F ( CCLayerTreeHostTestShortlived1 ) <NEW_LINE>
+if ( pin_code == NULL || pin_len > PIN_CODE_LEN ) <NEW_LINE>
+tgt_realm ) ; <NEW_LINE>
+static int enable ( bool start_restricted ) { <NEW_LINE>LOG_INFO ( LOG_TAG , " % s: start restricted = % d" , __func__ , start_restricted ) ; <NEW_LINE><NEW_LINE>restricted_mode = start_restricted ; <NEW_LINE>
+<NEW_LINE><NEW_LINE><NEW_LINE><NEW_LINE>
+EntrySyncCallbackHelper * resolveURLHelper = EntrySyncCallbackHelper::create ( ) ; <NEW_LINE>
+#endif <NEW_LINE>
+png_malloc ( png_ptr , info_ptr -> rowbytes ) ) ; <NEW_LINE>
+if ( ! content -> ChromeOnlyAccess ( ) ) { <NEW_LINE>
+clone_info -> stroke . alpha = ( MagickRealType ) TransparentAlpha ; <NEW_LINE>
+if ( argc < 1 ) { <NEW_LINE>js_ReportMissingArg ( cx , argv - 2 , 0 ) ; <NEW_LINE>return JS_FALSE ; <NEW_LINE> } <NEW_LINE><NEW_LINE>
+opendata = nfs4_opendata_alloc ( & ctx -> path , state -> owner , 0 , 0 , NULL ) ; <NEW_LINE>
+AssertIsOnIOThread ( ) ; <NEW_LINE>
+void OnContentRemoved ( nsPresContext * aPresContext , nsIContent * aContainer , <NEW_LINE>nsIFrame * aChildFrame , PRInt32 aIndex ) ; <NEW_LINE>
+if ( entry -> vertexDeclaration != mLastSetVDecl ) <NEW_LINE> { <NEW_LINE>device -> SetVertexDeclaration ( entry -> vertexDeclaration ) ; <NEW_LINE>mLastSetVDecl = entry -> vertexDeclaration ; <NEW_LINE> } <NEW_LINE><NEW_LINE>
+#line 521 "ext / standard / var_unserializer . re" <NEW_LINE>
+return ( ( ( pixel << 16 ) | ( pixel >> 16 ) ) & 0x00ff00ff ) | ( pixel & 0xff00ff00 ) ; <NEW_LINE>
+perf_sw_event ( PERF_COUNT_SW_PAGE_FAULTS , 1 , regs , address ) ;
+* aPkcs11 = nsnull ; <NEW_LINE>
+return Push ( cx ) ; <NEW_LINE>
+NotificationRegistrar notification_registrar_ ; <NEW_LINE>TabContentsObserver::Registrar tab_contents_observer_registrar_ ;
+void ShowOverflowBubble ( ) ;
+if ( ! frontend::CompileFunctionBody ( cx , fun , principals , NULL , & bindings , <NEW_LINE>chars , length , filename , lineno , version ) ) <NEW_LINE>
+<NEW_LINE><NEW_LINE>if ( ! IsSystemXHR ( ) ) { <NEW_LINE>
+AssertIsOnIOThread ( ) ; <NEW_LINE>
+ND_PRINT ( ( ndo , " % s" , mldv2_tstr ) ) ; <NEW_LINE>
+return document ( ) -> inQuirksMode ( ) && style ( ) -> logicalHeight ( ) . isAuto ( ) && ! isFloatingOrOutOfFlowPositioned ( ) && ( isRoot ( ) || isBody ( ) ) && ! document ( ) -> shouldDisplaySeamlesslyWithParent ( ) ; <NEW_LINE>
+nsWindow * win = GetContainerWindow ( ) ; <NEW_LINE>
+SyncBackendHost ( SyncFrontend * frontend , Profile * profile ) ; <NEW_LINE>
+<NEW_LINE><NEW_LINE>const int32 id_ ; <NEW_LINE>
+void Decoder::WriteInternal ( const char * aBuffer , uint32_t aCount , DecodeStrategy aStrategy ) { } <NEW_LINE>
+if ( cur -> type == XML_ATTRIBUTE_NODE ) { <NEW_LINE>cur = cur -> parent ; <NEW_LINE> } else if ( cur -> type == XML_NAMESPACE_DECL ) { <NEW_LINE>xmlNsPtr ns = ( xmlNsPtr ) cur ; <NEW_LINE><NEW_LINE>if ( ( ns -> next == NULL ) || <NEW_LINE> ( ns -> next -> type == XML_NAMESPACE_DECL ) ) <NEW_LINE>return ( NULL ) ; <NEW_LINE>cur = ( xmlNodePtr ) ns -> next ; <NEW_LINE> } <NEW_LINE>
+if ( Node * focusedNode = frame -> document ( ) -> focusedNode ( ) ) { <NEW_LINE>if ( focusedNode -> hasTagName ( HTMLNames::selectTag ) ) <NEW_LINE>return false ; <NEW_LINE>if ( focusedNode -> isElementNode ( ) && DOMSupport::isPopupInputField ( static_cast < Element * > ( focusedNode ) ) ) <NEW_LINE>return false ; <NEW_LINE> } <NEW_LINE>
+static const char * const cfg = " -- target = armv6 - linux - gcc -- enable - external - build -- enable - realtime - only -- enable - pic -- disable - runtime - cpu - detect -- disable - install - docs -- size - limit = 4096x3072" ; <NEW_LINE>
+<NEW_LINE>
+if ( Z_TYPE_PP ( test_ptr ) == IS_ARRAY && Z_TYPE_PP ( ptr ) == IS_ARRAY ) { <NEW_LINE>
+static void show_progress ( int frame_in , int frame_out , uint64_t dx_time ) { <NEW_LINE>
+#ifndef BASE_MAC_LIBDISPATCH_TASK_RUNNER_H_ <NEW_LINE>#define BASE_MAC_LIBDISPATCH_TASK_RUNNER_H_ <NEW_LINE>
+break ; <NEW_LINE>
+#include "base / synchronization / condition_variable . h" <NEW_LINE>
