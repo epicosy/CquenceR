@@ -187,11 +187,11 @@ class Repair(Command):
 
             if self.verbose:
                 print(f"Command: {test_cmd}\nOutput: {out}")
-            if err and not neg_tests:
+            if neg_tests and not err and should_fail:
                 print(f"\t{test}: 0")
                 test.passed = False
                 return False
-            if neg_tests and not err and should_fail:
+            if err:
                 print(f"\t{test}: 0")
                 test.passed = False
                 return False
