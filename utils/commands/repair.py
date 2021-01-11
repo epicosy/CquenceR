@@ -96,7 +96,7 @@ class Repair(Command):
         # Negative Tests
         neg_tests = self._get_tests(pos=False)
 
-        if not self._test(tests=neg_tests, neg_tests=True, should_fail=True):
+        if not self._test(tests=neg_tests, should_fail=True):
             print("Sanity check failed: test failure.")
             exit(1)
         if not self._test(tests=pos_tests):
@@ -178,7 +178,7 @@ class Repair(Command):
             return False, exec_time
         return True, exec_time
 
-    def _test(self, tests: List[Test], neg_tests: bool = False, should_fail: bool = False):
+    def _test(self, tests: List[Test], should_fail: bool = False):
         print(f"Testing:")
         for test in tests:
             test_cmd = self.test_script.replace("__TEST_NAME__", test.name)
@@ -187,11 +187,14 @@ class Repair(Command):
 
             if self.verbose:
                 print(f"Command: {test_cmd}\nOutput: {out}")
-            if neg_tests and not err and should_fail:
+            if not err and should_fail:
                 print(f"\t{test}: 0")
                 test.passed = False
                 return False
             if err:
+                if should_fail:
+                    print(f"\t{test}: 0")
+                    return True
                 print(f"\t{test}: 0")
                 test.passed = False
                 return False
@@ -210,7 +213,7 @@ class Repair(Command):
         patch.neg_tests = neg_tests
 
         if patch.compiles:
-            if self._test(tests=neg_tests, neg_tests=True):
+            if self._test(tests=neg_tests):
                 if self._test(tests=pos_tests):
                     patch(is_fix=True)
                     for pf in patch:
