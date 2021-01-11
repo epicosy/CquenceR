@@ -26,7 +26,7 @@ class Repair(Command):
         self.compile_args = compile_args
         self.test_script = test_script
         self.root = self.configs.data_paths.root
-        self.model_path = self.configs.data_paths.model / Path('final-model_step_2000.pt')
+        self.model_path = self.configs.data_paths.model / Path('final-model_step_4000.pt')
         self.out_path = self.configs.data_paths.root
         self.limit = self.configs.trunc_limit
         self.cont = cont
@@ -196,10 +196,7 @@ class Repair(Command):
                 test.passed = False
                 return False
             test.passed = True
-            if neg_tests:
-                print(f"\t{test}: 0")
-            else:
-                print(f"\t{test}: 1")
+            print(f"\t{test}: 1")
         return True
 
     def _test_patch(self, patch: Patch) -> bool:
