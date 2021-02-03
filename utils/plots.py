@@ -5,9 +5,21 @@ from pylab import *
 import numpy as np
 import pandas as pd
 from scipy import stats
+import matplotlib.font_manager as font_manager
 
 plt.style.use('seaborn-dark')
 
+medium_font = {'family': 'serif',
+              'name': 'Helvetica',
+              'size': 14}
+
+large_font = {'family': 'serif',
+              'name': 'Helvetica',
+              'weight': 'bold',
+              'size': 16}
+
+legend_font = font_manager.FontProperties(family=large_font["name"],
+                                          style="normal", size=14)
 
 def scatter(x: list, y: list, x_label: str, y_label: str):
     colors = np.random.rand(len(x))
@@ -78,17 +90,19 @@ class Plotter:
                  legend: List):
         nrows = len(y_data)
         fig, rows = plt.subplots(nrows, 1)
-        fig.suptitle(fig_title)
+        fig.suptitle(fig_title, **large_font)
         fig.set_size_inches(self.fig_size[0], self.fig_size[1], forward=True)
 
         for y, row, y_label in zip(y_data, rows, y_labels):
             for line in y:
                 row.plot(x_data, line, '.-')
-            row.set_ylabel(y_label)
-            row.legend(legend, loc='best')
-            # row.tick_params(labelrotation=20)
+            row.set_ylabel(y_label, **large_font)
+            #row.set_yticklabels(fontsize=14)
+            row.set_xticklabels(x_data,  rotation=-45, ha="center", **medium_font)
+            row.legend(legend, loc='best', prop=legend_font)
+            row.tick_params(labelsize=14)
 
-        rows[-1].set_xlabel(x_label)
+        rows[-1].set_xlabel(x_label, **large_font)
 
         self.file_name = "subplots"
         self.show()
@@ -110,7 +124,7 @@ class Plotter:
     def show(self):
         # Shows plot or saves it in the plots folder
         if self.save_path:
-            plt.savefig(f"{self.save_path / Path(self.file_name)}")
+            plt.savefig(f"{self.save_path / Path(self.file_name)}", bbox_inches='tight')
             plt.clf()
         else:
             plt.show()

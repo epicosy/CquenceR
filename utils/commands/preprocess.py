@@ -10,7 +10,7 @@ list_of_split_choices = ["train_val", "train_val_test"]
 
 class Preprocess(Command):
     def __init__(self, src_path: str = None, out_path: str = None, split: str = None, no_onmt: bool = False,
-                 no_truncation: bool = False, **kwargs):
+                 bpe: bool = False, no_truncation: bool = False, **kwargs):
         super().__init__(**kwargs)
         self.source = Path(src_path) if src_path else self.configs.data_paths.raw / Path('dataset.pkl')
         self.out = Path(out_path) if out_path else self.configs.data_paths.processed
@@ -20,6 +20,7 @@ class Preprocess(Command):
         self.no_onmt = no_onmt
         self.no_truncation = no_truncation
         self.out_file = Path(self.onmt_input_path / Path(f"preprocess.{self.seed}.out"))
+        self.bpe = bpe
 
     def __call__(self, **kwargs):
         if self.source.is_dir():
@@ -71,5 +72,7 @@ class Preprocess(Command):
                                 default=None)
         cmd_parser.add_argument('--no_onmt', action='store_true', default=False,
                                 help='Disables onmt pre-processing on the train and val sets.')
+        cmd_parser.add_argument('--bpe', action='store_true', default=False,
+                                help='Use Byte Pair Encoding for Subword Tokenization.')
         cmd_parser.add_argument('--no_truncation', action='store_true', default=False,
                                 help='Doesnt truncates the samples in the dataset.')

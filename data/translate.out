@@ -90,3 +90,33 @@
 /usr/local/lib/python3.7/dist-packages/torchtext-0.4.0-py3.7.egg/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
   var = torch.tensor(arr, dtype=self.dtype, device=device)
 [2020-11-09 19:12:41,079 INFO] PRED AVG SCORE: -1.6846, PRED PPL: 5.3904
+[2021-01-10 21:54:17,889 INFO] Translating shard 0.
+/home/epicosy/.local/lib/python3.8/site-packages/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+/home/epicosy/.local/lib/python3.8/site-packages/onmt/translate/beam_search.py:209: UserWarning: An output with one or more elements was resized since it had shape [50], which does not match the required output shape [1, 50].This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at  /pytorch/aten/src/ATen/native/Resize.cpp:19.)
+  torch.mul(self.topk_scores, length_penalty, out=self.topk_log_probs)
+[2021-01-10 21:54:18,211 INFO] PRED AVG SCORE: -3.7477, PRED PPL: 42.4250
+[2021-01-10 21:57:14,346 INFO] Translating shard 0.
+/home/epicosy/.local/lib/python3.8/site-packages/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+/home/epicosy/.local/lib/python3.8/site-packages/onmt/translate/beam_search.py:209: UserWarning: An output with one or more elements was resized since it had shape [50], which does not match the required output shape [1, 50].This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at  /pytorch/aten/src/ATen/native/Resize.cpp:19.)
+  torch.mul(self.topk_scores, length_penalty, out=self.topk_log_probs)
+[2021-01-10 21:57:14,684 INFO] PRED AVG SCORE: -3.7477, PRED PPL: 42.4250
+[2021-01-10 22:16:01,720 INFO] Translating shard 0.
+/home/epicosy/.local/lib/python3.8/site-packages/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+/home/epicosy/.local/lib/python3.8/site-packages/onmt/translate/beam_search.py:209: UserWarning: An output with one or more elements was resized since it had shape [50], which does not match the required output shape [1, 50].This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at  /pytorch/aten/src/ATen/native/Resize.cpp:19.)
+  torch.mul(self.topk_scores, length_penalty, out=self.topk_log_probs)
+[2021-01-10 22:16:02,135 INFO] PRED AVG SCORE: -3.7524, PRED PPL: 42.6241
+[2021-01-10 22:20:00,088 INFO] Translating shard 0.
+/home/epicosy/.local/lib/python3.8/site-packages/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+/home/epicosy/.local/lib/python3.8/site-packages/onmt/translate/beam_search.py:209: UserWarning: An output with one or more elements was resized since it had shape [50], which does not match the required output shape [1, 50].This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at  /pytorch/aten/src/ATen/native/Resize.cpp:19.)
+  torch.mul(self.topk_scores, length_penalty, out=self.topk_log_probs)
+[2021-01-10 22:20:00,477 INFO] PRED AVG SCORE: -3.7477, PRED PPL: 42.4250
+[2021-01-10 22:23:55,299 INFO] Translating shard 0.
+/home/epicosy/.local/lib/python3.8/site-packages/torchtext/data/field.py:359: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  var = torch.tensor(arr, dtype=self.dtype, device=device)
+/home/epicosy/.local/lib/python3.8/site-packages/onmt/translate/beam_search.py:209: UserWarning: An output with one or more elements was resized since it had shape [50], which does not match the required output shape [1, 50].This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at  /pytorch/aten/src/ATen/native/Resize.cpp:19.)
+  torch.mul(self.topk_scores, length_penalty, out=self.topk_log_probs)
+[2021-01-10 22:23:55,711 INFO] PRED AVG SCORE: -3.7477, PRED PPL: 42.4250

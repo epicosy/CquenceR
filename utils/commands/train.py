@@ -8,7 +8,7 @@ from utils.plots import Plotter
 
 
 class Train(Command):
-    def __init__(self, gpu: bool = False, plot: bool = False, skip: bool = False, **kwargs):
+    def __init__(self, gpu: bool = False, plot: bool = False, skip: bool = False, transformer: bool = False, **kwargs):
         super().__init__(**kwargs)
         if gpu:
             self.configs.onmt_args.train['gpu_ranks'] = 0
@@ -17,6 +17,7 @@ class Train(Command):
         self.out_file = Path(self.out_path / Path(f"train.final.{self.seed}.out"))
         self.plot = plot
         self.skip = skip
+        self.transformer = transformer
 
     def __call__(self, **kwargs):
         if not self.skip:
@@ -27,6 +28,14 @@ class Train(Command):
                 exit(1)
 
             self.configs.onmt_args.train['seed'] = self.seed
+            model = self.configs.onmt_args.train['model']['lstm']
+
+            if self.transformer:
+                model = self.configs.onmt_args.train['model']['transformer']
+            # TODO: FIX this
+            del self.configs.onmt_args.train['model']
+            self.configs.onmt_args.train.update(model)
+
             mutable_args = self.configs.onmt_args.unpack(name='train', string=True)
             cmd_str = f"onmt_train -data {self.in_path / Path('final')} {mutable_args} " \
                       f"-save_model {self.out_path / Path('final-model')} 2>&1"
@@ -61,7 +70,7 @@ class Train(Command):
 
         plotter = Plotter(str(self.configs.root / Path('train_plots')))
         plotter.subplots(x_data=steps, y_data=[[accuracy, val_accuracy], [perplexity, val_perplexity]], x_label="Steps",
-                         fig_title='Training stats', y_labels=["Accuracy", "Perplexity"], legend=['Train', 'Validation'])
+                         fig_title='Training and Validation Stats', y_labels=["Accuracy", "Perplexity"], legend=['Train', 'Validation'])
 
     @staticmethod
     def definition() -> dict:
@@ -72,5 +81,6 @@ class Train(Command):
     @staticmethod
     def add_arguments(cmd_parser) -> NoReturn:
         cmd_parser.add_argument('--gpu', action='store_true', default=False, help='Enables GPU training.')
+        cmd_parser.add_argument('--transformer', action='store_true', default=False, help='Use the transformer model.')
         cmd_parser.add_argument('--plot', help='Plots stats about testing.', action="store_true", required=False)
         cmd_parser.add_argument('--skip', help='Skips training.', action="store_true", required=False)
