@@ -28,8 +28,10 @@ do_version_check "$python3_version" "3.7"
 [[ $? -eq 9 ]] && echo "[Error] python3 version >= 3.7" && exit 1 ;
 # set pythonpath
 export PYTHONPATH=$(pwd)
+#install pip packages
+pip3 install -r requirements.txt
 # install OpenNMT
-pip3 install OpenNMT-py
+pip3 install OpenNMT-py==1.2.0
 # check if openmt is installed
 command -v onmt_train > /dev/null
 [[ $? -eq 1 ]] && echo "[Error] OpenNMT not installed" && exit 1 ;
