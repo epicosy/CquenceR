@@ -18,12 +18,10 @@ Original file is located at
 !apt-get install python3.7 python3.7-dev
 
 """# Initialize CquenceR
-Version of OpenNMT needs no be under 2.0.0, or some dependencies will not work later, such as the OpenNMT's preprocess script and other inputs. Also, the python version check in the init script might fial, just comment it. If you can not run with the gpu, update the torch, for that check the 2º cell in the "Train with GPU and Plot results" section.
+Version of OpenNMT needs no be under 2.0.0, or some dependencies will not work later, such as the OpenNMT's preprocess script and other inputs. Also, the python version check in the init script might fail, just comment it.
 """
 
 ! CquenceR/init.sh
-
-!pip3 install -Iv OpenNMT-py==1.2.0
 
 """# Install python 3.7 dependencies"""
 
@@ -72,17 +70,12 @@ Version of OpenNMT needs no be under 2.0.0, or some dependencies will not work l
 
 """# Train with GPU and Plot results (train_plots is the output folder)
 
+If you can not run with the gpu, update the torch. For that just uncomment the next cell and run it.
 """
 
+#!python3.7 -m pip  install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+
 !python3.7 CquenceR/CquenceR.py train -v --plot --gpu
-
-!python3.7 -m pip  install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
-#pip3 install https://download.pytorch.org/whl/cu100/torch-1.1.0-cp36-cp36m-linux_x86_64.whl
-#pip3 install https://download.pytorch.org/whl/cu100/torchvision-0.3.0-cp36-cp36m-linux_x86_64.whl
-
-#!curl https://us.download.nvidia.com/tesla/450.80.02/NVIDIA-Linux-x86_64-450.80.02.run -o cuda.run
-# https://stackoverflow.com/questions/50560395/how-to-install-cuda-in-google-colab-gpus
-#!python3.7 -m pip install mxnet-cu100
 
 """# Test and Plot Results (test_plots is the output folder)"""
 
@@ -100,7 +93,3 @@ if device.type == 'cuda':
     print('Memory Usage:')
     print('Allocated:', round(torch.cuda.memory_allocated(0)/1024**3,1), 'GB')
     print('Cached:   ', round(torch.cuda.memory_reserved(0)/1024**3,1), 'GB')
-
-#%rm /content/PatchBundle -rf
-
-#%cp /content/PatchBundle/data/filtered/merged.pkl /content/CquenceR/data/raw/dataset.pkl
