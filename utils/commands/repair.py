@@ -27,7 +27,7 @@ class Repair(Command):
         self.test_script = test_script
         self.root = self.configs.data_paths.root
         self.model_path = self.configs.data_paths.model / Path('final-model_step_4000.pt')
-        self.out_path = self.configs.data_paths.root
+        self.out_path = self.working_dir
         self.limit = self.configs.trunc_limit
         self.cont = cont
         self.beam = self.configs.onmt_args.translate['beam_size']
