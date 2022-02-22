@@ -2,5 +2,5 @@ pandas==1.1.4
 matplotlib==3.3.3
 numpy==1.19.4
 scipy==1.5.4
-python_Levenshtein==0.12.0
+python_Levenshtein==0.12.1
 scikit_learn==0.23.2
