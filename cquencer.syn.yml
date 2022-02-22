@@ -1,0 +1,9 @@
+cquencer:
+  program: CquenceR.py
+  path: /opt/cquencer
+  help: '--help'
+  args:
+    repair: ""
+    --beam_size: "50"
+  sanity_check: true
+  fault_loc: false
