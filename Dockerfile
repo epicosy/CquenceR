@@ -28,6 +28,7 @@ RUN mv /bin/sh /bin/sh.orig && ln -s /bin/bash /bin/sh
 ########################################################################################################################
 # Install OpenNMT-py and python dependencies
 ########################################################################################################################
-RUN pip3 install OpenNMT-py && pip3 install -r requirements.txt
+RUN pip3 install OpenNMT-py==1.2.0 
+RUN pip3 install -r requirements.txt
 
 VOLUME /opt/cquencer
