@@ -12,7 +12,7 @@ from utils.results import Results
 
 class Repair(Command):
     def __init__(self, working_dir: str, prefix: str, manifest_path: str, compile_script: str, test_script: str,
-                 compile_args: str, pos_tests: int, neg_tests: int, seed: int = 0, beam_size: int = None,
+                 pos_tests: int, neg_tests: int, seed: int = 0, beam_size: int = None,
                  cont: bool = False, skip_check: bool = False, **kwargs):
         super().__init__(**kwargs)
         self.working_dir = Path(working_dir)
@@ -23,7 +23,6 @@ class Repair(Command):
         self.pos_tests = pos_tests
         self.neg_tests = neg_tests
         self.compile_script = compile_script
-        self.compile_args = compile_args
         self.test_script = test_script
         self.root = self.configs.data_paths.root
         self.model_path = self.configs.data_paths.model / Path('final-model_step_4000.pt')
@@ -154,20 +153,23 @@ class Repair(Command):
         return prediction_to_patch(prefix=self.prefix, manifest=self.manifest, predictions_files=self.predictions,
                                    prediction_number=prediction, out_path=out_path)
 
-    # check syntax gcc main.c -fsyntax-only
-    # The technically best way to do this is to simply compile each file.
-    # Setting up all those compiles is either easy (because you have the build scripts) or will be
-    # h--- if you don't have them, and the difference may drive your choice of solution.
-    # For C, you pretty much need to run them through a compiler with the preprocessor enabled.
-    # If you don't do that, the typical C code containg macros and preprocessor conditionals won't be parsable at all.
-    def _compile(self, patch: Patch = None):
-        compile_cmd = self.compile_script
+    def get_manifest_files(self) -> List[Path]:
+        with self.manifest_path.open(mode="r") as mf:
+            files = []
 
+            for l in mf.readlines():
+                files.append(Path(self.prefix, l.split(':')[0]))
+
+            return files
+
+    def _compile(self, patch: Patch = None):
         if patch:
             print(f"Compiling patch {patch.number}.")
-            compile_cmd += " " + self.compile_args.replace('__SOURCE_NAME__', str(patch))
+            compile_cmd = self.compile_script.replace('__SOURCE_NAME__', str(patch))
         else:
             print("Compiling")
+            manifest_files = [str(f) for f in self.get_manifest_files()]
+            compile_cmd = self.compile_script.replace('__SOURCE_NAME__', ' '.join(manifest_files))
 
         out, err, exec_time = super().__call__(command=f"{compile_cmd}")
 
@@ -238,8 +240,8 @@ class Repair(Command):
         cmd_parser.add_argument('-mp', '--manifest_path', type=str, required=True,
                                 help='File with the vulnerable files and respective hunks lines.')
         cmd_parser.add_argument('-cs', '--compile_script', help='Compile script to be used.', type=str, required=True)
-        cmd_parser.add_argument('-ca', '--compile_args', type=str, required=True,
-                                help='Arguments to be used for compiling the patches.')
+#        cmd_parser.add_argument('-ca', '--compile_args', type=str, required=True,
+#                                help='Arguments to be used for compiling the patches.')
         cmd_parser.add_argument('-pf', '--prefix', help='Prefix for source files.', type=str, required=True)
         cmd_parser.add_argument('-ts', '--test_script', help='Test script to be used.', type=str, required=True)
         cmd_parser.add_argument('-pt', '--pos_tests', help='Number of positive tests.', type=int, required=True)
